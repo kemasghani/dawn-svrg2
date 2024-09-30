@@ -1,1 +1,71 @@
-{"name":"t:sections.footer.name","type":"footer","sections":{"footer":{"type":"footer","settings":{"color_scheme":"scheme-1","newsletter_enable":true,"newsletter_heading":"Subscribe to our emails","enable_follow_on_shop":true,"show_social":true,"enable_country_selector":true,"enable_language_selector":true,"payment_enable":true,"show_policy":true,"margin_top":0,"padding_top":36,"padding_bottom":36}}},"order":["footer"]}
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "image_6rNMKC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/LOGO_SVRG_FIX_PNG_White.png",
+            "image_width": 135,
+            "alignment": "center"
+          }
+        },
+        "link_list_rVpEHR": {
+          "type": "link_list",
+          "settings": {
+            "heading": "<strong>SHOP<\/strong>",
+            "menu": "shop"
+          }
+        },
+        "link_list_MhdNey": {
+          "type": "link_list",
+          "settings": {
+            "heading": "<strong>MY ACCOUNT<\/strong>",
+            "menu": "my-account"
+          }
+        },
+        "link_list_aMp4Fb": {
+          "type": "link_list",
+          "settings": {
+            "heading": "<strong>INFORMATION<\/strong>",
+            "menu": "information"
+          }
+        },
+        "text_gtT64Q": {
+          "type": "text",
+          "settings": {
+            "heading": "<strong>STORE LOCATION<\/strong>",
+            "subtext": "<p>TANGERANG SELATAN<br\/>Emerald Avenue 2 B3<br\/>JL HR Rasuna Said, Pondok Aren, Tangerang<br\/><br\/>SURABAYA<br\/>Ruko North Junction Blok RA 23, Citraland JL. Taman Puspa Raya, Sambikerap, Surabaya<br\/><br\/>STORE SERVICE<br\/>Monday-Sunday<br\/>09.00 - 18.00<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "image_6rNMKC",
+        "link_list_rVpEHR",
+        "link_list_MhdNey",
+        "link_list_aMp4Fb",
+        "text_gtT64Q"
+      ],
+      "settings": {
+        "color_scheme": "scheme-4",
+        "newsletter_enable": true,
+        "newsletter_heading": "Subscribe to our emails",
+        "enable_follow_on_shop": true,
+        "show_social": true,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "payment_enable": false,
+        "show_policy": true,
+        "margin_top": 0,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}
