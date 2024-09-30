@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    ol,
+    ul,
+    menu {
+        list-style: inherit;
+        margin: inherit
+    }
+
+    p,
+    ul {
+        margin-bottom: 16px
+    }
+
+    ul {
+        padding-left: 20px
+    }
+
+    h1 {
+        font-size: calc(var(--font-heading-scale) * 4rem);
+    }
+
+    b,
+    strong {
+        font-weight: bold;
+    }
+}

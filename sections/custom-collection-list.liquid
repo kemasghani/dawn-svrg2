@@ -1,0 +1,101 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+}
+{%- endstyle -%}
+<div id="collection-list-section" class="section-{{ section.id }}-padding">
+    <div class="collection-list-wrapper">
+      <div class="collection-list-grid">
+        {% for block in section.blocks %}
+          {% if block.type == 'collection_block' and block.settings.collection != blank %}
+            {% assign collection = collections[block.settings.collection] %}
+            <div class="collection-item">
+              <a href="{{ collection.url }}">
+                <img src="{{ collection.image | img_url: '150x150' }}" alt="{{ collection.title }}">
+              </a>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+
+    <style>
+      .collection-list-wrapper {
+        max-width: var(--page-width);
+        margin: auto;
+        padding: 20px 60px;
+      }
+      .collection-list-grid {
+       display: flex;
+       justify-content: center;
+       column-gap: 30px;
+      }
+      .collection-item {
+        text-align: center;
+      }
+      .collection-item img {
+        width: 100%;
+        border-radius: 50%;
+        height: auto;
+      }
+      .collection-item h3 {
+        margin-top: 10px;
+        font-size: 18px;
+      }
+    </style>
+  </div>
+
+  {% schema %}
+  {
+    "name": "Custom Collection List",
+    "settings": [
+        {
+            "type": "range",
+            "id": "padding_top",
+            "min": 0,
+            "max": 100,
+            "step": 4,
+            "unit": "px",
+            "label": "t:sections.all.padding.padding_top",
+            "default": 36
+          },
+          {
+            "type": "range",
+            "id": "padding_bottom",
+            "min": 0,
+            "max": 100,
+            "step": 4,
+            "unit": "px",
+            "label": "t:sections.all.padding.padding_bottom",
+            "default": 36
+          }
+    ],
+    "blocks": [
+      {
+        "type": "collection_block",
+        "name": "Collection Block",
+        "settings": [
+          {
+            "type": "collection",
+            "id": "collection",
+            "label": "Select Collection"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Custom Collection List",
+        "category": "Custom"
+      }
+    ]
+  }
+  {% endschema %}
