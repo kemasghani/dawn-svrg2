@@ -1,7 +1,202 @@
+/* custom css */
+.line-separator {
+  display: block !important;
+  transform: translateX(-20%);
+}
+
+.featured-collection .grid {
+  transform: translateX(-60px) !important;
+  width: 114%;
+}
+
+@media screen and (max-width: 1500px) {
+  .featured-collection .grid {
+    transform: translateX(-55px) !important;
+    width: 114%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .featured-collection .grid {
+    transform: translateX(-48px) !important;
+    width: 114%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .featured-collection .grid {
+    transform: translateX(-40px) !important;
+    width: 114%;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .featured-collection .grid {
+    transform: translateX(0px) !important;
+    width: 105%;
+  }
+}
+
+.flash-sale-head-container h2 {
+  font-size: 30px;
+  color: #B91C1C;
+}
+
+svg.arrow-left path {
+  fill: #63d7d1;
+  color: #63d7d1;
+}
+
+svg.arrow-right path {
+  fill: #63d7d1;
+  color: #63d7d1;
+}
+
+button[disabled='disabled'] svg.arrow-left path {
+  fill: #94A3B8;
+  color: #94A3B8;
+}
+
+button[disabled='disabled'] svg.arrow-right path {
+  fill: #94A3B8;
+  color: #94A3B8;
+}
+
+.countdown p {
+  padding: 3px 30px;
+  border: 2px dotted #B91C1C;
+  font-size: 24px;
+  font-weight: 700;
+  color: #B91C1C;
+  border-radius: 8px;
+}
+
+.view-all-carousel-control-container {
+  display: flex;
+  align-items: end;
+  column-gap: 20px;
+}
+
+.view-all-carousel-control-container-mobile {
+  display: none;
+  align-items: end;
+  column-gap: 20px;
+}
+
+.view-all-carousel-control-container .slider-buttons, .view-all-carousel-control-container-mobile .slider-buttons {
+  display: flex;
+  column-gap: 15px;
+}
+
+.view-all-carousel-control-container button, .view-all-carousel-control-container-mobile button {
+  border: 1px solid #94A3B8;
+  border-radius: 8px;
+  padding: 0px 4px;
+  height: 50px;
+  transform: translateY(2px);
+}
+
+.arrow-right {
+  transform: rotate(180deg);
+}
+
+.button-view-all {
+  background: transparent;
+  border: 1px solid #94A3B8;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 8px;
+  color: black;
+}
+
+li.image-banner-collection {
+  position: relative;
+  text-align: start;
+}
+
+li.image-banner-collection img {
+  filter: brightness(85%);
+  object-fit: cover;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.content-container, .multicolumn-card {
+  width: 100% !important;
+}
+
+.header ul li {
+  max-width: fit-content;
+}
+
+ul li {
+  width: 100%;
+  max-width: 100%;
+}
+
+li.image-banner-collection h1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 700;
+  padding: 0 16px;
+  font-size: 32px;
+}
+
+.slider-counter.caption span {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 850px) {
+  .view-all-carousel-control-container {
+    display: none;
+  }
+
+  .view-all-carousel-control-container-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+
+  .view-all-carousel-control-container-mobile button {
+    display: none;
+  }
+}
+
+/* end custom css */
+
+
 @media screen and (max-width: 749px) {
   .collection .grid__item:only-child {
     flex: 0 0 100%;
     max-width: 100%;
+  }
+
+  li.image-banner-collection h1 {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  li.image-banner-collection h1 {
+    font-size: 18px;
+  }
+
+  .countdown p {
+    padding: 2px 20px;
+    font-size: 16px;
+  }
+
+  .flash-sale-head-container h2 {
+    font-size: 23px;
   }
 }
 
@@ -63,7 +258,7 @@
   }
 }
 
-.collection__description > * {
+.collection__description>* {
   margin: 0;
 }
 
@@ -81,7 +276,7 @@
   }
 
   .collection__title.title-wrapper--self-padded-tablet-down {
-    padding: 0 5rem;
+    padding: 0 0rem;
   }
 
   .collection slider-component:not(.page-width-desktop) {
@@ -91,6 +286,12 @@
   .collection--full-width slider-component:not(.slider-component-desktop) {
     padding: 0 1.5rem;
     max-width: none;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .collection__title--desktop-slider .title {
+    margin-bottom: 0rem;
   }
 }
 

@@ -4,6 +4,9 @@
 {{ 'section-featured-blog.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
+.article-card__excerpt{
+  display: none;
+}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
@@ -37,14 +40,30 @@
         >
           {{ section.settings.heading }}
         </h2>
-
+        {%- if section.settings.show_view_all and section.settings.post_limit < section.settings.blog.articles_count -%}
+          <div
+            class="blog__view-all center small-hide medium-hide{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            {% if settings.animations_reveal_on_scroll %}
+              data-cascade
+            {% endif %}
+          >
+            <a
+              href="{{ section.settings.blog.url }}"
+              id="ViewAll-{{ section.id }}"
+              class="border border-[#63d7d1] !rounded-full py-2 px-8 mr-3 text-black"
+              aria-labelledby="ViewAll-{{ section.id }} SectionHeading-{{ section.id }}"
+            >
+              {{ 'sections.featured_blog.view_all' | t }}
+            </a>
+          </div>
+        {%- endif -%}
         {%- if section.settings.blog != blank
           and section.settings.show_view_all
           and section.settings.post_limit < section.settings.blog.articles_count
         -%}
           <a
             href="{{ section.settings.blog.url }}"
-            class="link underlined-link large-up-hide{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            class="border border-[#63d7d1] !rounded-full py-2 px-8 mr-3 text-black large-up-hide{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
           >
             {{ 'sections.featured_blog.view_all' | t }}
           </a>
@@ -113,7 +132,7 @@
                     {%- endif -%}
                     <div class="card__content">
                       <div class="card__information">
-                        <h3 class="card__heading h2">
+                        <h3 class="card__heading h2 text-[20px]">
                           {{ 'sections.featured_blog.onboarding_title' | t }}
                         </h3>
                         <p class="article-card__excerpt rte-width">
@@ -124,7 +143,7 @@
                   </div>
                   <div class="card__content">
                     <div class="card__information">
-                      <h3 class="card__heading h2">
+                      <h3 class="card__heading h2 text-[20px]">
                         {{ 'sections.featured_blog.onboarding_title' | t }}
                       </h3>
                       <p class="article-card__excerpt rte-width">
@@ -169,24 +188,6 @@
         </div>
       {%- endif -%}
     </slider-component>
-
-    {%- if section.settings.show_view_all and section.settings.post_limit < section.settings.blog.articles_count -%}
-      <div
-        class="blog__view-all center small-hide medium-hide{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-        {% if settings.animations_reveal_on_scroll %}
-          data-cascade
-        {% endif %}
-      >
-        <a
-          href="{{ section.settings.blog.url }}"
-          id="ViewAll-{{ section.id }}"
-          class="blog__button button"
-          aria-labelledby="ViewAll-{{ section.id }} SectionHeading-{{ section.id }}"
-        >
-          {{ 'sections.featured_blog.view_all' | t }}
-        </a>
-      </div>
-    {%- endif -%}
   </div>
 </div>
 

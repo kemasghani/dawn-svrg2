@@ -29,6 +29,7 @@
   assign money_price = price | money
   assign money_price_min = price_min | money
   assign money_price_max = price_max | money
+
   if settings.currency_code_enabled
     assign money_price = price | money_with_currency
     assign money_price_min = price_min | money_with_currency
@@ -38,7 +39,16 @@
   if target == product and product.price_varies
     assign money_price = 'products.product.price.from_price_html' | t: price: money_price
   endif
+
+  # Calculate discount percentage
+  if compare_at_price > price
+    assign discount_amount = compare_at_price | minus: price
+    assign discount_percentage = discount_amount | times: 100 | divided_by: compare_at_price
+  else
+    assign discount_percentage = 0
+  endif
 -%}
+
 
 {%- unless target == null and placeholder == null -%}
   <div
@@ -101,11 +111,21 @@
                 {{ compare_at_price | money }}
               {% endif %}
             </s>
+            <span class="px-3 py-2 bg-[#fee2e2] text-[#dc2626] font-[600] text-[11px] rounded-[5px] discount-card-product translate-x-2">
+              {%- if discount_percentage > 0 -%}
+                {{ discount_percentage | round }}%
+              {%- endif -%}
+            </span>
           </span>
         {%- endunless -%}
         <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.sale_price' | t }}</span>
-        <span class="price-item price-item--sale price-item--last">
+        <span class="price-item price-item--sale price-item--last mt-10 text-[15px] text-[#ff2e00]">
           {{ money_price }}
+        </span>
+        <span class="px-4 py-3 bg-[#fee2e2] text-[#dc2626] font-[600] text-[15px] rounded-[10px] discount-main-product hidden">
+          {%- if discount_percentage > 0 -%}
+            {{ discount_percentage | round }}%
+          {%- endif -%}
         </span>
       </div>
       <small class="unit-price caption{% if product.selected_or_first_available_variant.unit_price_measurement == nil %} hidden{% endif %}">
@@ -127,10 +147,10 @@
       <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
         {{ 'products.product.on_sale' | t }}
       </span>
-
       <span class="badge price__badge-sold-out color-{{ settings.sold_out_badge_color_scheme }}">
         {{ 'products.product.sold_out' | t }}
       </span>
+
     {%- endif -%}
   </div>
 {% endunless %}

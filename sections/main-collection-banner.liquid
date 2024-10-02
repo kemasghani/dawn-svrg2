@@ -8,11 +8,10 @@
     }
   }
 {%- endstyle -%}
-
 <div class="collection-hero{% if section.settings.show_collection_image and collection.image %} collection-hero--with-image{% endif %} color-{{ section.settings.color_scheme }} gradient">
-  <div class="collection-hero__inner page-width {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+  <div class="collection-hero__inner page-width text-center md:text-left mt-10 {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
     <div class="collection-hero__text-wrapper">
-      <h1 class="collection-hero__title">
+      <h1 class="text-[24px] md:text-[40px] mt-10 mb-4">
         <span class="visually-hidden">{{ 'sections.collection_template.title' | t }}: </span>
         {{- collection.title | escape -}}
       </h1>
@@ -20,10 +19,16 @@
       {%- if section.settings.show_collection_description -%}
         <div class="collection-hero__description rte">{{ collection.description }}</div>
       {%- endif -%}
+      {% if template.suffix contains 'countdown-collection' %}
+        <div class="countdown-timer-container">
+          <div id="countdown" class="countdown-main-collection">
+            <p>00 : 00 : 00</p>
+          </div>
+        </div>
+      {% endif %}
     </div>
-
     {%- if section.settings.show_collection_image and collection.image -%}
-      <div class="collection-hero__image-container media gradient">
+      <div class="collection-hero__image-container media gradient h-[400px]">
         <img
           srcset="
             {%- if collection.image.width >= 165 -%}{{ collection.image | image_url: width: 165 }} 165w,{%- endif -%}
@@ -44,6 +49,31 @@
     {%- endif -%}
   </div>
 </div>
+
+<script>
+  const countdownElementMain = document.getElementById(`countdown`);
+  const totalTime = {{ settings.countdown_total_time }};
+
+
+  let timeRemaining = totalTime * 60;
+
+  function updateCountdown() {
+    const hours = Math.floor(timeRemaining / 3600);
+    const minutes = Math.floor((timeRemaining % 3600) / 60);
+    const seconds = timeRemaining % 60;
+
+    countdownElementMain.innerHTML = `<p>${hours.toString().padStart(2, '0')} : ${minutes.toString().padStart(2, '0')} : ${seconds.toString().padStart(2, '0')}</p>`;
+
+    if (timeRemaining > 0) {
+      timeRemaining--;
+    } else {
+      clearInterval(countdownInterval);
+    }
+  }
+
+  const countdownInterval = setInterval(updateCountdown, 1000);
+  updateCountdown();
+</script>
 
 {% schema %}
 {

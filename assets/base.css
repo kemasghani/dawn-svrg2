@@ -74,7 +74,16 @@
   --shadow-visible: var(--media-shadow-visible);
 }
 
+.gpo-form__group.gpo-col-12>span {
+  display: none !important;
+}
+
+
 /* base */
+body {
+  width: 100vw;
+  overflow-x: hidden !important;
+}
 
 .page-width {
   max-width: var(--page-width);
@@ -881,6 +890,10 @@ summary::-webkit-details-marker {
 }
 
 /* component-grid */
+.multicolumn .grid {
+  row-gap: 50px;
+}
+
 .grid {
   display: flex !important;
   flex-wrap: wrap;
@@ -1789,7 +1802,7 @@ details[open]>.share-button__fallback {
 
 .field__button>.svg-wrapper {
   height: 2.5rem;
-  width: 2.5rem;
+  width: 100%;
 }
 
 .field__input:-webkit-autofill~.field__button,

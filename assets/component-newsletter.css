@@ -43,7 +43,7 @@
 }
 
 .newsletter-form__button {
-  width: 4.4rem;
+  width: fit-content;
   margin: 0;
   right: var(--inputs-border-width);
   top: 0;
@@ -63,7 +63,8 @@
 
 .newsletter-form__button:not(:focus-visible):not(.focused) {
   box-shadow: inherit;
-  background-color: inherit;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .newsletter-form__button .icon {

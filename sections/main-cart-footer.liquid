@@ -18,24 +18,12 @@
 {%- endstyle -%}
 
 <div
-  class="gradient color-{{ section.settings.color_scheme }}{% if cart == empty %} is-empty{% endif %}"
+  class="gradient color-{{ section.settings.color_scheme }}{% if cart == empty %} is-empty{% endif %} w-[95%]"
   id="main-cart-footer"
   data-id="{{ section.id }}"
 >
   <div class="page-width">
     <div class="cart__footer isolate section-{{ section.id }}-padding">
-      {%- if settings.show_cart_note -%}
-        <cart-note class="cart__note field">
-          <label for="Cart-note">{{ 'sections.cart.note' | t }}</label>
-          <textarea
-            class="text-area field__input"
-            name="note"
-            form="cart"
-            id="Cart-note"
-            placeholder="{{ 'sections.cart.note' | t }}"
-          >{{ cart.note }}</textarea>
-        </cart-note>
-      {%- endif -%}
 
       <div class="cart__blocks">
         {% for block in section.blocks %}
@@ -57,8 +45,19 @@
                     </ul>
                   {%- endif -%}
                 </div>
-
-                <div class="totals">
+                {%- if settings.show_cart_note -%}
+                  <cart-note class="cart__note field">
+                    <label for="Cart-note">Catatan Pembelian</label>
+                    <textarea
+                      class="text-area field__input"
+                      name="note"
+                      form="cart"
+                      id="Cart-note"
+                      placeholder="{{ 'sections.cart.note' | t }}"
+                    >{{ cart.note }}</textarea>
+                  </cart-note>
+                {%- endif -%}
+                <div class="totals mt-14">
                   <h2 class="totals__total">{{ 'sections.cart.estimated_total' | t }}</h2>
                   <p class="totals__total-value">{{ cart.total_price | money_with_currency }}</p>
                 </div>

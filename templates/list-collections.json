@@ -6,7 +6,7 @@
         "title": "Collections",
         "sort": "alphabetical",
         "image_ratio": "square",
-        "columns_desktop": 3,
+        "columns_desktop": 5,
         "columns_mobile": "2"
       }
     }

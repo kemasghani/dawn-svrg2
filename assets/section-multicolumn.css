@@ -1,3 +1,36 @@
+/* custom css */
+.multicolumn.background-primary .multicolumn-card {
+  display: flex !important;
+  flex-direction: column;
+  row-gap: 20px;
+  max-width: 250px;
+  margin: auto;
+  align-items: center;
+  background: transparent !important;
+}
+
+.multicolumn-card-spacing {
+  width: 25%;
+}
+
+div.multicolumn-card__info {
+  padding: 0 !important;
+}
+
+.multicolumn-card__info h3 {
+  font-weight: 700;
+  font-size: 16px;
+  color: #334155;
+}
+
+.multicolumn-card__info p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #64748B;
+}
+
+/* end custom css */
+
 .multicolumn .title {
   margin: 0;
 }
@@ -74,8 +107,7 @@
 }
 
 .multicolumn.background-primary .multicolumn-card {
-  background: rgb(var(--color-background))
-    linear-gradient(rgba(var(--color-foreground), 0.04), rgba(var(--color-foreground), 0.04));
+  background: rgb(var(--color-background)) linear-gradient(rgba(var(--color-foreground), 0.04), rgba(var(--color-foreground), 0.04));
 }
 
 .multicolumn-list h3 {
@@ -88,12 +120,11 @@
 }
 
 .multicolumn-card-spacing {
-  padding-top: 2.5rem;
   margin-left: 2.5rem;
   margin-right: 2.5rem;
 }
 
-.multicolumn-card__info > :nth-child(2) {
+.multicolumn-card__info> :nth-child(2) {
   margin-top: 1rem;
 }
 
@@ -160,7 +191,7 @@
   padding-bottom: 0;
 }
 
-.background-none .multicolumn-card__image-wrapper + .multicolumn-card__info {
+.background-none .multicolumn-card__image-wrapper+.multicolumn-card__info {
   padding-top: 2.5rem;
 }
 
@@ -168,7 +199,7 @@
   padding-left: 0.5rem;
 }
 
-.background-none .slider .multicolumn-card__image-wrapper + .multicolumn-card__info {
+.background-none .slider .multicolumn-card__image-wrapper+.multicolumn-card__info {
   padding-left: 1.5rem;
 }
 
@@ -205,7 +236,7 @@
   box-sizing: border-box;
 }
 
-.multicolumn-card > .multicolumn-card__image-wrapper--full-width:not(.multicolumn-card-spacing) {
+.multicolumn-card>.multicolumn-card__image-wrapper--full-width:not(.multicolumn-card-spacing) {
   border-top-left-radius: calc(var(--text-boxes-radius) - var(--text-boxes-border-width));
   border-top-right-radius: calc(var(--text-boxes-radius) - var(--text-boxes-border-width));
   overflow: hidden;

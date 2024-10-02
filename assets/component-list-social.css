@@ -1,6 +1,6 @@
 .list-social {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   column-gap: 25px;
 }
 

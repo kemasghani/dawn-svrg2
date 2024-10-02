@@ -13,6 +13,9 @@
 
 
 <style>
+  h1.header__heading{
+    transform: translateY(-10px) !important;
+  }
   .sosmed-icon svg{
   fill: white;
 }
@@ -70,7 +73,9 @@
     padding-top: 1rem;
     line-height: calc(1 + 0.8 / var(--font-body-scale));
   }
-
+  #navbar-header {
+    width: 100vw;
+  }
   @media screen and (min-width: 750px) {
     .list-menu__item--link {
       padding-bottom: 0.5rem;
@@ -78,27 +83,6 @@
     }
   }
 </style>
-{% if template == 'index' %}
-  <style>
-    #navbar-header {
-      position: absolute;
-      background: transparent;
-      width: 99vw;
-      transition: background-color 0.3s ease;
-    }
-  </style>
-
-  <script>
-    document.addEventListener('scroll', function() {
-      var navbar = document.getElementById('navbar-header');
-      if (window.scrollY > 100) {
-        navbar.style.backgroundColor = '#5aaaa6';
-      } else {
-        navbar.style.backgroundColor = 'transparent';
-      }
-    });
-  </script>
-{% endif %}
 
 
 {%- style -%}

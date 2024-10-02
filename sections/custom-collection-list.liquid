@@ -28,6 +28,30 @@
     </div>
 
     <style>
+      ::-webkit-scrollbar {
+        width: 12px; /* Adjust width for vertical scrollbar */
+        height: 12px; /* Adjust height for horizontal scrollbar */
+    }
+
+    /* Background of the scrollbar */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1; /* Color of the track */
+    }
+
+    /* Scrollbar handle */
+    ::-webkit-scrollbar-thumb {
+        background: #63d7d1; /* Color of the handle */
+        border-radius: 10px; /* Rounded corners */
+    }
+
+    /* Hover effect for the handle */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555; /* Color on hover */
+    }
+    .collection-list-wrapper::-webkit-scrollbar {
+      width: 4px; /* Adjust width for vertical scrollbar */
+      height: 4px; /* Adjust height for horizontal scrollbar */
+  }
       .collection-list-wrapper {
         max-width: var(--page-width);
         margin: auto;
@@ -45,6 +69,23 @@
         width: 100%;
         border-radius: 50%;
         height: auto;
+      }
+      @media screen and (max-width: 750px){
+        .collection-item img {
+          width: 80px;
+          height: 80px;
+        }
+        .collection-list-grid {
+          justify-content: start;
+         }
+         .collection-list-wrapper {
+         padding-left: 9px;
+         padding-right: 9px;
+         overflow-x: scroll;
+        }
+        .collection-list-grid {
+          column-gap: 17px;
+         }
       }
       .collection-item h3 {
         margin-top: 10px;

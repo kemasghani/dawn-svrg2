@@ -1,14 +1,24 @@
 <!-- custom-fullwidth-video.liquid -->
 <section id="fullwidth-video-section">
-  <a href="{{ section.settings.link }}">
     <div class="fullwidth-video-wrapper">
       {% if section.settings.video != blank %}
-        <video src="{{ section.settings.video.sources[1].url }}" style="width: 100%;" loop muted autoplay></video>
+        <video src="{{ section.settings.video.sources[1].url }}" style="height: 84vh; width: 100%; max-width: none; max-height: none; object-fit: cover;" loop muted autoplay></video>
       {% else %}
         <p>No video uploaded yet.</p>
       {% endif %}
+      <!-- Overlay content container -->
+      <div class="video-overlay-content flex flex-col gap-10">
+        <!-- Add any content you want here -->
+        <h1 class="!text-[70px] font-[600] text-white">Unleash Your Potential With SVRG.</h1>
+        <p class="text-[17px] font-[300]">High-Performance Workout Gear Designed for Comfort, Flexibility, and Durability</p>
+        <a href="{{ section.settings.link }}">
+          <div class="flex gap-5 button border-none">
+            <button class="text-[17px]">Shop Now</button>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
+          </div>
+        </a>
+      </div>
     </div>
-  </a>
 
   <style>
     #fullwidth-video-section {
@@ -21,10 +31,38 @@
       height: auto;
     }
 
-    .fullwidth-video {
+    video {
       width: 100%;
       height: auto;
       display: block;
+    }
+
+    /* Overlay content styles */
+    .video-overlay-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      z-index: 1;
+    }
+
+    .video-overlay-content .button {
+      width: fit-content;
+      margin: auto;
+      padding: 10px 30px;
+      background-color: #63d7d1;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 9px;
+    }
+    .button:after{
+      box-shadow: none;
+    }
+    .video-overlay-content .button:hover {
+      background-color: #63d7d1;
     }
   </style>
 </section>

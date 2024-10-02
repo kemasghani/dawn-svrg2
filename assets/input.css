@@ -11,6 +11,12 @@
         margin: inherit
     }
 
+    img,
+    video {
+        max-width: none;
+        height: auto;
+    }
+
     p,
     ul {
         margin-bottom: 16px

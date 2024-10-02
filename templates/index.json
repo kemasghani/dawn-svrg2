@@ -3,8 +3,8 @@
     "custom_fullwidth_video_DgQa8n": {
       "type": "custom-fullwidth-video",
       "settings": {
-        "video": "shopify:\/\/files\/videos\/PILATES-WEBSITE (1).mp4",
-        "link": "shopify:\/\/collections\/pilates"
+        "video": "shopify:\/\/files\/videos\/AEROBIC-STEPPER-WEBSITE.mp4",
+        "link": "shopify:\/\/collections\/all"
       }
     },
     "custom_collection_list_YXh6rN": {
@@ -57,18 +57,6 @@
           "settings": {
             "collection": "yoga"
           }
-        },
-        "collection_block_4p7yVX": {
-          "type": "collection_block",
-          "settings": {
-            "collection": "functional-sport"
-          }
-        },
-        "collection_block_3t7DQK": {
-          "type": "collection_block",
-          "settings": {
-            "collection": "accessories"
-          }
         }
       },
       "block_order": [
@@ -79,9 +67,7 @@
         "collection_block_dLcnwj",
         "collection_block_eCALUa",
         "collection_block_webKMT",
-        "collection_block_C4m8cN",
-        "collection_block_4p7yVX",
-        "collection_block_3t7DQK"
+        "collection_block_C4m8cN"
       ],
       "settings": {
         "padding_top": 36,
@@ -95,25 +81,57 @@
         "heading_size": "h2",
         "description": "",
         "show_description": false,
+        "show_border_top": true,
         "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
+        "collection": "pilates",
+        "products_to_show": 10,
+        "columns_desktop": 5,
         "full_width": false,
-        "show_view_all": false,
+        "show_view_all": true,
         "view_all_style": "solid",
-        "enable_desktop_slider": false,
+        "enable_desktop_slider": true,
         "color_scheme": "scheme-1",
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
+        "flash_sale_layout": false,
         "show_vendor": false,
         "show_rating": false,
         "quick_add": "none",
         "columns_mobile": "2",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 44,
         "padding_bottom": 36
+      }
+    },
+    "featured_collection_8mpqbj": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured products",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "show_border_top": true,
+        "description_style": "body",
+        "collection": "weightlifting",
+        "products_to_show": 10,
+        "columns_desktop": 5,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "flash_sale_layout": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 40,
+        "padding_bottom": 84
       }
     },
     "slideshow_j3t7C6": {
@@ -140,7 +158,7 @@
         "slide_phGmxz": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/WhatsApp_Image_2024-09-25_at_17.12.43_2.jpg",
+            "image": "shopify:\/\/shop_images\/1_fb83908b-5a4f-4f0c-a37e-ca6f0bef56c3.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -189,12 +207,292 @@
         "show_text_below": true,
         "accessibility_info": "Slideshow about our brand"
       }
+    },
+    "image_with_text_w4aNU7": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_8jwa9y": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>SVRG Cross X Weightlifting Shoes<\/strong>",
+            "heading_size": "h2"
+          }
+        },
+        "text_nVr4TL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Cross X Weightlifting Shoes dirancang secara khusus untuk kegiatan angkat besi, seperti angkat berat Olimpiade, powerlifting, dan latihan kekuatan lainnya. Sepatu ini dapat meningkatkan kinerja dan keselamatan untuk pemakainya saat melakukan latihan.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_DxFDUm": {
+          "type": "button",
+          "settings": {
+            "button_label": "Beli Sekarang",
+            "button_link": "shopify:\/\/products\/svrg-cross-x-weightlifting-shoes-fitness-shoes-sneakers-gym",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_8jwa9y",
+        "text_nVr4TL",
+        "button_DxFDUm"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Artboard_1_900x_7973064c-aa27-4b37-9cea-2b78c26d5cdf.webp",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "diagonal_cross_bar_WaKNHh": {
+      "type": "diagonal-cross-bar",
+      "settings": {
+        "bar_text": "Train Hard  *  Get Stronger  *  Push Limits  *  Train Hard  *  Get Stronger  *  Push Limits  *  Train Hard  *  Get Stronger  *  Push Limits  *  Train Hard  *  Get Stronger  *  Push Limits  *",
+        "background_color": "#63d7d1",
+        "background_color2": "#c8d92b",
+        "text_color": "#000000",
+        "padding_top": 48,
+        "padding_bottom": 36
+      }
+    },
+    "ex_shop_the_look_kiehnB": {
+      "type": "ex-shop-the-look",
+      "blocks": {
+        "product_wCYh6g": {
+          "type": "product",
+          "settings": {
+            "product": "svarga-11-in-1-agility-training-tubes-band-latihan-tinju-muay-thai",
+            "top": 23,
+            "left": 13
+          }
+        },
+        "product_3mUbAM": {
+          "type": "product",
+          "settings": {
+            "product": "svarga-3-tier-dumbbell-rack-rak-dumbell-3-susun-barbell-10-set",
+            "top": 10,
+            "left": 55
+          }
+        },
+        "product_RnQUf6": {
+          "type": "product",
+          "settings": {
+            "product": "svarga-adjustable-ankle-support-ankle-brace-dekker-pelindung-tumit",
+            "top": 35,
+            "left": 88
+          }
+        },
+        "product_TYbyWz": {
+          "type": "product",
+          "settings": {
+            "product": "svrg-2-in-1-push-up-sit-up-push-up-bar-sit-up-stand-home-gym",
+            "top": 50,
+            "left": 42
+          }
+        },
+        "product_h7NeYN": {
+          "type": "product",
+          "settings": {
+            "product": "3-pair-premium-socks",
+            "top": 56,
+            "left": 65
+          }
+        },
+        "product_GKVb7C": {
+          "type": "product",
+          "settings": {
+            "product": "svrg-3-handle-bumper-plate-3-grip-weight-plates-weightlifting-gym",
+            "top": 80,
+            "left": 90
+          }
+        },
+        "product_nMyHAq": {
+          "type": "product",
+          "settings": {
+            "product": "svrg-2-in-1-push-up-sit-up-push-up-bar-sit-up-stand-home-gym",
+            "top": 70,
+            "left": 10
+          }
+        },
+        "product_Hym9qF": {
+          "type": "product",
+          "settings": {
+            "product": "svarga-11-in-1-agility-training-tubes-band-latihan-tinju-muay-thai",
+            "top": 90,
+            "left": 40
+          }
+        }
+      },
+      "block_order": [
+        "product_wCYh6g",
+        "product_3mUbAM",
+        "product_RnQUf6",
+        "product_TYbyWz",
+        "product_h7NeYN",
+        "product_GKVb7C",
+        "product_nMyHAq",
+        "product_Hym9qF"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/jual_alat_gym_f079fec8-55b5-41dd-a3a8-c4ca5dd4048a.webp",
+        "heading": "",
+        "heading_size": "h1",
+        "caption": "",
+        "text_style": "caption-with-letter-spacing",
+        "text_size": "medium",
+        "button_label": "",
+        "button_link": "",
+        "button_style_secondary": true,
+        "content_alignment": "center",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "image_ratio": "adapt",
+        "quick_add": "none"
+      }
+    },
+    "multicolumn_erzB3j": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_Le7Xi9": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Cart_Blue.svg",
+            "title": "Promo setiap hari",
+            "text": "<p>Dapatkan alat olahraga dengan harga terbaik<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_HCMkBU": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Gift_Blue.svg",
+            "title": "Gratis kartu ucapan",
+            "text": "<p>Mengirim pesan hangat, penuh cinta, dan gratis.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_xey6aF": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Globe.svg",
+            "title": "Pengiriman seluruh dunia",
+            "text": "<p>Dijamin akan sampai ke tempatmu<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_wy8763": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Protect.svg",
+            "title": "Berkualitas",
+            "text": "<p>Barang dengan kualitas terbaik dan tahan lama<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_Le7Xi9",
+        "column_HCMkBU",
+        "column_xey6aF",
+        "column_wy8763"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_blog_FrKWDC": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "<strong>Blog posts<\/strong>",
+        "heading_size": "h2",
+        "blog": "the-journey",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "newsletter_YpphjE": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_XeRf6e": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Daftar dan Dapatkan Keuntunganya<\/strong>",
+            "heading_size": "h2"
+          }
+        },
+        "paragraph_3dFV7L": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Berlangganan untuk mendapatkan penawaran khusus, hadiah gratis, dan penawaran sekali seumur hidup.<\/p>"
+          }
+        },
+        "email_form_qRLqJC": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "heading_XeRf6e",
+        "paragraph_3dFV7L",
+        "email_form_qRLqJC"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 100,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "custom_fullwidth_video_DgQa8n",
     "custom_collection_list_YXh6rN",
     "featured_collection",
-    "slideshow_j3t7C6"
+    "featured_collection_8mpqbj",
+    "slideshow_j3t7C6",
+    "image_with_text_w4aNU7",
+    "diagonal_cross_bar_WaKNHh",
+    "ex_shop_the_look_kiehnB",
+    "multicolumn_erzB3j",
+    "featured_blog_FrKWDC",
+    "newsletter_YpphjE"
   ]
 }
