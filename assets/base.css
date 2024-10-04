@@ -85,6 +85,10 @@ body {
   overflow-x: hidden !important;
 }
 
+main#MainContent {
+  overflow-x: hidden !important;
+}
+
 .page-width {
   max-width: var(--page-width);
   margin: 0 auto;

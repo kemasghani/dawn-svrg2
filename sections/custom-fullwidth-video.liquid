@@ -2,14 +2,18 @@
 <section id="fullwidth-video-section">
     <div class="fullwidth-video-wrapper">
       {% if section.settings.video != blank %}
-        <video src="{{ section.settings.video.sources[1].url }}" style="height: 84vh; width: 100%; max-width: none; max-height: none; object-fit: cover;" loop muted autoplay></video>
+        <video src="{{ section.settings.video.sources[1].url }}"
+          class="w-full h-[84vh] object-cover"
+          loop
+          autoplay
+          style="height: 84vh; width: 100%; max-width: none; max-height: none; object-fit: cover;"></video>
       {% else %}
         <p>No video uploaded yet.</p>
       {% endif %}
       <!-- Overlay content container -->
       <div class="video-overlay-content flex flex-col gap-10">
         <!-- Add any content you want here -->
-        <h1 class="!text-[70px] font-[600] text-white">Unleash Your Potential With SVRG.</h1>
+        <h1 class="text-[70px] font-[600] text-white">Unleash Your Potential With SVRG.</h1>
         <p class="text-[17px] font-[300]">High-Performance Workout Gear Designed for Comfort, Flexibility, and Durability</p>
         <a href="{{ section.settings.link }}">
           <div class="flex gap-5 button border-none">
@@ -19,7 +23,6 @@
         </a>
       </div>
     </div>
-
   <style>
     #fullwidth-video-section {
       width: 100vw;
@@ -37,7 +40,6 @@
       display: block;
     }
 
-    /* Overlay content styles */
     .video-overlay-content {
       position: absolute;
       top: 50%;
@@ -47,7 +49,27 @@
       color: white;
       z-index: 1;
     }
-
+    @media screen and (max-width: 1420px){
+      .video-overlay-content{
+        width: 60%;
+      }
+    }
+    @media screen and (max-width: 1190px){
+      .video-overlay-content{
+        width: 70%;
+      }
+    }
+    @media screen and (max-width: 1000px){
+      .video-overlay-content{
+        width: 60%;
+      }
+      .video-overlay-content h1{
+        font-size: 50px;
+      }
+      .video-overlay-content p{
+        font-size: 14px;
+      }
+    }
     .video-overlay-content .button {
       width: fit-content;
       margin: auto;
@@ -63,6 +85,21 @@
     }
     .video-overlay-content .button:hover {
       background-color: #63d7d1;
+    }
+    @media screen and (max-width: 500px){
+      .video-overlay-content{
+        width: 80%;
+      }
+      .video-overlay-content h1{
+        font-size: 40px;
+      }
+      .video-overlay-content p{
+        font-size: 12px;
+      }
+      .video-overlay-content .button{
+        font-size: 14px;
+        padding: 10px 22px;
+      }
     }
   </style>
 </section>

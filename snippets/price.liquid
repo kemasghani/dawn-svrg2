@@ -38,6 +38,7 @@
 
   if target == product and product.price_varies
     assign money_price = 'products.product.price.from_price_html' | t: price: money_price
+    assign money_price = price | money_with_currency | append: ""
   endif
 
   # Calculate discount percentage
@@ -103,7 +104,7 @@
       <div class="price__sale">
         {%- unless product.price_varies == false and product.compare_at_price_varies %}
           <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
-          <span>
+          <span class="flex flex-nowrap">
             <s class="price-item price-item--regular">
               {% if settings.currency_code_enabled %}
                 {{ compare_at_price | money_with_currency }}
@@ -111,7 +112,7 @@
                 {{ compare_at_price | money }}
               {% endif %}
             </s>
-            <span class="px-3 py-2 bg-[#fee2e2] text-[#dc2626] font-[600] text-[11px] rounded-[5px] discount-card-product translate-x-2">
+            <span class="px-3 py-2 bg-[#fee2e2] text-[#dc2626] font-[600] text-[8px] md:text-[9px] h-fit rounded-[5px] discount-card-product translate-x-2 -translate-y-2 md:-translate-y-1">
               {%- if discount_percentage > 0 -%}
                 {{ discount_percentage | round }}%
               {%- endif -%}
@@ -119,7 +120,7 @@
           </span>
         {%- endunless -%}
         <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.sale_price' | t }}</span>
-        <span class="price-item price-item--sale price-item--last mt-10 text-[15px] text-[#ff2e00]">
+        <span class="price-item price-item--sale price-item--last mt-10 text-[15px] md:text-[18px] text-[#ff2e00]">
           {{ money_price }}
         </span>
         <span class="px-4 py-3 bg-[#fee2e2] text-[#dc2626] font-[600] text-[15px] rounded-[10px] discount-main-product hidden">
@@ -154,3 +155,7 @@
     {%- endif -%}
   </div>
 {% endunless %}
+<script>
+
+
+</script>

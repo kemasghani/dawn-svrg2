@@ -108,6 +108,12 @@
   font-size: 1.3rem;
 }
 
+@media screen and (max-width: 500px) {
+  .price--on-sale .price-item--regular {
+    font-size: 0.9rem;
+  }
+}
+
 .unit-price {
   display: block;
   font-size: 1.1rem;

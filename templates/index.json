@@ -3,7 +3,7 @@
     "custom_fullwidth_video_DgQa8n": {
       "type": "custom-fullwidth-video",
       "settings": {
-        "video": "shopify:\/\/files\/videos\/AEROBIC-STEPPER-WEBSITE.mp4",
+        "video": "shopify:\/\/files\/videos\/1003 (2) (1).mp4",
         "link": "shopify:\/\/collections\/all"
       }
     },
@@ -137,28 +137,10 @@
     "slideshow_j3t7C6": {
       "type": "slideshow",
       "blocks": {
-        "slide_xp7PwK": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/WhatsApp_Image_2024-09-18_at_16.46.36.jpg",
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "",
-            "text_alignment_mobile": "center"
-          }
-        },
         "slide_phGmxz": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1_fb83908b-5a4f-4f0c-a37e-ca6f0bef56c3.jpg",
+            "image": "shopify:\/\/shop_images\/1_1_11zon.webp",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -170,32 +152,12 @@
             "text_alignment": "center",
             "image_overlay_opacity": 0,
             "color_scheme": "",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_xGVHYE": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/WhatsApp_Image_2024-09-20_at_14.01.29_1.jpg",
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-1",
             "text_alignment_mobile": "center"
           }
         }
       },
       "block_order": [
-        "slide_xp7PwK",
-        "slide_phGmxz",
-        "slide_xGVHYE"
+        "slide_phGmxz"
       ],
       "settings": {
         "layout": "full_bleed",
@@ -240,7 +202,7 @@
         "button_DxFDUm"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Artboard_1_900x_7973064c-aa27-4b37-9cea-2b78c26d5cdf.webp",
+        "image": "shopify:\/\/shop_images\/Artboard_1_900x_7973064c-aa27-4b37-9cea-2b78c26d5cdf_11zon.webp",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -264,103 +226,6 @@
         "text_color": "#000000",
         "padding_top": 48,
         "padding_bottom": 36
-      }
-    },
-    "ex_shop_the_look_kiehnB": {
-      "type": "ex-shop-the-look",
-      "blocks": {
-        "product_wCYh6g": {
-          "type": "product",
-          "settings": {
-            "product": "svarga-11-in-1-agility-training-tubes-band-latihan-tinju-muay-thai",
-            "top": 23,
-            "left": 13
-          }
-        },
-        "product_3mUbAM": {
-          "type": "product",
-          "settings": {
-            "product": "svarga-3-tier-dumbbell-rack-rak-dumbell-3-susun-barbell-10-set",
-            "top": 10,
-            "left": 55
-          }
-        },
-        "product_RnQUf6": {
-          "type": "product",
-          "settings": {
-            "product": "svarga-adjustable-ankle-support-ankle-brace-dekker-pelindung-tumit",
-            "top": 35,
-            "left": 88
-          }
-        },
-        "product_TYbyWz": {
-          "type": "product",
-          "settings": {
-            "product": "svrg-2-in-1-push-up-sit-up-push-up-bar-sit-up-stand-home-gym",
-            "top": 50,
-            "left": 42
-          }
-        },
-        "product_h7NeYN": {
-          "type": "product",
-          "settings": {
-            "product": "3-pair-premium-socks",
-            "top": 56,
-            "left": 65
-          }
-        },
-        "product_GKVb7C": {
-          "type": "product",
-          "settings": {
-            "product": "svrg-3-handle-bumper-plate-3-grip-weight-plates-weightlifting-gym",
-            "top": 80,
-            "left": 90
-          }
-        },
-        "product_nMyHAq": {
-          "type": "product",
-          "settings": {
-            "product": "svrg-2-in-1-push-up-sit-up-push-up-bar-sit-up-stand-home-gym",
-            "top": 70,
-            "left": 10
-          }
-        },
-        "product_Hym9qF": {
-          "type": "product",
-          "settings": {
-            "product": "svarga-11-in-1-agility-training-tubes-band-latihan-tinju-muay-thai",
-            "top": 90,
-            "left": 40
-          }
-        }
-      },
-      "block_order": [
-        "product_wCYh6g",
-        "product_3mUbAM",
-        "product_RnQUf6",
-        "product_TYbyWz",
-        "product_h7NeYN",
-        "product_GKVb7C",
-        "product_nMyHAq",
-        "product_Hym9qF"
-      ],
-      "disabled": true,
-      "settings": {
-        "image": "shopify:\/\/shop_images\/jual_alat_gym_f079fec8-55b5-41dd-a3a8-c4ca5dd4048a.webp",
-        "heading": "",
-        "heading_size": "h1",
-        "caption": "",
-        "text_style": "caption-with-letter-spacing",
-        "text_size": "medium",
-        "button_label": "",
-        "button_link": "",
-        "button_style_secondary": true,
-        "content_alignment": "center",
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "image_ratio": "adapt",
-        "quick_add": "none"
       }
     },
     "multicolumn_erzB3j": {
@@ -426,8 +291,8 @@
         "color_scheme": "",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 96,
+        "padding_bottom": 96
       }
     },
     "featured_blog_FrKWDC": {
@@ -490,7 +355,6 @@
     "slideshow_j3t7C6",
     "image_with_text_w4aNU7",
     "diagonal_cross_bar_WaKNHh",
-    "ex_shop_the_look_kiehnB",
     "multicolumn_erzB3j",
     "featured_blog_FrKWDC",
     "newsletter_YpphjE"

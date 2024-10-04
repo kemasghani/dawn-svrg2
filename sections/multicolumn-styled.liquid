@@ -80,7 +80,9 @@
             {% endif %}
           >
           {%- if block.settings.video != blank -%}
-            <video src="{{ block.settings.video.sources[1].url }}" style="width: 100%;" controls loop muted autoplay></video>
+          <a href="{{ section.settings.link_video }}">
+            <video src="{{ block.settings.video.sources[1].url }}" style="width: 100%;" loop muted autoplay></video>
+          </a>
           {%- else -%}
           <div class="multicolumn-card content-container">
             {%- if block.settings.image != blank -%}
@@ -452,6 +454,11 @@
           "type": "video",
           "id": "video",
           "label": "Video"
+        },
+        {
+          "type": "url",
+          "id": "link_video",
+          "label": "Slide Link"
         },
         {
           "type": "inline_richtext",

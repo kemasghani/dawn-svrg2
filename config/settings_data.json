@@ -163,12 +163,6 @@
           "customCssGCW": ""
         }
       },
-      "18423266570658624584": {
-        "type": "shopify:\/\/apps\/best-currency-converter\/blocks\/doubly\/267afa86-a419-4d5b-a61b-556038e7294d",
-        "disabled": false,
-        "settings": {
-        }
-      },
       "3720565183479497137": {
         "type": "shopify:\/\/apps\/globo-product-option\/blocks\/app-embed-block\/fdc9fad5-1a0f-4bd4-9c8a-1af6a6eef6b8",
         "disabled": false,
@@ -177,6 +171,12 @@
       },
       "1710008633607995074": {
         "type": "shopify:\/\/apps\/tydal-reviews\/blocks\/app-embed\/5f785e18-66cc-4519-8181-565d1cce1705",
+        "disabled": true,
+        "settings": {
+        }
+      },
+      "18423266570658624584": {
+        "type": "shopify:\/\/apps\/best-currency-converter\/blocks\/doubly\/267afa86-a419-4d5b-a61b-556038e7294d",
         "disabled": true,
         "settings": {
         }
