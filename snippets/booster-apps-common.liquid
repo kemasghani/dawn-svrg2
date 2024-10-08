@@ -1,0 +1,73 @@
+<script type="text/javascript">
+  window.Pop = window.Pop || {};
+  window.Pop.common = window.Pop.common || {};
+  window.Pop.common.shop = {
+    permanent_domain: '{{ shop.permanent_domain }}',
+    currency: {{ shop.currency | json }},
+    money_format: {{ shop.money_format | json }},
+    id: 68873257256
+  };
+  {% if customer %}
+  window.Pop.common.customer = {
+    id: {{ customer.id | json }},
+    tags: {{ customer.tags | json }},
+    email: {{customer.email | json}},
+    accepts_marketing: {{ customer.accepts_marketing | json }},
+    first_name: {{ customer.first_name | json }},
+    last_name: {{ customer.last_name | json }},
+    orders_count: {{ customer.orders_count | json }},
+    tags: {{ customer.tags | json }},
+    total_spent: {{ customer.total_spent | json }}
+  };
+  {% endif %}
+
+  window.Pop.common.template = '{{ template | split: "." | first }}';
+  window.Pop.common.cart = {% if cart.item_count > 0 %}{{ cart | json }}{% else %}{}{% endif %};
+  window.Pop.common.vapid_public_key = "BJuXCmrtTK335SuczdNVYrGVtP_WXn4jImChm49st7K7z7e8gxSZUKk4DhUpk8j2Xpiw5G4-ylNbMKLlKkUEU98=";
+  window.Pop.global_config = {{shop.metafields.pop_global.config | json}};
+  window.Pop.widgets_config = {{shop.metafields.ba_widgets.config | json}};
+</script>
+
+
+<script type="text/javascript">
+  
+
+  (function() {
+    //Global snippet for Email Popups
+    //this is updated automatically - do not edit manually.
+    document.addEventListener('DOMContentLoaded', function() {
+      function loadScript(src, defer, done) {
+        var js = document.createElement('script');
+        js.src = src;
+        js.defer = defer;
+        js.onload = function(){done();};
+        js.onerror = function(){
+          done(new Error('Failed to load script ' + src));
+        };
+        document.head.appendChild(js);
+      }
+
+      function browserSupportsAllFeatures() {
+        return window.Promise && window.fetch && window.Symbol;
+      }
+
+      if (browserSupportsAllFeatures()) {
+        main();
+      } else {
+        loadScript('https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=Promise,fetch', true, main);
+      }
+
+      function loadAppScripts(){
+        const popAppEmbedEnabled = document.getElementById("pop-app-embed-init");
+
+        if (window.Pop.global_config.aat.includes("pop") && !popAppEmbedEnabled){
+          loadScript(window.Pop.global_config.asset_urls.widgets.init_js, true, function(){});
+        }
+      }
+
+      function main(err) {
+        loadScript(window.Pop.global_config.asset_urls.global.helper_js, false, loadAppScripts);
+      }
+    });
+  })();
+</script>
