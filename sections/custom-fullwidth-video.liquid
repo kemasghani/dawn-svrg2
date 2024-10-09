@@ -1,129 +1,141 @@
-<!-- custom-fullwidth-video.liquid -->
 <section id="fullwidth-video-section">
-    <div class="fullwidth-video-wrapper">
-      {% if section.settings.video != blank %}
-        <video src="{{ section.settings.video.sources[1].url }}"
-          class="w-full h-[84vh] object-cover"
-          loop
-          autoplay
-          style="height: 84vh; width: 100%; max-width: none; max-height: none; object-fit: cover;"></video>
-      {% else %}
-        <p>No video uploaded yet.</p>
-      {% endif %}
-      <!-- Overlay content container -->
-      <div class="video-overlay-content flex flex-col gap-10">
-        <!-- Add any content you want here -->
-        <h1 class="text-[70px] font-[600] text-white">Unleash Your Potential With SVRG.</h1>
-        <p class="text-[17px] font-[300]">High-Performance Workout Gear Designed for Comfort, Flexibility, and Durability</p>
-        <a href="{{ section.settings.link }}">
-          <div class="flex gap-5 button border-none">
-            <button class="text-[17px]">Shop Now</button>
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
-          </div>
-        </a>
-      </div>
+  <div class="fullwidth-video-wrapper">
+    {% if section.settings.video != blank %}
+      <video src="{{ section.settings.video.sources[1].url }}"
+        class="w-full h-[84vh] object-cover"
+        loop
+        autoplay
+        muted
+        style="height: 84vh; width: 100%; max-width: none; max-height: none; object-fit: cover;"></video>
+    {% else %}
+      <p>No video uploaded yet.</p>
+    {% endif %}
+
+    <!-- Overlay content container -->
+    <div class="video-overlay-content flex flex-col gap-10">
+
+      <h1 class="text-[70px] font-[600] text-white">{{ section.settings.video_heading }}</h1>
+      <p class="text-[17px] font-[300]">{{ section.settings.video_description }}</p>
+      <a href="{{ section.settings.link }}">
+        <div class="flex gap-5 button border-none">
+          <button class="text-[17px]">{{ section.settings.button_text }}</button>
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
+            <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/>
+          </svg>
+        </div>
+      </a>
     </div>
-  <style>
-    #fullwidth-video-section {
-      width: 100vw;
-    }
+  </div>
+<style>
+  #fullwidth-video-section {
+    width: 100vw;
+  }
 
-    .fullwidth-video-wrapper {
-      position: relative;
-      width: 100%;
-      height: auto;
-    }
+  .fullwidth-video-wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
 
-    video {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
+  video {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
 
+  .video-overlay-content {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+  }
+
+  /* Responsive styles */
+  @media screen and (max-width: 1420px) {
     .video-overlay-content {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      color: white;
-      z-index: 1;
+      width: 60%;
     }
-    @media screen and (max-width: 1420px){
-      .video-overlay-content{
-        width: 60%;
-      }
+  }
+  @media screen and (max-width: 1190px) {
+    .video-overlay-content {
+      width: 70%;
     }
-    @media screen and (max-width: 1190px){
-      .video-overlay-content{
-        width: 70%;
-      }
+  }
+  @media screen and (max-width: 1000px) {
+    .video-overlay-content h1 {
+      font-size: 50px;
     }
-    @media screen and (max-width: 1000px){
-      .video-overlay-content{
-        width: 60%;
-      }
-      .video-overlay-content h1{
-        font-size: 50px;
-      }
-      .video-overlay-content p{
-        font-size: 14px;
-      }
+    .video-overlay-content p {
+      font-size: 14px;
     }
-    .video-overlay-content .button {
-      width: fit-content;
-      margin: auto;
-      padding: 10px 30px;
-      background-color: #63d7d1;
-      color: white;
-      border: none;
-      cursor: pointer;
-      border-radius: 9px;
+  }
+  @media screen and (max-width: 500px) {
+    .video-overlay-content h1 {
+      font-size: 40px;
     }
-    .button:after{
-      box-shadow: none;
+    .video-overlay-content p {
+      font-size: 12px;
     }
-    .video-overlay-content .button:hover {
-      background-color: #63d7d1;
-    }
-    @media screen and (max-width: 500px){
-      .video-overlay-content{
-        width: 80%;
-      }
-      .video-overlay-content h1{
-        font-size: 40px;
-      }
-      .video-overlay-content p{
-        font-size: 12px;
-      }
-      .video-overlay-content .button{
-        font-size: 14px;
-        padding: 10px 22px;
-      }
-    }
-  </style>
+  }
+
+  .video-overlay-content .button {
+    width: fit-content;
+    margin: auto;
+    padding: 10px 30px;
+    background-color: #63d7d1;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 9px;
+  }
+
+  .video-overlay-content .button:hover {
+    background-color: #63d7d1;
+  }
+</style>
 </section>
 
 {% schema %}
 {
-  "name": "Full Width Video Section",
-  "settings": [
-    {
-      "type": "video",
-      "id": "video",
-      "label": "Upload Video"
-    },
-    {
-      "type": "url",
-      "id": "link",
-      "label": "Slide Link"
-    }
-  ],
-  "presets": [
-    {
-      "name": "Full Width Video",
-      "category": "Custom"
-    }
-  ]
+"name": "Full Width Video Section",
+"settings": [
+  {
+    "type": "video",
+    "id": "video",
+    "label": "Upload Video"
+  },
+  {
+    "type": "text",
+    "id": "video_heading",
+    "label": "Video Heading",
+    "default": "Unleash Your Potential With SVRG."
+  },
+  {
+    "type": "textarea",
+    "id": "video_description",
+    "label": "Video Description",
+    "default": "High-Performance Workout Gear Designed for Comfort, Flexibility, and Durability"
+  },
+  {
+    "type": "text",
+    "id": "button_text",
+    "label": "Button Text",
+    "default": "Shop Now"
+  },
+  {
+    "type": "url",
+    "id": "link",
+    "label": "Button Link"
+  }
+],
+"presets": [
+  {
+    "name": "Full Width Video",
+    "category": "Custom"
+  }
+]
 }
 {% endschema %}

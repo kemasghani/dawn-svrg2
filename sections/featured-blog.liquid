@@ -158,6 +158,7 @@
         {%- endif -%}
       </ul>
       {%- if posts_exceed_limit -%}
+        {%- if section.settings.show_slider_button -%}
         <div class="slider-buttons{% if section.settings.post_limit < 3 %} medium-hide{% endif %}{% if section.settings.post_limit < 2 %} small-hide{% endif %}">
           <button
             type="button"
@@ -186,6 +187,7 @@
             </span>
           </button>
         </div>
+      {%- endif -%}
       {%- endif -%}
     </slider-component>
   </div>
@@ -262,6 +264,12 @@
       "label": "t:sections.all.colors.label",
       "info": "t:sections.all.colors.has_cards_info",
       "default": "scheme-1"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_slider_button",
+      "default": true,
+      "label": "tShow Slider Button",
     },
     {
       "type": "checkbox",

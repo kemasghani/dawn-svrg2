@@ -3,6 +3,18 @@
   display: block;
 }
 
+@media screen and (max-width: 500px) {
+  .cart-item__details {
+    width: 150%;
+  }
+}
+
+@media screen and (min-width: 749px) {
+  .cart-item__details .cart-item__totals {
+    display: none;
+  }
+}
+
 .cart__empty-text,
 .is-empty .cart__contents,
 cart-items.is-empty .title-wrapper-with-link,

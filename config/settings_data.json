@@ -8,7 +8,7 @@
     "body_scale": 100,
     "page_width": 1600,
     "spacing_sections": 0,
-    "spacing_grid_horizontal": 8,
+    "spacing_grid_horizontal": 28,
     "spacing_grid_vertical": 40,
     "animations_reveal_on_scroll": true,
     "animations_hover_elements": "none",
@@ -93,7 +93,7 @@
     "drawer_shadow_horizontal_offset": 0,
     "drawer_shadow_vertical_offset": 4,
     "drawer_shadow_blur": 5,
-    "badge_position": "bottom left",
+    "badge_position": "top right",
     "badge_corner_radius": 40,
     "sale_badge_color_scheme": "scheme-4",
     "sold_out_badge_color_scheme": "scheme-3",
@@ -166,12 +166,6 @@
       "3720565183479497137": {
         "type": "shopify:\/\/apps\/globo-product-option\/blocks\/app-embed-block\/fdc9fad5-1a0f-4bd4-9c8a-1af6a6eef6b8",
         "disabled": false,
-        "settings": {
-        }
-      },
-      "1710008633607995074": {
-        "type": "shopify:\/\/apps\/tydal-reviews\/blocks\/app-embed\/5f785e18-66cc-4519-8181-565d1cce1705",
-        "disabled": true,
         "settings": {
         }
       },

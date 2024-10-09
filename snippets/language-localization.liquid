@@ -13,7 +13,10 @@
     aria-controls="{{ localPosition }}List"
     aria-describedby="{{ localPosition }}Label"
   >
-    <span>{{ localization.language.endonym_name | capitalize }}</span>
+    <span style="display:flex; column-gap:10px;">
+      <img src="{{ 'flag-' | append: localization.language.iso_code | append: '.svg' | asset_url }}" alt="{{ localization.language.endonym_name }}" style="width: 20px; border-radius:50%; height: auto; margin-right: 5px; vertical-align: middle;">
+      {{ localization.language.endonym_name | capitalize }}
+    </span>
     {{ 'icon-caret.svg' | inline_asset_content }}
   </button>
   <div class="disclosure__list-wrapper language-selector" hidden>
@@ -31,13 +34,15 @@
             data-value="{{ language.iso_code }}"
           >
             <span
+              style="display:flex; align-items:center;"
               {% if language.iso_code != localization.language.iso_code %}
                 class="visibility-hidden"
               {% endif %}
             >
               {{- 'icon-checkmark.svg' | inline_asset_content -}}
             </span>
-            <span>
+            <span style="display:flex; column-gap:10px;">
+              <img src="{{ 'flag-' | append: language.iso_code | append: '.svg' | asset_url }}" alt="{{ language.endonym_name }}" style="width: 20px; border-radius:50%; height: auto; margin-right: 5px; vertical-align: middle;">
               {{ language.endonym_name | capitalize }}
             </span>
           </a>

@@ -2,6 +2,9 @@
   content: none !important;
 }
 
+.main-cart .cart-item__old-price.product-option {
+  font-size: 9px;
+}
 
 .product__info-wrapper .discount-main-product {
   display: inline !important;

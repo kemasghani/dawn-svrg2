@@ -1,6 +1,6 @@
 .collection-hero__inner {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
 }
 
 .collection-hero--with-image .collection-hero__inner {

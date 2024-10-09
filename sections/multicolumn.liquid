@@ -150,6 +150,7 @@
       </ul>
 
       {%- if show_mobile_slider -%}
+        {%- if section.settings.show_slider_button -%}
         <div class="slider-buttons large-up-hide">
           <button
             type="button"
@@ -174,6 +175,7 @@
             {% render 'icon-caret' %}
           </button>
         </div>
+      {%- endif -%}
       {%- endif -%}
     </slider-component>
     <div class="center{% if show_mobile_slider %} small-hide medium-hide{% endif %}">
@@ -304,6 +306,12 @@
       ],
       "default": "left",
       "label": "t:sections.multicolumn.settings.column_alignment.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_slider_button",
+      "default": true,
+      "label": "tShow Slider Button",
     },
     {
       "type": "select",

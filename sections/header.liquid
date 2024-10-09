@@ -13,9 +13,6 @@
 
 
 <style>
-  h1.header__heading{
-    transform: translateY(-10px) !important;
-  }
   .sosmed-icon svg{
   fill: white;
 }
@@ -344,7 +341,28 @@
 {%- if settings.cart_type == "notification" -%}
   {%- render 'cart-notification', color_scheme: section.settings.color_scheme, desktop_menu_type: section.settings.menu_type_desktop -%}
 {%- endif -%}
+<script>
+  let scrollTimer;
 
+window.addEventListener('scroll', function() {
+    clearTimeout(scrollTimer); // Clear any existing timeout
+
+    // Set a new timeout to hide the forms after 0.5 seconds
+    scrollTimer = setTimeout(function() {
+        const localizationForms = document.querySelectorAll('.localization-form');
+        if (window.scrollY > 50) {
+            localizationForms.forEach(form => {
+                form.style.display = 'none'; // Hide the forms
+            });
+        } else {
+            localizationForms.forEach(form => {
+                form.style.display = ''; // Show the forms when scroll is less than or equal to 50px
+            });
+        }
+    }, 50); // Delay of 500 milliseconds
+});
+
+</script>
 <style>
   .cart-icon.svg-wrapper svg{
     width: 33px !important;

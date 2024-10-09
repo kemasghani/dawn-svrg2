@@ -10,8 +10,8 @@
 {%- endstyle -%}
 <div class="collection-hero{% if section.settings.show_collection_image and collection.image %} collection-hero--with-image{% endif %} color-{{ section.settings.color_scheme }} gradient">
   <div class="collection-hero__inner page-width text-center md:text-left mt-10 {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
-    <div class="collection-hero__text-wrapper">
-      <h1 class="text-[24px] md:text-[40px] mt-10 mb-4">
+    <div class="collection-hero__text-wrapper flex flex-col gap-10">
+      <h1 class="text-[24px] md:text-[40px] font-bold mt-10 mb-4">
         <span class="visually-hidden">{{ 'sections.collection_template.title' | t }}: </span>
         {{- collection.title | escape -}}
       </h1>
@@ -44,6 +44,7 @@
           alt="{{ collection.image.alt | escape }}"
           width="{{ collection.image.width }}"
           height="{{ collection.image.height }}"
+          style="border-radius:45px;"
         >
       </div>
     {%- endif -%}

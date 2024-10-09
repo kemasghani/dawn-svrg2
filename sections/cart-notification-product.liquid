@@ -20,9 +20,9 @@
         <dl>
           {%- unless item.product.has_only_default_variant -%}
             {%- for option in item.options_with_values -%}
-              <div class="product-option">
-                <dt>{{ option.name }}:</dt>
-                <dd>{{ option.value }}</dd>
+              <div style="color:black;" class="product-option">
+                <dt class="text-[10px]">{{ option.name }}:</dt>
+                <dd class="text-[10px]">{{ option.value }}</dd>
               </div>
             {%- endfor -%}
           {%- endunless -%}

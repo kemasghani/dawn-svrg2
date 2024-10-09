@@ -24,37 +24,18 @@
   <script src="{{ 'quick-order-list.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
 
-
 {%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
-  {%- if section.settings.flash_sale_layout -%}
-    .section-{{ section.id }}-padding .flash-sale-head-container {
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-    }
-  {%- else -%}
-    .section-{{ section.id }}-padding .flash-sale-head-container {
-      display: flex;
-      align-items: baseline;
-      justify-content: end;
-    }
-  {%- endif -%}
-  @media screen and (max-width: 370px){
-    .section-{{ section.id }}-padding .flash-sale-head-container {
-      display: flex;
-      flex-direction: column;
-      align-items: baseline;
-      justify-content: space-between;
-    }
-  }
+
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
+      padding-left: 5rem;
+      padding-right: 5rem;
     }
   }
 {%- endstyle -%}
@@ -78,98 +59,43 @@
     assign show_desktop_slider = true
   endif
 -%}
+
 <div
-  class="color-{{ section.settings.color_scheme }} isolate gradient page-width"
+  class="color-{{ section.settings.color_scheme }} isolate gradient featured-collection-base"
 >
   <div
-    class="featured-collection collection{% if section.settings.quick_add == 'bulk' %} collection-quick-add-bulk{% endif %} section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}"
+    class="collection{% if section.settings.quick_add == 'bulk' %} collection-quick-add-bulk{% endif %} section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}"
     id="collection-{{ section.id }}"
     data-id="{{ section.id }}"
   >
-    <slider-component class="slider-mobile-gutter{% if section.settings.full_width %} slider-component-full-width{% endif %}{% if show_mobile_slider == false %} page-width{% endif %}{% if show_desktop_slider == false and section.settings.full_width == false %} page-width-desktop{% endif %}{% if show_desktop_slider %} slider-component-desktop{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-      <div class="collection__title title-wrapper title-wrapper--no-top-margin{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
-        <div class="flash-sale-head-container">
-          {%- if section.settings.flash_sale_layout -%}
-          <div>
-          {%- if section.settings.title != blank -%}
-            <h2 class="title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-              {{ section.settings.title }}
-            </h2>
-          {%- endif -%}
-          {%- if section.settings.description != blank
-            or section.settings.show_description
-            and section.settings.collection.description != empty
-          -%}
-            <div class="collection__description {{ section.settings.description_style }} rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-              {%- if section.settings.show_description -%}
-                {{ section.settings.collection.description }}
-              {%- else -%}
-                {{ section.settings.description -}}
-              {%- endif %}
-            </div>
-          {%- endif -%}
-          </div>
-          <div class="countdown-timer-container">
-            <div id="countdown" class="countdown">
-              <p>00 : 00 : 00</p>
-            </div>
-          </div>
-          {%- endif -%}
-            <div class="view-all-carousel-control-container">
-              {%- if show_mobile_slider or show_desktop_slider -%}
-                <div class="slider-buttons">
-                  <button
-                    type="button"
-                    class="slider-button slider-button--prev"
-                    name="previous"
-                    aria-label="{{ 'general.slider.previous_slide' | t }}"
-                    aria-controls="Slider-{{ section.id }}"
-                  >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="inherit" class="arrow-left">
-                      <path d="M6.05782 11.7768L1.0443 6.76333C0.928944 6.64824 0.844749 6.52917 0.791713 6.40613C0.738676 6.28308 0.712158 6.14771 0.712158 6C0.712158 5.85229 0.738676 5.71692 0.791713 5.59387C0.844749 5.47083 0.928944 5.35176 1.0443 5.23668L6.05782 0.222754C6.12704 0.153807 6.20433 0.0994431 6.28972 0.0596659C6.37485 0.0198886 6.4662 0 6.56379 0C6.7587 0 6.92815 0.0658989 7.07214 0.197694C7.21587 0.329489 7.28773 0.503182 7.28773 0.718775V11.2812C7.28773 11.4968 7.21508 11.6705 7.06976 11.8023C6.9247 11.9341 6.75538 12 6.5618 12C6.51327 12 6.34528 11.9256 6.05782 11.7768Z" fill="#94A3B8"/>
-                      </svg>
-                  </button>
-                  <button
-                    type="button"
-                    class="slider-button slider-button--next"
-                    name="next"
-                    aria-label="{{ 'general.slider.next_slide' | t }}"
-                    aria-controls="Slider-{{ section.id }}"
-                  >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="inherit" class="arrow-right">
-                      <path d="M6.05782 11.7768L1.0443 6.76333C0.928944 6.64824 0.844749 6.52917 0.791713 6.40613C0.738676 6.28308 0.712158 6.14771 0.712158 6C0.712158 5.85229 0.738676 5.71692 0.791713 5.59387C0.844749 5.47083 0.928944 5.35176 1.0443 5.23668L6.05782 0.222754C6.12704 0.153807 6.20433 0.0994431 6.28972 0.0596659C6.37485 0.0198886 6.4662 0 6.56379 0C6.7587 0 6.92815 0.0658989 7.07214 0.197694C7.21587 0.329489 7.28773 0.503182 7.28773 0.718775V11.2812C7.28773 11.4968 7.21508 11.6705 7.06976 11.8023C6.9247 11.9341 6.75538 12 6.5618 12C6.51327 12 6.34528 11.9256 6.05782 11.7768Z" fill="#94A3B8"/>
-                      </svg>
-                  </button>
-                </div>
-              {%- endif -%}
-              {%- if section.settings.show_view_all and more_in_collection -%}
-                <div class="center collection__view-all{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-                  <a
-                    href="{{ section.settings.collection.url }}"
-                    class="{% if section.settings.view_all_style == 'link' %}link underlined-link{% elsif section.settings.view_all_style == 'solid' %}button{% else %}button button--secondary{% endif %} button-view-all"
-                    aria-label="{{ 'sections.featured_collection.view_all_label' | t: collection_name: section.settings.collection.title | escape }}"
-                  >
-                   {{ section.settings.text_button_all }}
-                  </a>
-                </div>
-              {%- endif -%}
-            </div>
-
+    <div class="collection__title title-wrapper title-wrapper--no-top-margin page-width{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
+      {%- if section.settings.title != blank -%}
+        <h2 class="title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+          {{ section.settings.title }}
+        </h2>
+      {%- endif -%}
+      {%- if section.settings.description != blank
+        or section.settings.show_description
+        and section.settings.collection.description != empty
+      -%}
+        <div class="collection__description {{ section.settings.description_style }} rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+          {%- if section.settings.show_description -%}
+            {{ section.settings.collection.description }}
+          {%- else -%}
+            {{ section.settings.description -}}
+          {%- endif %}
         </div>
-      </div>
+      {%- endif -%}
+    </div>
+
+    <slider-component class="slider-mobile-gutter{% if section.settings.full_width %} slider-component-full-width{% endif %}{% if show_mobile_slider == false %} page-width{% endif %}{% if show_desktop_slider == false and section.settings.full_width == false %} page-width-desktop{% endif %}{% if show_desktop_slider %} slider-component-desktop{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
       <ul
         id="Slider-{{ section.id }}"
         data-id="{{ section.id }}"
-        class=" grid product-grid contains-card contains-card--product{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid--{{ section.settings.columns_desktop }}-col-desktop{% if section.settings.collection == blank %} grid--2-col-tablet-down{% else %} grid--{{ section.settings.columns_mobile }}-col-tablet-down{% endif %}{% if show_mobile_slider or show_desktop_slider %} slider{% if show_desktop_slider %} slider--desktop{% endif %}{% if show_mobile_slider %} slider--tablet grid--peek{% endif %}{% endif %}"
+        class="grid product-grid contains-card contains-card--product{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid--{{ section.settings.columns_desktop }}-col-desktop{% if section.settings.collection == blank %} grid--2-col-tablet-down{% else %} grid--{{ section.settings.columns_mobile }}-col-tablet-down{% endif %}{% if show_mobile_slider or show_desktop_slider %} slider{% if show_desktop_slider %} slider--desktop{% endif %}{% if show_mobile_slider %} slider--tablet grid--peek{% endif %}{% endif %}"
         role="list"
         aria-label="{{ 'general.slider.name' | t }}"
       >
-        {% if section.settings.collection.metafields.custom.small_banner %}
-          <li class="image-banner-collection grid__item{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-            <img src="{{section.settings.collection.metafields.custom.small_banner | image_url }}" class="banner-collection" width="100%" height="100%" alt="{{ section.settings.collection.title }}">
-            <h1>{{ section.settings.collection.title }}</h1>
-          </li>
-        {%- endif -%}
         {% assign skip_card_product_styles = false %}
         {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
           <li
@@ -222,83 +148,62 @@
           {%- endfor -%}
         {%- endfor -%}
       </ul>
-
-        <div class="view-all-carousel-control-container-mobile">
-          {%- if show_mobile_slider or show_desktop_slider -%}
-            <div class="slider-buttons">
-              <button
-                type="button"
-                class="slider-button slider-button--prev"
-                name="previous"
-                aria-label="{{ 'general.slider.previous_slide' | t }}"
-                aria-controls="Slider-{{ section.id }}"
-              >
-                <img src="{{ 'arrow_left.svg' | asset_url }}" class="arrow-left" width="8px" height="14px" alt="Arrow Left">
-              </button>
-              <div class="slider-counter caption">
-                <span class="slider-counter--current">1</span>
-                <span aria-hidden="true"> / </span>
-                <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
-                <span class="slider-counter--total">{{ products_to_display }}</span>
-              </div>
-              <button
-                type="button"
-                class="slider-button slider-button--next"
-                name="next"
-                aria-label="{{ 'general.slider.next_slide' | t }}"
-                aria-controls="Slider-{{ section.id }}"
-              >
-                <img src="{{ 'arrow_left.svg' | asset_url }}" class="arrow-right" width="8px" height="14px" alt="Arrow Right">
-              </button>
+      {%- if show_mobile_slider or show_desktop_slider -%}
+        {%- if show_button_slider -%}
+          <div class="slider-buttons">
+            <button
+              type="button"
+              class="slider-button slider-button--prev"
+              name="previous"
+              aria-label="{{ 'general.slider.previous_slide' | t }}"
+              aria-controls="Slider-{{ section.id }}"
+            >
+              <span class="svg-wrapper">
+                {{- 'icon-caret.svg' | inline_asset_content -}}
+              </span>
+            </button>
+            <div class="slider-counter caption">
+              <span class="slider-counter--current">1</span>
+              <span aria-hidden="true"> / </span>
+              <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
+              <span class="slider-counter--total">{{ products_to_display }}</span>
             </div>
-          {%- endif -%}
-          {%- if section.settings.show_view_all and more_in_collection -%}
-            <div class="center collection__view-all{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-              <a
-                href="{{ section.settings.collection.url }}"
-                class="{% if section.settings.view_all_style == 'link' %}link underlined-link{% elsif section.settings.view_all_style == 'solid' %}button{% else %}button button--secondary{% endif %} button-view-all"
-                aria-label="{{ 'sections.featured_collection.view_all_label' | t: collection_name: section.settings.collection.title | escape }}"
-              >
-                {{ section.settings.text_button_all }}
-              </a>
-            </div>
-          {%- endif -%}
-        </div>
+            <button
+              type="button"
+              class="slider-button slider-button--next"
+              name="next"
+              aria-label="{{ 'general.slider.next_slide' | t }}"
+              aria-controls="Slider-{{ section.id }}"
+            >
+              <span class="svg-wrapper">
+                {{- 'icon-caret.svg' | inline_asset_content -}}
+              </span>
+            </button>
+          </div>
+      {%- endif -%}
+      {%- endif -%}
     </slider-component>
+
+    {%- if section.settings.show_view_all and more_in_collection -%}
+      <div class="center collection__view-all{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+        <a
+          href="{{ section.settings.collection.url }}"
+          class="{% if section.settings.view_all_style == 'link' %}link underlined-link{% elsif section.settings.view_all_style == 'solid' %}button{% else %}button button--secondary{% endif %}"
+          aria-label="{{ 'sections.featured_collection.view_all_label' | t: collection_name: section.settings.collection.title | escape }}"
+        >
+          {{ 'sections.featured_collection.view_all' | t }}
+        </a>
+      </div>
+    {%- endif -%}
     {% if section.settings.image_shape == 'arch' %}
-      {% render 'mask-arch' %}
+      {{ 'mask-arch.svg' | inline_asset_content }}
     {%- endif -%}
   </div>
 </div>
 
-<script>
-  const countdownElementFeatured = document.getElementById(`countdown`);
-  const totalTime = {{ settings.countdown_total_time }};
-
-
-  let timeRemaining = totalTime * 60;
-
-  function updateCountdown() {
-    const hours = Math.floor(timeRemaining / 3600);
-    const minutes = Math.floor((timeRemaining % 3600) / 60);
-    const seconds = timeRemaining % 60;
-
-    countdownElementFeatured.innerHTML = `<p>${hours.toString().padStart(2, '0')} : ${minutes.toString().padStart(2, '0')} : ${seconds.toString().padStart(2, '0')}</p>`;
-
-    if (timeRemaining > 0) {
-      timeRemaining--;
-    } else {
-      clearInterval(countdownInterval);
-    }
-  }
-
-  const countdownInterval = setInterval(updateCountdown, 1000);
-  updateCountdown();
-</script>
-
 {% schema %}
 {
-  "name": "t:sections.featured-collection.name",
+  "name": "Featured collection base",
   "tag": "section",
   "class": "section",
   "disabled_on": {
@@ -340,11 +245,6 @@
       "label": "t:sections.all.heading_size.label"
     },
     {
-      "type": "text",
-      "id": "text_button_all",
-      "label": "Text button",
-    },
-    {
       "type": "richtext",
       "id": "description",
       "label": "t:sections.featured-collection.settings.description.label"
@@ -354,12 +254,6 @@
       "id": "show_description",
       "label": "t:sections.featured-collection.settings.show_description.label",
       "default": false
-    },
-    {
-      "type": "checkbox",
-      "id": "show_border_top",
-      "label": "Show border top section",
-      "default": true
     },
     {
       "type": "select",
@@ -409,6 +303,12 @@
       "id": "full_width",
       "label": "t:sections.featured-collection.settings.full_width.label",
       "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_button_slider",
+      "default": true,
+      "label": "Show Button Slider"
     },
     {
       "type": "checkbox",
@@ -522,12 +422,6 @@
     },
     {
       "type": "checkbox",
-      "id": "flash_sale_layout",
-      "default": false,
-      "label": "Use flash sale layout"
-    },
-    {
-      "type": "checkbox",
       "id": "show_vendor",
       "default": false,
       "label": "t:sections.featured-collection.settings.show_vendor.label"
@@ -613,7 +507,7 @@
   ],
   "presets": [
     {
-      "name": "t:sections.featured-collection.presets.name"
+      "name": "Featured collection base"
     }
   ]
 }

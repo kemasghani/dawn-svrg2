@@ -1,5 +1,7 @@
 {{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
-
+{%- liquid
+  assign full_url = request.host | append: request.path
+-%}
 <article class="article-template">
   {%- for block in section.blocks -%}
     {%- case block.type -%}
@@ -11,6 +13,7 @@
         {%- if article.image -%}
           <div
             class="article-template__hero-container{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
+            style="margin-top:30px;"
             {{ block.shopify_attributes }}
           >
             <div
@@ -66,18 +69,24 @@
       {%- when 'content' -%}
         <div
           class="article-template__content page-width page-width--narrow rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+          style="margin-top:50px;"
           {{ block.shopify_attributes }}
         >
           {{ article.content }}
         </div>
 
       {%- when 'share' -%}
-        <div
-          class="article-template__social-sharing page-width page-width--narrow{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-          {{ block.shopify_attributes }}
-        >
-          {% assign share_url = request.origin | append: article.url %}
-          {% render 'share-button', block: block, share_link: share_url %}
+        <div popup-open="main-product-share" class=" cursor-pointer flex gap-3 article-template__social-sharing page-width page-width--narrow{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+          {{ block.shopify_attributes }}>
+          <span class="text-slate-600 text-[12px] font-normal">Share</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <mask id="mask0_45_335" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+              <rect width="20" height="20" fill="#D9D9D9"/>
+            </mask>
+            <g mask="url(#mask0_45_335)">
+              <path d="M15 18.3333C14.3056 18.3333 13.7153 18.0903 13.2292 17.6042C12.7431 17.118 12.5 16.5278 12.5 15.8333C12.5 15.7361 12.5069 15.6354 12.5208 15.5312C12.5347 15.4271 12.5556 15.3333 12.5833 15.25L6.70833 11.8333C6.47222 12.0417 6.20833 12.2049 5.91667 12.3229C5.625 12.441 5.31944 12.5 5 12.5C4.30556 12.5 3.71528 12.2569 3.22917 11.7708C2.74306 11.2847 2.5 10.6944 2.5 9.99999C2.5 9.30555 2.74306 8.71527 3.22917 8.22916C3.71528 7.74305 4.30556 7.49999 5 7.49999C5.31944 7.49999 5.625 7.55902 5.91667 7.67707C6.20833 7.79513 6.47222 7.95832 6.70833 8.16666L12.5833 4.74999C12.5556 4.66666 12.5347 4.57291 12.5208 4.46874C12.5069 4.36457 12.5 4.26388 12.5 4.16666C12.5 3.47221 12.7431 2.88193 13.2292 2.39582C13.7153 1.90971 14.3056 1.66666 15 1.66666C15.6944 1.66666 16.2847 1.90971 16.7708 2.39582C17.2569 2.88193 17.5 3.47221 17.5 4.16666C17.5 4.8611 17.2569 5.45138 16.7708 5.93749C16.2847 6.4236 15.6944 6.66666 15 6.66666C14.6806 6.66666 14.375 6.60763 14.0833 6.48957C13.7917 6.37152 13.5278 6.20832 13.2917 5.99999L7.41667 9.41666C7.44444 9.49999 7.46528 9.59374 7.47917 9.69791C7.49306 9.80207 7.5 9.90277 7.5 9.99999C7.5 10.0972 7.49306 10.1979 7.47917 10.3021C7.46528 10.4062 7.44444 10.5 7.41667 10.5833L13.2917 14C13.5278 13.7917 13.7917 13.6285 14.0833 13.5104C14.375 13.3924 14.6806 13.3333 15 13.3333C15.6944 13.3333 16.2847 13.5764 16.7708 14.0625C17.2569 14.5486 17.5 15.1389 17.5 15.8333C17.5 16.5278 17.2569 17.118 16.7708 17.6042C16.2847 18.0903 15.6944 18.3333 15 18.3333ZM15 4.99999C15.2361 4.99999 15.434 4.92013 15.5938 4.76041C15.7535 4.60068 15.8333 4.40277 15.8333 4.16666C15.8333 3.93055 15.7535 3.73263 15.5938 3.57291C15.434 3.41318 15.2361 3.33332 15 3.33332C14.7639 3.33332 14.566 3.41318 14.4062 3.57291C14.2465 3.73263 14.1667 3.93055 14.1667 4.16666C14.1667 4.40277 14.2465 4.60068 14.4062 4.76041C14.566 4.92013 14.7639 4.99999 15 4.99999ZM5 10.8333C5.23611 10.8333 5.43403 10.7535 5.59375 10.5937C5.75347 10.434 5.83333 10.2361 5.83333 9.99999C5.83333 9.76388 5.75347 9.56596 5.59375 9.40624C5.43403 9.24652 5.23611 9.16666 5 9.16666C4.76389 9.16666 4.56597 9.24652 4.40625 9.40624C4.24653 9.56596 4.16667 9.76388 4.16667 9.99999C4.16667 10.2361 4.24653 10.434 4.40625 10.5937C4.56597 10.7535 4.76389 10.8333 5 10.8333ZM15 16.6667C15.2361 16.6667 15.434 16.5868 15.5938 16.4271C15.7535 16.2674 15.8333 16.0694 15.8333 15.8333C15.8333 15.5972 15.7535 15.3993 15.5938 15.2396C15.434 15.0799 15.2361 15 15 15C14.7639 15 14.566 15.0799 14.4062 15.2396C14.2465 15.3993 14.1667 15.5972 14.1667 15.8333C14.1667 16.0694 14.2465 16.2674 14.4062 16.4271C14.566 16.5868 14.7639 16.6667 15 16.6667Z" fill="#475569"/>
+            </g>
+          </svg>
         </div>
     {%- endcase -%}
   {%- endfor -%}
@@ -287,6 +296,98 @@
     </div>
   {%- endif -%}
 </article>
+<div popup-container="main-product-share" class="w-full hidden h-full fixed top-0 left-0 z-[9999]">
+  <div class="flex items-center justify-center p-[24px] bg-stone-50/70 w-full h-full">
+    <div class="bg-white w-[420px] p-[24px] flex flex-col content-start justify-start relative rounded-[8px] overflow-hidden shadow-2xl shadow-gray-800/70">
+      <div class="flex w-full items-center justify-between pb-[24px] mb-[24px] border-b border-slate-100">
+          <span class="text-[18px] font-semibold text-slate-700 text-center w-[100%]">SHARE THIS BLOG</span>
+          <a href="javascript:void(0)" popup-close="main-product-share" class="p-[8px] -mr-[8px] -mt-[8px] -mb-[8px] [&_path]:fill-slate-400">
+            {% render 'icon-close-clipboard' %}
+          </a>
+      </div>
+      <div class="w-full flex flex-col items-center justify-center gap-[24px]">
+          <div class="flex flex-row items-center justify-center gap-[40px]">
+              <a href="https://www.facebook.com/sharer.php?u=https://{{ full_url }}" target="_blank" class="group flex flex-col items-center justify-center gap-[8px]">
+                  <span class="w-[48px] h-[48px] p-[12px] border-[1px] border-slate-200 rounded-full group-hover:border-[#63d7d1] group-hover:bg-[#63d7d1] group-hover:[&_path]:fill-white [&_path]:fill-slate-700">
+                    <svg class="w-full h-full" width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.1539 11.2494L10.7095 7.63H7.23641V5.28125C7.23641 4.29125 7.72141 3.32562 9.27703 3.32562H10.8558V0.244375C10.8558 0.244375 9.42328 0 8.05328 0C5.19328 0 3.32391 1.73375 3.32391 4.87187V7.63062H0.144531V11.25H3.32391V20H7.23641V11.25L10.1539 11.2494Z"/>
+                    </svg>
+                  </span>
+                <span class="text-[12px] text-slate-600">Facebook</span>
+              </a>
+
+              <a href="https://twitter.com/share?text={{ product.title }}&url={{ full_url }}" target="_blank" class="group flex flex-col items-center justify-center gap-[8px]">
+                  <span class="w-[48px] h-[48px] p-[12px] border-[1px] border-slate-200 rounded-full group-hover:border-[#63d7d1] group-hover:bg-[#63d7d1] group-hover:[&_path]:fill-white [&_path]:fill-slate-700">
+                    <svg class="w-full h-full" width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M18.3627 0H21.7553L14.3432 8.47193L23.0632 20H16.2353L10.8878 13.0081L4.76887 20H1.37388L9.30194 10.9385L0.937012 0H7.93785L12.7717 6.39068L18.3627 0ZM17.1718 17.9691H19.0519L6.91641 1.92425H4.89912L17.1718 17.9691Z"/>
+                    </svg>
+                  </span>
+                <span class="text-[12px] text-slate-600">X</span>
+              </a>
+
+              <a href="https://api.whatsapp.com/send?text={{ product.title }}%0A%0A{{ full_url }}" target="_blank" class="group flex flex-col items-center justify-center gap-[8px]">
+                <span class="w-[48px] h-[48px] p-[12px] border-[1px] border-slate-200 rounded-full group-hover:border-[#63d7d1] group-hover:bg-[#63d7d1] group-hover:[&_path]:fill-white [&_path]:fill-slate-700">
+                  <svg class="w-full h-full" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.321 14.1211C16.08 14.8033 15.122 15.3677 14.358 15.5327C13.835 15.6437 13.153 15.7316 10.855 14.7793C8.274 13.71 4.69 9.90097 4.69 7.36621C4.69 6.07582 5.434 4.57324 6.735 4.57324C7.361 4.57324 7.499 4.58545 7.705 5.07959C7.946 5.66177 8.534 7.09612 8.604 7.24316C8.893 7.84634 8.30999 8.19945 7.88699 8.72461C7.75199 8.88265 7.599 9.05358 7.77 9.34766C7.94 9.63575 8.528 10.5941 9.392 11.3633C10.508 12.3576 11.413 12.675 11.737 12.8101C11.978 12.9101 12.266 12.8868 12.442 12.6987C12.665 12.4577 12.942 12.0577 13.224 11.6636C13.423 11.3815 13.676 11.3463 13.941 11.4463C14.12 11.5083 16.395 12.5648 16.491 12.7339C16.562 12.8569 16.562 13.4389 16.321 14.1211ZM10.502 0H10.497C4.98399 0 0.5 4.48535 0.5 10C0.5 12.1867 1.20501 14.2153 2.40401 15.8608L1.158 19.5767L5.00101 18.3486C6.58201 19.395 8.469 20 10.502 20C16.015 20 20.5 15.5147 20.5 10C20.5 4.48535 16.015 0 10.502 0Z"/>
+                  </svg>
+                </span>
+                <span class="text-[12px] text-slate-600">WhatsApp</span>
+              </a>
+          </div>
+          <div class="w-full flex flex-row items-start justify-start h-[40px] mt-[10px] clipboard-input">
+            <input id="ex-link" class="flex flex-1 items-center justify-start h-full px-[15px] border-[1px] border-slate-200 bg-white text-[12px] text-slate-500 rounded-l-[8px] link-input" type="text" name="ex-link" spellcheck="false" value="https://{{ full_url }}" readonly="">
+            <a data-clipboard-target="#ex-link" href="javascript:void(0)" class="h-full w-[40px] flex flex-row items-center justify-center copyUrl border border-l-0 border-slate-200 bg-slate-50 rounded-r-[8px]">
+              <svg class="w-[20px] h-[20px] [&_path]:fill-slate-700" width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.5 16.5V14.5H2.5V16.5H0.5ZM0.5 13V11H2.5V13H0.5ZM0.5 9.5V7.5H2.5V9.5H0.5ZM4 20V18H6V20H4ZM6.5 16C5.95 16 5.47917 15.8042 5.0875 15.4125C4.69583 15.0208 4.5 14.55 4.5 14V2C4.5 1.45 4.69583 0.979167 5.0875 0.5875C5.47917 0.195833 5.95 0 6.5 0H15.5C16.05 0 16.5208 0.195833 16.9125 0.5875C17.3042 0.979167 17.5 1.45 17.5 2V14C17.5 14.55 17.3042 15.0208 16.9125 15.4125C16.5208 15.8042 16.05 16 15.5 16H6.5ZM6.5 14H15.5V2H6.5V14ZM7.5 20V18H9.5V20H7.5ZM2.5 20C1.95 20 1.47917 19.8042 1.0875 19.4125C0.695833 19.0208 0.5 18.55 0.5 18H2.5V20ZM11 20V18H13C13 18.55 12.8042 19.0208 12.4125 19.4125C12.0208 19.8042 11.55 20 11 20ZM0.5 6C0.5 5.45 0.695833 4.97917 1.0875 4.5875C1.47917 4.19583 1.95 4 2.5 4V6H0.5Z"/>
+              </svg>
+            </a>
+          </div>
+      </div>
+      <div class="copy-toast absolute bottom-[24px] left-0 w-full px-[24px] py-[8px] bg-[#63d7d1] hidden flex-row items-center justify-between">
+        <span class="text-[12px] text-white font-semibold">Link successfully copied.</span>
+        <a href="javascript:void(0)" class="copy-toast-close">{% render 'icon-close' %}</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flying fixed w-full bottom-0 left-0 bg-white hidden px-[16px] pb-[16px] flex-row items-center justify-end z-[1000] md:hidden !bg-transparent">
+  <a href="javascript:void(0)" class="scroll-to-detail w-[56px] h-[56px] rounded-full bg-brown flex flex-row items-center justify-center">
+    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10.3354 6.18494L5.33545 11.1849L6.73545 12.5849L9.33545 10.0099V20.1849H11.3354V10.0099L13.9354 12.5849L15.3354 11.1849L10.3354 6.18494ZM1.98545 15.6849C1.45212 14.8683 1.04378 13.9933 0.760449 13.0599C0.477116 12.1266 0.335449 11.1683 0.335449 10.1849C0.335449 8.8016 0.597949 7.5016 1.12295 6.28494C1.64795 5.06827 2.36045 4.00994 3.26045 3.10994C4.16045 2.20994 5.21878 1.49744 6.43545 0.972437C7.65212 0.447437 8.95212 0.184937 10.3354 0.184937C11.7188 0.184937 13.0188 0.447437 14.2354 0.972437C15.4521 1.49744 16.5104 2.20994 17.4104 3.10994C18.3105 4.00994 19.0229 5.06827 19.5479 6.28494C20.0729 7.5016 20.3354 8.8016 20.3354 10.1849C20.3354 11.1683 20.1938 12.1266 19.9104 13.0599C19.6271 13.9933 19.2188 14.8683 18.6854 15.6849L17.2354 14.2349C17.6021 13.6183 17.8771 12.9683 18.0604 12.2849C18.2438 11.6016 18.3354 10.9016 18.3354 10.1849C18.3354 7.9516 17.5604 6.05994 16.0104 4.50994C14.4604 2.95994 12.5688 2.18494 10.3354 2.18494C8.10212 2.18494 6.21045 2.95994 4.66045 4.50994C3.11045 6.05994 2.33545 7.9516 2.33545 10.1849C2.33545 10.9016 2.42712 11.6016 2.61045 12.2849C2.79378 12.9683 3.06878 13.6183 3.43545 14.2349L1.98545 15.6849Z" fill="#ffffff"/>
+    </svg>
+    </a>
+</div>
+
+<script>
+
+  var clipboard = new ClipboardJS('.copyUrl');
+  document.querySelector('.copyUrl').addEventListener('click', function(){
+    document.querySelector(".copy-toast").classList.remove('hidden')
+    document.querySelector(".copy-toast").classList.add('flex')
+    document.querySelector(".link-input").classList.add('hidden')
+  });
+
+  document.querySelector('.copy-toast-close').addEventListener('click', function(){
+    document.querySelector(".copy-toast").classList.add('hidden')
+    document.querySelector(".copy-toast").classList.remove('flex')
+  })
+  document.querySelector('[popup-open="main-product-share"]').addEventListener('click', function() {
+    document.querySelector('[popup-container="main-product-share"]').classList.remove('hidden');
+  });
+
+  document.querySelector('[popup-close="main-product-share"]').addEventListener('click', function() {
+    document.querySelector('[popup-container="main-product-share"]').classList.add('hidden');
+  });
+  document.querySelectorAll('.gpo-form__group.gpo-col-12').forEach((el) => {
+    if (el.classList.length === 2) { // Ensures it has exactly these two classes
+      el.remove();
+    }
+  });
+
+
+
+</script>
 
 <script type="application/ld+json">
   {{ article | structured_data }}
