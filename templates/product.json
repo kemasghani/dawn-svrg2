@@ -105,7 +105,7 @@
     "related-products": {
       "type": "related-products",
       "settings": {
-        "heading": "<strong>Related Products</strong>",
+        "heading": "<strong>Related Products<\/strong>",
         "heading_size": "h2",
         "products_to_show": 6,
         "columns_desktop": 6,

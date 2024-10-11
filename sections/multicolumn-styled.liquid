@@ -2,7 +2,7 @@
  <div class="flex flex-col md:flex-row gap-10">
   <div class="upper-section bg-[#dbdbdb68] rounded-[30px] py-20 pl-16 w-[100%]">
     <h2 class="text-[20px] md:text-[24px]">KENAPA HARUS BELI DI WEBSITE SVRG.</h2>
-    <ul class="mt-6 text-[15px] md:text-[18px] font-normal">
+    <ul class="mt-10 mb-14 text-[15px] md:text-[18px] font-normal">
       <li>Gratis Ongkir</li>
       <li>Special <i>Packaging</i></li>
       <li>Jaminan <i>Return/Refund</i></li>
@@ -11,18 +11,18 @@
   </div>
   <div class="flex flex-col w-full">
     <div class="image ">
-      <img src="{{ section.settings.image | img_url: '200x' }}" alt="{{ section.settings.title_1 }}" class="rounded-tr-[30px] rounded-tl-[30px]">
+      <img src="{{ section.settings.image }}" alt="{{ section.settings.title_1 }}" class="rounded-tr-[30px] rounded-tl-[30px]">
     </div>
     <div class="feature-icons bg-[black] flex items-baseline rounded-br-[30px] rounded-bl-[30px] py-10 px-8 w-[100%] h-fit">
-      <div class="feature-item flex flex-col items-center gap-6">
+      <div class="feature-item flex flex-col items-center gap-10">
         <img src="{{ section.settings.icon_1 | img_url: '200x' }}" alt="{{ section.settings.title_1 }}">
         <h3 class="text-[10px] md:text-[12px]">{{ section.settings.title_1 }}</h3>
       </div>
-      <div class="feature-item flex flex-col items-center gap-6">
+      <div class="feature-item flex flex-col items-center gap-10">
         <img src="{{ section.settings.icon_2 | img_url: '200x' }}" alt="{{ section.settings.title_2 }}">
         <h3 class="text-[10px] md:text-[12px]">{{ section.settings.title_2 }}</h3>
       </div>
-      <div class="feature-item flex flex-col items-center gap-6">
+      <div class="feature-item flex flex-col items-center gap-10">
         <img src="{{ section.settings.icon_3 | img_url: '200x' }}" alt="{{ section.settings.title_3 }}">
         <h3 class="text-[10px] md:text-[12px]">{{ section.settings.title_3 }}</h3>
       </div>
@@ -83,11 +83,12 @@
 
 .feature-item img {
   max-width: 50px;
-  max-height: 45px;
+  max-height: 40px;
 }
 .image img{
   width:100%;
-  max-height: max-content;
+  height: 350px;
+  object-fit: cover;
 }
 
 .feature-item h3 {
@@ -103,6 +104,9 @@
 .follow-us svg{
   color: white !important;
 }
+.custom-feature-section .list-social{
+  column-gap:5px;
+}
 </style>
 
 
@@ -111,9 +115,9 @@
   "name": "Custom Feature Section",
   "settings": [
     {
-      "type": "image_picker",
+      "type": "url",
       "id": "image",
-      "label": "Image"
+      "label": "Image url"
     },
     {
       "type": "image_picker",
