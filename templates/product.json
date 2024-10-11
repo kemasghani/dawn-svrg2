@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
@@ -39,6 +48,14 @@
           "settings": {
           }
         },
+        "inventory_eTp3ai": {
+          "type": "inventory",
+          "settings": {
+            "text_style": "body",
+            "inventory_threshold": 10,
+            "show_inventory_quantity": true
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -72,6 +89,7 @@
         "price",
         "variant_picker",
         "quantity_selector",
+        "inventory_eTp3ai",
         "buy_buttons",
         "collapsible_tab_yDxfdB",
         "collapsible_tab_bheXJC"
