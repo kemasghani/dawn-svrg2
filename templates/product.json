@@ -114,10 +114,10 @@
     "related-products": {
       "type": "related-products",
       "settings": {
-        "heading": "You may also like",
+        "heading": "<strong>Related Products</strong>",
         "heading_size": "h2",
-        "products_to_show": 5,
-        "columns_desktop": 5,
+        "products_to_show": 6,
+        "columns_desktop": 6,
         "color_scheme": "scheme-1",
         "image_ratio": "square",
         "image_shape": "default",
