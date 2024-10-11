@@ -74,6 +74,7 @@
         },
         "collapsible_tab_bheXJC": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Spesification",
             "icon": "check_mark",
