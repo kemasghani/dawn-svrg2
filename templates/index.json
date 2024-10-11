@@ -156,74 +156,23 @@
         "background_color2": "#c8d92b",
         "text_color": "#000000",
         "padding_top": 48,
-        "padding_bottom": 36
+        "padding_bottom": 100
       }
     },
-    "multicolumn_erzB3j": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_Le7Xi9": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Cart_Blue.svg",
-            "title": "Promo setiap hari",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_HCMkBU": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Gift_Blue.svg",
-            "title": "Gratis kartu ucapan",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_xey6aF": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Globe.svg",
-            "title": "Pengiriman seluruh dunia",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_wy8763": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Protect.svg",
-            "title": "Berkualitas",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_Le7Xi9",
-        "column_HCMkBU",
-        "column_xey6aF",
-        "column_wy8763"
-      ],
+    "multicolumn_styled_rCQVzp": {
+      "type": "multicolumn-styled",
       "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 4,
-        "column_alignment": "center",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "",
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 96,
-        "padding_bottom": 96
+        "image": "shopify:\/\/shop_images\/Screenshot_2024-10-11_152217.webp",
+        "icon_1": "shopify:\/\/shop_images\/FREE_DELIVERY.svg",
+        "title_1": "Gratis Ongkir",
+        "description_1": "",
+        "icon_2": "shopify:\/\/shop_images\/SEPCIAL_PACKAGING.svg",
+        "title_2": "Special Packaging",
+        "description_2": "",
+        "icon_3": "shopify:\/\/shop_images\/RETURN.svg",
+        "title_3": "Return \/ Refund Guarantee",
+        "description_3": "",
+        "social_text": "KUNJUNGI SOSIAL MEDIA KAMI"
       }
     },
     "featured_blog_FrKWDC": {
@@ -240,7 +189,7 @@
         "show_date": true,
         "show_author": false,
         "show_view_all": true,
-        "padding_top": 36,
+        "padding_top": 100,
         "padding_bottom": 0
       }
     },
@@ -286,7 +235,7 @@
     "featured_collection_8mpqbj",
     "image_with_text_w4aNU7",
     "diagonal_cross_bar_WaKNHh",
-    "multicolumn_erzB3j",
+    "multicolumn_styled_rCQVzp",
     "featured_blog_FrKWDC",
     "newsletter_YpphjE"
   ]
