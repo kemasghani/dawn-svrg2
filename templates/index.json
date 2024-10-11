@@ -53,7 +53,7 @@
       "settings": {
         "title": "Featured products",
         "heading_size": "h2",
-        "text_button_all": "",
+        "text_button_all": "Lihat Semua",
         "description": "",
         "show_description": false,
         "show_border_top": true,
@@ -84,7 +84,7 @@
       "settings": {
         "title": "Featured products",
         "heading_size": "h2",
-        "text_button_all": "",
+        "text_button_all": "Lihat Semua",
         "description": "",
         "show_description": false,
         "show_border_top": true,
