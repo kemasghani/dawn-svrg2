@@ -193,7 +193,7 @@
         "post_limit": 3,
         "columns_desktop": 3,
         "color_scheme": "",
-        "show_slider_button": true,
+        "show_slider_button": false,
         "show_image": true,
         "show_date": true,
         "show_author": false,
