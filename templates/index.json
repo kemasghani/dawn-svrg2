@@ -76,7 +76,8 @@
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 16,
-        "padding_bottom": 16
+        "padding_bottom": 16,
+        "margin_top": 0
       }
     },
     "featured_collection_8mpqbj": {
@@ -107,7 +108,8 @@
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 16,
-        "padding_bottom": 16
+        "padding_bottom": 16,
+        "margin_top": 24
       }
     },
     "image_with_text_w4aNU7": {
