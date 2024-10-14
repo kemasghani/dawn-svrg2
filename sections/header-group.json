@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "name": "t:sections.header.name",
   "type": "header",
@@ -9,7 +18,7 @@
           "type": "announcement",
           "settings": {
             "text": "[ NEW PROMO 10.10 ] SHOCKTOBER Discount 5%",
-            "link": "shopify:\/\/collections"
+            "link": "shopify://collections"
           }
         }
       },
@@ -36,7 +45,7 @@
         "sticky_header_type": "reduce-logo-size",
         "show_line_separator": true,
         "color_scheme": "scheme-2",
-        "menu_color_scheme": "scheme-1",
+        "menu_color_scheme": "scheme-2",
         "enable_country_selector": true,
         "enable_language_selector": true,
         "enable_customer_avatar": true,
