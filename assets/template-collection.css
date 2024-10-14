@@ -190,7 +190,7 @@ li.image-banner-collection h1 {
 
 @media screen and (max-width: 500px) {
   li.image-banner-collection h1 {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .countdown p {
