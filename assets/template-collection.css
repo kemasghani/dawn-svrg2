@@ -204,7 +204,12 @@ li.image-banner-collection h1 {
 }
 @media screen and (max-width: 366px) {
   li.image-banner-collection h1 {
-    font-size: 14px;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 331px) {
+  li.image-banner-collection h1 {
+    font-size: 11px;
   }
 }
 @media screen and (max-width: 989px) {
