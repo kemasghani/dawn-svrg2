@@ -172,6 +172,7 @@
       "type": "custom-feature-section",
       "settings": {
         "title_section": "KENAPA HARUS BELI DI WEBSITE SVRG.",
+        "link": "shopify://pages/why-choose-svrg",
         "benefit_1": "<p>Gratis Ongkir</p>",
         "benefit_2": "<p>Spesial <em>Packaging</em></p>",
         "benefit_3": "<p>Jaminan <em>Return/Refund</em></p>",
