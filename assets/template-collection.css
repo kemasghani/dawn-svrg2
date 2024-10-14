@@ -1,4 +1,7 @@
 /* custom css */
+.collection__view-all .button{
+  min-height: 40px;
+}
 .line-separator {
   display: block !important;
   transform: translateX(-20%);
