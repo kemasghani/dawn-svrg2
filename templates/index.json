@@ -45,7 +45,7 @@
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 68,
-        "padding_bottom": 36
+        "padding_bottom": 0
       }
     },
     "featured_collection": {
@@ -76,7 +76,8 @@
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 16,
-        "padding_bottom": 16
+        "padding_bottom": 32,
+        "margin_top": 0
       }
     },
     "featured_collection_8mpqbj": {
@@ -107,7 +108,8 @@
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 16,
-        "padding_bottom": 16
+        "padding_bottom": 32,
+        "margin_top": 36
       }
     },
     "image_with_text_w4aNU7": {
@@ -142,7 +144,7 @@
         "button_DxFDUm"
       ],
       "settings": {
-        "image": "shopify://shop_images/Artboard_1_900x_7973064c-aa27-4b37-9cea-2b78c26d5cdf_11zon_1.webp",
+        "image": "shopify://shop_images/Artboard_1_900x_7973064c-aa27-4b37-9cea-2b78c26d5cdf_11zon.webp",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -160,7 +162,7 @@
     "diagonal_cross_bar_WaKNHh": {
       "type": "diagonal-cross-bar",
       "settings": {
-        "bar_text": "Latihan Keras * Menjadi Lebih Kuat * Lampaui Batasan * Latihan Keras * Menjadi Lebih Kuat * Lampaui Batasan * Latihan Keras * Menjadi Lebih Kuat * Lampaui Batasan * Latihan Keras * Menjadi Lebih Kuat * Lampaui Batasan",
+        "bar_text": "Latihan Keras * Menjadi Lebih Kuat * Dorong Batasan * Latihan Keras * Menjadi Lebih Kuat * Dorong Batasan * Latihan Keras * Menjadi Lebih Kuat * Dorong Batasan * Latihan Keras * Menjadi Lebih Kuat * Dorong Batasan",
         "background_color": "#63d7d1",
         "background_color2": "#c8d92b",
         "text_color": "#000000",
@@ -176,8 +178,8 @@
         "benefit_1": "<p>Gratis Ongkir</p>",
         "benefit_2": "<p>Spesial <em>Packaging</em></p>",
         "benefit_3": "<p>Jaminan <em>Return/Refund</em></p>",
-        "image": "https://res.cloudinary.com/doq2grch0/image/upload/v1728641470/vecteezy_happy-smile-asian-woman-scan-qr-code-for-pay-of-food_22166258.mov.19_24_06_08.Still002_rpl1uv.webp",
-        "icon_1": "shopify://shop_images/FREE_DELIVERY.svg",
+        "image": "https://res.cloudinary.com/doq2grch0/image/upload/v1728887876/Artboard-1-_1__pq4rxj.webp",
+        "icon_1": "shopify://shop_images/Artboard-1-_1.webp",
         "read_more_text": "Baca Selengkapnya",
         "title_1": "Gratis Ongkir",
         "icon_2": "shopify://shop_images/SEPCIAL_PACKAGING.svg",
