@@ -202,7 +202,11 @@ li.image-banner-collection h1 {
     font-size: 23px;
   }
 }
-
+@media screen and (max-width: 366px) {
+  li.image-banner-collection h1 {
+    font-size: 14px;
+  }
+}
 @media screen and (max-width: 989px) {
   .collection .slider.slider--tablet {
     margin-bottom: 1.5rem;
