@@ -1,28 +1,19 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "custom_fullwidth_video_DgQa8n": {
       "type": "custom-fullwidth-video",
       "settings": {
-        "video": "shopify://files/videos/1003 (2) (1).mp4",
-        "video_heading": "Manfaatkan Potensimu dengan SVRG.",
+        "video": "shopify:\/\/files\/videos\/1003 (2) (1).mp4",
+        "video_heading": "Maksimalkan Latihan Fisikmu dengan SVRG.",
         "video_description": "Perlengkapan Olahraga Berkinerja Tinggi yang Dirancang untuk Kenyamanan, Fleksibilitas, dan Daya Tahan.",
         "button_text": "Belanja Sekarang",
-        "link": "shopify://collections/all"
+        "link": "shopify:\/\/collections\/all"
       }
     },
     "featured_collection_base_3hdGUm": {
       "type": "featured-collection-base",
       "settings": {
-        "title": "<strong>Produk Terlaris</strong>",
+        "title": "<strong>Produk Terlaris<\/strong>",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
@@ -118,14 +109,14 @@
         "heading_8jwa9y": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>SVRG Cross X Weightlifting Shoes</strong>",
+            "heading": "<strong>SVRG Cross X Weightlifting Shoes<\/strong>",
             "heading_size": "h2"
           }
         },
         "text_nVr4TL": {
           "type": "text",
           "settings": {
-            "text": "<p>Cross X Weightlifting Shoes dirancang secara khusus untuk kegiatan angkat besi, seperti angkat berat Olimpiade, powerlifting, dan latihan kekuatan lainnya. Sepatu ini dapat meningkatkan kinerja dan keselamatan untuk pemakainya saat melakukan latihan.</p>",
+            "text": "<p>Cross X Weightlifting Shoes dirancang secara khusus untuk kegiatan angkat besi, seperti angkat berat Olimpiade, powerlifting, dan latihan kekuatan lainnya. Sepatu ini dapat meningkatkan kinerja dan keselamatan untuk pemakainya saat melakukan latihan.<\/p>",
             "text_style": "body"
           }
         },
@@ -133,7 +124,7 @@
           "type": "button",
           "settings": {
             "button_label": "Beli Sekarang",
-            "button_link": "shopify://products/svrg-cross-x-weightlifting-shoes-fitness-shoes-sneakers-gym",
+            "button_link": "shopify:\/\/products\/svrg-cross-x-weightlifting-shoes-fitness-shoes-sneakers-gym",
             "button_style_secondary": false
           }
         }
@@ -144,7 +135,7 @@
         "button_DxFDUm"
       ],
       "settings": {
-        "image": "shopify://shop_images/Artboard_1_900x_7973064c-aa27-4b37-9cea-2b78c26d5cdf_11zon.webp",
+        "image": "shopify:\/\/shop_images\/Artboard_1_900x_7973064c-aa27-4b37-9cea-2b78c26d5cdf_11zon.webp",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -162,7 +153,7 @@
     "diagonal_cross_bar_WaKNHh": {
       "type": "diagonal-cross-bar",
       "settings": {
-        "bar_text": "Latihan Keras * Menjadi Lebih Kuat * Dorong Batasan * Latihan Keras * Menjadi Lebih Kuat * Dorong Batasan * Latihan Keras * Menjadi Lebih Kuat * Dorong Batasan * Latihan Keras * Menjadi Lebih Kuat * Dorong Batasan",
+        "bar_text": "Latihan Keras * Menjadi Lebih Kuat * Lampaui Batasan * Latihan Keras * Menjadi Lebih Kuat * Lampaui Batasan * Latihan Keras * Menjadi Lebih Kuat * Lampaui Batasan * Latihan Keras * Menjadi Lebih Kuat * Lampaui Batasan",
         "background_color": "#63d7d1",
         "background_color2": "#c8d92b",
         "text_color": "#000000",
@@ -174,17 +165,17 @@
       "type": "custom-feature-section",
       "settings": {
         "title_section": "KENAPA HARUS BELI DI WEBSITE SVRG.",
-        "link": "shopify://pages/why-choose-svrg",
-        "benefit_1": "<p>Gratis Ongkir</p>",
-        "benefit_2": "<p>Spesial <em>Packaging</em></p>",
-        "benefit_3": "<p>Jaminan <em>Return/Refund</em></p>",
-        "image": "https://res.cloudinary.com/doq2grch0/image/upload/v1728887876/Artboard-1-_1__pq4rxj.webp",
-        "icon_1": "shopify://shop_images/Artboard-1-_1.webp",
+        "link": "shopify:\/\/pages\/why-choose-svrg",
+        "benefit_1": "<p>Gratis Ongkir<\/p>",
+        "benefit_2": "<p>Spesial <em>Packaging<\/em><\/p>",
+        "benefit_3": "<p>Jaminan <em>Return\/Refund<\/em><\/p>",
+        "image_url": "shopify:\/\/shop_images\/Artboard_1A_08517b21-5934-4c5d-bc84-8feb2d90d2b5.webp",
+        "icon_1": "shopify:\/\/shop_images\/FREE_DELIVERY.svg",
         "read_more_text": "Baca Selengkapnya",
         "title_1": "Gratis Ongkir",
-        "icon_2": "shopify://shop_images/SEPCIAL_PACKAGING.svg",
+        "icon_2": "shopify:\/\/shop_images\/SEPCIAL_PACKAGING.svg",
         "title_2": "Paket Khusus",
-        "icon_3": "shopify://shop_images/RETURN.svg",
+        "icon_3": "shopify:\/\/shop_images\/RETURN.svg",
         "title_3": "Jaminan Uang Kembali",
         "social_text": "KUNJUNGI SOSIAL MEDIA KAMI"
       }
@@ -192,7 +183,7 @@
     "featured_blog_FrKWDC": {
       "type": "featured-blog",
       "settings": {
-        "heading": "<strong>Blog posts</strong>",
+        "heading": "<strong>Blog posts<\/strong>",
         "heading_size": "h2",
         "blog": "the-journey",
         "post_limit": 3,
@@ -213,14 +204,14 @@
         "heading_XeRf6e": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Daftar dan Dapatkan Keuntunganya</strong>",
+            "heading": "<strong>Daftar dan Dapatkan Keuntunganya<\/strong>",
             "heading_size": "h2"
           }
         },
         "paragraph_3dFV7L": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Berlangganan untuk mendapatkan penawaran khusus, hadiah gratis, dan penawaran sekali seumur hidup.</p>"
+            "text": "<p>Berlangganan untuk mendapatkan penawaran khusus, hadiah gratis, dan penawaran sekali seumur hidup.<\/p>"
           }
         },
         "email_form_qRLqJC": {
