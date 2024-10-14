@@ -296,5 +296,5 @@ li.image-banner-collection h1 {
 }
 
 .collection__view-all a:not(.link) {
-  margin-top: 1rem;
+  margin-top: 0rem;
 }
