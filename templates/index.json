@@ -97,7 +97,7 @@
         "quick_add": "none",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
-        "padding_top": 40,
+        "padding_top": 8,
         "padding_bottom": 84
       }
     },
@@ -159,19 +159,21 @@
         "padding_bottom": 100
       }
     },
-    "multicolumn_styled_rCQVzp": {
-      "type": "multicolumn-styled",
+    "custom_feature_section_wngyVP": {
+      "type": "custom-feature-section",
       "settings": {
+        "title_section": "KENAPA HARUS BELI DI WEBSITE SVRG.",
+        "benefit_1": "<p>Gratis Ongkir<\/p>",
+        "benefit_2": "<p>Spesial <em>Packaging<\/em><\/p>",
+        "benefit_3": "<p>Jaminan <em>Return\/Refund<\/em><\/p>",
         "image": "https:\/\/res.cloudinary.com\/doq2grch0\/image\/upload\/v1728641470\/vecteezy_happy-smile-asian-woman-scan-qr-code-for-pay-of-food_22166258.mov.19_24_06_08.Still002_rpl1uv.webp",
         "icon_1": "shopify:\/\/shop_images\/FREE_DELIVERY.svg",
+        "read_more_text": "Baca Selengkapnya",
         "title_1": "Gratis Ongkir",
-        "description_1": "",
         "icon_2": "shopify:\/\/shop_images\/SEPCIAL_PACKAGING.svg",
-        "title_2": "Special Packaging",
-        "description_2": "",
+        "title_2": "Paket Khusus",
         "icon_3": "shopify:\/\/shop_images\/RETURN.svg",
-        "title_3": "Return \/ Refund Guarantee",
-        "description_3": "",
+        "title_3": "Jaminan Uang Kembali",
         "social_text": "KUNJUNGI SOSIAL MEDIA KAMI"
       }
     },
@@ -235,7 +237,7 @@
     "featured_collection_8mpqbj",
     "image_with_text_w4aNU7",
     "diagonal_cross_bar_WaKNHh",
-    "multicolumn_styled_rCQVzp",
+    "custom_feature_section_wngyVP",
     "featured_blog_FrKWDC",
     "newsletter_YpphjE"
   ]

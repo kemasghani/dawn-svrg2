@@ -1,13 +1,13 @@
 <div class="custom-feature-section flex flex-col gap-3 px-[2rem] md:px-[5rem] pt-56">
  <div class="flex flex-col md:flex-row gap-10">
   <div class="upper-section bg-[#dbdbdb68] rounded-[30px] py-20 pl-16 w-[100%]">
-    <h2 class="text-[20px] md:text-[24px]">KENAPA HARUS BELI DI WEBSITE SVRG.</h2>
+    <h2 class="text-[20px] md:text-[24px]">{{ section.settings.title_section }}</h2>
     <ul class="mt-10 mb-14 text-[15px] md:text-[18px] font-normal">
-      <li>Gratis Ongkir</li>
-      <li>Special <i>Packaging</i></li>
-      <li>Jaminan <i>Return/Refund</i></li>
+      <li>{{ section.settings.benefit_1 }}</li>
+      <li>{{ section.settings.benefit_2 }}</li>
+      <li>{{ section.settings.benefit_3 }}</li>
     </ul>
-    <button class="read-more-btn rounded-2xl text-[12px] md:text-[16px]">Read More</button>
+    <button class="read-more-btn rounded-2xl text-[12px] md:text-[16px]">{{ section.settings.read_more_text }}</button>
   </div>
   <div class="flex flex-col w-full">
     <div class="image ">
@@ -115,6 +115,26 @@
   "name": "Custom Feature Section",
   "settings": [
     {
+      "type": "text",
+      "id": "title_section",
+      "label": "Title section"
+    },
+    {
+      "type": "richtext",
+      "id": "benefit_1",
+      "label": "Benefit 1"
+    },
+    {
+      "type": "richtext",
+      "id": "benefit_2",
+      "label": "Benefit 2"
+    },
+    {
+      "type": "richtext",
+      "id": "benefit_3",
+      "label": "Benefit 3"
+    },
+    {
       "type": "url",
       "id": "image",
       "label": "Image url"
@@ -126,15 +146,13 @@
     },
     {
       "type": "text",
-      "id": "title_1",
-      "label": "Title 1",
-      "default": "Gratis Ongkir"
+      "id": "read_more_text",
+      "label": "Read more text"
     },
     {
       "type": "text",
-      "id": "description_1",
-      "label": "Description 1",
-      "default": "Free shipping across Indonesia"
+      "id": "title_1",
+      "label": "Title 1"
     },
     {
       "type": "image_picker",
@@ -144,14 +162,7 @@
     {
       "type": "text",
       "id": "title_2",
-      "label": "Title 2",
-      "default": "Special Packaging"
-    },
-    {
-      "type": "text",
-      "id": "description_2",
-      "label": "Description 2",
-      "default": "Special care in packaging"
+      "label": "Title 2"
     },
     {
       "type": "image_picker",
@@ -161,14 +172,7 @@
     {
       "type": "text",
       "id": "title_3",
-      "label": "Title 3",
-      "default": "Return / Refund Guarantee"
-    },
-    {
-      "type": "text",
-      "id": "description_3",
-      "label": "Description 3",
-      "default": "Easy returns and refunds"
+      "label": "Title 3"
     },
     {
       "type": "text",
