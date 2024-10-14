@@ -76,7 +76,7 @@
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 16,
-        "padding_bottom": 16,
+        "padding_bottom": 32,
         "margin_top": 0
       }
     },
@@ -108,8 +108,8 @@
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 16,
-        "padding_bottom": 16,
-        "margin_top": 56
+        "padding_bottom": 32,
+        "margin_top": 96
       }
     },
     "image_with_text_w4aNU7": {
