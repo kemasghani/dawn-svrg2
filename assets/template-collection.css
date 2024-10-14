@@ -101,12 +101,12 @@ button[disabled='disabled'] svg.arrow-right path {
 }
 
 .button-view-all {
-  background: transparent;
+  background: #63d7d1;
   border: 1px solid #94A3B8;
   font-size: 14px;
   font-weight: 400;
   border-radius: 8px;
-  color: black;
+  color: white;
 }
 
 li.image-banner-collection {
