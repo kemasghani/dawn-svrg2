@@ -13,7 +13,7 @@
   </div>
   <div class="flex flex-col w-full">
     <div class="image ">
-      <img src="{{ section.settings.image_url | img_url: '200x'  }}" alt="{{ section.settings.title_1 }}" class="rounded-tr-[30px] rounded-tl-[30px]">
+      <img src="{{ section.settings.image_url }}" alt="{{ section.settings.title_1 }}" class="rounded-tr-[30px] rounded-tl-[30px]">
     </div>
     <div class="feature-icons bg-[black] flex items-baseline rounded-br-[30px] rounded-bl-[30px] py-10 px-8 w-[100%] h-fit">
       <div class="feature-item flex flex-col items-center gap-10">
@@ -142,7 +142,7 @@
       "label": "Benefit 3"
     },
     {
-      "type": "image_picker",
+      "type": "url",
       "id": "image_url",
       "label": "Image url"
     },
