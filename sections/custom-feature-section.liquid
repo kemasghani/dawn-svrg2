@@ -7,7 +7,9 @@
       <li>{{ section.settings.benefit_2 }}</li>
       <li>{{ section.settings.benefit_3 }}</li>
     </ul>
-    <button class="read-more-btn rounded-2xl text-[12px] md:text-[16px]">{{ section.settings.read_more_text }}</button>
+    <a href="{{ section.settings.link }}">
+      <button class="read-more-btn rounded-2xl text-[12px] md:text-[16px]">{{ section.settings.read_more_text }}</button>
+    </a>
   </div>
   <div class="flex flex-col w-full">
     <div class="image ">
@@ -118,6 +120,11 @@
       "type": "text",
       "id": "title_section",
       "label": "Title section"
+    },
+    {
+      "type": "url",
+      "id": "link",
+      "label": "Button link"
     },
     {
       "type": "richtext",
