@@ -157,7 +157,11 @@ li.image-banner-collection h1 {
     font-size: 27px;
   }
 }
-
+@media screen and (max-width: 1293px){
+  li.image-banner-collection h1{
+    font-size: 22px;
+  }
+}
 .slider-counter.caption span {
   font-size: 12px;
   font-weight: 700;
