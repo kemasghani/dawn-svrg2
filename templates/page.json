@@ -1,14 +1,172 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "rich_text_8QnRmb": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Lp47yC": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Kenapa Harus Beli di SVRG?</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_KzaC3w": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Berolahraga adalah salah satu cara untuk hidup lebih sehat. Apakah Anda sudah mulai melakukan rutinitas olahraga Anda? Apakah Anda mulai mencari-cari peralatan yang dapat menunjang kegiatan olahraga Anda? Tenang, Anda bisa mendapatkan segala yang Anda perlukan untuk aktivitas olahraga yang lebih bersemangat di website SVRG.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Lp47yC",
+        "text_KzaC3w"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_with_text_caPNqc": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_Jd7zJb": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Alat Olahraga Kualitas Premium</strong>",
+            "heading_size": "h2"
+          }
+        },
+        "text_JfzPrL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Produk olahraga di SVRG.ID terbuat dari bahan berkualitas tinggi yang dirancang khusus untuk meningkatkan performa Anda dalam setiap latihan. Dibuat dari material terbaik, SVRG menjamin semua alat olahraga di sini cocok untuk penggunaan jangka panjang karena awet!</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Jd7zJb",
+        "text_JfzPrL"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/jual_alat_gym_f079fec8-55b5-41dd-a3a8-c4ca5dd4048a.webp",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_YbpJqe": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_4CUdYD": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Pilihan Lengkap untuk Semua Jenis Olahraga</strong>",
+            "heading_size": "h2"
+          }
+        },
+        "text_TykCFq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>SVRG.ID menyediakan berbagai keperluan olahraga mulai dari gym, yoga, pilates, hingga olahraga outdoor. Anda tak perlu repot mencari di banyak tempat, hanya di satu website SVRG.ID, Anda bisa temukan semua keperluan olahraga yang Anda butuhkan</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_4CUdYD",
+        "text_TykCFq"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/svrg-banner-bawa-gym-mu-ke-level-selanjutnya.jpg",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_k4Xcce": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_mkr4Mc": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Pengiriman Cepat dan Aman</strong>",
+            "heading_size": "h2"
+          }
+        },
+        "text_DwBFaQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>SVRG.ID menawarkan layanan pengiriman cepat dengan pengemasan aman. Anda tak perlu khawatir, karena kami memastikan barang yang Anda beli sampai ke rumah Anda dalam kondisi terbaik.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_mkr4Mc",
+        "text_DwBFaQ"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/vecteezy_happy-smile-asian-woman-scan-qr-code-for-pay-of-food_22166258.mov.19_24_06_08.Still002.webp",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "rich_text_8QnRmb",
+    "image_with_text_caPNqc",
+    "image_with_text_YbpJqe",
+    "image_with_text_k4Xcce"
   ]
 }
