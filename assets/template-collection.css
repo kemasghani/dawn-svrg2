@@ -1,9 +1,10 @@
 /* custom css */
-@media screen and (max-width: 849px){
-  .collection__view-all .button{
-  min-height: 40px;
+@media screen and (max-width: 849px) {
+  .collection__view-all .button {
+    min-height: 40px;
+  }
 }
-}
+
 .line-separator {
   display: block !important;
   transform: translateX(-20%);
@@ -107,7 +108,6 @@ button[disabled='disabled'] svg.arrow-right path {
 
 .button-view-all {
   background: #63d7d1;
-  border: 1px solid #94A3B8;
   font-size: 14px;
   font-weight: 400;
   border-radius: 8px;
@@ -152,16 +152,19 @@ li.image-banner-collection h1 {
   padding: 0 16px;
   font-size: 29px;
 }
-@media screen and (max-width: 1345px){
-  li.image-banner-collection h1{
+
+@media screen and (max-width: 1345px) {
+  li.image-banner-collection h1 {
     font-size: 27px;
   }
 }
-@media screen and (max-width: 1293px){
-  li.image-banner-collection h1{
+
+@media screen and (max-width: 1293px) {
+  li.image-banner-collection h1 {
     font-size: 22px;
   }
 }
+
 .slider-counter.caption span {
   font-size: 12px;
   font-weight: 700;
@@ -213,16 +216,19 @@ li.image-banner-collection h1 {
     font-size: 23px;
   }
 }
+
 @media screen and (max-width: 366px) {
   li.image-banner-collection h1 {
     font-size: 13px;
   }
 }
+
 @media screen and (max-width: 331px) {
   li.image-banner-collection h1 {
     font-size: 11px;
   }
 }
+
 @media screen and (max-width: 989px) {
   .collection .slider.slider--tablet {
     margin-bottom: 1.5rem;

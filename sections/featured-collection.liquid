@@ -271,6 +271,16 @@
     {%- endif -%}
   </div>
 </div>
+{% if section.settings.show_view_all_category %}
+  <a href="{{ section.settings.link }}">
+    <div class="flex gap-5 button border-none w-[70%] md:w-[50%] mx-auto mt-[30px]">
+      <button class="text-[12px] md:text-[17px] text-black">{{ section.settings.button_text }}</button>
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black">
+        <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/>
+      </svg>
+    </div>
+  </a>`
+{%- endif -%}
 
 <script>
   const countdownElementFeatured = document.getElementById(`countdown`);
@@ -306,6 +316,23 @@
     "groups": ["header", "footer"]
   },
   "settings": [
+    {
+      "type": "url",
+      "id": "link",
+      "label": "Button Link"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Lihat Semua Category"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_view_all_category",
+      "default": false,
+      "label": "Show view all categories"
+    },
     {
       "type": "inline_richtext",
       "id": "title",

@@ -4,7 +4,7 @@
       "type": "custom-fullwidth-video",
       "settings": {
         "video": "shopify:\/\/files\/videos\/1003 (2) (1).mp4",
-        "video_heading": "Maksimalkan Latihan Fisikmu dengan SVRG.",
+        "video_heading": "Maksimalkan Olahragamu dengan SVRG.",
         "video_description": "Perlengkapan Olahraga Berkinerja Tinggi yang Dirancang untuk Kenyamanan, Fleksibilitas, dan Daya Tahan.",
         "button_text": "Belanja Sekarang",
         "link": "shopify:\/\/collections\/all"
@@ -42,6 +42,9 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
+        "link": "",
+        "button_text": "Lihat Semua Category",
+        "show_view_all_category": false,
         "title": "Featured products",
         "heading_size": "h2",
         "text_button_all": "Lihat Semua",
@@ -74,6 +77,9 @@
     "featured_collection_8mpqbj": {
       "type": "featured-collection",
       "settings": {
+        "link": "shopify:\/\/collections",
+        "button_text": "Lihat Semua Category",
+        "show_view_all_category": true,
         "title": "Featured products",
         "heading_size": "h2",
         "text_button_all": "Lihat Semua",
@@ -109,14 +115,14 @@
         "heading_8jwa9y": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>SVRG Cross X Weightlifting Shoes<\/strong>",
+            "heading": "<strong>Cross X Weightlifting Shoes<\/strong>",
             "heading_size": "h2"
           }
         },
         "text_nVr4TL": {
           "type": "text",
           "settings": {
-            "text": "<p>Cross X Weightlifting Shoes dirancang secara khusus untuk kegiatan angkat besi, seperti angkat berat Olimpiade, powerlifting, dan latihan kekuatan lainnya. Sepatu ini dapat meningkatkan kinerja dan keselamatan untuk pemakainya saat melakukan latihan.<\/p>",
+            "text": "<p>Cross X Weightlifting Shoes dirancang secara khusus untuk kegiatan angkat besi, seperti powerlifting, dan latihan squat lainnya. <\/p>",
             "text_style": "body"
           }
         },
@@ -153,7 +159,7 @@
     "diagonal_cross_bar_WaKNHh": {
       "type": "diagonal-cross-bar",
       "settings": {
-        "bar_text": "Latihan Keras * Menjadi Lebih Kuat * Lampaui Batasan * Latihan Keras * Menjadi Lebih Kuat * Lampaui Batasan * Latihan Keras * Menjadi Lebih Kuat * Lampaui Batasan * Latihan Keras * Menjadi Lebih Kuat * Lampaui Batasan",
+        "bar_text": "We'd love to have you as our reseller. Contact us today and let's grow together !",
         "background_color": "#63d7d1",
         "background_color2": "#c8d92b",
         "text_color": "#000000",
@@ -164,11 +170,11 @@
     "custom_feature_section_wngyVP": {
       "type": "custom-feature-section",
       "settings": {
-        "title_section": "KENAPA HARUS BELI DI WEBSITE SVRG.",
+        "title_section": "KENAPA HARUS BELI DI  SVRG.",
         "link": "shopify:\/\/pages\/why-choose-svrg",
-        "benefit_1": "<p>Gratis Ongkir<\/p>",
-        "benefit_2": "<p>Spesial <em>Packaging<\/em><\/p>",
-        "benefit_3": "<p>Jaminan <em>Return\/Refund<\/em><\/p>",
+        "benefit_1": "<p>Gratis<\/p>",
+        "benefit_2": "<p>Spesial <\/p>",
+        "benefit_3": "<p>Jaminan <\/p>",
         "image_url": "https:\/\/res.cloudinary.com\/doq2grch0\/image\/upload\/v1728894178\/Artboard_1A_ssnith.webp",
         "icon_1": "shopify:\/\/shop_images\/FREE_DELIVERY.svg",
         "read_more_text": "Baca Selengkapnya",

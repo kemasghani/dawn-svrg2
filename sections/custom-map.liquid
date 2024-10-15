@@ -1,41 +1,84 @@
 <!-- Custom Map Section with Leaflet -->
 <div class="map-section">
-    <div id="map" style="height: 500px; width: 100%;z-index:-1;"></div>
+    <div id="map" style="width: 100%;z-index:0;"></div>
 
-    <div class="locations-list">
+    <div class="locations-list dekstop">
       <ul>
         {% for block in section.blocks %}
         <li class="location-item" data-lat="{{ block.settings.latitude }}" data-lng="{{ block.settings.longitude }}">
           <div class="location-title font-[600] flex justify-between">
-            <div class="flex gap-3">
+            <div class="flex gap-3 map-item">
                 {% render 'tower' %}
                 {{ block.settings.title }}
             </div>
             <a href="{{ block.settings.link_maps }}" target="_blank" class="map-container">{% render 'map' %}</a>
           </div>
-          <div class="location-address">{{ block.settings.address }}</div>
+          <div class="location-address map-item">{{ block.settings.address }}</div>
         </li>
         {% endfor %}
       </ul>
     </div>
   </div>
+  <div class="locations-list mobile">
+    <ul>
+      {% for block in section.blocks %}
+      <li class="location-item" data-lat="{{ block.settings.latitude }}" data-lng="{{ block.settings.longitude }}">
+        <div class="location-title font-[600] flex justify-between">
+          <div class="flex gap-3">
+              {% render 'tower' %}
+              {{ block.settings.title }}
+          </div>
+          <a href="{{ block.settings.link_maps }}" target="_blank" class="map-container">{% render 'map' %}</a>
+        </div>
+        <div class="location-address">{{ block.settings.address }}</div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
 
 <style>
 
     .map-section {
-      display: flex;
-      flex-wrap: wrap;
-      padding: 50px;
+        height: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 50px;
+    }
+    .locations-list.mobile{
+        display: none;
+    }
+    .locations-list {
+        width: 500px;
+      }
+    @media screen and (max-width: 749px){
+        .map-section {
+            height: 300px;
+            flex-direction: row;
+            padding: 20px;
+        }
+        .locations-list.dekstop{
+            display: none;
+        }
+        .locations-list.mobile{
+            display: block;
+        }
+        .locations-list {
+            width: 100%;
+        }
+        ul{
+            padding: 0 20px !important;
+        }
+        .map-item{
+            font-size: 13px;
+        }
+
     }
 
     #map {
       flex: 1;
     }
-    .map-section ul{
+    .locations-list ul{
         list-style:none;
-    }
-    .locations-list {
-      width: 500px;
     }
     .location-address {
         margin-top: 23px;
@@ -63,7 +106,7 @@
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         // Initialize the Leaflet map with a zoom level of 10
-        var map = L.map('map').setView([-6.917464, 107.619123], 10); // Zoom level set to 10 for a more zoomed-out view
+        var map = L.map('map').setView([-6.917464, 107.619123], 3); // Zoom level set to 10 for a more zoomed-out view
 
         // Add the tile layer (map background)
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {

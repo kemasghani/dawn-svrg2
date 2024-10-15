@@ -88,7 +88,7 @@
             {%- endunless -%}
           {%- endif -%}
           <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
-          <span class="price-item price-item--regular">
+          <span class="price-item price-item--regular text-[13px] !font-[500] md:text-[16px]">
             {{-
               'products.product.volume_pricing.price_range'
               | t: minimum: money_price_min, maximum: money_price_max
@@ -96,7 +96,7 @@
           </span>
         {%- else -%}
           <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
-          <span class="price-item price-item--regular">
+          <span class="price-item price-item--regular text-[13px] !font-[500] md:text-[16px]">
             {{ money_price }}
           </span>
         {%- endif -%}
@@ -120,10 +120,10 @@
           </span>
         {%- endunless -%}
         <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.sale_price' | t }}</span>
-        <span class="price-item price-item--sale price-item--last mt-10 text-[15px] md:text-[18px] text-[#ff2e00]">
+        <span class="price-item price-item--sale price-item--last mt-10 text-[13px] !font-[500] md:text-[16px] text-[#ff2e00]">
           {{ money_price }}
         </span>
-        <span class="px-4 py-3 bg-[#fee2e2] text-[#dc2626] font-[600] text-[15px] rounded-[10px] discount-main-product hidden">
+        <span class="px-4 py-3 bg-[#fee2e2] text-[#dc2626] !font-[600] text-[15px] rounded-[10px] discount-main-product hidden">
           {%- if discount_percentage > 0 -%}
             {{ discount_percentage | round }}%
           {%- endif -%}
