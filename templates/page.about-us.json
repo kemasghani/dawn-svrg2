@@ -11,7 +11,6 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
@@ -38,6 +37,7 @@
         "heading_Lp47yC",
         "text_KzaC3w"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "left",
         "content_alignment": "left",
@@ -69,6 +69,7 @@
         "heading_Jd7zJb",
         "text_JfzPrL"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/jual_alat_gym_f079fec8-55b5-41dd-a3a8-c4ca5dd4048a.webp",
         "height": "small",
@@ -107,6 +108,7 @@
         "heading_4CUdYD",
         "text_TykCFq"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/svrg-banner-bawa-gym-mu-ke-level-selanjutnya.jpg",
         "height": "small",
@@ -145,6 +147,7 @@
         "heading_mkr4Mc",
         "text_DwBFaQ"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/snapedit_1728888483665_1.webp",
         "height": "small",
