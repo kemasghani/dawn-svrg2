@@ -14,21 +14,18 @@
         "heading_Lp47yC": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Tentang Kita<\/strong>",
+            "heading": "<strong>Tentang Kami</strong>",
             "heading_size": "h1"
           }
         },
         "text_KzaC3w": {
           "type": "text",
           "settings": {
-            "text": "<p>The Republic of Svarga adalah perusahaan distributor alat olahraga terkemuka yang didirikan pada tahun 2018 di Surabaya, Indonesia. Kami memulai bisnis ini dengan melihat kebutuhan akan peralatan home gym dan perlengkapan workout berkualitas dengan harga terjangkau. Sejak didirikan, kami selalu fokus pada pengalaman olahraga pelanggan yang menyenangkan dan terus bergerak untuk melampaui harapan pelanggan dalam hal inovasi, layanan, dan nilai.<\/p><p>Dengan koleksi katalog yang mencakup lebih dari 1000 produk, mulai dari pakaian dan peralatan workout, yoga, running, hingga aksesoris, kami siap memenuhi kebutuhan olahraga dan gaya hidup sehat Anda. Kami juga berkembang dalam hal toko retail dengan tersedia di beberapa kota di Indonesia.<\/p>"
+            "text": "<p>SVRG adalah perusahaan distributor alat olahraga terbaik yang didirikan sejak tahun 2018 di Surabaya, Indonesia. Kami memulai bisnis ini karena melihat adanya kebutuhan akan peralatan home gym dan perlengkapan workout berkualitas dengan harga terjangkau. Sejak didirikan, kami selalu fokus pada pengalaman olahraga pelanggan yang menyenangkan dan terus bergerak untuk memberikan kepuasan terhadap pelanggan dalam hal inovasi, layanan, dan nilai guna produk.</p><p>Dengan koleksi katalog yang mencakup lebih dari 1000 produk, mulai dari pakaian dan peralatan workout, Pilates, yoga, running, hingga aksesoris, kami siap memenuhi kebutuhan olahraga dan menemani perjalanan hidup sehat Anda.</p>"
           }
         }
       },
-      "block_order": [
-        "heading_Lp47yC",
-        "text_KzaC3w"
-      ],
+      "block_order": ["heading_Lp47yC", "text_KzaC3w"],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -44,24 +41,21 @@
         "heading_Jd7zJb": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Alat Olahraga Kualitas Premium<\/strong>",
+            "heading": "<strong>Alat Olahraga Kualitas Premium</strong>",
             "heading_size": "h2"
           }
         },
         "text_JfzPrL": {
           "type": "text",
           "settings": {
-            "text": "<p>Produk olahraga di SVRG.ID terbuat dari bahan berkualitas tinggi yang dirancang khusus untuk meningkatkan performa Anda dalam setiap latihan. Dibuat dari material terbaik, SVRG menjamin semua alat olahraga di sini cocok untuk penggunaan jangka panjang karena awet!<\/p>",
+            "text": "<p>Produk olahraga di SVRG.ID terbuat dari bahan berkualitas tinggi yang dirancang khusus untuk meningkatkan performa Anda dalam setiap latihan. Dibuat dari material terbaik, SVRG. menjamin semua alat olahraga yang kami jual cocok untuk penggunaan jangka panjang.</p>",
             "text_style": "body"
           }
         }
       },
-      "block_order": [
-        "heading_Jd7zJb",
-        "text_JfzPrL"
-      ],
+      "block_order": ["heading_Jd7zJb", "text_JfzPrL"],
       "settings": {
-        "image": "shopify:\/\/shop_images\/DSC07112.webp",
+        "image": "shopify://shop_images/DSC07112.webp",
         "height": "small",
         "desktop_image_width": "small",
         "layout": "image_first",
@@ -82,65 +76,24 @@
         "heading_4CUdYD": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Pilihan Lengkap untuk Semua Jenis Olahraga<\/strong>",
+            "heading": "<strong>Pilihan Lengkap untuk Semua Jenis Olahraga</strong>",
             "heading_size": "h2"
           }
         },
         "text_TykCFq": {
           "type": "text",
           "settings": {
-            "text": "<p>SVRG.ID menyediakan berbagai keperluan olahraga mulai dari gym, yoga, pilates, hingga olahraga outdoor. Anda tak perlu repot mencari di banyak tempat, hanya di satu website SVRG.ID, Anda bisa temukan semua keperluan olahraga yang Anda butuhkan<\/p>",
+            "text": "<p>SVRG. menyediakan berbagai keperluan olahraga mulai dari gym, yoga, Pilates, hingga olahraga outdoor. Anda tak perlu repot mencari di banyak tempat, hanya di satu website SVRG.ID, Anda bisa temukan semua keperluan olahraga yang Anda butuhkan.</p>",
             "text_style": "body"
           }
         }
       },
-      "block_order": [
-        "heading_4CUdYD",
-        "text_TykCFq"
-      ],
+      "block_order": ["heading_4CUdYD", "text_TykCFq"],
       "settings": {
-        "image": "shopify:\/\/shop_images\/DSC07106.webp",
+        "image": "shopify://shop_images/DSC07106.webp",
         "height": "small",
         "desktop_image_width": "small",
         "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "image_with_text_k4Xcce": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_mkr4Mc": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>Pengiriman Cepat dan Aman<\/strong>",
-            "heading_size": "h2"
-          }
-        },
-        "text_DwBFaQ": {
-          "type": "text",
-          "settings": {
-            "text": "<p>SVRG.ID menawarkan layanan pengiriman cepat dengan pengemasan aman. Anda tak perlu khawatir, karena kami memastikan barang yang Anda beli sampai ke rumah Anda dalam kondisi terbaik.<\/p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_mkr4Mc",
-        "text_DwBFaQ"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/DSC05555.webp",
-        "height": "small",
-        "desktop_image_width": "small",
-        "layout": "image_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
@@ -157,7 +110,6 @@
     "main",
     "rich_text_8QnRmb",
     "image_with_text_caPNqc",
-    "image_with_text_YbpJqe",
-    "image_with_text_k4Xcce"
+    "image_with_text_YbpJqe"
   ]
 }
