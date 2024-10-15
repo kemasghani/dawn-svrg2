@@ -1,0 +1,155 @@
+<!-- Custom Map Section with Leaflet -->
+<div class="map-section">
+    <div id="map" style="height: 500px; width: 100%;z-index:-1;"></div>
+
+    <div class="locations-list">
+      <ul>
+        {% for block in section.blocks %}
+        <li class="location-item" data-lat="{{ block.settings.latitude }}" data-lng="{{ block.settings.longitude }}">
+          <div class="location-title font-[600] flex justify-between">
+            <div class="flex gap-3">
+                {% render 'tower' %}
+                {{ block.settings.title }}
+            </div>
+            <a href="{{ block.settings.link_maps }}" target="_blank" class="map-container">{% render 'map' %}</a>
+          </div>
+          <div class="location-address">{{ block.settings.address }}</div>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+<style>
+
+    .map-section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 50px;
+    }
+
+    #map {
+      flex: 1;
+    }
+    .map-section ul{
+        list-style:none;
+    }
+    .locations-list {
+      width: 500px;
+    }
+    .location-address {
+        margin-top: 23px;
+    }
+
+    .location-item {
+      border-bottom: 1px solid #ccc;
+
+      padding: 30px;
+      height: fit-content;
+    }
+    .location-item:hover {
+      background-color: #f0f0f0;
+    }
+
+    .map-container {
+        cursor: pointer;
+        transition: transform 0.3s ease;
+      }
+      .map-container:hover {
+        transform: scale(1.3); /* Zoom in slightly on hover */
+      }
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Initialize the Leaflet map with a zoom level of 10
+        var map = L.map('map').setView([-6.917464, 107.619123], 10); // Zoom level set to 10 for a more zoomed-out view
+
+        // Add the tile layer (map background)
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Store markers in an array
+        var markers = [];
+
+        // Add a marker for each location
+        document.querySelectorAll('.location-item').forEach(function(item) {
+            var lat = item.getAttribute('data-lat');
+            var lng = item.getAttribute('data-lng');
+            var title = item.querySelector('.location-title').innerText;
+            var marker = L.marker([lat, lng]).addTo(map).bindPopup(title);
+
+            markers.push(marker);
+
+            // Add click event to focus the map on the marker when clicked
+            item.addEventListener('click', function() {
+                map.setView([lat, lng], 16);
+                marker.openPopup();
+            });
+        });
+
+        // Adjust the map bounds to fit all markers
+            if (markers.length > 0) {
+            var group = new L.featureGroup(markers);
+            map.fitBounds(group.getBounds());
+            }
+        });
+</script>
+
+  {% schema %}
+  {
+    "name": "Custom Map Section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "section_title",
+        "label": "Section Title",
+        "default": "Our Locations"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "location",
+        "name": "Location",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Location Title",
+            "default": "Location Name"
+          },
+          {
+            "type": "text",
+            "id": "address",
+            "label": "Location Address",
+            "default": "Address details"
+          },
+          {
+            "type": "url",
+            "id": "link_maps",
+            "label": "Link Google Maps"
+          },
+          {
+            "type": "text",
+            "id": "latitude",
+            "label": "Latitude",
+            "default": "-6.917464"
+          },
+          {
+            "type": "text",
+            "id": "longitude",
+            "label": "Longitude",
+            "default": "107.619123"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Custom Map Section",
+        "category": "Custom"
+      }
+    ]
+  }
+  {% endschema %}
