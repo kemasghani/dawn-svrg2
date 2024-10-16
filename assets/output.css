@@ -107,7 +107,7 @@
 }
 
 /*
-! tailwindcss v3.4.13 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.14 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -550,7 +550,7 @@ video {
 
 /* Make elements with the HTML hidden attribute stay hidden by default */
 
-[hidden] {
+[hidden]:where(:not([hidden="until-found"])) {
   display: none;
 }
 
@@ -713,10 +713,6 @@ b,
   margin-top: 3.5rem;
 }
 
-.mt-28 {
-  margin-top: 7rem;
-}
-
 .mt-7 {
   margin-top: 1.75rem;
 }
@@ -727,6 +723,18 @@ b,
 
 .mt-\[30px\] {
   margin-top: 30px;
+}
+
+.mt-\[\] {
+  margin-top: ;
+}
+
+.mt-\[1\] {
+  margin-top: 1;
+}
+
+.mt-\[100px\] {
+  margin-top: 100px;
 }
 
 .line-clamp-2 {

@@ -3624,3 +3624,14 @@ details-disclosure>details {
     transform: translateX(100%) scaleX(0);
   }
 }
+
+@font-face {
+  font-family: 'Bornstrong Bold';
+  src: url('https://cdn.shopify.com/s/files/1/0688/7325/7256/files/BornStrong_Bold.woff?v=1729046643') format('woff');
+  font-display: swap;
+  font-style: normal;
+}
+
+.video-overlay-content h1 {
+  font-family: 'Bornstrong Bold' !important;
+}

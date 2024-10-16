@@ -1,0 +1,180 @@
+<!-- reviews-section.liquid -->
+<section class="reviews-section mt-[100px]">
+    <div class="reviews-container">
+    <h2 class="inline-richtext {{ section.settings.heading_size }}">{{ section.settings.heading }}</h2>
+      <div class="reviews-slider">
+        {% for block in section.blocks %}
+          <div class="review-slide">
+            <div class="review-content">
+              <h3>{{ block.settings.product_name }}</h3>
+              <p class="review-text">"{{ block.settings.review_text }}"</p>
+              <div class="reviewer-info">
+                <img class="reviewer-image" src="{{ block.settings.reviewer_image | image_url }}" alt="{{ block.settings.reviewer_name }}">
+                <p class="reviewer-name">{{ block.settings.reviewer_name }}</p>
+                <p class="reviewer-title">{{ block.settings.reviewer_title }}</p>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .reviews-section {
+      padding: 50px;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+    .reviews-section h2{
+        margin-bottom: 40px;
+        font-size:
+    }
+    .reviews-container {
+      max-width: 1900px;
+      margin: 0 auto;
+    }
+
+    .reviews-slider {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 20px;
+      padding-bottom: 50px;
+    }
+
+    .review-slide {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      scroll-snap-align: start;
+    }
+    .review-content{
+        width: 400px;
+    }
+    @media screen and (max-width: 500px) {
+        .review-content{
+            width: 280px;
+        }
+    }
+    .review-content h3 {
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .review-text {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .reviewer-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .reviewer-image {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .reviewer-name {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .reviewer-title {
+      font-size: 14px;
+      color: #999;
+    }
+  </style>
+
+  {% schema %}
+  {
+    "name": "Reviews Section",
+    "settings": [
+      {
+        "type": "inline_richtext",
+        "id": "heading",
+        "label": "Section Heading",
+        "default": "SVRG's Review"
+      },
+      {
+        "type": "select",
+        "id": "heading_size",
+        "options": [
+          {
+            "value": "h2",
+            "label": "t:sections.all.heading_size.options__1.label"
+          },
+          {
+            "value": "h1",
+            "label": "t:sections.all.heading_size.options__2.label"
+          },
+          {
+            "value": "h0",
+            "label": "t:sections.all.heading_size.options__3.label"
+          },
+          {
+            "value": "hxl",
+            "label": "t:sections.all.heading_size.options__4.label"
+          },
+          {
+            "value": "hxxl",
+            "label": "t:sections.all.heading_size.options__5.label"
+          }
+        ],
+        "default": "h1",
+        "label": "t:sections.all.heading_size.label"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "block",
+        "name": "Review",
+        "settings": [
+          {
+            "type": "text",
+            "id": "product_name",
+            "label": "Product Name",
+            "default": "Ekata Series - Plain Edition"
+          },
+          {
+            "type": "textarea",
+            "id": "review_text",
+            "label": "Review Text",
+            "default": "Favorit banget asliii, soalnya ada garis tengah, jadi untuk centeringnya lebih mudah."
+          },
+          {
+            "type": "image_picker",
+            "id": "reviewer_image",
+            "label": "Reviewer Image"
+          },
+          {
+            "type": "text",
+            "id": "reviewer_name",
+            "label": "Reviewer Name",
+            "default": "Andienaisyah"
+          },
+          {
+            "type": "text",
+            "id": "reviewer_title",
+            "label": "Reviewer Title",
+            "default": "Indonesian Singer"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Reviews",
+        "category": "Custom"
+      }
+    ]
+  }
+  {% endschema %}

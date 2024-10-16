@@ -159,7 +159,7 @@
     "diagonal_cross_bar_WaKNHh": {
       "type": "diagonal-cross-bar",
       "settings": {
-        "bar_text": "We'd love to have you as our reseller. Contact us today and let's grow together !",
+        "bar_text": "We'd love to have you as our reseller. Contact us today and let's grow together !    We'd love to have you as our reseller. Contact us today and let's grow together !",
         "background_color": "#63d7d1",
         "background_color2": "#c8d92b",
         "text_color": "#000000",
@@ -184,6 +184,105 @@
         "icon_3": "shopify:\/\/shop_images\/RETURN.svg",
         "title_3": "Jaminan Uang Kembali",
         "social_text": "KUNJUNGI SOSIAL MEDIA KAMI"
+      }
+    },
+    "review_ma6n9G": {
+      "type": "review",
+      "blocks": {
+        "block_L6PBWg": {
+          "type": "block",
+          "settings": {
+            "product_name": "Ekata Series - Limited Edition",
+            "review_text": "\"Ga licin sama sekali, suprise that this kind of mat exist honestly lollll, thank you ilove it!\"",
+            "reviewer_image": "shopify:\/\/shop_images\/svrg-petite-diva.jpg",
+            "reviewer_name": "Petitediva",
+            "reviewer_title": "Indonesian Influencer"
+          }
+        },
+        "block_frnJid": {
+          "type": "block",
+          "settings": {
+            "product_name": "Ekata Series - Limited Edition",
+            "review_text": "So cool!!! Suka banget, tebell dan stickyy,\nThank you Svarga.",
+            "reviewer_image": "shopify:\/\/shop_images\/svrg-penyogastar.jpg",
+            "reviewer_name": "Penyogastar",
+            "reviewer_title": "Celebrity Yoga Instructor"
+          }
+        },
+        "block_AzqapY": {
+          "type": "block",
+          "settings": {
+            "product_name": "Ekata Series - Darbotz Mats",
+            "review_text": "Hi Svarga! Darbotz Mats Super coollll omg, coolest collab & baru sadar Svarga dari Surabaya, bangga bgt krn aku juga dari Surabaya hehee!\nKeep up the good works guys!!",
+            "reviewer_image": "shopify:\/\/shop_images\/svrg-rania-putrisari_1.jpg",
+            "reviewer_name": "Rania Putrisari",
+            "reviewer_title": "Indonesian Model"
+          }
+        },
+        "block_krCpeq": {
+          "type": "block",
+          "settings": {
+            "product_name": "Ekata Series - Plain Edition",
+            "review_text": "Favorit banget asliii, soalnya ada garis tengah, jadi untuk centeringnya lebih mudah.",
+            "reviewer_image": "shopify:\/\/shop_images\/svrg-andien-icon.jpg",
+            "reviewer_name": "Andienaisyah",
+            "reviewer_title": "Indonesian Singer"
+          }
+        },
+        "block_F7XEY7": {
+          "type": "block",
+          "settings": {
+            "product_name": "Ekata Series - Limited Edition",
+            "review_text": "I love it, grip-nya jadi bener2 enak bngt...",
+            "reviewer_image": "shopify:\/\/shop_images\/svrg-chelsea-olivia.jpg",
+            "reviewer_name": "Chelseaoliviaa",
+            "reviewer_title": "Indonesian Celebrity"
+          }
+        },
+        "block_DQ9CpN": {
+          "type": "block",
+          "settings": {
+            "product_name": "Resistance Bands",
+            "review_text": "Thankyou yaa resistance bandnya. Kualitasnya bagus sekali",
+            "reviewer_image": "shopify:\/\/shop_images\/svrg-maretto-aufra.jpg",
+            "reviewer_name": "Marettoaufra",
+            "reviewer_title": "Calisthenics Specialist"
+          }
+        },
+        "block_JxmVRJ": {
+          "type": "block",
+          "settings": {
+            "product_name": "Shuroo Series - Sweat Smile Repeat.",
+            "review_text": "love the design and the quality",
+            "reviewer_image": "shopify:\/\/shop_images\/svrg-jryan-karsten.jpg",
+            "reviewer_name": "Jryankarsten",
+            "reviewer_title": "Indonesian Model"
+          }
+        },
+        "block_mFMXqj": {
+          "type": "block",
+          "settings": {
+            "product_name": "Ekata Limited Edition - Darbotz",
+            "review_text": "Insane bagus banget. The mat so prettyyy!!",
+            "reviewer_image": "shopify:\/\/shop_images\/svrg-raisa.jpg",
+            "reviewer_name": "Raisa6690",
+            "reviewer_title": "Indonesian Singer"
+          }
+        }
+      },
+      "block_order": [
+        "block_L6PBWg",
+        "block_frnJid",
+        "block_AzqapY",
+        "block_krCpeq",
+        "block_F7XEY7",
+        "block_DQ9CpN",
+        "block_JxmVRJ",
+        "block_mFMXqj"
+      ],
+      "settings": {
+        "heading": "<strong>SVRG's Review<\/strong>",
+        "heading_size": "h2"
       }
     },
     "featured_blog_FrKWDC": {
@@ -247,6 +346,7 @@
     "image_with_text_w4aNU7",
     "diagonal_cross_bar_WaKNHh",
     "custom_feature_section_wngyVP",
+    "review_ma6n9G",
     "featured_blog_FrKWDC",
     "newsletter_YpphjE"
   ]

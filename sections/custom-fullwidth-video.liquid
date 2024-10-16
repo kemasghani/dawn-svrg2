@@ -13,9 +13,13 @@
 
     <!-- Overlay content container -->
     <div class="video-overlay-content flex flex-col gap-10">
+      <div class="text-content-gradient"></div>
 
-      <h1 class="text-[70px] font-[600] text-white">{{ section.settings.video_heading }}</h1>
-      <p class="text-[17px] font-[300]">{{ section.settings.video_description }}</p>
+      <!-- Text content on top of the gradient -->
+      <div class="text-content-overlay flex flex-col gap-10">
+        <h1 class="text-[70px] font-[600] text-white">{{ section.settings.video_heading }}</h1>
+        <p class="text-[17px] font-[300]">{{ section.settings.video_description }}</p>
+      </div>
       <a href="{{ section.settings.link }}">
         <div class="flex gap-5 button border-none">
           <button class="text-[13px] md:text-[17px] text-black">{{ section.settings.button_text }}</button>
@@ -27,10 +31,27 @@
     </div>
   </div>
 <style>
+.video-overlay-content div:empty{
+  display: block;
+}
   #fullwidth-video-section {
     width: 100vw;
   }
+  .text-content-overlay {
+    position: relative;
+    z-index: 2; /* Keep the text above the gradient */
+  }
 
+  .text-content-gradient {
+    border-radius: 40px;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 100%;
+    height: 130%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); /* Gradasi hitam ke transparan */
+    z-index: 1;
+  }
   .fullwidth-video-wrapper {
     position: relative;
     width: 100%;
@@ -51,12 +72,13 @@
     text-align: center;
     color: white;
     z-index: 1;
+    width: 60%;
   }
 
   /* Responsive styles */
   @media screen and (max-width: 1420px) {
     .video-overlay-content {
-      width: 60%;
+      width: 70%;
     }
   }
   @media screen and (max-width: 1190px) {
