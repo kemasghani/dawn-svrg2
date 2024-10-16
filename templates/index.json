@@ -169,6 +169,7 @@
     },
     "custom_feature_section_wngyVP": {
       "type": "custom-feature-section",
+      "disabled": true,
       "settings": {
         "title_section": "KENAPA HARUS BELI DI  SVRG.",
         "link": "shopify:\/\/pages\/why-choose-svrg",
@@ -193,7 +194,7 @@
           "type": "block",
           "settings": {
             "product_name": "Ekata Series - Limited Edition",
-            "review_text": "\"Ga licin sama sekali, suprise that this kind of mat exist honestly lollll, thank you ilove it!\"",
+            "review_text": "Ga licin sama sekali, suprise that this kind of mat exist honestly lollll, thank you ilove it!",
             "reviewer_image": "shopify:\/\/shop_images\/svrg-petite-diva.jpg",
             "reviewer_name": "Petitediva",
             "reviewer_title": "Indonesian Influencer"
@@ -336,6 +337,33 @@
         "padding_top": 100,
         "padding_bottom": 52
       }
+    },
+    "multicolumn_styled_8DinCN": {
+      "type": "multicolumn-styled",
+      "settings": {
+        "image_1": "shopify:\/\/shop_images\/3_Grid_White-04.jpg",
+        "title_1": "KENAPA HARUS BELI DI SVRG.",
+        "benefit_1": "Gratis Ongkir",
+        "benefit_2": "Pengemasan Spesial",
+        "benefit_3": "Jaminan Return",
+        "link_1": "shopify:\/\/pages\/why-choose-svrg",
+        "button_text_1": "Baca Selengkapnya",
+        "icon_1": "shopify:\/\/shop_images\/Delivery.svg",
+        "icon_text_1": "Gratis Ongkir",
+        "icon_2": "shopify:\/\/shop_images\/SEPCIAL_PACKAGING.svg",
+        "icon_text_2": "Pengemasan Spesial",
+        "icon_3": "shopify:\/\/shop_images\/RETURN.svg",
+        "icon_text_3": "Jaminan Return",
+        "image_2": "shopify:\/\/shop_images\/3_Grid_White-05.jpg",
+        "title_2": "Diskon Cuci Gudang",
+        "link_2": "shopify:\/\/collections\/clearance-sale",
+        "button_text_2": "Cek Sekarang",
+        "image_3": "shopify:\/\/shop_images\/3_Grid_White-06.jpg",
+        "title_3": "Temukan Toko",
+        "subtitle_3": "Belanja Online di Webstore, tersedia pilihan Pickup in SVRG. Showroom",
+        "link_3": "shopify:\/\/pages\/about",
+        "button_text_3": "Temukan Toko"
+      }
     }
   },
   "order": [
@@ -348,6 +376,7 @@
     "custom_feature_section_wngyVP",
     "review_ma6n9G",
     "featured_blog_FrKWDC",
-    "newsletter_YpphjE"
+    "newsletter_YpphjE",
+    "multicolumn_styled_8DinCN"
   ]
 }

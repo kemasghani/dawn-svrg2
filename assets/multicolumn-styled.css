@@ -1,0 +1,130 @@
+.custom-featured-section {
+    padding: 50px 50px;
+    background-color: #f7f7f7;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.featured-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+@media screen and (max-width: 900px) {
+    .featured-cards {
+        flex-direction: column;
+    }
+}
+
+.custom-featured-section .card {
+    position: relative;
+    /* To ensure overlay content stays within the card */
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: start;
+    min-height: 300px;
+    height: 500px;
+    flex: 1;
+}
+
+.card-image {
+    position: relative;
+    height: 100%;
+    min-height: 400px;
+    max-height: 500px;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@media screen and (max-width: 900px) {
+    .card-image img {
+        width: 170%;
+    }
+
+    .custom-featured-section {
+        padding: 50px 2.5rem;
+    }
+}
+
+.overlay-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(88 88 88 / 50%);
+    /* Semi-transparent black overlay */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+    text-align: start;
+    /* Hidden by default */
+    transition: opacity 0.3s ease;
+}
+
+
+.overlay-content h2 {
+    letter-spacing: -0.5px;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.overlay-content ul {
+    margin-bottom: 20px;
+}
+
+.overlay-content ul li {
+    letter-spacing: -0.5px;
+    font-size: 16px;
+    color: white;
+}
+
+.overlay-content .btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #63d7d1;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.card-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card-icons .icon-item {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card-icons .icon-item img {
+    width: fit-content;
+    height: fit-content;
+    max-width: 50px;
+    max-height: 40px;
+    margin-bottom: 10px;
+}
+
+.card-icons .icon-item p {
+    font-size: 10px;
+    color: #333;
+}

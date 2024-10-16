@@ -1,0 +1,204 @@
+{{ 'multicolumn-styled.css' | asset_url | stylesheet_tag }}
+<section class="custom-featured-section">
+    <div class="container">
+      <div class="featured-cards">
+        <!-- First Card (Dynamic Content) -->
+        <div class="card">
+          <div class="card-image">
+            <img src="{{ section.settings.image_1 | image_url }}" alt="Card Image 1" />
+            <div class="overlay-content flex flex-col justify-between">
+                <div class="flex flex-col gap-8">
+                    <h2>{{ section.settings.title_1 }}</h2>
+                    <ul>
+                    <li>{{ section.settings.benefit_1 }}</li>
+                    <li>{{ section.settings.benefit_2 }}</li>
+                    <li>{{ section.settings.benefit_3 }}</li>
+                    </ul>
+                    <div>
+                    <a href="{{ section.settings.link_1 }}" class="btn">{{ section.settings.button_text_1 }}</a>
+                    </div>
+                </div>
+                <div class="card-icons">
+                    <div class="icon-item">
+                    <img src="{{ section.settings.icon_1 | image_url }}" alt="Icon 1">
+                    <p class="!text-white">{{ section.settings.icon_text_1 }}</p>
+                    </div>
+                    <div class="icon-item">
+                    <img src="{{ section.settings.icon_2 | image_url }}" alt="Icon 2">
+                    <p class="!text-white">{{ section.settings.icon_text_2 }}</p>
+                    </div>
+                    <div class="icon-item">
+                    <img src="{{ section.settings.icon_3 | image_url }}" alt="Icon 3">
+                    <p class="!text-white">{{ section.settings.icon_text_3 }}</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Card (Dynamic Content) -->
+        <div class="card">
+          <div class="card-image">
+            <img src="{{ section.settings.image_2 | image_url }}" alt="Card Image 2" />
+            <div class="overlay-content flex flex-col justify-center items-center gap-16">
+              <h2>{{ section.settings.title_2 }}</h2>
+              <div>
+                <a href="{{ section.settings.link_2 }}" class="btn">{{ section.settings.button_text_2 }}</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Third Card (Dynamic Content) -->
+        <div class="card">
+          <div class="card-image">
+            <img src="{{ section.settings.image_3 | image_url }}" alt="Card Image 3" />
+            <div class="overlay-content flex flex-col justify-center gap-20 items-center">
+              <div>
+                <a href="{{ section.settings.link_3 }}" class="btn">{{ section.settings.button_text_3 }}</a>
+              </div>
+              <p class="text-[9px] text-center">{{ section.settings.subtitle_3 }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+  {% schema %}
+  {
+    "name": "Multicolumn Styled",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image_1",
+        "label": "First Card Image"
+      },
+      {
+        "type": "text",
+        "id": "title_1",
+        "label": "First Card Title",
+        "default": "KENAPA HARUS BELI DI WEBSITE ERIGO"
+      },
+      {
+        "type": "text",
+        "id": "benefit_1",
+        "label": "First Benefit",
+        "default": "Gratis Ongkir"
+      },
+      {
+        "type": "text",
+        "id": "benefit_2",
+        "label": "Second Benefit",
+        "default": "Special Packaging"
+      },
+      {
+        "type": "text",
+        "id": "benefit_3",
+        "label": "Third Benefit",
+        "default": "Jaminan Return/Refund"
+      },
+      {
+        "type": "url",
+        "id": "link_1",
+        "label": "First Card Button Link",
+        "default": "/collections/all"
+      },
+      {
+        "type": "text",
+        "id": "button_text_1",
+        "label": "First Card Button Text",
+        "default": "Read More"
+      },
+      {
+        "type": "image_picker",
+        "id": "icon_1",
+        "label": "Icon 1 (Gratis Ongkir)"
+      },
+      {
+        "type": "text",
+        "id": "icon_text_1",
+        "label": "Icon Text 1",
+        "default": "Gratis Ongkir"
+      },
+      {
+        "type": "image_picker",
+        "id": "icon_2",
+        "label": "Icon 2 (Special Packaging)"
+      },
+      {
+        "type": "text",
+        "id": "icon_text_2",
+        "label": "Icon Text 2",
+        "default": "Special Packaging"
+      },
+      {
+        "type": "image_picker",
+        "id": "icon_3",
+        "label": "Icon 3 (Return/Refund)"
+      },
+      {
+        "type": "text",
+        "id": "icon_text_3",
+        "label": "Icon Text 3",
+        "default": "Pengembalian Barang / Dana"
+      },
+      {
+        "type": "image_picker",
+        "id": "image_2",
+        "label": "Second Card Image"
+      },
+      {
+        "type": "text",
+        "id": "title_2",
+        "label": "Second Card Title",
+        "default": "Segera Hadir!"
+      },
+      {
+        "type": "url",
+        "id": "link_2",
+        "label": "Second Card Button Link"
+      },
+      {
+        "type": "text",
+        "id": "button_text_2",
+        "label": "Second Card Button Text",
+        "default": "Check Now"
+      },
+      {
+        "type": "image_picker",
+        "id": "image_3",
+        "label": "Third Card Image"
+      },
+      {
+        "type": "text",
+        "id": "title_3",
+        "label": "Third Card Title",
+        "default": "PICKUP INSTORE"
+      },
+      {
+        "type": "text",
+        "id": "subtitle_3",
+        "label": "Third Card Subtitle",
+        "default": "Belanja Online di Webstore, tersedia pilihan Pickup in Erigo Neighborhood Store"
+      },
+      {
+        "type": "url",
+        "id": "link_3",
+        "label": "Third Card Button Link"
+      },
+      {
+        "type": "text",
+        "id": "button_text_3",
+        "label": "Third Card Button Text",
+        "default": "Find Store"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Multicolumn Styled"
+      }
+    ]
+  }
+  {% endschema %}

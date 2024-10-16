@@ -717,24 +717,16 @@ b,
   margin-top: 1.75rem;
 }
 
+.mt-\[100px\] {
+  margin-top: 100px;
+}
+
 .mt-\[10px\] {
   margin-top: 10px;
 }
 
 .mt-\[30px\] {
   margin-top: 30px;
-}
-
-.mt-\[\] {
-  margin-top: ;
-}
-
-.mt-\[1\] {
-  margin-top: 1;
-}
-
-.mt-\[100px\] {
-  margin-top: 100px;
 }
 
 .line-clamp-2 {
@@ -932,12 +924,16 @@ b,
   justify-content: space-between;
 }
 
+.justify-around {
+  justify-content: space-around;
+}
+
 .gap-10 {
   gap: 2.5rem;
 }
 
-.gap-14 {
-  gap: 3.5rem;
+.gap-16 {
+  gap: 4rem;
 }
 
 .gap-2 {
@@ -952,6 +948,10 @@ b,
   gap: 1.25rem;
 }
 
+.gap-8 {
+  gap: 2rem;
+}
+
 .gap-\[24px\] {
   gap: 24px;
 }
@@ -962,6 +962,30 @@ b,
 
 .gap-\[8px\] {
   gap: 8px;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.gap-\[\] {
+  gap: ;
+}
+
+.gap-\[20px\] {
+  gap: 20px;
+}
+
+.gap-\[0px\] {
+  gap: 0px;
+}
+
+.gap-\[60px\] {
+  gap: 60px;
+}
+
+.gap-20 {
+  gap: 5rem;
 }
 
 .overflow-hidden {
@@ -1240,6 +1264,10 @@ b,
   padding-top: 14rem;
 }
 
+.pt-\[30px\] {
+  padding-top: 30px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1346,6 +1374,11 @@ b,
 
 .italic {
   font-style: italic;
+}
+
+.\!text-white {
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
 
 .text-\[\#dc2626\] {
