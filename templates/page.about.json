@@ -145,6 +145,48 @@
       "settings": {
         "section_title": "Our Locations"
       }
+    },
+    "rich_text_Retgz4": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_azbpYC": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        },
+        "text_DLNhKK": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        },
+        "button_fUtw47": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_azbpYC",
+        "text_DLNhKK",
+        "button_fUtw47"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -152,6 +194,7 @@
     "rich_text_8QnRmb",
     "image_with_text_caPNqc",
     "image_with_text_YbpJqe",
-    "custom_map_THRmWc"
+    "custom_map_THRmWc",
+    "rich_text_Retgz4"
   ]
 }

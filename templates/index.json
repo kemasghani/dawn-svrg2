@@ -158,6 +158,7 @@
     },
     "diagonal_cross_bar_WaKNHh": {
       "type": "diagonal-cross-bar",
+      "disabled": true,
       "settings": {
         "bar_text": "We'd love to have you as our reseller. Contact us today and let's grow together !    We'd love to have you as our reseller. Contact us today and let's grow together !",
         "background_color": "#63d7d1",
@@ -185,6 +186,33 @@
         "icon_3": "shopify:\/\/shop_images\/RETURN.svg",
         "title_3": "Jaminan Uang Kembali",
         "social_text": "KUNJUNGI SOSIAL MEDIA KAMI"
+      }
+    },
+    "multicolumn_styled_8DinCN": {
+      "type": "multicolumn-styled",
+      "settings": {
+        "image_1": "shopify:\/\/shop_images\/3_Grid_White-04.jpg",
+        "title_1": "KENAPA HARUS BELI DI SVRG.",
+        "benefit_1": "Gratis Ongkir",
+        "benefit_2": "Pengemasan Spesial",
+        "benefit_3": "Jaminan Return",
+        "link_1": "shopify:\/\/pages\/why-choose-svrg",
+        "button_text_1": "Baca Selengkapnya",
+        "icon_1": "shopify:\/\/shop_images\/DELIVERY_1.svg",
+        "icon_text_1": "Gratis Ongkir",
+        "icon_2": "shopify:\/\/shop_images\/SPECIAL_PACKAGING.svg",
+        "icon_text_2": "Pengemasan Spesial",
+        "icon_3": "shopify:\/\/shop_images\/RETURN_1.svg",
+        "icon_text_3": "Jaminan Return",
+        "image_2": "shopify:\/\/shop_images\/3_Grid_White-05.jpg",
+        "title_2": "Diskon Cuci Gudang",
+        "link_2": "shopify:\/\/collections\/clearance-sale",
+        "button_text_2": "Cek Sekarang",
+        "image_3": "shopify:\/\/shop_images\/3_Grid_White-06.jpg",
+        "title_3": "Temukan Toko",
+        "subtitle_3": "Belanja Online di Webstore, tersedia pilihan Pickup in SVRG. Showroom",
+        "link_3": "shopify:\/\/pages\/about",
+        "button_text_3": "Temukan Toko"
       }
     },
     "review_ma6n9G": {
@@ -337,33 +365,6 @@
         "padding_top": 100,
         "padding_bottom": 52
       }
-    },
-    "multicolumn_styled_8DinCN": {
-      "type": "multicolumn-styled",
-      "settings": {
-        "image_1": "shopify:\/\/shop_images\/3_Grid_White-04.jpg",
-        "title_1": "KENAPA HARUS BELI DI SVRG.",
-        "benefit_1": "Gratis Ongkir",
-        "benefit_2": "Pengemasan Spesial",
-        "benefit_3": "Jaminan Return",
-        "link_1": "shopify:\/\/pages\/why-choose-svrg",
-        "button_text_1": "Baca Selengkapnya",
-        "icon_1": "shopify:\/\/shop_images\/Delivery.svg",
-        "icon_text_1": "Gratis Ongkir",
-        "icon_2": "shopify:\/\/shop_images\/SEPCIAL_PACKAGING.svg",
-        "icon_text_2": "Pengemasan Spesial",
-        "icon_3": "shopify:\/\/shop_images\/RETURN.svg",
-        "icon_text_3": "Jaminan Return",
-        "image_2": "shopify:\/\/shop_images\/3_Grid_White-05.jpg",
-        "title_2": "Diskon Cuci Gudang",
-        "link_2": "shopify:\/\/collections\/clearance-sale",
-        "button_text_2": "Cek Sekarang",
-        "image_3": "shopify:\/\/shop_images\/3_Grid_White-06.jpg",
-        "title_3": "Temukan Toko",
-        "subtitle_3": "Belanja Online di Webstore, tersedia pilihan Pickup in SVRG. Showroom",
-        "link_3": "shopify:\/\/pages\/about",
-        "button_text_3": "Temukan Toko"
-      }
     }
   },
   "order": [
@@ -374,9 +375,9 @@
     "image_with_text_w4aNU7",
     "diagonal_cross_bar_WaKNHh",
     "custom_feature_section_wngyVP",
+    "multicolumn_styled_8DinCN",
     "review_ma6n9G",
     "featured_blog_FrKWDC",
-    "newsletter_YpphjE",
-    "multicolumn_styled_8DinCN"
+    "newsletter_YpphjE"
   ]
 }
