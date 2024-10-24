@@ -112,7 +112,7 @@
                 {{ compare_at_price | money }}
               {% endif %}
             </s>
-            <span class="px-3 py-2 bg-[#fee2e2] text-[#dc2626] font-[600] text-[8px] md:text-[9px] h-fit rounded-[5px] discount-card-product translate-x-2 -translate-y-2 md:-translate-y-1">
+            <span class="badge-discount px-3 py-2 bg-[#fee2e2] text-[#dc2626] font-[600] text-[8px] md:text-[9px] h-fit rounded-[5px] discount-card-product translate-x-2 -translate-y-2 md:-translate-y-1">
               {%- if discount_percentage > 0 -%}
                 {{ discount_percentage | round }}%
               {%- endif -%}

@@ -119,10 +119,22 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "recent_products_nKBcNy": {
+      "type": "recent-products",
+      "settings": {
+        "color_scheme": "",
+        "heading": "RECENTLY VIEWED",
+        "padding_top": 56,
+        "padding_bottom": 56,
+        "padding_top_mobile": 32,
+        "padding_bottom_mobile": 32
+      }
     }
   },
   "order": [
     "main",
-    "related-products"
+    "related-products",
+    "recent_products_nKBcNy"
   ]
 }

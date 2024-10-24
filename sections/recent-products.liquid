@@ -1,0 +1,332 @@
+    {% style %}
+    #section-{{ section.id }}{
+        padding-top: {{ section.settings.padding_top | append: 'px' }};
+        padding-bottom: {{ section.settings.padding_bottom | append: 'px' }};
+    }
+
+    @media screen and (max-width: 768px){
+        #section-{{ section.id }}{
+        padding-top: {{ section.settings.padding_top_mobile | append: 'px' }};
+        padding-bottom: {{ section.settings.padding_bottom_mobile | append: 'px' }};
+        }
+    }
+    .control-container{
+        justify-content: end;
+        transform: translate(-145%,-44px);
+    }
+    @media screen and (max-width: 650px){
+        .control-container{
+            transform: translate(-30%,-44px);
+        }
+    }
+    .arrow-right {
+        transform: rotate(180deg);
+    }
+    .control-container button{
+        border: 1px solid #94A3B8;
+        border-radius: 8px;
+        padding: 0px 4px;
+        height: 50px;
+        transform: translateY(2px);
+    }
+    #recent-container{
+        transform: translateY(-83px);
+        margin:0;
+    }
+    .recently-viewed{
+        transform: translateY(0px);
+    }
+    svg.arrow-left path {
+  fill: red;
+  color: red;
+}
+
+svg.arrow-right path {
+  fill: red;
+  color: red;
+}
+
+.swiper-button-disabled svg.arrow-left path {
+  fill: #94A3B8;
+  color: #94A3B8;
+}
+
+.swiper-button-disabled svg.arrow-right path {
+  fill: #94A3B8;
+  color: #94A3B8;
+}
+    {% endstyle %}
+
+    <section id="section-{{ section.id }}" class="color-{{ section.settings.color_scheme }} w-full border-t border-slate-200">
+    <div class="w-[100%] translate-x-[5%]">
+        <div class="w-full flex flex-row items-center justify-between mb-[50px]">
+        <h2 class="md:text-[32px] text-[20px] font-[700] mb-[80px]">
+            RECENTLY VIEWED
+        </h2>
+        <div class="flex gap-8 control-container w-100">
+            <div class="swiper-prev-{{ section.id }}">
+                <button
+                    type="button"
+                    class="slider-button slider-button--prev"
+                    name="previous"
+                    aria-label="{{ 'general.slider.previous_slide' | t }}"
+                    aria-controls="Slider-{{ section.id }}"
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="inherit" class="arrow-left">
+                        <path d="M6.05782 11.7768L1.0443 6.76333C0.928944 6.64824 0.844749 6.52917 0.791713 6.40613C0.738676 6.28308 0.712158 6.14771 0.712158 6C0.712158 5.85229 0.738676 5.71692 0.791713 5.59387C0.844749 5.47083 0.928944 5.35176 1.0443 5.23668L6.05782 0.222754C6.12704 0.153807 6.20433 0.0994431 6.28972 0.0596659C6.37485 0.0198886 6.4662 0 6.56379 0C6.7587 0 6.92815 0.0658989 7.07214 0.197694C7.21587 0.329489 7.28773 0.503182 7.28773 0.718775V11.2812C7.28773 11.4968 7.21508 11.6705 7.06976 11.8023C6.9247 11.9341 6.75538 12 6.5618 12C6.51327 12 6.34528 11.9256 6.05782 11.7768Z" fill="#94A3B8"/>
+                        </svg>
+                </button>
+            </div>
+            <div class="swiper-next-{{ section.id }}">
+                <button
+                    type="button"
+                    class="slider-button slider-button--next"
+                    name="next"
+                    aria-label="{{ 'general.slider.next_slide' | t }}"
+                    aria-controls="Slider-{{ section.id }}"
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="inherit" class="arrow-right">
+                        <path d="M6.05782 11.7768L1.0443 6.76333C0.928944 6.64824 0.844749 6.52917 0.791713 6.40613C0.738676 6.28308 0.712158 6.14771 0.712158 6C0.712158 5.85229 0.738676 5.71692 0.791713 5.59387C0.844749 5.47083 0.928944 5.35176 1.0443 5.23668L6.05782 0.222754C6.12704 0.153807 6.20433 0.0994431 6.28972 0.0596659C6.37485 0.0198886 6.4662 0 6.56379 0C6.7587 0 6.92815 0.0658989 7.07214 0.197694C7.21587 0.329489 7.28773 0.503182 7.28773 0.718775V11.2812C7.28773 11.4968 7.21508 11.6705 7.06976 11.8023C6.9247 11.9341 6.75538 12 6.5618 12C6.51327 12 6.34528 11.9256 6.05782 11.7768Z" fill="#94A3B8"/>
+                        </svg>
+                </button>
+            </div>
+        </div>
+        </div>
+        <div id="recent-container" class="page-width relative flex flex-wrap items-center justify-center !px-0">
+        <div class="swiper-{{ section.id }} relative w-full">
+
+        <div class="recently-viewed swiper-wrapper"></div>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <script>
+    function setRecentlyViewedProducts() {
+        console.log("kemas ghani sampourn");
+
+        const productData = {
+        productTitle: "{{ product.title | escape }}",
+        productHandle: "{{ product.handle }}",
+        vendor: "{{ product.vendor | escape }}",
+        imgWidth:"{{ product.featured_media.width }}",
+        imgHeight:"{{ product.featured_media.height }}",
+        productPrice: "{{ product.price | money_without_currency }}", // No HTML, just the value
+        productCompareAtPrice: "{{ product.compare_at_price | money_without_currency }}",
+        productUrl: "{{ product.url }}",
+        productImageAltText: "{{product.featured_media.alt | escape }}"
+        };
+
+        const productList = [];
+        let jsonResp, jsonRespArr, jsonRespArrStr;
+        const numberOfProducts = 8;
+        productList.push(productData);
+        const currProductPageTitle = productData.productTitle;
+        const productDataString = JSON.stringify(productList);
+        const localData = localStorage.getItem("luresRecentlyViewedProducts");
+
+        if (localData === null) {
+        localStorage.setItem("luresRecentlyViewedProducts", productDataString);
+        } else if (localData) {
+        const oldProductData = localStorage.getItem("luresRecentlyViewedProducts");
+        const countProductData = (oldProductData.match(/productTitle/g) || []).length;
+        const sameProduct = oldProductData.includes(currProductPageTitle);
+        if (countProductData < numberOfProducts && sameProduct == false) {
+            jsonResp = JSON.parse(oldProductData);
+            jsonRespArr = jsonResp.concat(productList);
+            jsonRespArrStr = JSON.stringify(jsonRespArr);
+            localStorage.setItem("luresRecentlyViewedProducts", jsonRespArrStr);
+        } else if (countProductData >= numberOfProducts && sameProduct == false) {
+            jsonResp = JSON.parse(oldProductData);
+            jsonResp.shift();
+            jsonRespArr = jsonResp.concat(productList);
+            jsonRespArr = JSON.stringify(jsonRespArr);
+            localStorage.setItem("luresRecentlyViewedProducts", jsonRespArr);
+        }
+        }
+        console.log(productData);
+
+    }
+
+    setRecentlyViewedProducts();
+    const localViewed = localStorage.recentlyViewedProduct;
+    function getRecentlyViewedProducts() {
+        const productData = JSON.parse(localStorage.getItem("luresRecentlyViewedProducts"));
+        const recentlyViewedHtml = [];
+        if (!productData[1] || !productData[1].productTitle) {
+        document.querySelector("#recent-container").innerHTML = `
+            <div class="no-recently-viewed mt-[100px]">
+            <p>Your recent product views are empty. Discover something new today!</p>
+            </div>
+        `;
+        } else {
+        productData.slice(0, 8).map(item => {
+            if(!item.productHandle) return;
+            var get_currency = document.querySelector('header').getAttribute('data-currency');
+            var productImg = '';
+            var productImg2 = '';
+            var productType = '';
+            var comparePrice = '';
+            var originalPrice = '';
+            var percentage = '';
+            var roundPercentage = '';
+            var noCompare = '';
+            var originalWrapper = '';
+
+            var productImgCon = 'transition-opacity duration-300';
+            var productImgCon2 = '';
+            if(item.productHandle){
+                let xhr = new XMLHttpRequest();
+                xhr.open("GET", "https://republik-svarga.myshopify.com/products/" + item.productHandle + ".json", false);
+                xhr.send();
+                let response = JSON.parse(xhr.responseText);
+                console.log(response);
+                productImg = response.product.images[0].src;
+                productType = response.product.product_type;
+                if(response.product.variants[0].compare_at_price){
+                comparePrice = response.product.variants[0].compare_at_price;
+                originalPrice = response.product.variants[0].price;
+                percentage = (comparePrice - originalPrice) * 100 / comparePrice;
+                roundPercentage = Math.floor(percentage);
+                originalWrapper = 'text-red-600';
+                } else {
+                noCompare = '!hidden';
+                }
+                if (!response.product.images[1]){
+                productImgCon = '';
+                productImgCon2 = '!hidden';
+                } else {
+                productImg2 = response.product.images[1].src;
+                }
+            }
+
+            recentlyViewedHtml.unshift(`
+            <div class="swiper-slide translate-y-[200px]">
+                <div class="card-wrapper">
+                <div class="card card--standard card--media">
+                    <a href="${item.productUrl}" class="group card__inner block color-background-2 gradient mb-[10px] md:mb-[20px] border border-slate-200">
+                    <img src="${productImg}" class="bg-white object-cover w-full max-w-[344px] max-[768px]:h-[195px] md:max-h-[344px] ${productImgCon}">
+                    <img src="${productImg2}" class="bg-white absolute top-0 left-0 object-cover w-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 max-w-[344px] max-[768px]:h-[195px] md:max-h-[344px] ${productImgCon2}">
+                    </a>
+                    <a href="${item.productUrl}" class="flex flex-1 flex-col items-start justify-start w-full">
+                    <div class="caption-with-letter-spacing font-[400] text-[10px]">${item.vendor}</div>
+                    <span class="text-[16px] font-bold text-black font-medium w-full line-clamp-1 mt-3">${item.productTitle}</span>
+                    <div class="w-full" style="margin-top: 6px">
+                        <div class="w-full flex flex-row items-center flex-wrap gap-[8px] md:gap-[16px] flex-wrap ex-price left">
+                        <span class="visually-hidden visually-hidden--inline">Regular price</span>
+                        <div class="text-[12px] text-slate-500 w-full flex flex-col md:flex-row text-start justify-start gap-[12px] md:gap-[8px]">
+                            <div class="flex flex-row text-start justify-start gap-[8px]">
+                                <span class="money text-start tracking-wide text-[12px] !text-black">${item.productPrice}</span>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                </div>
+            </div>
+            `);
+        });
+
+        const newProductData = `${recentlyViewedHtml.join("")}`;
+        const fullContent = document.getElementsByClassName("recently-viewed");
+        fullContent[0].innerHTML = newProductData;
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", function (event) {
+        getRecentlyViewedProducts();
+        new Swiper('.swiper-{{ section.id }}', {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 8,
+        initialSlide: 1,
+        pagination: {
+            el: ".swiper-pagination-{{ section.id }}",
+        },
+        navigation: {
+            nextEl: ".swiper-next-{{ section.id }}",
+            prevEl: ".swiper-prev-{{ section.id }}"
+        },
+        breakpoints: {
+            768: {
+            slidesPerView: 4,
+            slidesPerGroup: 4,
+            spaceBetween: 8
+            }
+        }
+        })
+    });
+    </script>
+
+    {% schema %}
+    {
+    "name": "Recent Products",
+    "settings": [
+        {
+        "type": "color_scheme",
+        "id": "color_scheme",
+        "label": "Color Scheme"
+        },
+        {
+        "type": "text",
+        "id": "heading",
+        "default": "RECENTLY VIEWED",
+        "label": "Title"
+        },
+        {
+        "type": "header",
+        "content": "Section Padding"
+        },
+        {
+        "type": "range",
+        "id": "padding_top",
+        "label": "Padding Top",
+        "min": 0,
+        "max": 100,
+        "step": 2,
+        "default": 56,
+        "unit": "px"
+        },
+        {
+        "type": "range",
+        "id": "padding_bottom",
+        "label": "Padding Bottom",
+        "min": 0,
+        "max": 100,
+        "step": 2,
+        "default": 56,
+        "unit": "px"
+        },
+        {
+        "type": "header",
+        "content": "Section Padding (Mobile)"
+        },
+        {
+        "type": "range",
+        "id": "padding_top_mobile",
+        "label": "Padding Top",
+        "min": 0,
+        "max": 100,
+        "step": 2,
+        "default": 32,
+        "unit": "px"
+        },
+        {
+        "type": "range",
+        "id": "padding_bottom_mobile",
+        "label": "Padding Bottom",
+        "min": 0,
+        "max": 100,
+        "step": 2,
+        "default": 32,
+        "unit": "px"
+        }
+    ],
+    "presets": [
+        {
+        "name": "Recent Products"
+        }
+    ]
+    }
+    {% endschema %}

@@ -3625,13 +3625,101 @@ details-disclosure>details {
   }
 }
 
-@font-face {
-  font-family: 'Bornstrong Bold';
-  src: url('https://cdn.shopify.com/s/files/1/0688/7325/7256/files/BornStrong_Bold.woff?v=1729046643') format('woff');
+/* @font-face {
+  font-family: 'CalibreThin';
+  src:
+    url('https://cdn.shopify.com/s/files/1/0688/7325/7256/files/CalibreThin.woff2?v=1729653652') format('woff2');
   font-display: swap;
   font-style: normal;
 }
 
-.video-overlay-content h1 {
-  font-family: 'Bornstrong Bold' !important;
+@font-face {
+  font-family: 'CalibreBold';
+  src:
+    url('https://cdn.shopify.com/s/files/1/0688/7325/7256/files/CalibreBold.woff2?v=1729653652') format('woff2');
+  font-display: swap;
+  font-style: normal;
 }
+
+@font-face {
+  font-family: 'CalibreSemibold';
+  src:
+    url('https://cdn.shopify.com/s/files/1/0688/7325/7256/files/CalibreSemibold.woff2?v=1729653652') format('woff2');
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CalibreMedium';
+  src:
+    url('https://cdn.shopify.com/s/files/1/0688/7325/7256/files/CalibreMedium.woff2?v=1729653652') format('woff2');
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CalibreRegular';
+  src:
+    url('https://cdn.shopify.com/s/files/1/0688/7325/7256/files/CalibreRegular.woff2?v=1729653652') format('woff2');
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src:
+    url('https://cdn.shopify.com/s/files/1/0688/7325/7256/files/Helvetica.woff2?v=1729654739') format('woff2');
+  font-display: swap;
+  font-style: normal;
+} */
+
+/* 
+
+.shopify-section h1 {
+  font-family: 'CalibreSemibold';
+}
+
+h3 {
+  font-family: 'CalibreSemibold' !important;
+}
+
+ul span {
+  font-family: 'CalibreMedium' !important;
+  font-weight: 200 !important;
+}
+
+h2 {
+  font-family: 'CalibreBold' !important;
+}
+
+p {
+  font-family: 'Helvetica';
+}
+
+.custom-featured-section h2 {
+  font-family: 'CalibreSemibold' !important;
+}
+
+.overlay-content ul li {
+  font-family: 'Helvetica' !important;
+}
+
+.price-item--last span {
+  font-family: 'CalibreSemibold' !important;
+}
+
+.price-item--regular span {
+  font-family: 'CalibreSemibold' !important;
+}
+
+.price__sale .price-item--regular span {
+  font-family: 'Assistant' !important;
+}
+
+span.badge-discount {
+  font-family: 'CalibreSemibold' !important;
+}
+
+button, a.btn, a.button {
+  font-family: 'Helvetica' !important;
+} */
