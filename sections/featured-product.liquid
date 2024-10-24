@@ -1,3 +1,7 @@
+{%- comment -%}
+This file has been modified by the Yoast SEO for Shopify app.
+You can learn more about this (and learn how to cleanly revert these changes) at https://yoa.st/removing-theme-changes.
+{%- endcomment -%}
 {%- liquid
   assign product = section.settings.product
   if product == null
@@ -477,9 +481,14 @@
     endif
   -%}
 
-  <script type="application/ld+json">
+  {%- comment -%}Yoast SEO schema control block: start.{%- endcomment -%}
+{%- assign yoast_seo_settings = shop.metafields.yoast_seo.settings.value | default: shop.metafields.yoast_seo.settings -%}
+{%- if disabled_by_yoast_seo or yoast_seo_settings.schema.useTheme.schema -%}
+<script type="application/ld+json">
     {{ product | structured_data }}
-  </script>
+  {%- comment -%}Yoast SEO schema control block: end.{%- endcomment -%}
+</script>
+{%- endif -%}
 
   {% if product.media.size > 0 %}
     <script src="{{ 'product-modal.js' | asset_url }}" defer="defer"></script>
