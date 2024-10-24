@@ -122,6 +122,7 @@
     },
     "recent_products_nKBcNy": {
       "type": "recent-products",
+      "disabled": true,
       "settings": {
         "color_scheme": "",
         "heading": "RECENTLY VIEWED",

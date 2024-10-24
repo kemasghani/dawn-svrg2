@@ -49,11 +49,16 @@
               (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
             {%- endcapture -%}
               {%- endif -%}
-              {{
-                section.settings.image
-                | image_url: width: 1500
-                | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
-              }}
+              {%- if section.settings.image_url != blank -%}
+                <img src="{{ section.settings.image_url }}" sizes="{{ sizes }}" widths="{{ widths }}" fetchpriority="{{ fetch_priority }}" alt="Your Image Description" loading= "lazy" />
+
+              {%- else -%}
+                {{
+                  section.settings.image
+                  | image_url: width: 1500
+                  | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
+                }}
+              {%- endif -%}
             {%- else -%}
               {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
             {%- endif -%}
@@ -119,6 +124,11 @@
       "type": "image_picker",
       "id": "image",
       "label": "t:sections.image-with-text.settings.image.label"
+    },
+    {
+      "type": "url",
+      "id": "image_url",
+      "label": "Image Url"
     },
     {
       "type": "select",

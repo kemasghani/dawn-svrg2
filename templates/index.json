@@ -3,7 +3,8 @@
     "custom_fullwidth_video_DgQa8n": {
       "type": "custom-fullwidth-video",
       "settings": {
-        "video": "shopify:\/\/files\/videos\/1003 (2) (1).mp4",
+        "video": "shopify:\/\/files\/videos\/ca2e138374d34365901b09ca083056c8.HD-1080p-7.2Mbps-35756872.webm",
+        "video_url": "https:\/\/res.cloudinary.com\/doq2grch0\/video\/upload\/v1729751724\/ca2e138374d34365901b09ca083056c8.HD-1080p-7.2Mbps-35756872_ntidsg.webm",
         "video_heading": "Maksimalkan Olahragamu dengan SVRG.",
         "video_description": "Perlengkapan Olahraga Berkinerja Tinggi yang Dirancang untuk Kenyamanan, Fleksibilitas, dan Daya Tahan.",
         "button_text": "Belanja Sekarang",
@@ -142,6 +143,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Artboard_1_900x_7973064c-aa27-4b37-9cea-2b78c26d5cdf_11zon.webp",
+        "image_url": "https:\/\/res.cloudinary.com\/doq2grch0\/image\/upload\/v1729749547\/Artboard_1_900x_7973064c-aa27-4b37-9cea-2b78c26d5cdf_11zon_2_gknrbq.webp",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
