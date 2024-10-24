@@ -1,6 +1,10 @@
+{%- comment -%}
+This file has been modified by the Yoast SEO for Shopify app.
+You can learn more about this (and learn how to cleanly revert these changes) at https://yoa.st/removing-theme-changes.
+{%- endcomment -%}
 <!doctype html>
 <html class="js" lang="{{ request.locale.iso_code }}">
-  <head>
+  <head>{% render 'yoast-seo' %}
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -21,15 +25,23 @@
       <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
     {%- endunless -%}
 
-    <title>
+    {%- comment -%}Auto-disabled. Yoast plugin is taking care of SEO output.{%- endcomment -%}
+{%- if disabled_by_yoast_seo -%}
+<title>
       {{ page_title }}
       {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
       {%- if current_page != 1 %} &ndash; Page {{ current_page }}{% endif -%}
       {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
     </title>
+{%- comment -%} End Yoast auto-disable. {%- endcomment -%}
+{%- endif -%}
 
     {% if page_description %}
-      <meta name="description" content="{{ page_description | escape }}">
+      {%- comment -%}Auto-disabled. Yoast plugin is taking care of Meta Tags output.{%- endcomment -%}
+{%- if disabled_by_yoast_seo -%}
+<meta name="description" content="{{ page_description | escape }}">
+{%- comment -%} End Yoast auto-disable. {%- endcomment -%}
+{%- endif -%}
     {% endif %}
 
     {% render 'meta-tags' %}
