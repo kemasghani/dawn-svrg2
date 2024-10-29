@@ -89,6 +89,12 @@ button[disabled='disabled'] svg.arrow-right path {
   column-gap: 20px;
 }
 
+@media screen and (max-width: 849px) {
+  .view-all-carousel-control-container-mobile {
+    transform: translateY(-20px);
+  }
+}
+
 .view-all-carousel-control-container .slider-buttons, .view-all-carousel-control-container-mobile .slider-buttons {
   display: flex;
   column-gap: 15px;
@@ -209,7 +215,7 @@ li.image-banner-collection h1 {
 
   .countdown p {
     padding: 2px 20px;
-    font-size: 16px;
+    font-size: 22px;
   }
 
   .flash-sale-head-container h2 {
