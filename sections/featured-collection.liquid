@@ -284,7 +284,7 @@
 
 <script>
   const countdownElementFeatured = document.getElementById(`countdown`);
-  const totalTime = {{ settings.countdown_total_time }};
+  const totalTime = {{ section.settings.countdown_total_time }};
 
 
   let timeRemaining = totalTime * 60;
@@ -553,6 +553,13 @@
       "id": "flash_sale_layout",
       "default": false,
       "label": "Use flash sale layout"
+    },
+    {
+      "type": "number",
+      "id": "countdown_total_time",
+      "label": "Countdown Total Time (in minutes)",
+      "default": 120,
+      "info": "Set the total time in minutes for the countdown timer."
     },
     {
       "type": "checkbox",
