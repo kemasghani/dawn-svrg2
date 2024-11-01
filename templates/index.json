@@ -1,23 +1,14 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "custom_fullwidth_video_DgQa8n": {
       "type": "custom-fullwidth-video",
       "settings": {
-        "video": "shopify://files/videos/ca2e138374d34365901b09ca083056c8.HD-1080p-7.2Mbps-35756872.webm",
-        "video_url": "https://res.cloudinary.com/doq2grch0/video/upload/v1729751724/ca2e138374d34365901b09ca083056c8.HD-1080p-7.2Mbps-35756872_ntidsg.webm",
+        "video": "shopify:\/\/files\/videos\/ca2e138374d34365901b09ca083056c8.HD-1080p-7.2Mbps-35756872.webm",
+        "video_url": "https:\/\/res.cloudinary.com\/doq2grch0\/video\/upload\/v1729751724\/ca2e138374d34365901b09ca083056c8.HD-1080p-7.2Mbps-35756872_ntidsg.webm",
         "video_heading": "Maksimalkan Olahragamu dengan SVRG.",
         "video_description": "Perlengkapan Olahraga Berkinerja Tinggi yang Dirancang untuk Kenyamanan, Fleksibilitas, dan Daya Tahan.",
         "button_text": "Belanja Sekarang",
-        "link": "shopify://collections/all"
+        "link": "shopify:\/\/collections\/all"
       }
     },
     "featured_collection_4n9Qmt": {
@@ -26,7 +17,7 @@
         "link": "",
         "button_text": "Lihat Semua Category",
         "show_view_all_category": false,
-        "title": "Flash Sale",
+        "title": "<em>FLASH SALE<\/em>",
         "heading_size": "h1",
         "text_button_all": "Lihat Semua",
         "description": "",
@@ -45,6 +36,7 @@
         "image_shape": "default",
         "show_secondary_image": false,
         "flash_sale_layout": true,
+        "countdown_total_time": 120,
         "show_vendor": false,
         "show_rating": false,
         "quick_add": "none",
@@ -58,7 +50,7 @@
     "featured_collection_base_3hdGUm": {
       "type": "featured-collection-base",
       "settings": {
-        "title": "<strong>Produk Terlaris</strong>",
+        "title": "<strong>Produk Terlaris<\/strong>",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
@@ -109,6 +101,7 @@
         "image_shape": "default",
         "show_secondary_image": true,
         "flash_sale_layout": false,
+        "countdown_total_time": 120,
         "show_vendor": false,
         "show_rating": false,
         "quick_add": "none",
@@ -122,7 +115,7 @@
     "featured_collection_8mpqbj": {
       "type": "featured-collection",
       "settings": {
-        "link": "shopify://collections",
+        "link": "shopify:\/\/collections",
         "button_text": "Lihat Semua Category",
         "show_view_all_category": true,
         "title": "Featured products",
@@ -144,6 +137,7 @@
         "image_shape": "default",
         "show_secondary_image": true,
         "flash_sale_layout": false,
+        "countdown_total_time": 120,
         "show_vendor": false,
         "show_rating": false,
         "quick_add": "none",
@@ -160,14 +154,14 @@
         "heading_8jwa9y": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Cross X Weightlifting Shoes</strong>",
+            "heading": "<strong>Cross X Weightlifting Shoes<\/strong>",
             "heading_size": "h2"
           }
         },
         "text_nVr4TL": {
           "type": "text",
           "settings": {
-            "text": "<p>Cross X Weightlifting Shoes dirancang secara khusus untuk kegiatan angkat besi, seperti powerlifting, dan latihan squat lainnya. </p>",
+            "text": "<p>Cross X Weightlifting Shoes dirancang secara khusus untuk kegiatan angkat besi, seperti powerlifting, dan latihan squat lainnya. <\/p>",
             "text_style": "body"
           }
         },
@@ -175,7 +169,7 @@
           "type": "button",
           "settings": {
             "button_label": "Beli Sekarang",
-            "button_link": "shopify://products/svrg-cross-x-weightlifting-shoes-fitness-shoes-sneakers-gym",
+            "button_link": "shopify:\/\/products\/svrg-cross-x-weightlifting-shoes-fitness-shoes-sneakers-gym",
             "button_style_secondary": false
           }
         }
@@ -186,8 +180,8 @@
         "button_DxFDUm"
       ],
       "settings": {
-        "image": "shopify://shop_images/Artboard_1_900x_7973064c-aa27-4b37-9cea-2b78c26d5cdf_11zon.webp",
-        "image_url": "https://res.cloudinary.com/doq2grch0/image/upload/v1729749547/Artboard_1_900x_7973064c-aa27-4b37-9cea-2b78c26d5cdf_11zon_2_gknrbq.webp",
+        "image": "shopify:\/\/shop_images\/Artboard_1_900x_7973064c-aa27-4b37-9cea-2b78c26d5cdf_11zon.webp",
+        "image_url": "https:\/\/res.cloudinary.com\/doq2grch0\/image\/upload\/v1729749547\/Artboard_1_900x_7973064c-aa27-4b37-9cea-2b78c26d5cdf_11zon_2_gknrbq.webp",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -219,17 +213,17 @@
       "disabled": true,
       "settings": {
         "title_section": "KENAPA HARUS BELI DI  SVRG.",
-        "link": "shopify://pages/why-choose-svrg",
-        "benefit_1": "<p>Gratis</p>",
-        "benefit_2": "<p>Spesial </p>",
-        "benefit_3": "<p>Jaminan </p>",
-        "image_url": "https://res.cloudinary.com/doq2grch0/image/upload/v1728894178/Artboard_1A_ssnith.webp",
-        "icon_1": "shopify://shop_images/FREE_DELIVERY.svg",
+        "link": "shopify:\/\/pages\/why-choose-svrg",
+        "benefit_1": "<p>Gratis<\/p>",
+        "benefit_2": "<p>Spesial <\/p>",
+        "benefit_3": "<p>Jaminan <\/p>",
+        "image_url": "https:\/\/res.cloudinary.com\/doq2grch0\/image\/upload\/v1728894178\/Artboard_1A_ssnith.webp",
+        "icon_1": "shopify:\/\/shop_images\/FREE_DELIVERY.svg",
         "read_more_text": "Baca Selengkapnya",
         "title_1": "Gratis Ongkir",
-        "icon_2": "shopify://shop_images/SEPCIAL_PACKAGING.svg",
+        "icon_2": "shopify:\/\/shop_images\/SEPCIAL_PACKAGING.svg",
         "title_2": "Paket Khusus",
-        "icon_3": "shopify://shop_images/RETURN.svg",
+        "icon_3": "shopify:\/\/shop_images\/RETURN.svg",
         "title_3": "Jaminan Uang Kembali",
         "social_text": "KUNJUNGI SOSIAL MEDIA KAMI"
       }
@@ -237,27 +231,27 @@
     "multicolumn_styled_8DinCN": {
       "type": "multicolumn-styled",
       "settings": {
-        "image_1": "shopify://shop_images/Lime_1.jpg",
+        "image_1": "shopify:\/\/shop_images\/Lime_1.jpg",
         "title_1": "KENAPA HARUS BELI DI SVRG.",
         "benefit_1": "Gratis Ongkir",
         "benefit_2": "Pengemasan Spesial",
         "benefit_3": "Jaminan Return",
-        "link_1": "shopify://pages/why-choose-svrg",
+        "link_1": "shopify:\/\/pages\/why-choose-svrg",
         "button_text_1": "Baca Selengkapnya",
-        "icon_1": "shopify://shop_images/DELIVERY_BLACK.svg",
+        "icon_1": "shopify:\/\/shop_images\/DELIVERY_BLACK.svg",
         "icon_text_1": "Gratis Ongkir",
-        "icon_2": "shopify://shop_images/PACKAGING_BLACK.svg",
+        "icon_2": "shopify:\/\/shop_images\/PACKAGING_BLACK.svg",
         "icon_text_2": "Pengemasan Spesial",
-        "icon_3": "shopify://shop_images/RETURN_BLACK.svg",
+        "icon_3": "shopify:\/\/shop_images\/RETURN_BLACK.svg",
         "icon_text_3": "Jaminan Return",
-        "image_2": "shopify://shop_images/Lime_2.jpg",
+        "image_2": "shopify:\/\/shop_images\/Lime_2.jpg",
         "title_2": "Diskon Cuci Gudang",
-        "link_2": "shopify://collections/clearance-sale",
+        "link_2": "shopify:\/\/collections\/clearance-sale",
         "button_text_2": "Cek Sekarang",
-        "image_3": "shopify://shop_images/Lime_3.jpg",
+        "image_3": "shopify:\/\/shop_images\/Lime_3.jpg",
         "title_3": "Temukan Toko",
         "subtitle_3": "Belanja Online di Webstore, tersedia pilihan Pickup in SVRG. Showroom",
-        "link_3": "shopify://pages/about",
+        "link_3": "shopify:\/\/pages\/about",
         "button_text_3": "Temukan Toko"
       }
     },
@@ -269,7 +263,7 @@
           "settings": {
             "product_name": "Ekata Series - Limited Edition",
             "review_text": "Ga licin sama sekali, suprise that this kind of mat exist honestly lollll, thank you ilove it!",
-            "reviewer_image": "shopify://shop_images/svrg-petite-diva.jpg",
+            "reviewer_image": "shopify:\/\/shop_images\/svrg-petite-diva.jpg",
             "reviewer_name": "Petitediva",
             "reviewer_title": "Indonesian Influencer"
           }
@@ -279,7 +273,7 @@
           "settings": {
             "product_name": "Ekata Series - Limited Edition",
             "review_text": "So cool!!! Suka banget, tebell dan stickyy,\nThank you Svarga.",
-            "reviewer_image": "shopify://shop_images/svrg-penyogastar.jpg",
+            "reviewer_image": "shopify:\/\/shop_images\/svrg-penyogastar.jpg",
             "reviewer_name": "Penyogastar",
             "reviewer_title": "Celebrity Yoga Instructor"
           }
@@ -289,7 +283,7 @@
           "settings": {
             "product_name": "Ekata Series - Darbotz Mats",
             "review_text": "Hi Svarga! Darbotz Mats Super coollll omg, coolest collab & baru sadar Svarga dari Surabaya, bangga bgt krn aku juga dari Surabaya hehee!\nKeep up the good works guys!!",
-            "reviewer_image": "shopify://shop_images/svrg-rania-putrisari_1.jpg",
+            "reviewer_image": "shopify:\/\/shop_images\/svrg-rania-putrisari_1.jpg",
             "reviewer_name": "Rania Putrisari",
             "reviewer_title": "Indonesian Model"
           }
@@ -299,7 +293,7 @@
           "settings": {
             "product_name": "Ekata Series - Plain Edition",
             "review_text": "Favorit banget asliii, soalnya ada garis tengah, jadi untuk centeringnya lebih mudah.",
-            "reviewer_image": "shopify://shop_images/svrg-andien-icon.jpg",
+            "reviewer_image": "shopify:\/\/shop_images\/svrg-andien-icon.jpg",
             "reviewer_name": "Andienaisyah",
             "reviewer_title": "Indonesian Singer"
           }
@@ -309,7 +303,7 @@
           "settings": {
             "product_name": "Ekata Series - Limited Edition",
             "review_text": "I love it, grip-nya jadi bener2 enak bngt...",
-            "reviewer_image": "shopify://shop_images/svrg-chelsea-olivia.jpg",
+            "reviewer_image": "shopify:\/\/shop_images\/svrg-chelsea-olivia.jpg",
             "reviewer_name": "Chelseaoliviaa",
             "reviewer_title": "Indonesian Celebrity"
           }
@@ -319,7 +313,7 @@
           "settings": {
             "product_name": "Resistance Bands",
             "review_text": "Thankyou yaa resistance bandnya. Kualitasnya bagus sekali",
-            "reviewer_image": "shopify://shop_images/svrg-maretto-aufra.jpg",
+            "reviewer_image": "shopify:\/\/shop_images\/svrg-maretto-aufra.jpg",
             "reviewer_name": "Marettoaufra",
             "reviewer_title": "Calisthenics Specialist"
           }
@@ -329,7 +323,7 @@
           "settings": {
             "product_name": "Shuroo Series - Sweat Smile Repeat.",
             "review_text": "love the design and the quality",
-            "reviewer_image": "shopify://shop_images/svrg-jryan-karsten.jpg",
+            "reviewer_image": "shopify:\/\/shop_images\/svrg-jryan-karsten.jpg",
             "reviewer_name": "Jryankarsten",
             "reviewer_title": "Indonesian Model"
           }
@@ -339,7 +333,7 @@
           "settings": {
             "product_name": "Ekata Limited Edition - Darbotz",
             "review_text": "Insane bagus banget. The mat so prettyyy!!",
-            "reviewer_image": "shopify://shop_images/svrg-raisa.jpg",
+            "reviewer_image": "shopify:\/\/shop_images\/svrg-raisa.jpg",
             "reviewer_name": "Raisa6690",
             "reviewer_title": "Indonesian Singer"
           }
@@ -356,14 +350,14 @@
         "block_mFMXqj"
       ],
       "settings": {
-        "heading": "<strong>SVRG's Review</strong>",
+        "heading": "<strong>SVRG's Review<\/strong>",
         "heading_size": "h2"
       }
     },
     "featured_blog_FrKWDC": {
       "type": "featured-blog",
       "settings": {
-        "heading": "<strong>Blog posts</strong>",
+        "heading": "<strong>Blog posts<\/strong>",
         "heading_size": "h2",
         "blog": "the-journey",
         "post_limit": 3,
@@ -384,14 +378,14 @@
         "heading_XeRf6e": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Daftar dan Dapatkan Keuntunganya</strong>",
+            "heading": "<strong>Daftar dan Dapatkan Keuntunganya<\/strong>",
             "heading_size": "h2"
           }
         },
         "paragraph_3dFV7L": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Berlangganan untuk mendapatkan penawaran khusus, hadiah gratis, dan penawaran sekali seumur hidup.</p>"
+            "text": "<p>Berlangganan untuk mendapatkan penawaran khusus, hadiah gratis, dan penawaran sekali seumur hidup.<\/p>"
           }
         },
         "email_form_qRLqJC": {
