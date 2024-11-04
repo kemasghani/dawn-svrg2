@@ -25,8 +25,8 @@
         "show_border_top": true,
         "description_style": "body",
         "collection": "accessories",
-        "products_to_show": 10,
-        "columns_desktop": 6,
+        "products_to_show": 5,
+        "columns_desktop": 5,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
@@ -47,33 +47,40 @@
         "margin_top": 0
       }
     },
-    "featured_collection_base_3hdGUm": {
-      "type": "featured-collection-base",
+    "featured_collection_FXhrhq": {
+      "type": "featured-collection",
       "settings": {
-        "title": "<strong>Produk Terlaris<\/strong>",
-        "heading_size": "h2",
+        "link": "shopify:\/\/collections\/new-arrivals",
+        "button_text": "Lihat Semua Category",
+        "show_view_all_category": false,
+        "title": "Produk Terlaris",
+        "heading_size": "h1",
+        "text_button_all": "Lihat Semua",
         "description": "",
         "show_description": false,
+        "show_border_top": true,
         "description_style": "body",
-        "collection": "all",
-        "products_to_show": 20,
-        "columns_desktop": 5,
+        "collection": "new-arrivals",
+        "products_to_show": 6,
+        "columns_desktop": 6,
         "full_width": false,
-        "show_button_slider": false,
-        "show_view_all": false,
+        "show_view_all": true,
         "view_all_style": "solid",
         "enable_desktop_slider": true,
-        "color_scheme": "scheme-1",
+        "color_scheme": "",
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": false,
+        "flash_sale_layout": false,
+        "countdown_total_time": 120,
         "show_vendor": false,
         "show_rating": false,
         "quick_add": "none",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
-        "padding_top": 68,
-        "padding_bottom": 0
+        "padding_top": 4,
+        "padding_bottom": 72,
+        "margin_top": 0
       }
     },
     "featured_collection": {
@@ -82,7 +89,7 @@
         "link": "",
         "button_text": "Lihat Semua Category",
         "show_view_all_category": false,
-        "title": "Featured products",
+        "title": "",
         "heading_size": "h2",
         "text_button_all": "Lihat Semua",
         "description": "",
@@ -107,7 +114,7 @@
         "quick_add": "none",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
-        "padding_top": 16,
+        "padding_top": 24,
         "padding_bottom": 32,
         "margin_top": 0
       }
@@ -118,7 +125,7 @@
         "link": "shopify:\/\/collections",
         "button_text": "Lihat Semua Category",
         "show_view_all_category": true,
-        "title": "Featured products",
+        "title": "",
         "heading_size": "h2",
         "text_button_all": "Lihat Semua",
         "description": "",
@@ -143,7 +150,7 @@
         "quick_add": "none",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
-        "padding_top": 16,
+        "padding_top": 24,
         "padding_bottom": 32,
         "margin_top": 36
       }
@@ -410,7 +417,7 @@
   "order": [
     "custom_fullwidth_video_DgQa8n",
     "featured_collection_4n9Qmt",
-    "featured_collection_base_3hdGUm",
+    "featured_collection_FXhrhq",
     "featured_collection",
     "featured_collection_8mpqbj",
     "image_with_text_w4aNU7",
