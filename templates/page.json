@@ -8,26 +8,19 @@
         "padding_bottom": 28
       }
     },
-    "rich_text_8QnRmb": {
+    "rich_text_pz4ijT": {
       "type": "rich-text",
       "blocks": {
-        "heading_Lp47yC": {
+        "heading_pdYpWV": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Kenapa Harus Beli di SVRG?<\/strong>",
-            "heading_size": "h1"
-          }
-        },
-        "text_KzaC3w": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Berolahraga adalah salah satu cara untuk hidup lebih sehat. Apakah Anda sudah mulai melakukan rutinitas olahraga Anda? Apakah Anda mulai mencari-cari peralatan yang dapat menunjang kegiatan olahraga Anda? Tenang, Anda bisa mendapatkan segala yang Anda perlukan untuk aktivitas olahraga yang lebih bersemangat di website SVRG.<\/p>"
+            "heading": "<strong>Our Video Review<\/strong>",
+            "heading_size": "h2"
           }
         }
       },
       "block_order": [
-        "heading_Lp47yC",
-        "text_KzaC3w"
+        "heading_pdYpWV"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -38,126 +31,195 @@
         "padding_bottom": 52
       }
     },
-    "image_with_text_caPNqc": {
-      "type": "image-with-text",
+    "banner_review_HCgGQ8": {
+      "type": "banner-review",
       "blocks": {
-        "heading_Jd7zJb": {
-          "type": "heading",
+        "slide_L6ffPP": {
+          "type": "slide",
           "settings": {
-            "heading": "<strong>Alat Olahraga Kualitas Premium<\/strong>",
-            "heading_size": "h2"
+            "media_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/d714d4e5e52745e1ae5d646377b7eefd.mp4"
           }
         },
-        "text_JfzPrL": {
-          "type": "text",
+        "slide_fewAGN": {
+          "type": "slide",
           "settings": {
-            "text": "<p>Produk olahraga di SVRG.ID terbuat dari bahan berkualitas tinggi yang dirancang khusus untuk meningkatkan performa Anda dalam setiap latihan. Dibuat dari material terbaik, SVRG menjamin semua alat olahraga di sini cocok untuk penggunaan jangka panjang karena awet!<\/p>",
-            "text_style": "body"
+            "media_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/d714d4e5e52745e1ae5d646377b7eefd.mp4"
+          }
+        },
+        "slide_WjUgph": {
+          "type": "slide",
+          "settings": {
+            "media_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/d714d4e5e52745e1ae5d646377b7eefd.mp4"
+          }
+        },
+        "slide_k7CF4c": {
+          "type": "slide",
+          "settings": {
+            "media_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/d714d4e5e52745e1ae5d646377b7eefd.mp4"
+          }
+        },
+        "slide_he7bzx": {
+          "type": "slide",
+          "settings": {
+            "media_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/d714d4e5e52745e1ae5d646377b7eefd.mp4"
+          }
+        },
+        "slide_RPbfTY": {
+          "type": "slide",
+          "settings": {
+            "media_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/d714d4e5e52745e1ae5d646377b7eefd.mp4"
           }
         }
       },
       "block_order": [
-        "heading_Jd7zJb",
-        "text_JfzPrL"
+        "slide_L6ffPP",
+        "slide_fewAGN",
+        "slide_WjUgph",
+        "slide_k7CF4c",
+        "slide_he7bzx",
+        "slide_RPbfTY"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/jual_alat_gym_f079fec8-55b5-41dd-a3a8-c4ca5dd4048a.webp",
-        "height": "small",
-        "desktop_image_width": "small",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 100,
-        "padding_bottom": 36
+        "rating": "",
+        "review_count": 0
       }
     },
-    "image_with_text_YbpJqe": {
-      "type": "image-with-text",
+    "review_iBmaWq": {
+      "type": "review",
       "blocks": {
-        "heading_4CUdYD": {
-          "type": "heading",
+        "block_MB3CJH": {
+          "type": "block",
           "settings": {
-            "heading": "<strong>Pilihan Lengkap untuk Semua Jenis Olahraga<\/strong>",
-            "heading_size": "h2"
+            "product_name": "Ekata Series - Plain Edition",
+            "review_text": "Enak bgt asli dipakenya",
+            "reviewer_image": "shopify:\/\/shop_images\/svrg-andien-icon.jpg",
+            "reviewer_name": "Andienaisyah",
+            "reviewer_title": "Indonesian Singer"
           }
         },
-        "text_TykCFq": {
-          "type": "text",
+        "block_XtNNkN": {
+          "type": "block",
           "settings": {
-            "text": "<p>SVRG.ID menyediakan berbagai keperluan olahraga mulai dari gym, yoga, pilates, hingga olahraga outdoor. Anda tak perlu repot mencari di banyak tempat, hanya di satu website SVRG.ID, Anda bisa temukan semua keperluan olahraga yang Anda butuhkan<\/p>",
-            "text_style": "body"
+            "product_name": "Ekata Limited Edition - Darbotz",
+            "review_text": "Insane bagus banget. The mat so prettyyy!!",
+            "reviewer_image": "shopify:\/\/shop_images\/svrg-raisa.jpg",
+            "reviewer_name": "Raisa6690",
+            "reviewer_title": "Indonesian Singer"
+          }
+        },
+        "block_DqyMaU": {
+          "type": "block",
+          "settings": {
+            "product_name": "Ekata Series - Limited Edition",
+            "review_text": "So cool!!! Suka banget, tebell dan stickyy,Thank you Svarga",
+            "reviewer_image": "shopify:\/\/shop_images\/svrg-penyogastar.jpg",
+            "reviewer_name": "Penyogastar",
+            "reviewer_title": "Celebrity Yoga Instructor"
+          }
+        },
+        "block_wVrbW6": {
+          "type": "block",
+          "settings": {
+            "product_name": "Ekata Series - Limited Edition",
+            "review_text": "I love it, grip-nya jadi bener2 enak bngt...",
+            "reviewer_image": "shopify:\/\/shop_images\/svrg-chelsea-olivia.jpg",
+            "reviewer_name": "Chelseaoliviaa",
+            "reviewer_title": "Indonesian Celebrity"
+          }
+        },
+        "block_mjVMni": {
+          "type": "block",
+          "settings": {
+            "product_name": "Resistance Bands",
+            "review_text": "Thankyou yaa resistance bandnya. Kualitasnya bagus sekali",
+            "reviewer_image": "shopify:\/\/shop_images\/svrg-maretto-aufra.jpg",
+            "reviewer_name": "Marettoaufra",
+            "reviewer_title": "Calisthenics Specialist"
+          }
+        },
+        "block_VUKUEe": {
+          "type": "block",
+          "settings": {
+            "product_name": "Shuroo Series - Sweat Smile Repeat",
+            "review_text": "love the design and the quality",
+            "reviewer_image": "shopify:\/\/shop_images\/svrg-jryan-karsten.jpg",
+            "reviewer_name": "Jryankarsten",
+            "reviewer_title": "Indonesian Model"
+          }
+        },
+        "block_LGbAJ9": {
+          "type": "block",
+          "settings": {
+            "product_name": "Ekata Series - Limited Edition",
+            "review_text": "Ga licin sama sekali, suprise that this kind of mat exist honestly lollll, thank you ilove it!",
+            "reviewer_image": "shopify:\/\/shop_images\/svrg-petite-diva.jpg",
+            "reviewer_name": "Rania Putrisari",
+            "reviewer_title": "Indonesian Model"
+          }
+        },
+        "block_P6R98V": {
+          "type": "block",
+          "settings": {
+            "product_name": "Ekata Series - Darbotz Mats",
+            "review_text": "Hi Svarga! Darbotz Mats Super coollll omg, coolest collab & baru sadar Svarga dari Surabaya, bangga bgt krn aku juga dari Surabaya hehee!Keep up the good works guys!!",
+            "reviewer_image": "shopify:\/\/shop_images\/svrg-rania-putrisari_1.jpg",
+            "reviewer_name": "Rania Putrisari",
+            "reviewer_title": "Indonesian Model"
           }
         }
       },
       "block_order": [
-        "heading_4CUdYD",
-        "text_TykCFq"
+        "block_MB3CJH",
+        "block_XtNNkN",
+        "block_DqyMaU",
+        "block_wVrbW6",
+        "block_mjVMni",
+        "block_VUKUEe",
+        "block_LGbAJ9",
+        "block_P6R98V"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/svrg-banner-bawa-gym-mu-ke-level-selanjutnya.jpg",
-        "height": "small",
-        "desktop_image_width": "small",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "heading": "<strong>Celebrity's Review<\/strong>",
+        "heading_size": "h2"
       }
     },
-    "image_with_text_k4Xcce": {
-      "type": "image-with-text",
+    "rich_text_AYwVaJ": {
+      "type": "rich-text",
       "blocks": {
-        "heading_mkr4Mc": {
+        "heading_fgtdMV": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Pengiriman Cepat dan Aman<\/strong>",
+            "heading": "<strong>Our Online Shop Review<\/strong>",
             "heading_size": "h2"
-          }
-        },
-        "text_DwBFaQ": {
-          "type": "text",
-          "settings": {
-            "text": "<p>SVRG.ID menawarkan layanan pengiriman cepat dengan pengemasan aman. Anda tak perlu khawatir, karena kami memastikan barang yang Anda beli sampai ke rumah Anda dalam kondisi terbaik.<\/p>",
-            "text_style": "body"
           }
         }
       },
       "block_order": [
-        "heading_mkr4Mc",
-        "text_DwBFaQ"
+        "heading_fgtdMV"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/snapedit_1728888483665_1.webp",
-        "height": "small",
-        "desktop_image_width": "small",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
         "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 80
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_with_image_pcxeYz": {
+      "type": "image-with-image",
+      "settings": {
+        "image_1": "shopify:\/\/shop_images\/REVIEW-02.webp",
+        "image_2": "shopify:\/\/shop_images\/REVIEW-03.webp"
       }
     }
   },
   "order": [
     "main",
-    "rich_text_8QnRmb",
-    "image_with_text_caPNqc",
-    "image_with_text_YbpJqe",
-    "image_with_text_k4Xcce"
+    "rich_text_pz4ijT",
+    "banner_review_HCgGQ8",
+    "review_iBmaWq",
+    "rich_text_AYwVaJ",
+    "image_with_image_pcxeYz"
   ]
 }

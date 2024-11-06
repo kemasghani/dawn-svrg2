@@ -1,0 +1,37 @@
+{% schema %}
+{
+  "name": "Two Image Line",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "Image 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "Image 2"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Two Image Line"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="container mx-auto py-8 mb-[200px]">
+  <div class="flex flex-col md:flex-row flex-wrap">
+    <div class="w-full md:w-1/2  p-2">
+      {% if section.settings.image_1 %}
+        <img src="{{ section.settings.image_1 | img_url: '1024x1024' }}" alt="Image 1" class="w-full object-cover">
+      {% endif %}
+    </div>
+    <div class="w-full md:w-1/2 p-2">
+      {% if section.settings.image_2 %}
+        <img src="{{ section.settings.image_2 | img_url: '1024x1024' }}" alt="Image 2" class="w-full object-cover">
+      {% endif %}
+    </div>
+  </div>
+</div>

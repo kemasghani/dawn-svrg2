@@ -508,7 +508,7 @@ h6:empty {
   text-underline-offset: 0.3rem;
   color: rgb(var(--color-link));
   background-color: transparent;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   font-family: inherit;
 }
 
@@ -2826,7 +2826,13 @@ details[open]>.header__submenu {
 .header__menu-item span {
   transition: text-decoration var(--duration-short) ease;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 400;
+}
+
+.header__submenu .header__menu-item span {
+  transition: text-decoration var(--duration-short) ease;
+  font-size: 14px !important;
+  font-weight: 400;
 }
 
 .header__menu-item:hover span {
@@ -3625,6 +3631,19 @@ details-disclosure>details {
   }
 }
 
+#menulist li a.link {
+  font-size: 7px !important;
+}
+
+.accordion a {
+  text-decoration: underline;
+  color: rgb(132, 132, 184);
+}
+
+.accordion .accordion__content {
+  padding-left: 30px;
+}
+
 /* @font-face {
   font-family: 'CalibreThin';
   src:
@@ -3673,7 +3692,7 @@ details-disclosure>details {
   font-style: normal;
 } */
 
-/* 
+/*
 
 .shopify-section h1 {
   font-family: 'CalibreSemibold';

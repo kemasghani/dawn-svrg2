@@ -1,0 +1,120 @@
+{% comment %}
+hair_free_section.liquid
+{% endcomment %}
+
+<section>
+  <div>
+    <swiper-container
+      class="mySwiper"
+      allowTouchMove="false"
+      pagination="false"
+      effect="coverflow"
+      grab-cursor="false"
+      centered-slides="true"
+      slides-per-view="auto"
+      loop="true"
+      autoplay="true"
+      autoplay-delay="3000"
+      coverflow-effect-rotate="20"
+      coverflow-effect-stretch="10"
+      coverflow-effect-depth="100"
+      coverflow-effect-modifier="1.5"
+      coverflow-effect-slide-shadows="true"
+      id="videoSwiper"
+    >
+      {% for block in section.blocks %}
+        <swiper-slide>
+          <video controls muted loop class="slide-media" style="width: 100%;">
+            <source src="{{ block.settings.media_url }}" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </swiper-slide>
+      {% endfor %}
+    </swiper-container>
+  </div>
+</section>
+
+  <style>
+    swiper-container {
+      width: 60%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+  }
+  @media screen and (max-width: 769px){
+    swiper-container {
+      width: 100%;
+  }
+  }
+  swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 700px;
+  }
+    .hair-free-section {
+      display: flex;
+      align-items: center;
+    }
+
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const swiperContainer = document.getElementById('videoSwiper');
+      const swiperSlides = swiperContainer.querySelectorAll("swiper-slide video");
+
+      const swiper = swiperContainer.swiper;
+
+      // Listen for the slideChange event to dynamically play or pause videos
+      swiper.on('slideChange', () => {
+        swiperSlides.forEach((video, index) => {
+           console.log("ini index: "+ index)
+           console.log("ini realindex :" + swiper.realIndex)
+          if (index === swiper.realIndex+2) { // Play the video if it's the active (centered) slide
+            video.play();
+          } else {
+            video.pause(); // Pause all other videos
+          }
+        });
+      });
+    });
+  </script>
+
+  {% schema %}
+  {
+    "name": "Review Banner",
+    "settings": [
+      {
+        "type": "text",
+        "id": "rating",
+        "label": "Rating",
+        "default": "4.8"
+      },
+      {
+        "type": "number",
+        "id": "review_count",
+        "label": "Review Count",
+        "default": 7322
+      }
+    ],
+    "blocks": [
+      {
+        "type": "slide",
+        "name": "Slider Item",
+        "settings": [
+          {
+            "type": "text",
+            "id": "media_url",
+            "label": "Media URL"
+          },
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Review Banner"
+      }
+    ]
+  }
+  {% endschema %}
