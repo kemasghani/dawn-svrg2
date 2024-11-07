@@ -43,7 +43,7 @@
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 36,
-        "padding_bottom": 36,
+        "padding_bottom": 8,
         "margin_top": 0
       }
     },
@@ -238,7 +238,7 @@
     "multicolumn_styled_8DinCN": {
       "type": "multicolumn-styled",
       "settings": {
-        "image_1": "shopify:\/\/shop_images\/Lime_1.jpg",
+        "image_1": "shopify:\/\/shop_images\/3_Grid-04.jpg",
         "title_1": "KENAPA HARUS BELI DI SVRG.",
         "benefit_1": "Gratis Ongkir",
         "benefit_2": "Pengemasan Spesial",
@@ -251,11 +251,11 @@
         "icon_text_2": "Pengemasan Spesial",
         "icon_3": "shopify:\/\/shop_images\/RETURN_BLACK.svg",
         "icon_text_3": "Jaminan Return",
-        "image_2": "shopify:\/\/shop_images\/Lime_2.jpg",
+        "image_2": "shopify:\/\/shop_images\/3_Grid-05.jpg",
         "title_2": "Diskon Cuci Gudang",
         "link_2": "shopify:\/\/collections\/clearance-sale",
         "button_text_2": "Cek Sekarang",
-        "image_3": "shopify:\/\/shop_images\/Lime_3.jpg",
+        "image_3": "shopify:\/\/shop_images\/3_Grid-06.jpg",
         "title_3": "Temukan Toko",
         "subtitle_3": "Belanja Online di Webstore, tersedia pilihan Pickup in SVRG. Showroom",
         "link_3": "shopify:\/\/pages\/about",
@@ -495,8 +495,8 @@
     "featured_blog_FrKWDC": {
       "type": "featured-blog",
       "settings": {
-        "heading": "<strong>Blog Posts<\/strong>",
-        "heading_size": "h2",
+        "heading": "Blog Posts",
+        "heading_size": "h1",
         "blog": "the-journey",
         "post_limit": 3,
         "columns_desktop": 3,
@@ -516,7 +516,7 @@
         "heading_XeRf6e": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Daftar dan Dapatkan Keuntunganya<\/strong>",
+            "heading": "<strong>Daftar dan Dapatkan Keuntungannya<\/strong>",
             "heading_size": "h2"
           }
         },
