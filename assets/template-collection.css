@@ -15,12 +15,6 @@
   width: 102%;
 }
 
-
-
-.flash-sale-head-container h2 {
-  font-size: 30px;
-}
-
 svg.arrow-left path {
   fill: #63d7d1;
   color: #63d7d1;
@@ -190,10 +184,6 @@ li.image-banner-collection h1 {
     padding: 2px 20px;
     font-size: 22px;
   }
-
-  .flash-sale-head-container h2 {
-    font-size: 23px;
-  }
 }
 
 @media screen and (max-width: 366px) {
@@ -271,11 +261,11 @@ li.image-banner-collection h1 {
 }
 
 .collection__title.title-wrapper {
-  margin-bottom: 2.5rem;
+  margin-bottom: 0rem;
 }
 
 .collection__title .title:not(:only-child) {
-  margin-bottom: 1rem;
+  margin: 0rem;
 }
 
 @media screen and (min-width: 990px) {

@@ -26,6 +26,9 @@
 
 
 {%- style -%}
+ul.product-grid{
+  margin-top: 10px;
+}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
@@ -37,20 +40,23 @@
     }
     .section-{{ section.id }}-padding .flash-sale-head-container {
       display: flex;
-      align-items: baseline;
+      align-items: center;
       justify-content: space-between;
     }`
   {%- else -%}
     {%- if section.settings.title != blank -%}
     .section-{{ section.id }}-padding .flash-sale-head-container {
       display: flex;
-      align-items: baseline;
+      align-items: center;
       justify-content: space-between;
+    }
+    .section-{{ section.id }}-padding .view-all-carousel-control-container{
+      transform: translateY(-5px);
     }
     {%- else -%}
       .section-{{ section.id }}-padding .flash-sale-head-container {
       display: flex;
-      align-items: baseline;
+      align-items: center;
       justify-content: end;
     }
     {%- endif -%}
@@ -103,7 +109,7 @@
           {%- if section.settings.flash_sale_layout -%}
             <div>
             {%- if section.settings.title != blank -%}
-              <h2 class="title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+              <h2 class="title inline-richtext m-0 {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
                 {{ section.settings.title }}
               </h2>
             {%- endif -%}

@@ -308,14 +308,14 @@ h5,
 
 h1,
 .h1 {
-  font-size: calc(var(--font-heading-scale) * 3rem);
+  font-size: calc(var(--font-heading-scale) * 2.5rem);
 }
 
 @media only screen and (min-width: 750px) {
 
   h1,
   .h1 {
-    font-size: calc(var(--font-heading-scale) * 4rem);
+    font-size: calc(var(--font-heading-scale) * 3rem);
   }
 }
 
@@ -786,7 +786,7 @@ summary::-webkit-details-marker {
 /* component-title */
 .title,
 .title-wrapper-with-link {
-  margin: 3rem 0 2rem;
+  margin: 3rem 0 10px;
 }
 
 .title-wrapper-with-link .title {
@@ -806,7 +806,7 @@ summary::-webkit-details-marker {
   justify-content: space-between;
   align-items: flex-end;
   gap: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 5px;
   flex-wrap: wrap;
 }
 
@@ -831,7 +831,7 @@ summary::-webkit-details-marker {
 
   .title,
   .title-wrapper-with-link {
-    margin: 5rem 0 3rem;
+    margin: 5rem 0 10px;
   }
 
   .title--primary {
@@ -3642,6 +3642,14 @@ details-disclosure>details {
 
 .accordion .accordion__content {
   padding-left: 30px;
+}
+
+.article-card .card__heading.h2 {
+  font-size: 17px;
+}
+
+#countdown p {
+  margin: 0;
 }
 
 /* @font-face {

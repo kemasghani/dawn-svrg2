@@ -11,42 +11,6 @@
         "link": "shopify:\/\/collections\/all"
       }
     },
-    "featured_collection_4n9Qmt": {
-      "type": "featured-collection",
-      "settings": {
-        "link": "",
-        "button_text": "Lihat Semua Category",
-        "show_view_all_category": false,
-        "title": "<em>FLASH SALE<\/em>",
-        "heading_size": "h1",
-        "text_button_all": "Lihat Semua",
-        "description": "",
-        "show_description": false,
-        "show_border_top": true,
-        "description_style": "body",
-        "collection": "accessories",
-        "products_to_show": 5,
-        "columns_desktop": 5,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": true,
-        "color_scheme": "",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "flash_sale_layout": true,
-        "countdown_total_time": 120,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 8,
-        "margin_top": 0
-      }
-    },
     "featured_collection_FXhrhq": {
       "type": "featured-collection",
       "settings": {
@@ -78,8 +42,8 @@
         "quick_add": "none",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
-        "padding_top": 4,
-        "padding_bottom": 72,
+        "padding_top": 44,
+        "padding_bottom": 4,
         "margin_top": 0
       }
     },
@@ -152,7 +116,7 @@
         "swipe_on_mobile": true,
         "padding_top": 24,
         "padding_bottom": 32,
-        "margin_top": 36
+        "margin_top": 16
       }
     },
     "image_with_text_w4aNU7": {
@@ -260,105 +224,6 @@
         "subtitle_3": "Belanja Online di Webstore, tersedia pilihan Pickup in SVRG. Showroom",
         "link_3": "shopify:\/\/pages\/about",
         "button_text_3": "Temukan Toko"
-      }
-    },
-    "review_ma6n9G": {
-      "type": "review",
-      "blocks": {
-        "block_L6PBWg": {
-          "type": "block",
-          "settings": {
-            "product_name": "Ekata Series - Limited Edition",
-            "review_text": "Ga licin sama sekali, suprise that this kind of mat exist honestly lollll, thank you ilove it!",
-            "reviewer_image": "shopify:\/\/shop_images\/svrg-petite-diva.jpg",
-            "reviewer_name": "Petitediva",
-            "reviewer_title": "Indonesian Influencer"
-          }
-        },
-        "block_frnJid": {
-          "type": "block",
-          "settings": {
-            "product_name": "Ekata Series - Limited Edition",
-            "review_text": "So cool!!! Suka banget, tebell dan stickyy,\nThank you Svarga.",
-            "reviewer_image": "shopify:\/\/shop_images\/svrg-penyogastar.jpg",
-            "reviewer_name": "Penyogastar",
-            "reviewer_title": "Celebrity Yoga Instructor"
-          }
-        },
-        "block_AzqapY": {
-          "type": "block",
-          "settings": {
-            "product_name": "Ekata Series - Darbotz Mats",
-            "review_text": "Hi Svarga! Darbotz Mats Super coollll omg, coolest collab & baru sadar Svarga dari Surabaya, bangga bgt krn aku juga dari Surabaya hehee!\nKeep up the good works guys!!",
-            "reviewer_image": "shopify:\/\/shop_images\/svrg-rania-putrisari_1.jpg",
-            "reviewer_name": "Rania Putrisari",
-            "reviewer_title": "Indonesian Model"
-          }
-        },
-        "block_krCpeq": {
-          "type": "block",
-          "settings": {
-            "product_name": "Ekata Series - Plain Edition",
-            "review_text": "Favorit banget asliii, soalnya ada garis tengah, jadi untuk centeringnya lebih mudah.",
-            "reviewer_image": "shopify:\/\/shop_images\/svrg-andien-icon.jpg",
-            "reviewer_name": "Andienaisyah",
-            "reviewer_title": "Indonesian Singer"
-          }
-        },
-        "block_F7XEY7": {
-          "type": "block",
-          "settings": {
-            "product_name": "Ekata Series - Limited Edition",
-            "review_text": "I love it, grip-nya jadi bener2 enak bngt...",
-            "reviewer_image": "shopify:\/\/shop_images\/svrg-chelsea-olivia.jpg",
-            "reviewer_name": "Chelseaoliviaa",
-            "reviewer_title": "Indonesian Celebrity"
-          }
-        },
-        "block_DQ9CpN": {
-          "type": "block",
-          "settings": {
-            "product_name": "Resistance Bands",
-            "review_text": "Thankyou yaa resistance bandnya. Kualitasnya bagus sekali",
-            "reviewer_image": "shopify:\/\/shop_images\/svrg-maretto-aufra.jpg",
-            "reviewer_name": "Marettoaufra",
-            "reviewer_title": "Calisthenics Specialist"
-          }
-        },
-        "block_JxmVRJ": {
-          "type": "block",
-          "settings": {
-            "product_name": "Shuroo Series - Sweat Smile Repeat.",
-            "review_text": "love the design and the quality",
-            "reviewer_image": "shopify:\/\/shop_images\/svrg-jryan-karsten.jpg",
-            "reviewer_name": "Jryankarsten",
-            "reviewer_title": "Indonesian Model"
-          }
-        },
-        "block_mFMXqj": {
-          "type": "block",
-          "settings": {
-            "product_name": "Ekata Limited Edition - Darbotz",
-            "review_text": "Insane bagus banget. The mat so prettyyy!!",
-            "reviewer_image": "shopify:\/\/shop_images\/svrg-raisa.jpg",
-            "reviewer_name": "Raisa6690",
-            "reviewer_title": "Indonesian Singer"
-          }
-        }
-      },
-      "block_order": [
-        "block_L6PBWg",
-        "block_frnJid",
-        "block_AzqapY",
-        "block_krCpeq",
-        "block_F7XEY7",
-        "block_DQ9CpN",
-        "block_JxmVRJ",
-        "block_mFMXqj"
-      ],
-      "settings": {
-        "heading": "<strong>SVRG's Review<\/strong>",
-        "heading_size": "h2"
       }
     },
     "collapsible_content_4VJ4VT": {
@@ -528,8 +393,7 @@
         },
         "email_form_qRLqJC": {
           "type": "email_form",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -547,7 +411,6 @@
   },
   "order": [
     "custom_fullwidth_video_DgQa8n",
-    "featured_collection_4n9Qmt",
     "featured_collection_FXhrhq",
     "featured_collection",
     "featured_collection_8mpqbj",
@@ -555,7 +418,6 @@
     "diagonal_cross_bar_WaKNHh",
     "custom_feature_section_wngyVP",
     "multicolumn_styled_8DinCN",
-    "review_ma6n9G",
     "collapsible_content_4VJ4VT",
     "featured_blog_FrKWDC",
     "newsletter_YpphjE"

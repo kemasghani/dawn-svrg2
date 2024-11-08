@@ -50,7 +50,7 @@
             <a
               href="{{ section.settings.blog.url }}"
               id="ViewAll-{{ section.id }}"
-              class="border border-[#63d7d1] !rounded-full py-2 px-8 mr-3 text-black"
+              class="border border-[#63d7d1] !rounded-full py-2 px-8 mr-3 text-black md:text-[15px]"
               aria-labelledby="ViewAll-{{ section.id }} SectionHeading-{{ section.id }}"
             >
               {{ 'sections.featured_blog.view_all' | t }}
@@ -63,7 +63,7 @@
         -%}
           <a
             href="{{ section.settings.blog.url }}"
-            class="border border-[#63d7d1] !rounded-full py-2 px-8 mr-3 text-black large-up-hide{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            class="border border-[#63d7d1] !rounded-full py-2 px-8 mr-3 !text-[12px] md:text-[15px] text-black large-up-hide{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
           >
             {{ 'sections.featured_blog.view_all' | t }}
           </a>
