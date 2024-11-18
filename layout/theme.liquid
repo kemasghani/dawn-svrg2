@@ -341,9 +341,16 @@ You can learn more about this (and learn how to cleanly revert these changes) at
 
     {% sections 'header-group' %}
 
-    <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
-      {{ content_for_layout }}
-    </main>
+    {% if template.name == 'cart' %}
+      <main id="MainContent" class="cartContainer content-for-layout focus-none" role="main" tabindex="-1">
+        {{ content_for_layout }}
+      </main>
+      {% else %}
+      <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
+        {{ content_for_layout }}
+      </main>
+      {% endif %}
+
 
     {% sections 'footer-group' %}
 

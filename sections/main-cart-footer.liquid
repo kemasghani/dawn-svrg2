@@ -8,7 +8,9 @@
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
-
+.recomendProduct .grid{
+  display: grid !important;
+}
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
@@ -18,13 +20,12 @@
 {%- endstyle -%}
 
 <div
-  class="gradient color-{{ section.settings.color_scheme }}{% if cart == empty %} is-empty{% endif %} w-[95%]"
+  class="gradient color-{{ section.settings.color_scheme }}{% if cart == empty %} is-empty{% endif %} w-[95%] mt-16"
   id="main-cart-footer"
   data-id="{{ section.id }}"
 >
   <div class="page-width">
     <div class="cart__footer isolate section-{{ section.id }}-padding">
-
       <div class="cart__blocks">
         {% for block in section.blocks %}
           {%- case block.type -%}
@@ -129,14 +130,79 @@
         <div id="cart-errors"></div>
       </div>
     </div>
+    <div class="recomendProduct">
+      {% if section.settings.recommended_collection != blank %}
+        {% assign collection_handle = section.settings.recommended_collection %}
+        {% assign collection = collections[collection_handle] %}
+
+        {% if collection and collection.products.size > 0 %}
+          <h1 class="h1">Rekomendasi Produk</h1>
+          <div class="grid grid-cols-2 gap-4 mt-3">
+            {% assign limited_products = collection.products | limit: 6 %}
+            {% for product in limited_products %}
+              <div class="border rounded-lg p-4 bg-white shadow max-w-[170px]">
+                <a href="{{ product.url }}" class="block">
+                  <img src="{{ product.featured_image | img_url: '400x400' }}" alt="{{ product.title }}" class="w-full h-auto object-cover rounded-md">
+                </a>
+                <p class="font-semibold mt-2 text-[13px] !mb-0 !pb-2">{{ product.title }}</p>
+                <p class="text-gray-600  text-[12px]">{{ product.price | money }}</p>
+                <form method="post" action="/cart/add" class="mt-4">
+                  <input type="hidden" name="id" value="{{ product.variants.first.id }}">
+                  <button type="submit" class="w-full py-2 px-4 bg-[#63d7d1] text-black rounded hover:bg-[#5db9b4] transition text-[12px]" data-reload="true">
+                    Tambahkan
+                  </button>
+                </form>
+              </div>
+            {% endfor %}
+          </div>
+        {% else %}
+          <p class="text-gray-500">No products available in this collection</p>
+        {% endif %}
+      {% else %}
+        <p class="text-gray-500">No collection selected</p>
+      {% endif %}
+    </div>
+
   </div>
 </div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Disable scroll restoration
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+
+    const buttons = document.querySelectorAll('button[data-reload="true"]');
+    buttons.forEach(button => {
+      button.addEventListener('click', function() {
+        // Mark that reload was triggered
+        sessionStorage.setItem('scrollToTop', 'true');
+
+        setTimeout(function() {
+          location.reload();
+        }, 500); // Delay to allow the cart action to complete
+      });
+    });
+
+    // Scroll to top if reload was triggered
+    if (sessionStorage.getItem('scrollToTop') === 'true') {
+      window.scrollTo(0, 0);
+      sessionStorage.removeItem('scrollToTop'); // Reset flag
+    }
+  });
+</script>
+
 
 {% schema %}
 {
   "name": "t:sections.main-cart-footer.name",
   "class": "cart__footer-wrapper",
   "settings": [
+    {
+      "type": "collection",
+      "id": "recommended_collection",
+      "label": "Recommended Collection"
+    },
     {
       "type": "color_scheme",
       "id": "color_scheme",
