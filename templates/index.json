@@ -129,13 +129,6 @@
             "heading_size": "h2"
           }
         },
-        "text_nVr4TL": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Cross X Weightlifting Shoes dirancang secara khusus untuk kegiatan angkat besi, seperti powerlifting, dan latihan squat lainnya. <\/p>",
-            "text_style": "body"
-          }
-        },
         "button_DxFDUm": {
           "type": "button",
           "settings": {
@@ -147,7 +140,6 @@
       },
       "block_order": [
         "heading_8jwa9y",
-        "text_nVr4TL",
         "button_DxFDUm"
       ],
       "settings": {

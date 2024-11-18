@@ -10,11 +10,6 @@
     },
     "cart-footer": {
       "type": "main-cart-footer",
-      "settings": {
-        "color_scheme": "scheme-1",
-        "padding_top": 20,
-        "padding_bottom": 40
-      },
       "blocks": {
         "subtotal": {
           "type": "subtotal",
@@ -23,12 +18,23 @@
         "buttons": {
           "type": "buttons",
           "settings": {}
+        },
+        "oc_gift_wrap_product_star_rating_dE9PBT": {
+          "type": "shopify:\/\/apps\/oc-gift-wrap-product\/blocks\/star_rating\/235afcd6-e1c6-4bf3-966b-a73b1c132cd1",
+          "settings": {}
         }
       },
       "block_order": [
         "subtotal",
-        "buttons"
-      ]
+        "buttons",
+        "oc_gift_wrap_product_star_rating_dE9PBT"
+      ],
+      "settings": {
+        "recommended_collection": "accessories",
+        "color_scheme": "scheme-1",
+        "padding_top": 20,
+        "padding_bottom": 40
+      }
     }
   },
   "order": [
