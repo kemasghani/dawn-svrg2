@@ -1,0 +1,211 @@
+<style>
+    /* Quiz Button */
+.quiz-btn {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .quiz-btn:hover {
+    background-color: #45a049;
+  }
+
+  /* Full-screen Modal */
+  #quiz-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  #quiz-container {
+    background: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    overflow: auto;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    background: transparent;
+    border: none;
+    color: #555;
+    cursor: pointer;
+  }
+  .close-btn:hover {
+    color: red;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .choices-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .choice {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .choice:hover {
+    background-color: #f1f1f1;
+  }
+
+  .choice.selected {
+    background-color: #4caf50;
+    color: white;
+    border-color: #4caf50;
+  }
+
+  .nav-btn {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .nav-btn:hover {
+    background-color: #0056b3;
+  }
+
+</style>
+<section id="quiz-section">
+    <!-- Button to open quiz -->
+    <button id="start-quiz-button" class="quiz-btn">Take Quiz</button>
+
+    <!-- Quiz Modal -->
+    <div id="quiz-modal" class="hidden">
+      <div id="quiz-container">
+        <!-- Close Button -->
+        <button id="close-quiz" class="close-btn">×</button>
+
+        <!-- Quiz Content -->
+        <div id="quiz-screen">
+          <h2 id="quiz-question"></h2>
+          <div id="quiz-choices" class="choices-container"></div>
+          <div class="quiz-navigation">
+            <button id="prev-button" class="nav-btn">Previous</button>
+            <button id="next-button" class="nav-btn">Next</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const quizModal = document.getElementById("quiz-modal");
+        const startQuizButton = document.getElementById("start-quiz-button");
+        const closeQuizButton = document.getElementById("close-quiz");
+
+        const quizQuestions = [
+          {
+            question: "What is your main fitness goal?",
+            choices: [
+              "Build strength and muscle",
+              "Improve cardio and endurance",
+              "Enhance flexibility and mobility",
+              "Train for a specific sport",
+              "Enjoy outdoor activities",
+            ],
+          },
+          {
+            question: "Where do you usually work out?",
+            choices: [
+              "At the gym",
+              "At home",
+              "Outdoors",
+              "In a sport-specific facility",
+              "On or near water",
+            ],
+          },
+        ];
+
+        let currentQuestionIndex = 0;
+        const questionElement = document.getElementById("quiz-question");
+        const choicesContainer = document.getElementById("quiz-choices");
+
+        const renderQuestion = (index) => {
+          const currentQuestion = quizQuestions[index];
+          questionElement.textContent = currentQuestion.question;
+          choicesContainer.innerHTML = "";
+
+          currentQuestion.choices.forEach((choice, idx) => {
+            const choiceElement = document.createElement("div");
+            choiceElement.className = "choice";
+            choiceElement.textContent = choice;
+            choiceElement.addEventListener("click", () => {
+              document
+                .querySelectorAll(".choice")
+                .forEach((el) => el.classList.remove("selected"));
+              choiceElement.classList.add("selected");
+            });
+            choicesContainer.appendChild(choiceElement);
+          });
+        };
+
+        startQuizButton.addEventListener("click", () => {
+          quizModal.classList.remove("hidden");
+          document.body.style.overflowY = "hidden"; // Disable vertical scroll
+          renderQuestion(currentQuestionIndex);
+        });
+
+        closeQuizButton.addEventListener("click", () => {
+          quizModal.classList.add("hidden");
+          document.body.style.overflowY = "scroll"; // Re-enable vertical scroll
+        });
+
+        document.getElementById("next-button").addEventListener("click", () => {
+          if (currentQuestionIndex < quizQuestions.length - 1) {
+            currentQuestionIndex++;
+            renderQuestion(currentQuestionIndex);
+          } else {
+            alert("Quiz completed!");
+            quizModal.classList.add("hidden");
+            document.body.style.overflowY = "scroll"; // Re-enable vertical scroll
+          }
+        });
+
+        document.getElementById("prev-button").addEventListener("click", () => {
+          if (currentQuestionIndex > 0) {
+            currentQuestionIndex--;
+            renderQuestion(currentQuestionIndex);
+          }
+        });
+      });
+
+</script>
+
+  {% schema %}
+  {
+    "name": "Take Quiz",
+    "presets": [
+      {
+        "name": "Take Quiz",
+        "category": "Custom"
+      }
+    ]
+  }
+  {% endschema %}

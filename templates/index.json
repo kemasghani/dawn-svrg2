@@ -399,10 +399,15 @@
         "padding_top": 100,
         "padding_bottom": 52
       }
+    },
+    "take_quiz_MKRjmd": {
+      "type": "take-quiz",
+      "settings": {}
     }
   },
   "order": [
     "custom_fullwidth_video_DgQa8n",
+    "take_quiz_MKRjmd",
     "featured_collection_FXhrhq",
     "featured_collection",
     "featured_collection_8mpqbj",
