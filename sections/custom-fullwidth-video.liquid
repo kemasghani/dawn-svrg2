@@ -23,14 +23,11 @@
       <!-- Text content on top of the gradient -->
       <div class="text-content-overlay flex flex-col gap-10">
         <h1 class="text-[70px] font-[600] text-white">{{ section.settings.video_heading }}</h1>
-        <p class="text-[17px] font-[300]">{{ section.settings.video_description }}</p>
+        <p class="text-[20px] font-[300]">{{ section.settings.video_description }}</p>
       </div>
       <a href="{{ section.settings.link }}">
         <div class="flex gap-5 button border-none">
           <button class="text-[13px] md:text-[17px] text-black">{{ section.settings.button_text }}</button>
-          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black">
-            <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/>
-          </svg>
         </div>
       </a>
     </div>
@@ -113,15 +110,11 @@
     width: fit-content;
     margin: auto;
     padding: 10px 30px;
-    background-color: #63d7d1;
+    background-color: white;
     color: white;
     border: none;
     cursor: pointer;
-    border-radius: 9px;
-  }
-
-  .video-overlay-content .button:hover {
-    background-color: #63d7d1;
+    border-radius: 0px !important;
   }
 </style>
 </section>

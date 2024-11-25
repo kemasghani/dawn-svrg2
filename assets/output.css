@@ -1412,10 +1412,6 @@ b,
   font-size: 16px;
 }
 
-.text-\[17px\] {
-  font-size: 17px;
-}
-
 .text-\[18px\] {
   font-size: 18px;
 }
@@ -1704,10 +1700,6 @@ b,
 
   .md\:text-\[18px\] {
     font-size: 18px;
-  }
-
-  .md\:text-\[20px\] {
-    font-size: 20px;
   }
 
   .md\:text-\[24px\] {

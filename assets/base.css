@@ -2857,15 +2857,14 @@ details[open] > .header__submenu {
 }
 
 .header__menu-item span {
+  letter-spacing: 1px;
   transition: text-decoration var(--duration-short) ease;
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 17px;
 }
 
 .header__submenu .header__menu-item span {
   transition: text-decoration var(--duration-short) ease;
   font-size: 14px !important;
-  font-weight: 400;
 }
 
 .header__menu-item:hover span {
@@ -3740,105 +3739,59 @@ details-disclosure > details {
   font-size: 17px;
 }
 
+@media screen and (max-width: 989px) {
+  nav {
+    display: none !important;
+  }
+}
+
 #countdown p {
   margin: 0;
 }
+.header__menu-item svg {
+  color: white;
+}
+.header svg {
+  color: white;
+}
 
-/* @font-face {
-  font-family: 'CalibreThin';
-  src:
-    url('https://cdn.shopify.com/s/files/1/0688/7325/7256/files/CalibreThin.woff2?v=1729653652') format('woff2');
+@font-face {
+  font-family: "Arquitecta";
+  src: url("https://cdn.shopify.com/s/files/1/0688/7325/7256/files/Arquitecta.otf?v=1732519824")
+    format("otf");
   font-display: swap;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'CalibreBold';
-  src:
-    url('https://cdn.shopify.com/s/files/1/0688/7325/7256/files/CalibreBold.woff2?v=1729653652') format('woff2');
+  font-family: "ArquitectaBlack";
+  src: url("https://cdn.shopify.com/s/files/1/0688/7325/7256/files/ArquitectaBlack.otf?v=1732519824")
+    format("opentype");
   font-display: swap;
   font-style: normal;
 }
-
-@font-face {
-  font-family: 'CalibreSemibold';
-  src:
-    url('https://cdn.shopify.com/s/files/1/0688/7325/7256/files/CalibreSemibold.woff2?v=1729653652') format('woff2');
-  font-display: swap;
-  font-style: normal;
+header nav ul li span {
+  font-family: "Arquitecta";
+  font-weight: 600;
 }
-
-@font-face {
-  font-family: 'CalibreMedium';
-  src:
-    url('https://cdn.shopify.com/s/files/1/0688/7325/7256/files/CalibreMedium.woff2?v=1729653652') format('woff2');
-  font-display: swap;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'CalibreRegular';
-  src:
-    url('https://cdn.shopify.com/s/files/1/0688/7325/7256/files/CalibreRegular.woff2?v=1729653652') format('woff2');
-  font-display: swap;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Helvetica';
-  src:
-    url('https://cdn.shopify.com/s/files/1/0688/7325/7256/files/Helvetica.woff2?v=1729654739') format('woff2');
-  font-display: swap;
-  font-style: normal;
-} */
-
-/*
 
 .shopify-section h1 {
-  font-family: 'CalibreSemibold';
+  font-family: "ArquitectaBlack";
+  font-weight: 300;
+  letter-spacing: 1.5px;
 }
 
-h3 {
-  font-family: 'CalibreSemibold' !important;
+.shopify-section p {
+  font-family: "Arquitecta";
+  font-weight: 300;
+  letter-spacing: 1.5px;
 }
 
-ul span {
-  font-family: 'CalibreMedium' !important;
-  font-weight: 200 !important;
+.video-overlay-content .button {
+  font-family: "Arquitecta";
+  font-weight: 900;
+  letter-spacing: 1px;
 }
-
-h2 {
-  font-family: 'CalibreBold' !important;
+.view-all-carousel-control-container {
+  display: none !important;
 }
-
-p {
-  font-family: 'Helvetica';
-}
-
-.custom-featured-section h2 {
-  font-family: 'CalibreSemibold' !important;
-}
-
-.overlay-content ul li {
-  font-family: 'Helvetica' !important;
-}
-
-.price-item--last span {
-  font-family: 'CalibreSemibold' !important;
-}
-
-.price-item--regular span {
-  font-family: 'CalibreSemibold' !important;
-}
-
-.price__sale .price-item--regular span {
-  font-family: 'Assistant' !important;
-}
-
-span.badge-discount {
-  font-family: 'CalibreSemibold' !important;
-}
-
-button, a.btn, a.button {
-  font-family: 'Helvetica' !important;
-} */

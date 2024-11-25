@@ -1,0 +1,94 @@
+<section class="custom-service-section">
+    <div class="container">
+        <h2 class="section-title">{{ section.settings.title }}</h2>
+        <div class="services-grid">
+            {% for block in section.blocks %}
+            <div class="service-item">
+                <img src="{{ block.settings.image | img_url: 'medium' }}" alt="{{ block.settings.title }}">
+                <h3>{{ block.settings.title }}</h3>
+                <p>{{ block.settings.description }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<style>
+    .custom-service-section {
+        text-align: center;
+        padding: 40px 20px;
+        background-color: #f9f9f9;
+    }
+    .custom-service-section .services-grid {
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+    }
+    .custom-service-section .service-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 150px;
+    }
+    .custom-service-section .service-item img {
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+    }
+    .custom-service-section .service-item h3 {
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .custom-service-section .service-item p {
+        margin-top: 5px;
+        font-size: 14px;
+        color: #666;
+    }
+</style>
+
+{% schema %}
+{
+    "name": "Multicolumn Icon",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Section Title",
+            "default": "Our Service"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "service_item",
+            "name": "Service Item",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Icon/Image"
+                },
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Service Title",
+                    "default": "Service Name"
+                },
+                {
+                    "type": "text",
+                    "id": "description",
+                    "label": "Description",
+                    "default": "Short description of the service."
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Multicolumn Icon",
+            "category": "Custom Sections"
+        }
+    ]
+}
+{% endschema %}

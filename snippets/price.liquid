@@ -98,9 +98,8 @@
           <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
           <span class="price-item price-item--regular text-[16px] !font-[500] md:text-[16px] text-[#ff2e00]">
             {{ money_price }}
-
           </span>
-'?'        {%- endif -%}
+        {%- endif -%}
       </div>
       <div class="price__sale">
         {%- unless product.price_varies == false and product.compare_at_price_varies %}

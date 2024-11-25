@@ -5,7 +5,7 @@
   {% render 'header-dropdown-menu' %}
 {% endcomment %}
 
-<nav class="header__inline-menu">
+<nav class="header__inline-menu flex items-center">
   <ul class="list-menu list-menu--inline" role="list">
     {%- for link in section.settings.menu.links -%}
       <li>
@@ -18,9 +18,9 @@
               >
                 <span
                   {%- if link.child_active %}
-                    class="header__active-menu-item text-black  text-[14px] font-[400]"
+                    class="header__active-menu-item text-white  text-[14px]"
                   {% endif %}
-                  class="text-black  text-[14px] font-[400]"
+                  class="text-white  text-[14px]"
                 >
                   {{- link.title | escape -}}
                 </span>
@@ -92,9 +92,9 @@
           >
             <span
               {%- if link.current %}
-                class="header__active-menu-item text-black  text-[14px] font-[400]"
+                class="header__active-menu-item text-white  text-[14px]"
               {% endif %}
-              class="text-black text-[14px] font-[400]"
+              class="text-white text-[14px]"
             >
               {{- link.title | escape -}}
             </span>

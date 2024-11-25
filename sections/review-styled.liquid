@@ -1,0 +1,147 @@
+<section class="scrollable-reviews-section">
+    <div class="container">
+        <h2 class="section-title">{{ section.settings.title }}</h2>
+        <div class="reviews-wrapper">
+            {% for block in section.blocks %}
+            <div class="review-item">
+                <div class="image-wrapper">
+                    <img src="{{ block.settings.image | img_url: 'medium' }}" alt="{{ block.settings.name }}">
+                </div>
+                <div class="review-content">
+                    <h3>{{ block.settings.name }}</h3>
+                    <p class="role">{{ block.settings.role }}</p>
+                    <p>“{{ block.settings.review }}”</p>
+                    <p class="product">{{ block.settings.product }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<style>
+.scrollable-reviews-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+.scrollable-reviews-section .section-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.scrollable-reviews-section .reviews-wrapper {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+}
+.scrollable-reviews-section .reviews-wrapper::-webkit-scrollbar {
+    height: 8px;
+}
+.scrollable-reviews-section .reviews-wrapper::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}
+.scrollable-reviews-section .review-item {
+    position: relative;
+    flex: 0 0 400px;
+    width: 231px;
+    height: 550px;
+    background: #fff;
+    overflow: hidden;
+    padding: 60px 15px 20px;
+}
+.scrollable-reviews-section .review-item .image-wrapper {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    overflow: hidden;
+}
+.scrollable-reviews-section .review-item .image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.scrollable-reviews-section .review-content {
+    background: white;
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+    padding: 10px 33px;
+}
+.scrollable-reviews-section .review-content h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+.scrollable-reviews-section .review-content .role {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+.scrollable-reviews-section .review-content .product {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+</style>
+
+{% schema %}
+{
+    "name": "Review Styled",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Section Title",
+            "default": "Customer Reviews"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "review_item",
+            "name": "Review Item",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Reviewer Image"
+                },
+                {
+                    "type": "text",
+                    "id": "name",
+                    "label": "Reviewer Name",
+                    "default": "John Doe"
+                },
+                {
+                    "type": "text",
+                    "id": "role",
+                    "label": "Reviewer Role",
+                    "default": "Customer"
+                },
+                {
+                    "type": "textarea",
+                    "id": "review",
+                    "label": "Review Text",
+                    "default": "This is an amazing product!"
+                },
+                {
+                    "type": "text",
+                    "id": "product",
+                    "label": "Product Mentioned",
+                    "default": "Product Name"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Review Styled",
+            "category": "Custom Sections"
+        }
+    ]
+}
+{% endschema %}
