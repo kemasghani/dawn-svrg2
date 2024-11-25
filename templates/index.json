@@ -5,10 +5,51 @@
       "settings": {
         "video": "shopify:\/\/files\/videos\/ca2e138374d34365901b09ca083056c8.HD-1080p-7.2Mbps-35756872.webm",
         "video_url": "https:\/\/res.cloudinary.com\/doq2grch0\/video\/upload\/v1729751724\/ca2e138374d34365901b09ca083056c8.HD-1080p-7.2Mbps-35756872_ntidsg.webm",
-        "video_heading": "Maksimalkan Olahragamu dengan SVRG.",
+        "video_heading": "MAKSIMALKAN OLAHRAGAMU DENGAN SVRG.",
         "video_description": "Perlengkapan Olahraga Berkinerja Tinggi yang Dirancang untuk Kenyamanan, Fleksibilitas, dan Daya Tahan.",
-        "button_text": "Belanja Sekarang",
+        "button_text": "BELANJA SEKARANG",
         "link": "shopify:\/\/collections\/all"
+      }
+    },
+    "take_quiz_MKRjmd": {
+      "type": "take-quiz",
+      "disabled": true,
+      "settings": {}
+    },
+    "featured_collection_PwmxtQ": {
+      "type": "featured-collection",
+      "settings": {
+        "link": "",
+        "button_text": "Lihat Semua Category",
+        "show_view_all_category": false,
+        "title": "Featured collection",
+        "heading_size": "h1",
+        "text_button_all": "",
+        "description": "",
+        "show_description": false,
+        "show_border_top": true,
+        "description_style": "body",
+        "collection": "new-arrivals",
+        "products_to_show": 5,
+        "columns_desktop": 5,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "flash_sale_layout": false,
+        "countdown_total_time": 120,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "margin_top": 0
       }
     },
     "featured_collection_FXhrhq": {
@@ -25,10 +66,10 @@
         "show_border_top": true,
         "description_style": "body",
         "collection": "new-arrivals",
-        "products_to_show": 6,
-        "columns_desktop": 6,
+        "products_to_show": 5,
+        "columns_desktop": 5,
         "full_width": false,
-        "show_view_all": true,
+        "show_view_all": false,
         "view_all_style": "solid",
         "enable_desktop_slider": true,
         "color_scheme": "",
@@ -49,6 +90,7 @@
     },
     "featured_collection": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "link": "",
         "button_text": "Lihat Semua Category",
@@ -85,6 +127,7 @@
     },
     "featured_collection_8mpqbj": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "link": "shopify:\/\/collections",
         "button_text": "Lihat Semua Category",
@@ -147,7 +190,7 @@
         "image_url": "https:\/\/res.cloudinary.com\/doq2grch0\/image\/upload\/v1729749547\/Artboard_1_900x_7973064c-aa27-4b37-9cea-2b78c26d5cdf_11zon_2_gknrbq.webp",
         "height": "adapt",
         "desktop_image_width": "medium",
-        "layout": "image_first",
+        "layout": "text_first",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "center",
         "content_layout": "no-overlap",
@@ -193,6 +236,7 @@
     },
     "multicolumn_styled_8DinCN": {
       "type": "multicolumn-styled",
+      "disabled": true,
       "settings": {
         "image_1": "shopify:\/\/shop_images\/3_Grid-04.jpg",
         "title_1": "KENAPA HARUS BELI DI SVRG.",
@@ -216,6 +260,52 @@
         "subtitle_3": "Belanja Online di Webstore, tersedia pilihan Pickup in SVRG. Showroom",
         "link_3": "shopify:\/\/pages\/about",
         "button_text_3": "Temukan Toko"
+      }
+    },
+    "multicolumn_icon_b6EmaQ": {
+      "type": "multicolumn-icon",
+      "blocks": {
+        "service_item_LJQyeK": {
+          "type": "service_item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Isolation_Mode.png",
+            "title": "1 Month Guarantee",
+            "description": ""
+          }
+        },
+        "service_item_k6UVLx": {
+          "type": "service_item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Isolation_Mode_1.png",
+            "title": "Cash On Delivery",
+            "description": ""
+          }
+        },
+        "service_item_8DTPRK": {
+          "type": "service_item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Isolation_Mode_2.png",
+            "title": "Ready Stock",
+            "description": ""
+          }
+        },
+        "service_item_TDAgYk": {
+          "type": "service_item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Isolation_Mode_3.png",
+            "title": "Free Delivery",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "service_item_LJQyeK",
+        "service_item_k6UVLx",
+        "service_item_8DTPRK",
+        "service_item_TDAgYk"
+      ],
+      "settings": {
+        "title": "Our Service"
       }
     },
     "collapsible_content_4VJ4VT": {
@@ -399,15 +489,12 @@
         "padding_top": 100,
         "padding_bottom": 52
       }
-    },
-    "take_quiz_MKRjmd": {
-      "type": "take-quiz",
-      "settings": {}
     }
   },
   "order": [
     "custom_fullwidth_video_DgQa8n",
     "take_quiz_MKRjmd",
+    "featured_collection_PwmxtQ",
     "featured_collection_FXhrhq",
     "featured_collection",
     "featured_collection_8mpqbj",
@@ -415,6 +502,7 @@
     "diagonal_cross_bar_WaKNHh",
     "custom_feature_section_wngyVP",
     "multicolumn_styled_8DinCN",
+    "multicolumn_icon_b6EmaQ",
     "collapsible_content_4VJ4VT",
     "featured_blog_FrKWDC",
     "newsletter_YpphjE"

@@ -84,6 +84,82 @@
         "review_count": 0
       }
     },
+    "review_styled_GNrmy8": {
+      "type": "review-styled",
+      "blocks": {
+        "review_item_QJ3PJJ": {
+          "type": "review_item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Mask_group_4.png",
+            "name": "John Doe",
+            "role": "Customer",
+            "review": "This is an amazing product!",
+            "product": "Product Name"
+          }
+        },
+        "review_item_97qC4b": {
+          "type": "review_item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Mask_group_5.png",
+            "name": "John Doe",
+            "role": "Customer",
+            "review": "This is an amazing product!",
+            "product": "Product Name"
+          }
+        },
+        "review_item_hQza8X": {
+          "type": "review_item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Mask_group_6.png",
+            "name": "John Doe",
+            "role": "Customer",
+            "review": "This is an amazing product!",
+            "product": "Product Name"
+          }
+        },
+        "review_item_wbVqwU": {
+          "type": "review_item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Mask_group_7.png",
+            "name": "John Doe",
+            "role": "Customer",
+            "review": "This is an amazing product!",
+            "product": "Product Name"
+          }
+        },
+        "review_item_QQ4mfw": {
+          "type": "review_item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Mask_group_5.png",
+            "name": "John Doe",
+            "role": "Customer",
+            "review": "This is an amazing product!",
+            "product": "Product Name"
+          }
+        },
+        "review_item_UVrD3q": {
+          "type": "review_item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Mask_group_4.png",
+            "name": "John Doe",
+            "role": "Customer",
+            "review": "This is an amazing product!",
+            "product": "Product Name"
+          }
+        }
+      },
+      "block_order": [
+        "review_item_QJ3PJJ",
+        "review_item_97qC4b",
+        "review_item_hQza8X",
+        "review_item_wbVqwU",
+        "review_item_QQ4mfw",
+        "review_item_UVrD3q"
+      ],
+      "settings": {
+        "title": "Customer Reviews"
+      }
+    },
     "review_iBmaWq": {
       "type": "review",
       "blocks": {
@@ -178,6 +254,7 @@
         "block_LGbAJ9",
         "block_P6R98V"
       ],
+      "disabled": true,
       "settings": {
         "heading": "<strong>Celebrity's Review<\/strong>",
         "heading_size": "h2"
@@ -218,6 +295,7 @@
     "main",
     "rich_text_pz4ijT",
     "banner_review_HCgGQ8",
+    "review_styled_GNrmy8",
     "review_iBmaWq",
     "rich_text_AYwVaJ",
     "image_with_image_pcxeYz"
