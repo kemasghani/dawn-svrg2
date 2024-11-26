@@ -777,6 +777,22 @@ b,
   margin-top: 30px;
 }
 
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mt-9 {
+  margin-top: 2.25rem;
+}
+
+.mt-12 {
+  margin-top: 3rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .line-clamp-1 {
   overflow: hidden;
   display: -webkit-box;
@@ -1420,8 +1436,20 @@ b,
   font-size: 20px;
 }
 
+.text-\[21px\] {
+  font-size: 21px;
+}
+
 .text-\[24px\] {
   font-size: 24px;
+}
+
+.text-\[25px\] {
+  font-size: 25px;
+}
+
+.text-\[30px\] {
+  font-size: 30px;
 }
 
 .text-\[70px\] {
@@ -1434,6 +1462,10 @@ b,
 
 .text-\[9px\] {
   font-size: 9px;
+}
+
+.text-\[17px\] {
+  font-size: 17px;
 }
 
 .\!font-\[500\] {
@@ -1706,6 +1738,10 @@ b,
     font-size: 24px;
   }
 
+  .md\:text-\[28px\] {
+    font-size: 28px;
+  }
+
   .md\:text-\[30px\] {
     font-size: 30px;
   }
@@ -1720,6 +1756,18 @@ b,
 
   .md\:text-\[9px\] {
     font-size: 9px;
+  }
+
+  .md\:text-\[21px\] {
+    font-size: 21px;
+  }
+
+  .md\:text-\[25px\] {
+    font-size: 25px;
+  }
+
+  .md\:text-\[20px\] {
+    font-size: 20px;
   }
 }
 

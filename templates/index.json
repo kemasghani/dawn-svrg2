@@ -11,6 +11,87 @@
         "link": "shopify:\/\/collections\/all"
       }
     },
+    "custom_collection_list_NjCYFP": {
+      "type": "custom-collection-list",
+      "blocks": {
+        "collection_block_VHALjw": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "accessories"
+          }
+        },
+        "collection_block_YzKnzF": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "agility-conditioning"
+          }
+        },
+        "collection_block_FQT9he": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "bags"
+          }
+        },
+        "collection_block_CgeNLJ": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "combat-sport"
+          }
+        },
+        "collection_block_AnfFYp": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "golf"
+          }
+        },
+        "collection_block_3kQKeH": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "gym"
+          }
+        },
+        "collection_block_mkLxmU": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "therapy"
+          }
+        },
+        "collection_block_igyLir": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "weight"
+          }
+        },
+        "collection_block_mBEHn7": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "weightlifting"
+          }
+        },
+        "collection_block_eahqc4": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "yoga"
+          }
+        }
+      },
+      "block_order": [
+        "collection_block_VHALjw",
+        "collection_block_YzKnzF",
+        "collection_block_FQT9he",
+        "collection_block_CgeNLJ",
+        "collection_block_AnfFYp",
+        "collection_block_3kQKeH",
+        "collection_block_mkLxmU",
+        "collection_block_igyLir",
+        "collection_block_mBEHn7",
+        "collection_block_eahqc4"
+      ],
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "take_quiz_MKRjmd": {
       "type": "take-quiz",
       "disabled": true,
@@ -493,6 +574,7 @@
   },
   "order": [
     "custom_fullwidth_video_DgQa8n",
+    "custom_collection_list_NjCYFP",
     "take_quiz_MKRjmd",
     "featured_collection_PwmxtQ",
     "featured_collection_FXhrhq",

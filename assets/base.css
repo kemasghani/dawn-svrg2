@@ -155,7 +155,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 
   .page-width-desktop {
     max-width: var(--page-width);
-    padding: 0 5rem;
+    padding: 0 2rem;
   }
 }
 
@@ -3770,6 +3770,33 @@ details-disclosure > details {
   font-display: swap;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "ProximaSemiBold";
+  src: url("https://cdn.shopify.com/s/files/1/0688/7325/7256/files/Proxima_Nova_Condensed_Semibold.otf?v=1732519737")
+    format("opentype");
+  font-display: swap;
+  font-style: normal;
+}
+
+h3.card__heading a {
+  font-family: "Arquitecta";
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+.card__inner .card-information {
+  font-family: "ProximaSemiBold";
+}
+
+.collection__title .title {
+  font-family: "Arquitecta";
+  font-weight: 900;
+}
+
+.title-custom-category {
+  font-family: "Arquitecta";
+  font-weight: 900;
+}
 header nav ul li span {
   font-family: "Arquitecta";
   font-weight: 600;
@@ -3786,11 +3813,26 @@ header nav ul li span {
   font-weight: 300;
   letter-spacing: 1.5px;
 }
-
+.collection-item p {
+  font-family: "Arquitecta";
+  letter-spacing: 1px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.custom-service-section h2 {
+  font-family: "Arquitecta";
+  font-weight: 900;
+}
 .video-overlay-content .button {
   font-family: "Arquitecta";
   font-weight: 900;
   letter-spacing: 1px;
+}
+.header__menu-item {
+  font-family: "Arquitecta";
+  font-weight: 900;
+  color: white;
+  text-transform: uppercase;
 }
 .view-all-carousel-control-container {
   display: none !important;

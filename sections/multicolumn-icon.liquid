@@ -1,6 +1,6 @@
 <section class="custom-service-section">
     <div>
-        <h2 class="section-title">{{ section.settings.title }}</h2>
+        <h2 class="section-title text-[30px] mb-10">{{ section.settings.title }}</h2>
         <div class="services-grid">
             {% for block in section.blocks %}
             <div class="service-item">
@@ -20,7 +20,6 @@
         background-color: #f9f9f9;
     }
     .custom-service-section .services-grid {
-        border: 1px solid;
         width: 70%;
         margin: auto;
         height: 150px;
@@ -33,6 +32,7 @@
         align-items: center;
         text-align: center;
         max-width: 150px;
+        min-width: 85px;
     }
     .custom-service-section .service-item img {
         width: 110px;
@@ -65,12 +65,19 @@
     }
     @media screen and (max-width: 500px){
         .custom-service-section .service-item img {
-            width: 50px;
-            height: 50px;
+            width: 60px;
+            height: 60px;
         }
         .custom-service-section .service-item h3 {
-            font-size: 9px;
+            display: none;
         }
+        .custom-service-section {
+            padding: 40px 0px;
+        }
+        .custom-service-section .service-item{
+            min-width: 0px;
+        }
+
     }
 </style>
 

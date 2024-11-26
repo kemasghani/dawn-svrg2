@@ -13,25 +13,28 @@
 {%- endstyle -%}
 <div id="collection-list-section" class="section-{{ section.id }}-padding">
     <div class="collection-list-wrapper">
+      <h2 class="title text-[30px] title-custom-category">
+        {{ section.settings.title }}
+      </h2>
       <div class="collection-list-grid">
         {% for block in section.blocks %}
           {% if block.type == 'collection_block' and block.settings.collection != blank %}
             {% assign collection = collections[block.settings.collection] %}
             <div class="collection-item">
               <a href="{{ collection.url }}">
-                <img src="{{ collection.image | img_url: '150x150' }}" alt="{{ collection.title }}">
+                <img src="{{ collection.metafields.custom.thumbnail | img_url: '150x150' }}" alt="{{ collection.title }}">
+                <p class="text-[12px] md:text-[20px] mt-3">{{ collection.title }}</p>
               </a>
             </div>
           {% endif %}
         {% endfor %}
-      </div>
-
     </div>
+</div>
 
     <style>
       ::-webkit-scrollbar {
-        width: 12px; /* Adjust width for vertical scrollbar */
-        height: 12px; /* Adjust height for horizontal scrollbar */
+        width: 4px; /* Adjust width for vertical scrollbar */
+        height: 4px; /* Adjust height for horizontal scrollbar */
     }
 
     /* Background of the scrollbar */
@@ -50,26 +53,28 @@
         background: #555; /* Color on hover */
     }
     .collection-list-wrapper::-webkit-scrollbar {
-      width: 4px; /* Adjust width for vertical scrollbar */
-      height: 4px; /* Adjust height for horizontal scrollbar */
+      width: 2px; /* Adjust width for vertical scrollbar */
+      height: 2px; /* Adjust height for horizontal scrollbar */
   }
       .collection-list-wrapper {
         max-width: var(--page-width);
         margin: auto;
-        padding: 20px 60px;
+        padding: 20px 7rem;
       }
       .collection-list-grid {
        display: flex;
-       justify-content: center;
+       column-gap: 20px;
+       overflow-x: scroll;
        column-gap: 30px;
       }
       .collection-item {
         text-align: center;
       }
       .collection-item img {
-        width: 100%;
-        border-radius: 50%;
-        height: auto;
+        margin: auto;
+        object-fit: cover;
+        width: 180px;
+        height: 180px;
       }
       @media screen and (max-width: 750px){
         .collection-item img {
@@ -99,6 +104,11 @@
   {
     "name": "Custom Collection List",
     "settings": [
+        {
+          "id": "title",
+          "label": "Title",
+          "type": "text",
+        },
         {
             "type": "range",
             "id": "padding_top",

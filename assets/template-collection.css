@@ -10,11 +10,6 @@
   transform: translateX(-20%);
 }
 
-.featured-collection .grid {
-
-  width: 102%;
-}
-
 svg.arrow-left path {
   fill: #63d7d1;
   color: #63d7d1;
@@ -25,22 +20,22 @@ svg.arrow-right path {
   color: #63d7d1;
 }
 
-button[disabled='disabled'] svg.arrow-left path {
-  fill: #94A3B8;
-  color: #94A3B8;
+button[disabled="disabled"] svg.arrow-left path {
+  fill: #94a3b8;
+  color: #94a3b8;
 }
 
-button[disabled='disabled'] svg.arrow-right path {
-  fill: #94A3B8;
-  color: #94A3B8;
+button[disabled="disabled"] svg.arrow-right path {
+  fill: #94a3b8;
+  color: #94a3b8;
 }
 
 .countdown p {
   padding: 3px 30px;
-  border: 2px dotted #B91C1C;
+  border: 2px dotted #b91c1c;
   font-size: 24px;
   font-weight: 600;
-  color: #B91C1C;
+  color: #b91c1c;
   border-radius: 8px;
 }
 
@@ -62,13 +57,15 @@ button[disabled='disabled'] svg.arrow-right path {
   }
 }
 
-.view-all-carousel-control-container .slider-buttons, .view-all-carousel-control-container-mobile .slider-buttons {
+.view-all-carousel-control-container .slider-buttons,
+.view-all-carousel-control-container-mobile .slider-buttons {
   display: flex;
   column-gap: 15px;
 }
 
-.view-all-carousel-control-container button, .view-all-carousel-control-container-mobile button {
-  border: 1px solid #94A3B8;
+.view-all-carousel-control-container button,
+.view-all-carousel-control-container-mobile button {
+  border: 1px solid #94a3b8;
   border-radius: 8px;
   padding: 0px 4px;
   height: 50px;
@@ -99,7 +96,8 @@ li.image-banner-collection img {
   border-radius: 8px;
 }
 
-.content-container, .multicolumn-card {
+.content-container,
+.multicolumn-card {
   width: 100% !important;
 }
 
@@ -149,7 +147,7 @@ li.image-banner-collection h1 {
   }
 
   .view-all-carousel-control-container-mobile {
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: baseline;
     margin-right: 5%;
@@ -162,7 +160,6 @@ li.image-banner-collection h1 {
 }
 
 /* end custom css */
-
 
 @media screen and (max-width: 749px) {
   .collection .grid__item:only-child {
@@ -256,7 +253,7 @@ li.image-banner-collection h1 {
   }
 }
 
-.collection__description>* {
+.collection__description > * {
   margin: 0;
 }
 
