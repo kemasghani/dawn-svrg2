@@ -14,52 +14,16 @@
     "custom_collection_list_NjCYFP": {
       "type": "custom-collection-list",
       "blocks": {
-        "collection_block_VHALjw": {
-          "type": "collection_block",
-          "settings": {
-            "collection": "accessories"
-          }
-        },
-        "collection_block_YzKnzF": {
-          "type": "collection_block",
-          "settings": {
-            "collection": "agility-conditioning"
-          }
-        },
-        "collection_block_FQT9he": {
-          "type": "collection_block",
-          "settings": {
-            "collection": "bags"
-          }
-        },
-        "collection_block_CgeNLJ": {
-          "type": "collection_block",
-          "settings": {
-            "collection": "combat-sport"
-          }
-        },
-        "collection_block_AnfFYp": {
-          "type": "collection_block",
-          "settings": {
-            "collection": "golf"
-          }
-        },
         "collection_block_3kQKeH": {
           "type": "collection_block",
           "settings": {
             "collection": "gym"
           }
         },
-        "collection_block_mkLxmU": {
+        "collection_block_AVamUE": {
           "type": "collection_block",
           "settings": {
-            "collection": "therapy"
-          }
-        },
-        "collection_block_igyLir": {
-          "type": "collection_block",
-          "settings": {
-            "collection": "weight"
+            "collection": "pilates"
           }
         },
         "collection_block_mBEHn7": {
@@ -68,28 +32,44 @@
             "collection": "weightlifting"
           }
         },
-        "collection_block_eahqc4": {
+        "collection_block_DAgJFN": {
           "type": "collection_block",
           "settings": {
             "collection": "yoga"
           }
+        },
+        "collection_block_VHALjw": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "combat-sport"
+          }
+        },
+        "collection_block_AnfFYp": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "water-sport"
+          }
+        },
+        "collection_block_mkLxmU": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "therapy"
+          }
         }
       },
       "block_order": [
-        "collection_block_VHALjw",
-        "collection_block_YzKnzF",
-        "collection_block_FQT9he",
-        "collection_block_CgeNLJ",
-        "collection_block_AnfFYp",
         "collection_block_3kQKeH",
-        "collection_block_mkLxmU",
-        "collection_block_igyLir",
+        "collection_block_AVamUE",
         "collection_block_mBEHn7",
-        "collection_block_eahqc4"
+        "collection_block_DAgJFN",
+        "collection_block_VHALjw",
+        "collection_block_AnfFYp",
+        "collection_block_mkLxmU"
       ],
       "settings": {
-        "padding_top": 36,
-        "padding_bottom": 36
+        "title": "KATEGORI",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "take_quiz_MKRjmd": {
@@ -103,14 +83,14 @@
         "link": "",
         "button_text": "Lihat Semua Category",
         "show_view_all_category": false,
-        "title": "Featured collection",
+        "title": "PRODUK TERLARIS",
         "heading_size": "h1",
         "text_button_all": "",
         "description": "",
         "show_description": false,
         "show_border_top": true,
         "description_style": "body",
-        "collection": "new-arrivals",
+        "collection": "agility-conditioning",
         "products_to_show": 5,
         "columns_desktop": 5,
         "full_width": false,
@@ -128,8 +108,8 @@
         "quick_add": "none",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 36,
+        "padding_top": 60,
+        "padding_bottom": 8,
         "margin_top": 0
       }
     },
@@ -139,14 +119,14 @@
         "link": "shopify:\/\/collections\/new-arrivals",
         "button_text": "Lihat Semua Category",
         "show_view_all_category": false,
-        "title": "Produk Terlaris",
+        "title": "MESIN PILATES",
         "heading_size": "h1",
         "text_button_all": "Lihat Semua",
         "description": "",
         "show_description": false,
         "show_border_top": true,
         "description_style": "body",
-        "collection": "new-arrivals",
+        "collection": "pilates",
         "products_to_show": 5,
         "columns_desktop": 5,
         "full_width": false,
@@ -164,7 +144,7 @@
         "quick_add": "none",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
-        "padding_top": 44,
+        "padding_top": 0,
         "padding_bottom": 4,
         "margin_top": 0
       }
@@ -386,7 +366,7 @@
         "service_item_TDAgYk"
       ],
       "settings": {
-        "title": "Our Service"
+        "title": "OUR SERVICE"
       }
     },
     "collapsible_content_4VJ4VT": {
