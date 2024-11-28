@@ -183,7 +183,7 @@
         "type": "shopify:\/\/apps\/glo-color-swatch\/blocks\/app-embed-block\/4394f710-096c-4021-bbde-8ebb26057c11",
         "disabled": false,
         "settings": {
-          "customCssGCW": ".glider-track li{\n width:fit-content;\n}\n.glider-track{\n gap:5px;\n}\n\n.ul-swatches-list::-webkit-scrollbar {\n  width: 6px !important;\n}\n\n.ul-swatches-list::-webkit-scrollbar-track {\n  background: #1c1c1c !important;\n}\n\n.ul-swatches-list::-webkit-scrollbar-thumb {\n  background: #ffffff !important;\n  border-radius: 10px !important;\n}\n\n.ul-swatches-list::-webkit-scrollbar-thumb:hover {\n  background: #cccccc !important;\n}\n.ul-swatches-list {\n  scrollbar-width: thin !important;\n  scrollbar-color: #ffffff #1c1c1c !important;\n}\n.ul-swatches-list {\n  scrollbar-width: none !important; \/* For Firefox: hides the scrollbar and arrows *\/\n  -ms-overflow-style: none !important; \/* For Internet Explorer and Edge *\/\n}\n\n.ul-swatches-list::-webkit-scrollbar {\n  display: none !important; \/* For Webkit-based browsers *\/\n}"
+          "customCssGCW": ".glider-track li{\n width:fit-content;\n}\n.glider-track{\n gap:5px;\n}\n\n\n ::-webkit-scrollbar {\n        width: 4px;\n        height: 4px;\n    }\n\n    ::-webkit-scrollbar-track {\n        background: #f1f1f1; \n    }\n    ::-webkit-scrollbar-thumb {\n        background: #63d7d1;\n        border-radius: 10px;\n    }\n\n    ::-webkit-scrollbar-thumb:hover {\n        background: #555; \n    }\n    .ul-swatches-list::-webkit-scrollbar {\n      width: 2px;\n      height: 2px;\n  }\n\n.swatch-anchor{\nwhite-space: nowrap;\n}"
         }
       }
     },
