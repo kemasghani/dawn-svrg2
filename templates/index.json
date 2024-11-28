@@ -81,8 +81,8 @@
       "type": "featured-collection",
       "settings": {
         "link": "",
-        "button_text": "Lihat Semua Category",
-        "show_view_all_category": false,
+        "button_text": "LIHAT SELENGKAPNYA",
+        "show_view_all_category": true,
         "title": "PRODUK TERLARIS",
         "heading_size": "h1",
         "text_button_all": "",
@@ -117,8 +117,8 @@
       "type": "featured-collection",
       "settings": {
         "link": "shopify:\/\/collections\/new-arrivals",
-        "button_text": "Lihat Semua Category",
-        "show_view_all_category": false,
+        "button_text": "LIHAT SELENGKAPNYA",
+        "show_view_all_category": true,
         "title": "MESIN PILATES",
         "heading_size": "h1",
         "text_button_all": "Lihat Semua",
@@ -236,7 +236,7 @@
         "button_DxFDUm": {
           "type": "button",
           "settings": {
-            "button_label": "Beli Sekarang",
+            "button_label": "BELI SEKARANG",
             "button_link": "shopify:\/\/products\/svrg-cross-x-weightlifting-shoes-fitness-shoes-sneakers-gym",
             "button_style_secondary": false
           }
@@ -248,12 +248,13 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Artboard_1_900x_7973064c-aa27-4b37-9cea-2b78c26d5cdf_11zon.webp",
+        "headline": "Produk Terpopuler",
         "image_url": "https:\/\/res.cloudinary.com\/doq2grch0\/image\/upload\/v1729749547\/Artboard_1_900x_7973064c-aa27-4b37-9cea-2b78c26d5cdf_11zon_2_gknrbq.webp",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
         "desktop_content_position": "middle",
-        "desktop_content_alignment": "center",
+        "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "section_color_scheme": "",
         "color_scheme": "",
@@ -503,7 +504,7 @@
     "featured_blog_FrKWDC": {
       "type": "featured-blog",
       "settings": {
-        "heading": "Blog Posts",
+        "heading": "BLOG POSTS",
         "heading_size": "h1",
         "blog": "the-journey",
         "post_limit": 3,

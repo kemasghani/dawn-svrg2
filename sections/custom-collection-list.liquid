@@ -13,7 +13,7 @@
 {%- endstyle -%}
 <div id="collection-list-section" class="section-{{ section.id }}-padding">
     <div class="collection-list-wrapper">
-      <h2 class="title text-[30px] title-custom-category">
+      <h2 class="title text-[27px] md:text-[30px] title-custom-category">
         {{ section.settings.title }}
       </h2>
       <div class="collection-list-grid">
@@ -65,6 +65,7 @@
        display: flex;
        column-gap: 20px;
        overflow-x: scroll;
+       overflow-y: hidden;
        column-gap: 30px;
       }
       .collection-item {
@@ -76,6 +77,14 @@
         width: 180px;
         height: 180px;
       }
+      @media screen and (max-width: 500px){
+        .collection-list-grid {
+          height: 125px;
+        }
+        .featured-collection{
+          padding-top: 0px !important;
+        }
+      }
       @media screen and (max-width: 750px){
         .collection-item img {
           width: 80px;
@@ -85,8 +94,8 @@
           justify-content: start;
          }
          .collection-list-wrapper {
-         padding-left: 9px;
-         padding-right: 9px;
+         padding-left: 17px;
+         padding-right: 0px;
          overflow-x: scroll;
         }
         .collection-list-grid {

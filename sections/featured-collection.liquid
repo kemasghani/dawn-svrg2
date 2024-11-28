@@ -26,6 +26,17 @@
 
 
 {%- style -%}
+@media screen and (max-width: 500px) {
+ .page-width {
+  padding: 0 !important;
+ }
+ .footer__content-top.page-width {
+  padding: 0 2rem !important;
+ }
+ .header.page-width {
+  padding: 0 2rem !important;
+ }
+}
 ul.product-grid{
   margin-top: 10px;
 }
@@ -294,12 +305,21 @@ ul.product-grid{
   </div>
 </div>
 {% if section.settings.show_view_all_category %}
-  <a href="{{ section.settings.link }}">
-    <div class="flex gap-5 button border-none w-[70%] md:w-[50%] mx-auto mt-[30px]">
-      <button class="text-[12px] md:text-[17px] text-black">{{ section.settings.button_text }}</button>
-      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black">
-        <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/>
-      </svg>
+  <a href="{{ section.settings.link }}" class="translate-y-56">
+    <div class="flex gap-5 justify-center border-none w-[70%] md:w-[50%] mx-auto view-more" style="transform: translateY(-30px);">
+      <button class="text-[15px] md:text-[20px] text-[#666666]">{{ section.settings.button_text }}</button>
+      <div class="flex items-center">
+        <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_9_171)">
+          <path d="M1.21801 11.5592L0 10.3412L4.55924 5.78199L0 1.21801L1.21801 0L7 5.78199L1.21801 11.5592Z" fill="#6D6D6D"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_9_171">
+          <rect width="7" height="11.5592" fill="white"/>
+          </clipPath>
+          </defs>
+          </svg>
+      </div>
     </div>
   </a>`
 {%- endif -%}

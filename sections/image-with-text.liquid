@@ -51,7 +51,6 @@
               {%- endif -%}
               {%- if section.settings.image_url != blank -%}
                 <img src="{{ section.settings.image_url }}" sizes="{{ sizes }}" widths="{{ widths }}" fetchpriority="{{ fetch_priority }}" alt="Your Image Description" loading= "lazy" />
-
               {%- else -%}
                 {{
                   section.settings.image
@@ -69,6 +68,7 @@
             id="ImageWithText--{{ section.id }}"
             class="image-with-text__content image-with-text__content--{{ section.settings.desktop_content_position }} image-with-text__content--desktop-{{ section.settings.desktop_content_alignment }} image-with-text__content--mobile-{{ section.settings.mobile_content_alignment }} image-with-text__content--{{ section.settings.height }} content-container{% unless remove_color_classes %} gradient color-{{ section.settings.color_scheme }}{% else %} background-transparent{% endunless %}"
           >
+            <h3 class="translate-y-5">{{ section.settings.headline }}</h3>
             {%- for block in section.blocks -%}
               {% case block.type %}
                 {%- when 'heading' -%}
@@ -124,6 +124,11 @@
       "type": "image_picker",
       "id": "image",
       "label": "t:sections.image-with-text.settings.image.label"
+    },
+    {
+      "type": "text",
+      "id": "headline",
+      "label": "Headline Text"
     },
     {
       "type": "url",

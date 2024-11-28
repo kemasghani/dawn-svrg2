@@ -3740,7 +3740,7 @@ details-disclosure > details {
 }
 
 @media screen and (max-width: 989px) {
-  nav {
+  nav.header__inline-menu {
     display: none !important;
   }
 }
@@ -3779,6 +3779,14 @@ details-disclosure > details {
   font-style: normal;
 }
 
+@font-face {
+  font-family: "ProximaNova";
+  src: url("https://cdn.shopify.com/s/files/1/0688/7325/7256/files/Proxima_Nova_ScOsf_Regular.otf?v=1732519737")
+    format("opentype");
+  font-display: swap;
+  font-style: normal;
+}
+
 h3.card__heading a {
   font-family: "Arquitecta";
   letter-spacing: 1px;
@@ -3810,7 +3818,7 @@ header nav ul li span {
 
 .shopify-section p {
   font-family: "Arquitecta";
-  font-weight: 300;
+  font-weight: 500;
   letter-spacing: 1.5px;
 }
 .collection-item p {
@@ -3820,6 +3828,10 @@ header nav ul li span {
   text-transform: uppercase;
 }
 .custom-service-section h2 {
+  font-family: "Arquitecta";
+  font-weight: 900;
+}
+.blog__title {
   font-family: "Arquitecta";
   font-weight: 900;
 }
@@ -3836,4 +3848,66 @@ header nav ul li span {
 }
 .view-all-carousel-control-container {
   display: none !important;
+}
+.newsletter__wrapper h2 {
+  font-family: "Arquitecta";
+  letter-spacing: 1px;
+  font-weight: 900;
+}
+
+.newsletter__wrapper p {
+  font-family: "Arquitecta";
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+.image-with-text__heading {
+  text-transform: uppercase;
+}
+.view-more button {
+  font-family: "Arquitecta";
+  letter-spacing: 1px;
+  font-weight: 900;
+}
+
+.image-with-text__content h2 {
+  font-family: "Arquitecta";
+  letter-spacing: 1px;
+  font-weight: 900;
+}
+
+.image-with-text__content a {
+  font-family: "Arquitecta";
+  letter-spacing: 1px;
+  font-weight: 900;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #63d7d1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.ul-swatches-list::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+
+.ul-swatches-list {
+  height: 60px !important;
+}
+
+.review-item .review-content p {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
 }
