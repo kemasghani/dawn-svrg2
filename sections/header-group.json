@@ -14,16 +14,15 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
-        "announcement-bar-0": {
-          "type": "announcement",
+        "countdown_KBbrtx": {
+          "type": "countdown",
           "settings": {
-            "text": "[ NEW PROMO 10.10 ] SHOCKTOBER Discount 5%",
-            "link": "shopify://collections"
+            "text": "Flash Sale"
           }
         }
       },
       "block_order": [
-        "announcement-bar-0"
+        "countdown_KBbrtx"
       ],
       "settings": {
         "color_scheme": "scheme-3",
