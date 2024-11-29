@@ -1,8 +1,17 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/LOGO_SVRG_FIX_PNG_White_1.png",
+    "logo": "shopify://shop_images/LOGO_SVRG_FIX_PNG_White_1.png",
     "logo_width": 90,
-    "favicon": "shopify:\/\/shop_images\/LOGO_SVRG_FIX_PNG_Black.png",
+    "favicon": "shopify://shop_images/LOGO_SVRG_FIX_PNG_Black.png",
     "type_header_font": "assistant_n4",
     "heading_scale": 100,
     "type_body_font": "assistant_n4",
@@ -99,12 +108,12 @@
     "sale_badge_color_scheme": "scheme-4",
     "sold_out_badge_color_scheme": "scheme-3",
     "brand_headline": "",
-    "brand_description": "<p><\/p>",
+    "brand_description": "<p></p>",
     "brand_image_width": 100,
-    "social_facebook_link": "https:\/\/www.facebook.com\/therepublicofsvarga",
-    "social_instagram_link": "https:\/\/www.instagram.com\/svrg.id\/",
-    "social_youtube_link": "https:\/\/www.youtube.com\/@SVRGofficial",
-    "social_tiktok_link": "https:\/\/www.tiktok.com\/@svrg.id",
+    "social_facebook_link": "https://www.facebook.com/therepublicofsvarga",
+    "social_instagram_link": "https://www.instagram.com/svrg.id/",
+    "social_youtube_link": "https://www.youtube.com/@SVRGofficial",
+    "social_tiktok_link": "https://www.tiktok.com/@svrg.id",
     "social_twitter_link": "",
     "social_snapchat_link": "",
     "social_pinterest_link": "",
@@ -136,7 +145,7 @@
     "content_for_index": [],
     "blocks": {
       "15683396631634586217": {
-        "type": "shopify:\/\/apps\/inbox\/blocks\/chat\/841fc607-4181-4ad1-842d-e24d7f8bad6b",
+        "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
         "disabled": false,
         "settings": {
           "button_color": "#63d7d1",
@@ -150,37 +159,37 @@
         }
       },
       "3720565183479497137": {
-        "type": "shopify:\/\/apps\/globo-product-option\/blocks\/app-embed-block\/fdc9fad5-1a0f-4bd4-9c8a-1af6a6eef6b8",
+        "type": "shopify://apps/globo-product-option/blocks/app-embed-block/fdc9fad5-1a0f-4bd4-9c8a-1af6a6eef6b8",
         "disabled": false,
         "settings": {}
       },
       "18423266570658624584": {
-        "type": "shopify:\/\/apps\/best-currency-converter\/blocks\/doubly\/267afa86-a419-4d5b-a61b-556038e7294d",
+        "type": "shopify://apps/best-currency-converter/blocks/doubly/267afa86-a419-4d5b-a61b-556038e7294d",
         "disabled": true,
         "settings": {}
       },
       "6744518860797519131": {
-        "type": "shopify:\/\/apps\/langwill-translate\/blocks\/floating-selector\/35c05b0e-4f05-4fc9-adc7-77b6ccb6b2ca",
+        "type": "shopify://apps/langwill-translate/blocks/floating-selector/35c05b0e-4f05-4fc9-adc7-77b6ccb6b2ca",
         "disabled": true,
         "settings": {}
       },
       "yoast-seo-metatags": {
-        "type": "shopify:\/\/apps\/yoast-seo-seo-for-everyone\/blocks\/metatags\/7c777011-bc88-4743-a24e-64336e1e5b46",
+        "type": "shopify://apps/yoast-seo-seo-for-everyone/blocks/metatags/7c777011-bc88-4743-a24e-64336e1e5b46",
         "disabled": false,
         "settings": {}
       },
       "14060646107696862457": {
-        "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
         "disabled": false,
         "settings": {}
       },
       "15659984488230578541": {
-        "type": "shopify:\/\/apps\/oc-gift-wrap-product\/blocks\/giftproduct\/235afcd6-e1c6-4bf3-966b-a73b1c132cd1",
+        "type": "shopify://apps/oc-gift-wrap-product/blocks/giftproduct/235afcd6-e1c6-4bf3-966b-a73b1c132cd1",
         "disabled": true,
         "settings": {}
       },
       "4571859552318407796": {
-        "type": "shopify:\/\/apps\/glo-color-swatch\/blocks\/app-embed-block\/4394f710-096c-4021-bbde-8ebb26057c11",
+        "type": "shopify://apps/glo-color-swatch/blocks/app-embed-block/4394f710-096c-4021-bbde-8ebb26057c11",
         "disabled": false,
         "settings": {
           "customCssGCW": ".glider-track li{\n width:fit-content;\n}\n.glider-track{\n gap:5px;\n}\n\n\n ::-webkit-scrollbar {\n        width: 4px;\n        height: 4px;\n    }\n\n    ::-webkit-scrollbar-track {\n        background: #f1f1f1; \n    }\n    ::-webkit-scrollbar-thumb {\n        background: #63d7d1;\n        border-radius: 10px;\n    }\n\n    ::-webkit-scrollbar-thumb:hover {\n        background: #555; \n    }\n    .ul-swatches-list::-webkit-scrollbar {\n      width: 2px;\n      height: 2px;\n  }\n\n.swatch-anchor{\nwhite-space: nowrap;\n}"
@@ -412,7 +421,7 @@
       "sale_badge_color_scheme": "scheme-4",
       "sold_out_badge_color_scheme": "scheme-3",
       "brand_headline": "",
-      "brand_description": "<p><\/p>",
+      "brand_description": "<p></p>",
       "brand_image_width": 100,
       "social_twitter_link": "",
       "social_facebook_link": "",
