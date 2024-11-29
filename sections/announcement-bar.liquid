@@ -27,7 +27,10 @@
       {%- render 'social-icons' -%}
     {%- endif -%}
     {%- if section.blocks.size == 1 -%}
-      <div
+       {%- for block in section.blocks -%}
+      {% case block.type %}
+        {%- when 'announcement' -%}
+          <<div
         class="announcement-bar{% if section.settings.show_social %} announcement-bar--one-announcement{% endif %}"
         role="region"
         aria-label="{{ 'sections.header.announcement' | t }}"
@@ -50,7 +53,13 @@
             </a>
           {%- endif -%}
         {%- endif -%}
-      </div>
+      </div>        
+      {%- when 'countdown' -%}
+          <div class="countdown-bar">
+            Countdown
+          </div>
+      {% endcase %}
+    {%- endfor -%}
     {%- elsif section.blocks.size > 1 -%}
       <slideshow-component
         class="announcement-bar"
