@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "name": "t:sections.footer.name",
   "type": "footer",
@@ -8,7 +17,7 @@
         "image_6rNMKC": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/LOGO_SVRG_FIX_PNG_White.png",
+            "image": "shopify://shop_images/LOGO_SVRG_FIX_PNG_White.png",
             "image_width": 135,
             "alignment": "center"
           }
@@ -16,29 +25,30 @@
         "link_list_rVpEHR": {
           "type": "link_list",
           "settings": {
-            "heading": "<strong>SHOP<\/strong>",
+            "heading": "<strong>SHOP</strong>",
             "menu": "shop"
           }
         },
         "link_list_MhdNey": {
           "type": "link_list",
+          "disabled": true,
           "settings": {
-            "heading": "<strong>MY ACCOUNT<\/strong>",
+            "heading": "<strong>MY ACCOUNT</strong>",
             "menu": "my-account"
           }
         },
         "link_list_aMp4Fb": {
           "type": "link_list",
           "settings": {
-            "heading": "<strong>INFORMATION<\/strong>",
+            "heading": "<strong>INFORMATION</strong>",
             "menu": "information"
           }
         },
         "text_gtT64Q": {
           "type": "text",
           "settings": {
-            "heading": "<strong>STORE LOCATION<\/strong>",
-            "subtext": "<p>TANGERANG SELATAN<br\/><br\/>Emerald Avenue 2 B3<br\/>JL HR Rasuna Said, Pondok Aren, Tangerang Selatan<\/p><p>SURABAYA<br\/><br\/>Ruko North Junction Blok RA 23, Citraland JL. Taman Puspa Raya, Sambikerap, Surabaya<br\/><br\/>STORE SERVICE<\/p><p>Monday-Sunday<br\/>09.00 - 18.00<br\/><\/p>"
+            "heading": "<strong>STORE LOCATION</strong>",
+            "subtext": "<p>TANGERANG SELATAN<br/><br/>Emerald Avenue 2 B3<br/>JL HR Rasuna Said, Pondok Aren, Tangerang Selatan</p><p>SURABAYA<br/><br/>Ruko North Junction Blok RA 23, Citraland JL. Taman Puspa Raya, Sambikerap, Surabaya<br/><br/>STORE SERVICE</p><p>Monday-Sunday<br/>09.00 - 18.00<br/></p>"
           }
         }
       },
