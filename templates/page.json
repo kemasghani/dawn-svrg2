@@ -121,7 +121,7 @@
         "review_item_hQza8X": {
           "type": "review_item",
           "settings": {
-            "image": "shopify://shop_images/Mask_group_6.png",
+            "image": "https://res.cloudinary.com/doq2grch0/image/upload/v1733121082/Mask_group_11_zukd6b.png",
             "name": "John Doe",
             "role": "Customer",
             "review": "This is an amazing product!",
@@ -131,7 +131,7 @@
         "review_item_wbVqwU": {
           "type": "review_item",
           "settings": {
-            "image": "shopify://shop_images/Mask_group_7.png",
+            "image": "https://res.cloudinary.com/doq2grch0/image/upload/v1733121082/Mask_group_11_zukd6b.png",
             "name": "John Doe",
             "role": "Customer",
             "review": "This is an amazing product!",
@@ -141,7 +141,7 @@
         "review_item_QQ4mfw": {
           "type": "review_item",
           "settings": {
-            "image": "shopify://shop_images/Mask_group_5.png",
+            "image": "https://res.cloudinary.com/doq2grch0/image/upload/v1733121082/Mask_group_11_zukd6b.png",
             "name": "John Doe",
             "role": "Customer",
             "review": "This is an amazing product!",
@@ -151,7 +151,7 @@
         "review_item_UVrD3q": {
           "type": "review_item",
           "settings": {
-            "image": "shopify://shop_images/Mask_group_4.png",
+            "image": "https://res.cloudinary.com/doq2grch0/image/upload/v1733121082/Mask_group_11_zukd6b.png",
             "name": "John Doe",
             "role": "Customer",
             "review": "This is an amazing product!",
