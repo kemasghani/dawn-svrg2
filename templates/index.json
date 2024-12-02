@@ -90,7 +90,7 @@
       "type": "featured-collection",
       "settings": {
         "link": "",
-        "button_text": "LIHAT SELENGKAPNYA",
+        "button_text": "LIHAT SEMUA",
         "show_view_all_category": true,
         "title": "PRODUK TERLARIS",
         "heading_size": "h1",
@@ -126,7 +126,7 @@
       "type": "featured-collection",
       "settings": {
         "link": "shopify://collections/new-arrivals",
-        "button_text": "LIHAT SELENGKAPNYA",
+        "button_text": "LIHAT SEMUA",
         "show_view_all_category": true,
         "title": "MESIN PILATES",
         "heading_size": "h1",
