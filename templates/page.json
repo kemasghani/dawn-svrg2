@@ -47,7 +47,13 @@
         "slide_L6ffPP": {
           "type": "slide",
           "settings": {
-            "media_url": "https://cdn.shopify.com/videos/c/o/v/d714d4e5e52745e1ae5d646377b7eefd.mp4"
+            "media_url": "https://res.cloudinary.com/doq2grch0/image/upload/v1733121082/Mask_group_9_w6u0vw.png"
+          }
+        },
+        "slide_pXd3fh": {
+          "type": "slide",
+          "settings": {
+            "media_url": ""
           }
         },
         "slide_fewAGN": {
@@ -83,6 +89,7 @@
       },
       "block_order": [
         "slide_L6ffPP",
+        "slide_pXd3fh",
         "slide_fewAGN",
         "slide_WjUgph",
         "slide_k7CF4c",
