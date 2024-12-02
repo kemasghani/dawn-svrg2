@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -14,7 +23,7 @@
         "heading_pdYpWV": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Our Video Review<\/strong>",
+            "heading": "<strong>Our Video Review</strong>",
             "heading_size": "h2"
           }
         }
@@ -22,6 +31,7 @@
       "block_order": [
         "heading_pdYpWV"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -37,37 +47,37 @@
         "slide_L6ffPP": {
           "type": "slide",
           "settings": {
-            "media_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/d714d4e5e52745e1ae5d646377b7eefd.mp4"
+            "media_url": "https://cdn.shopify.com/videos/c/o/v/d714d4e5e52745e1ae5d646377b7eefd.mp4"
           }
         },
         "slide_fewAGN": {
           "type": "slide",
           "settings": {
-            "media_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/d714d4e5e52745e1ae5d646377b7eefd.mp4"
+            "media_url": "https://cdn.shopify.com/videos/c/o/v/d714d4e5e52745e1ae5d646377b7eefd.mp4"
           }
         },
         "slide_WjUgph": {
           "type": "slide",
           "settings": {
-            "media_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/d714d4e5e52745e1ae5d646377b7eefd.mp4"
+            "media_url": "https://cdn.shopify.com/videos/c/o/v/d714d4e5e52745e1ae5d646377b7eefd.mp4"
           }
         },
         "slide_k7CF4c": {
           "type": "slide",
           "settings": {
-            "media_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/d714d4e5e52745e1ae5d646377b7eefd.mp4"
+            "media_url": "https://cdn.shopify.com/videos/c/o/v/d714d4e5e52745e1ae5d646377b7eefd.mp4"
           }
         },
         "slide_he7bzx": {
           "type": "slide",
           "settings": {
-            "media_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/d714d4e5e52745e1ae5d646377b7eefd.mp4"
+            "media_url": "https://cdn.shopify.com/videos/c/o/v/d714d4e5e52745e1ae5d646377b7eefd.mp4"
           }
         },
         "slide_RPbfTY": {
           "type": "slide",
           "settings": {
-            "media_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/d714d4e5e52745e1ae5d646377b7eefd.mp4"
+            "media_url": "https://cdn.shopify.com/videos/c/o/v/d714d4e5e52745e1ae5d646377b7eefd.mp4"
           }
         }
       },
@@ -79,6 +89,7 @@
         "slide_he7bzx",
         "slide_RPbfTY"
       ],
+      "disabled": true,
       "settings": {
         "rating": "",
         "review_count": 0
@@ -90,7 +101,7 @@
         "review_item_QJ3PJJ": {
           "type": "review_item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Mask_group_4.png",
+            "image": "shopify://shop_images/Mask_group_4.png",
             "name": "John Doe",
             "role": "Customer",
             "review": "This is an amazing product!",
@@ -100,7 +111,7 @@
         "review_item_97qC4b": {
           "type": "review_item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Mask_group_5.png",
+            "image": "shopify://shop_images/Mask_group_5.png",
             "name": "John Doe",
             "role": "Customer",
             "review": "This is an amazing product!",
@@ -110,7 +121,7 @@
         "review_item_hQza8X": {
           "type": "review_item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Mask_group_6.png",
+            "image": "shopify://shop_images/Mask_group_6.png",
             "name": "John Doe",
             "role": "Customer",
             "review": "This is an amazing product!",
@@ -120,7 +131,7 @@
         "review_item_wbVqwU": {
           "type": "review_item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Mask_group_7.png",
+            "image": "shopify://shop_images/Mask_group_7.png",
             "name": "John Doe",
             "role": "Customer",
             "review": "This is an amazing product!",
@@ -130,7 +141,7 @@
         "review_item_QQ4mfw": {
           "type": "review_item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Mask_group_5.png",
+            "image": "shopify://shop_images/Mask_group_5.png",
             "name": "John Doe",
             "role": "Customer",
             "review": "This is an amazing product!",
@@ -140,7 +151,7 @@
         "review_item_UVrD3q": {
           "type": "review_item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Mask_group_4.png",
+            "image": "shopify://shop_images/Mask_group_4.png",
             "name": "John Doe",
             "role": "Customer",
             "review": "This is an amazing product!",
@@ -168,7 +179,7 @@
           "settings": {
             "product_name": "Ekata Series - Plain Edition",
             "review_text": "Enak bgt asli dipakenya",
-            "reviewer_image": "shopify:\/\/shop_images\/svrg-andien-icon.jpg",
+            "reviewer_image": "shopify://shop_images/svrg-andien-icon.jpg",
             "reviewer_name": "Andienaisyah",
             "reviewer_title": "Indonesian Singer"
           }
@@ -178,7 +189,7 @@
           "settings": {
             "product_name": "Ekata Limited Edition - Darbotz",
             "review_text": "Insane bagus banget. The mat so prettyyy!!",
-            "reviewer_image": "shopify:\/\/shop_images\/svrg-raisa.jpg",
+            "reviewer_image": "shopify://shop_images/svrg-raisa.jpg",
             "reviewer_name": "Raisa6690",
             "reviewer_title": "Indonesian Singer"
           }
@@ -188,7 +199,7 @@
           "settings": {
             "product_name": "Ekata Series - Limited Edition",
             "review_text": "So cool!!! Suka banget, tebell dan stickyy,Thank you Svarga",
-            "reviewer_image": "shopify:\/\/shop_images\/svrg-penyogastar.jpg",
+            "reviewer_image": "shopify://shop_images/svrg-penyogastar.jpg",
             "reviewer_name": "Penyogastar",
             "reviewer_title": "Celebrity Yoga Instructor"
           }
@@ -198,7 +209,7 @@
           "settings": {
             "product_name": "Ekata Series - Limited Edition",
             "review_text": "I love it, grip-nya jadi bener2 enak bngt...",
-            "reviewer_image": "shopify:\/\/shop_images\/svrg-chelsea-olivia.jpg",
+            "reviewer_image": "shopify://shop_images/svrg-chelsea-olivia.jpg",
             "reviewer_name": "Chelseaoliviaa",
             "reviewer_title": "Indonesian Celebrity"
           }
@@ -208,7 +219,7 @@
           "settings": {
             "product_name": "Resistance Bands",
             "review_text": "Thankyou yaa resistance bandnya. Kualitasnya bagus sekali",
-            "reviewer_image": "shopify:\/\/shop_images\/svrg-maretto-aufra.jpg",
+            "reviewer_image": "shopify://shop_images/svrg-maretto-aufra.jpg",
             "reviewer_name": "Marettoaufra",
             "reviewer_title": "Calisthenics Specialist"
           }
@@ -218,7 +229,7 @@
           "settings": {
             "product_name": "Shuroo Series - Sweat Smile Repeat",
             "review_text": "love the design and the quality",
-            "reviewer_image": "shopify:\/\/shop_images\/svrg-jryan-karsten.jpg",
+            "reviewer_image": "shopify://shop_images/svrg-jryan-karsten.jpg",
             "reviewer_name": "Jryankarsten",
             "reviewer_title": "Indonesian Model"
           }
@@ -228,7 +239,7 @@
           "settings": {
             "product_name": "Ekata Series - Limited Edition",
             "review_text": "Ga licin sama sekali, suprise that this kind of mat exist honestly lollll, thank you ilove it!",
-            "reviewer_image": "shopify:\/\/shop_images\/svrg-petite-diva.jpg",
+            "reviewer_image": "shopify://shop_images/svrg-petite-diva.jpg",
             "reviewer_name": "Rania Putrisari",
             "reviewer_title": "Indonesian Model"
           }
@@ -238,7 +249,7 @@
           "settings": {
             "product_name": "Ekata Series - Darbotz Mats",
             "review_text": "Hi Svarga! Darbotz Mats Super coollll omg, coolest collab & baru sadar Svarga dari Surabaya, bangga bgt krn aku juga dari Surabaya hehee!Keep up the good works guys!!",
-            "reviewer_image": "shopify:\/\/shop_images\/svrg-rania-putrisari_1.jpg",
+            "reviewer_image": "shopify://shop_images/svrg-rania-putrisari_1.jpg",
             "reviewer_name": "Rania Putrisari",
             "reviewer_title": "Indonesian Model"
           }
@@ -256,7 +267,7 @@
       ],
       "disabled": true,
       "settings": {
-        "heading": "<strong>Celebrity's Review<\/strong>",
+        "heading": "<strong>Celebrity's Review</strong>",
         "heading_size": "h2"
       }
     },
@@ -266,7 +277,7 @@
         "heading_fgtdMV": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Our Online Shop Review<\/strong>",
+            "heading": "<strong>Our Online Shop Review</strong>",
             "heading_size": "h2"
           }
         }
@@ -286,8 +297,8 @@
     "image_with_image_pcxeYz": {
       "type": "image-with-image",
       "settings": {
-        "image_1": "shopify:\/\/shop_images\/REVIEW-02.webp",
-        "image_2": "shopify:\/\/shop_images\/REVIEW-03.webp"
+        "image_1": "shopify://shop_images/REVIEW-02.webp",
+        "image_2": "shopify://shop_images/REVIEW-03.webp"
       }
     }
   },
