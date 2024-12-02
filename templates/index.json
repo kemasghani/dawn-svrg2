@@ -524,41 +524,8 @@
         "show_date": true,
         "show_author": false,
         "show_view_all": true,
-        "padding_top": 100,
-        "padding_bottom": 0
-      }
-    },
-    "newsletter_YpphjE": {
-      "type": "newsletter",
-      "blocks": {
-        "heading_XeRf6e": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>Daftar dan Dapatkan Keuntungannya</strong>",
-            "heading_size": "h2"
-          }
-        },
-        "paragraph_3dFV7L": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>Berlangganan untuk mendapatkan penawaran khusus, hadiah gratis, dan penawaran sekali seumur hidup.</p>"
-          }
-        },
-        "email_form_qRLqJC": {
-          "type": "email_form",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "heading_XeRf6e",
-        "paragraph_3dFV7L",
-        "email_form_qRLqJC"
-      ],
-      "settings": {
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 100,
-        "padding_bottom": 52
+        "padding_top": 56,
+        "padding_bottom": 56
       }
     }
   },
@@ -576,7 +543,6 @@
     "multicolumn_styled_8DinCN",
     "multicolumn_icon_b6EmaQ",
     "collapsible_content_4VJ4VT",
-    "featured_blog_FrKWDC",
-    "newsletter_YpphjE"
+    "featured_blog_FrKWDC"
   ]
 }
