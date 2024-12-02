@@ -3911,3 +3911,18 @@ header nav ul li span {
   font-weight: 500;
   font-style: normal;
 }
+.countdown-timer {
+  font-family: "Arquitecta";
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+.viewAllBlog span {
+  font-family: "Arquitecta";
+  letter-spacing: 1px;
+  font-weight: 900;
+}
+
+.newsletter-form__button svg {
+  color: black;
+  fill: black;
+}
