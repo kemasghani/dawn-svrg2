@@ -50,12 +50,6 @@
             "media_url": "https://res.cloudinary.com/doq2grch0/image/upload/v1733121082/Mask_group_9_w6u0vw.png"
           }
         },
-        "slide_pXd3fh": {
-          "type": "slide",
-          "settings": {
-            "media_url": ""
-          }
-        },
         "slide_fewAGN": {
           "type": "slide",
           "settings": {
@@ -89,7 +83,6 @@
       },
       "block_order": [
         "slide_L6ffPP",
-        "slide_pXd3fh",
         "slide_fewAGN",
         "slide_WjUgph",
         "slide_k7CF4c",
