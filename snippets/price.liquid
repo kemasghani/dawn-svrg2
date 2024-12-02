@@ -105,7 +105,7 @@
         {%- unless product.price_varies == false and product.compare_at_price_varies %}
           <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
           <span class="flex flex-nowrap">
-            <s class="price-item price-item--regular">
+            <s class="price-item price-item--regular text-[13px] opacity-60">
               {% if settings.currency_code_enabled %}
                 {{ compare_at_price | money_with_currency }}
               {% else %}
@@ -120,7 +120,7 @@
           </span>
         {%- endunless -%}
         <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.sale_price' | t }}</span>
-        <span class="price-item price-item--sale price-item--last mt-10 text-[13px] !font-[500] md:text-[16px] text-[#686868]">
+        <span class="price-item price-item--sale price-item--last mt-10 text-[16px] !font-[500] md:text-[16px] text-[#686868]">
           {{ money_price }}
         </span>
         <span class="px-4 py-3 bg-[#fee2e2] text-[#dc2626] !font-[600] text-[16px] rounded-[10px] discount-main-product hidden">

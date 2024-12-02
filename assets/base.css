@@ -449,18 +449,6 @@ table:not([class]) th {
   border: 0.1rem solid rgba(var(--color-foreground), 0.2);
 }
 
-@media screen and (max-width: 749px) {
-  .small-hide {
-    display: none !important;
-  }
-}
-
-@media screen and (min-width: 750px) and (max-width: 989px) {
-  .medium-hide {
-    display: none !important;
-  }
-}
-
 @media screen and (min-width: 990px) {
   .large-up-hide {
     display: none !important;
@@ -3787,25 +3775,31 @@ details-disclosure > details {
   font-style: normal;
 }
 
+@font-face {
+  font-family: "ArquitectaHeavy";
+  src: url("https://cdn.shopify.com/s/files/1/0688/7325/7256/files/ArquitectaHeavy.otf?v=1732519824")
+    format("opentype");
+  font-display: swap;
+  font-style: normal;
+}
+
 h3.card__heading a {
-  font-family: "Arquitecta";
+  font-family: "ArquitectaBlack";
   letter-spacing: 1px;
   font-weight: 700;
   text-transform: uppercase;
 }
-.card__inner .card-information {
-  font-family: "ProximaSemiBold";
-}
 
 .collection__title .title {
-  font-family: "Arquitecta";
+  font-family: "ArquitectaBlack";
   font-weight: 900;
 }
 
 .title-custom-category {
-  font-family: "Arquitecta";
+  font-family: "ArquitectaBlack";
   font-weight: 900;
 }
+
 header nav ul li span {
   font-family: "Arquitecta";
   font-weight: 600;
@@ -3823,8 +3817,8 @@ header nav ul li span {
   letter-spacing: 1.5px;
 }
 .collection-item p {
-  font-family: "Arquitecta";
-  letter-spacing: 1px;
+  font-family: "ArquitectaHeavy";
+  letter-spacing: 0.5px;
   font-weight: 900;
   text-transform: uppercase;
 }
@@ -3881,7 +3875,11 @@ header nav ul li span {
   letter-spacing: 1px;
   font-weight: 900;
 }
-
+.card-information .price__container span {
+  font-family: "ProximaSemiBold";
+  letter-spacing: 1px;
+  font-weight: 900;
+}
 ::-webkit-scrollbar {
   width: 4px;
   height: 4px;
@@ -3926,4 +3924,8 @@ header nav ul li span {
 .newsletter-form__button svg {
   color: black;
   fill: black;
+}
+
+.headerSearch .svg-wrapper {
+  transform: translateX(-20px);
 }

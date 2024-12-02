@@ -13,10 +13,10 @@
 {%- endstyle -%}
 <div id="collection-list-section" class="section-{{ section.id }}-padding">
     <div class="collection-list-wrapper">
-      <h2 class="title text-[30px] md:text-[30px] title-custom-category">
+      <h2 class="title text-[30px] md:text-[40px] title-custom-category">
         {{ section.settings.title }}
       </h2>
-      <div class="collection-list-grid">
+      <div class="collection-list-grid" style="height: 140px;">
         {% for block in section.blocks %}
           {% if block.type == 'collection_block' and block.settings.collection != blank %}
             {% assign collection = collections[block.settings.collection] %}
@@ -59,7 +59,7 @@
       .collection-list-wrapper {
         max-width: var(--page-width);
         margin: auto;
-        padding: 20px 7rem;
+        padding: 0px 7rem 20px;
       }
       .collection-list-grid {
        display: flex;
@@ -69,26 +69,30 @@
        column-gap: 30px;
       }
       .collection-item {
+        min-width: 100px;
         text-align: center;
       }
       .collection-item img {
         margin: auto;
         object-fit: cover;
-        width: 180px;
+        width: 100%;
         height: 180px;
       }
       @media screen and (max-width: 500px){
         .collection-list-grid {
-          height: 125px;
+          height: 140px;
         }
         .featured-collection{
           padding-top: 0px !important;
         }
+        #collection-list-section{
+          margin-bottom: 20px;
+        }
       }
       @media screen and (max-width: 750px){
         .collection-item img {
-          width: 80px;
-          height: 80px;
+          width: 100%;
+          height: 100px;
         }
         .collection-list-grid {
           justify-content: start;
@@ -96,10 +100,9 @@
          .collection-list-wrapper {
          padding-left: 17px;
          padding-right: 0px;
-         overflow-x: scroll;
         }
         .collection-list-grid {
-          column-gap: 17px;
+          column-gap: 9px;
          }
       }
       .collection-item h3 {

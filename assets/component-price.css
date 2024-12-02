@@ -114,14 +114,8 @@
 .price--on-sale .price-item--regular {
   text-decoration: line-through;
   color: rgba(var(--color-foreground), 0.75);
-  font-size: 1.3rem;
 }
 
-@media screen and (max-width: 500px) {
-  .price--on-sale .price-item--regular {
-    font-size: 0.9rem;
-  }
-}
 
 .unit-price {
   display: block;
