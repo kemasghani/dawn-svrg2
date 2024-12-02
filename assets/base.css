@@ -317,7 +317,7 @@ h5,
 
 h1,
 .h1 {
-  font-size: calc(var(--font-heading-scale) * 3.3rem);
+  font-size: 30px;
 }
 
 @media only screen and (min-width: 750px) {
@@ -3791,6 +3791,7 @@ h3.card__heading a {
   font-family: "Arquitecta";
   letter-spacing: 1px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 .card__inner .card-information {
   font-family: "ProximaSemiBold";
