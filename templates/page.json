@@ -111,7 +111,7 @@
         "review_item_97qC4b": {
           "type": "review_item",
           "settings": {
-            "image": "shopify://shop_images/Mask_group_5.png",
+            "image": "https://res.cloudinary.com/doq2grch0/image/upload/v1733121082/Mask_group_11_zukd6b.png",
             "name": "John Doe",
             "role": "Customer",
             "review": "This is an amazing product!",
