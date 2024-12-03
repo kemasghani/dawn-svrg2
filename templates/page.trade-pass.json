@@ -1,0 +1,127 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "rich_text_4qDmrb": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_WYQD7g": {
+          "type": "heading",
+          "settings": {
+            "heading": "RESELLER PROGRAM",
+            "heading_size": "h1"
+          }
+        },
+        "text_qyNEGU": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Selamat datang di svrg.co.id, tempat terbaik untuk membeli produk-produk olahraga terlengkap dan berkualitas tinggi! Kami menawarkan program grosir yang menarik untuk para reseller yang ingin menghasilkan keuntungan besar dengan menjual produk-produk kami. Kami punya solusinya!<br\/><br\/>Dengan bergabung dan daftar dalam program grosir kami, Anda akan mendapatkan keuntungan yang menguntungkan dengan menjual produk-produk kami yang berkualitas tinggi dan terbukti laris di pasaran. Kami menawarkan harga yang sangat kompetitif untuk produk-produk kami, sehingga Anda bisa menghasilkan keuntungan yang lebih besar.<\/h3><h3>Tidak hanya itu, kami juga menyediakan layanan pelanggan yang ramah dan responsif untuk membantu Anda dalam setiap tahap proses penjualan. Kami memastikan bahwa setiap pesanan Anda akan diproses dan dikirim dengan cepat dan tepat waktu.<\/h3><h3>Jangan lewatkan kesempatan ini untuk memperluas bisnis Anda dengan menjual produk-produk olahraga terbaik dari kami. Segera daftar sekarang dan nikmati keuntungannya!<\/h3>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_WYQD7g",
+        "text_qyNEGU"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "multicolumn_icon_BU4VBc": {
+      "type": "multicolumn-icon",
+      "blocks": {
+        "service_item_YxNREC": {
+          "type": "service_item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/svrg-bulk-order-pages-discount_38e8c8c5-c447-4c50-867a-bcb62f3a1ff8.jpg",
+            "title": "HARGA DIBAWAH RETAIL",
+            "description": ""
+          }
+        },
+        "service_item_D3KnEm": {
+          "type": "service_item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/svrg-bulk-order-pages-card.jpg",
+            "title": "KARTU SPESIAL MEMBER",
+            "description": ""
+          }
+        },
+        "service_item_zVddVt": {
+          "type": "service_item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/svrg-bulk-order-pages-exclusive-sales.jpg",
+            "title": "EXCLUSIVE SALES",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "service_item_YxNREC",
+        "service_item_D3KnEm",
+        "service_item_zVddVt"
+      ],
+      "settings": {
+        "title": "APA SIH KEUNTUNGANYA ?"
+      }
+    },
+    "rich_text_C4aBJe": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_NJzMPa": {
+          "type": "heading",
+          "settings": {
+            "heading": "TERTARIK ? DAFTAR SEGERA!",
+            "heading_size": "h1"
+          }
+        },
+        "text_8iKjbF": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Untuk mendaftar sebagai reseller, Anda perlu memenuhi beberapa syarat sebagai berikut:<\/h3><ol><li><h3>Memiliki usaha\/perusahaan\/pelatih\/tim\/perseorangan yang bergerak di bidang penjualan produk-produk olahraga.<\/h3><\/li><li><h3>Melakukan pemesanan dalam jumlah tertentu untuk mendapatkan harga grosir yang lebih murah.<\/h3><\/li><li><h3>Melengkapi data diri dan data usaha yang valid pada form pendaftaran yang tersedia di website kami.<\/h3><\/li><\/ol><h3>Setelah mendaftar, Anda akan mendapatkan akses ke daftar produk dan harga grosir yang kami sediakan. Anda bisa melakukan pemesanan dengan mudah melalui website kami atau menghubungi tim customer service kami untuk membantu Anda dalam proses pemesanan.<\/h3><h3>Kami berkomitmen untuk menyediakan produk-produk olahraga berkualitas tinggi dan layanan yang ramah serta responsif kepada setiap reseller kami. Bergabunglah dengan program grosir kami sekarang dan jadilah bagian dari komunitas reseller yang sukses dengan produk-produk olahraga terbaik dari svrg.co.id!<br\/><br\/>Klik tombol dibawah untuk mendaftar<\/h3>"
+          }
+        },
+        "button_3gFTiz": {
+          "type": "button",
+          "settings": {
+            "button_label": "APPLY",
+            "button_link": "https:\/\/wa.me\/681235163566",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_NJzMPa",
+        "text_8iKjbF",
+        "button_3gFTiz"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_4qDmrb",
+    "multicolumn_icon_BU4VBc",
+    "rich_text_C4aBJe"
+  ]
+}
