@@ -215,7 +215,9 @@ You can learn more about this (and learn how to cleanly revert these changes) at
         render 'header-search', input_id: 'Search-In-Modal-1'
       endif
     -%}
-    <div class="headerSearch">{% render 'header-search', input_id: 'Search-In-Modal' %}</div>
+    <div class="searchMobile">
+      <div class="headerSearch">{% render 'header-search', input_id: 'Search-In-Modal' %}</div>
+    </div>
     <div class="flex gap-10">
       {%- if section.settings.logo_position != 'middle-center' -%}
         {%- if request.page_type == 'index' -%}
@@ -290,7 +292,9 @@ You can learn more about this (and learn how to cleanly revert these changes) at
 
     <div class="header__icons{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header__icons--localization header-localization{% endif %}">
 
-
+      <div class="searchDekstop">
+        <div class="headerSearch">{% render 'header-search', input_id: 'Search-In-Modal' %}</div>
+      </div>
       {%- if shop.customer_accounts_enabled -%}
         <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
           {%- if section.settings.enable_customer_avatar -%}

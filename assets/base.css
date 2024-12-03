@@ -3222,7 +3222,6 @@ details-disclosure > details {
 
 .rte ul,
 .rte ol {
-  list-style-position: inside;
   padding-left: 2rem;
 }
 
@@ -3761,7 +3760,7 @@ details-disclosure > details {
 
 @font-face {
   font-family: "ProximaSemiBold";
-  src: url("https://cdn.shopify.com/s/files/1/0688/7325/7256/files/Proxima_Nova_Condensed_Semibold.otf?v=1732519737")
+  src: url("https://cdn.shopify.com/s/files/1/0688/7325/7256/files/Proxima_Nova_Semibold.otf?v=1732519736")
     format("opentype");
   font-display: swap;
   font-style: normal;
@@ -3904,12 +3903,6 @@ header nav ul li span {
 .ul-swatches-list {
   height: 60px !important;
 }
-
-.review-item .review-content p {
-  font-family: "Poppins", serif;
-  font-weight: 500;
-  font-style: normal;
-}
 .countdown-timer {
   font-family: "Arquitecta";
   letter-spacing: 1px;
@@ -3926,6 +3919,67 @@ header nav ul li span {
   fill: black;
 }
 
-.headerSearch .svg-wrapper {
+.searachMobile .headerSearch .svg-wrapper {
   transform: translateX(-20px);
+}
+
+@media screen and (max-width: 990px) {
+  .searchDekstop {
+    display: none;
+  }
+}
+@media screen and (min-width: 990px) {
+  .searchMobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .facets.small-hide {
+    display: none;
+  }
+  .mobile-facets__open-label.small-hide {
+    display: none;
+  }
+  .product-count {
+    padding: 10px 0;
+  }
+}
+.searchMobile .svg-wrapper .icon-search {
+  transform: translateX(-30px);
+}
+.searchMobile .search__button.field__button svg {
+  color: white;
+  fill: white;
+}
+@media screen and (max-width: 380px) {
+  .searchMobile .svg-wrapper .icon-search {
+    transform: translateX(-20px);
+  }
+}
+@media screen and (max-width: 350px) {
+  .searchMobile .svg-wrapper .icon-search {
+    transform: translateX(-10px);
+  }
+}
+.review-content h3 {
+  font-family: "Arquitecta";
+  letter-spacing: 1px;
+  font-weight: 900;
+}
+.review-content p.role {
+  font-family: "ProximaSemiBold";
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.review-content p.content {
+  font-family: "ProximaSemiBold";
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+.review-content p.product {
+  font-family: "ProximaSemiBold";
+  letter-spacing: 1px;
+  font-weight: 300;
 }

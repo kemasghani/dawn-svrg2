@@ -16,14 +16,20 @@
       <h2 class="title text-[30px] md:text-[40px] title-custom-category">
         {{ section.settings.title }}
       </h2>
-      <div class="collection-list-grid" style="height: 140px;">
+      <div class="collection-list-grid">
         {% for block in section.blocks %}
           {% if block.type == 'collection_block' and block.settings.collection != blank %}
             {% assign collection = collections[block.settings.collection] %}
             <div class="collection-item">
               <a href="{{ collection.url }}">
                 <img src="{{ collection.metafields.custom.thumbnail | img_url: '150x150' }}" alt="{{ collection.title }}">
-                <p class="text-[12px] md:text-[20px] mt-3">{{ collection.title }}</p>
+                <p class="text-[18px] md:text-[22px] mt-3">
+                  {% if collection.title.size > 7 %}
+                    {{ collection.title | slice: 0, 7 }}...
+                  {% else %}
+                    {{ collection.title }}
+                  {% endif %}
+                </p>
               </a>
             </div>
           {% endif %}
@@ -69,7 +75,7 @@
        column-gap: 30px;
       }
       .collection-item {
-        min-width: 100px;
+        min-width: 180px;
         text-align: center;
       }
       .collection-item img {
@@ -90,6 +96,9 @@
         }
       }
       @media screen and (max-width: 750px){
+        .collection-item{
+          min-width: 100px;
+        }
         .collection-item img {
           width: 100%;
           height: 100px;

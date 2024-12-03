@@ -5,12 +5,14 @@
             {% for block in section.blocks %}
             <div class="review-item">
                 <div class="image-wrapper">
-                    <img src="{{ block.settings.image | img_url: 'medium' }}" alt="{{ block.settings.name }}">
+                    <img src="{{ block.settings.image }}" alt="{{ block.settings.name }}">
                 </div>
-                <div class="review-content">
-                    <h3>{{ block.settings.name }}</h3>
-                    <p class="role">{{ block.settings.role }}</p>
-                    <p>“{{ block.settings.review }}”</p>
+                <div class="review-content flex flex-col justify-between">
+                    <div>
+                        <h3>{{ block.settings.name }}</h3>
+                        <p class="role">{{ block.settings.role }}</p>
+                    </div>
+                    <p class="content">“{{ block.settings.review }}”</p>
                     <p class="product">{{ block.settings.product }}</p>
                 </div>
             </div>
@@ -66,11 +68,13 @@
     object-fit: cover;
 }
 .scrollable-reviews-section .review-content {
+    height: 245px;
     background: white;
     position: absolute;
     right: 0;
     bottom: 50px;
     padding: 10px 33px;
+    width: 76%;
 }
 .scrollable-reviews-section .review-content h3 {
     font-size: 18px;
