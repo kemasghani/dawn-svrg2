@@ -1,4 +1,16 @@
-<section class="custom-service-section">
+{%- style -%}
+    @media screen and (max-width: 500px) {
+        .custom-service-section .service-item h3 {
+        {% if section.settings.show_text %}
+            display: block;
+        {% else %}
+            display: none;
+        {% endif %}
+        }
+    }
+{%- endstyle -%}
+
+<section class="custom-service-section section-{{ section.id }}-service">
     <div>
         <h2 class="section-title text-[30px] md:text-[30px] mb-10">{{ section.settings.title }}</h2>
         <div class="services-grid">
@@ -68,9 +80,6 @@
             width: 60px;
             height: 60px;
         }
-        .custom-service-section .service-item h3 {
-            display: none;
-        }
         .custom-service-section {
             padding: 40px 0px;
         }
@@ -94,6 +103,12 @@
             "id": "title",
             "label": "Section Title",
             "default": "Our Service"
+        },
+        {
+            "type": "checkbox",
+            "id": "show_text",
+            "label": "Show Text",
+            "default": false
         }
     ],
     "blocks": [

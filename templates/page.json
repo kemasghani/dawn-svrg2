@@ -132,17 +132,37 @@
         "review_item_QQ4mfw": {
           "type": "review_item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Mask_group_5.png",
-            "name": "John Doe",
-            "role": "Customer",
-            "review": "This is an amazing product!",
-            "product": "Product Name"
+            "image": "https:\/\/res.cloudinary.com\/doq2grch0\/image\/upload\/v1733278773\/influencer2_c8jygl.jpg",
+            "name": "Marettoaufra",
+            "role": "Calisthenics Specialist",
+            "review": "Thankyou yaa resistance bandnya. Kualitasnya bagus sekali",
+            "product": "Resistance Bands"
           }
         },
         "review_item_UVrD3q": {
           "type": "review_item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Mask_group_4.png",
+            "image": "https:\/\/res.cloudinary.com\/doq2grch0\/image\/upload\/v1733278774\/influencer3_fpuht1.jpg",
+            "name": "Jryankarsten",
+            "role": "Indonesian Model",
+            "review": "love the design and the quality",
+            "product": "Shuroo Series - Sweat Smile"
+          }
+        },
+        "review_item_76QKDU": {
+          "type": "review_item",
+          "settings": {
+            "image": "https:\/\/res.cloudinary.com\/doq2grch0\/image\/upload\/v1733278775\/influencer5_xlem6h.jpg",
+            "name": "Rania Putrisari",
+            "role": "Indonesian Model",
+            "review": "Super coollll omg, coolest collab & baru sadar Svarga dari Surabaya, bangga bgt krn aku juga dari Surabaya hehee",
+            "product": "Product Name"
+          }
+        },
+        "review_item_BH78Bc": {
+          "type": "review_item",
+          "settings": {
+            "image": "",
             "name": "John Doe",
             "role": "Customer",
             "review": "This is an amazing product!",
@@ -156,10 +176,12 @@
         "review_item_hQza8X",
         "review_item_wbVqwU",
         "review_item_QQ4mfw",
-        "review_item_UVrD3q"
+        "review_item_UVrD3q",
+        "review_item_76QKDU",
+        "review_item_BH78Bc"
       ],
       "settings": {
-        "title": "Customer Reviews"
+        "title": "SVRG’S REVIEW"
       }
     },
     "review_iBmaWq": {

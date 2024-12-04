@@ -229,7 +229,7 @@
         "heading_8jwa9y": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Cross X Weightlifting Shoes<\/strong>",
+            "heading": "<strong>WEIGHTLIFTING SHOES<\/strong>",
             "heading_size": "h2"
           }
         },
@@ -260,7 +260,7 @@
         "color_scheme": "",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
-        "padding_top": 36,
+        "padding_top": 0,
         "padding_bottom": 36
       }
     },
@@ -367,7 +367,8 @@
         "service_item_TDAgYk"
       ],
       "settings": {
-        "title": "OUR SERVICE"
+        "title": "OUR SERVICE",
+        "show_text": false
       }
     },
     "collapsible_content_4VJ4VT": {
