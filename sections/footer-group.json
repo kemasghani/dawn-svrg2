@@ -7,6 +7,7 @@
       "blocks": {
         "image_6rNMKC": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/LOGO_SVRG_FIX_PNG_White.png",
             "image_width": 135,
@@ -22,7 +23,6 @@
         },
         "link_list_MhdNey": {
           "type": "link_list",
-          "disabled": true,
           "settings": {
             "heading": "<strong>MY ACCOUNT<\/strong>",
             "menu": "my-account"
