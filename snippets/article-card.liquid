@@ -80,7 +80,7 @@
                 {{ article.title | truncate: 50 | escape }}
               </a>
             </h3>
-            <div class="article-card__info caption-with-letter-spacing h5">
+            <div class="article-card__info text-[#939393] caption-with-letter-spacing h5">
               {%- if show_date -%}
                 <span class="circle-divider">{{ article.published_at | time_tag: format: 'date' }}</span>
               {%- endif -%}
@@ -119,7 +119,7 @@
               {{ article.title | truncate: 50 | escape }}
             </a>
           </h3>
-          <div class="article-card__info caption-with-letter-spacing h5">
+          <div class="article-card__info text-[#939393] caption-with-letter-spacing h5">
             {%- if show_date -%}
               <span class="circle-divider">{{ article.published_at | time_tag: format: 'date' }}</span>
             {%- endif -%}

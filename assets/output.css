@@ -1546,6 +1546,11 @@ b,
   color: rgb(104 104 104 / var(--tw-text-opacity, 1));
 }
 
+.text-\[\#939393\] {
+  --tw-text-opacity: 1;
+  color: rgb(147 147 147 / var(--tw-text-opacity, 1));
+}
+
 .text-\[\#dc2626\] {
   --tw-text-opacity: 1;
   color: rgb(220 38 38 / var(--tw-text-opacity, 1));
