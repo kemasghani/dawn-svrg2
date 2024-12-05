@@ -7,9 +7,19 @@
   .subscribeDekstop {
     display: none;
   }
-  .subscribeMobile{
+  .subscribeMobile {
     margin-bottom: 30px;
     margin-top: 25px;
+  }
+  .newsletter-form {
+    align-items: start;
+  }
+  .footer-list-menu {
+    max-width: 1000px !important;
+    width: 100%;
+    overflow: hidden;
+    max-height: 30px;
+    transition: 0.5s;
   }
 }
 

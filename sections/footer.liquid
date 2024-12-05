@@ -141,94 +141,99 @@
               </div>
             {%- endif -%}
             {%- for block in section.blocks -%}
-              <div
-                class="footer-block w-fit max-w-[200px]{% if block.type == 'link_list' %} footer-block--menu{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-                {{ block.shopify_attributes }}
-                {% if settings.animations_reveal_on_scroll %}
-                  data-cascade
-                  style="--animation-order: {{ forloop.index }};"
-                {% endif %}
-              >
-                {%- if block.settings.heading != blank -%}
-                  <h2 class="footer-block__heading inline-richtext">{{- block.settings.heading -}}</h2>
-                {%- endif -%}
-
-                {%- case block.type -%}
-                  {%- when '@app' -%}
-                    {% render block %}
-                  {%- when 'text' -%}
-                    <div class="footer-block__details-content rte">
-                      {{ block.settings.subtext }}
+                <div
+                  class="footer-block w-fit footer-list-menu max-w-[200px]{% if block.type == 'link_list' %} footer-block--menu{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                  {{ block.shopify_attributes }}
+                  {% if settings.animations_reveal_on_scroll %}
+                    data-cascade
+                    style="--animation-order: {{ forloop.index }}; max-height: 30px;"
+                  {% endif %}
+                  id="footer-list-menu-{{ forloop.index }}"
+                >
+                  {%- if block.settings.heading != blank -%}
+                  <div class="flex justify-between cursor-pointer">
+                    <h2 class="footer-block__heading inline-richtext">{{- block.settings.heading -}}</h2>
+                    <div>
+                      <svg width="20" height="20" version="1.1" xmlns="http://www.w3.org/2000/svg" desc="Created with imagetracer.js version 1.2.6" ><path fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="1" opacity="0" d="M 0 0 L 20 0 L 20 20 L 0 20 L 0 0 Z M 2 6 L 2 8 L 9 14 L 12 14 L 18 6 L 16 6 L 11 11 L 5 6 L 2 6 Z " /><path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.7411764705882353" d="M 3.5 7 L 10.5 13 L 17 7.5 L 9.5 14 L 3.5 7 Z " /><path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.1843137254901961" d="M 4.5 6 L 10.5 11 L 16 6.5 L 9.5 12 L 4.5 6 Z " /><path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.9137254901960784" d="M 3.5 6 L 10.5 12 L 17 6.5 L 9.5 13 L 3.5 6 Z " /><path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.0392156862745098" d="M 2.5 7 L 8.5 14 L 2.5 7 Z " /><path fill="rgb(255,255,255)" stroke="rgb(255,255,255)" stroke-width="1" opacity="0.0392156862745098" d="M 17.5 7 L 11.5 14 L 17.5 7 Z " /></svg>
                     </div>
-                  {%- when 'link_list' -%}
-                    {%- if block.settings.menu != blank -%}
-                      <ul class="footer-block__details-content list-unstyled">
-                        {%- for link in block.settings.menu.links -%}
-                          <li>
-                            <a
-                              href="{{ link.url }}"
-                              class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}"
-                            >
-                              {{ link.title | escape }}
-                            </a>
-                          </li>
-                        {%- endfor -%}
-                      </ul>
-                    {%- endif -%}
-                  {%- when 'brand_information' -%}
-                    <div class="footer-block__brand-info">
-                      {%- if settings.brand_image != blank -%}
-                        {%- assign brand_image_height = settings.brand_image_width
-                          | divided_by: settings.brand_image.aspect_ratio
-                        -%}
-                        <div
-                          class="footer-block__image-wrapper"
-                          style="max-width: min(100%, {{ settings.brand_image_width }}px);"
-                        >
-                          {{
-                            settings.brand_image
-                            | image_url: width: 1100
-                            | image_tag:
-                              loading: 'lazy',
-                              widths: '50, 100, 150, 200, 300, 400, 550, 800, 1100',
-                              height: brand_image_height,
-                              width: settings.brand_image_width
-                          }}
-                        </div>
+                  </div>
+                  {%- endif -%}
+                  {%- case block.type -%}
+                    {%- when '@app' -%}
+                      {% render block %}
+                    {%- when 'text' -%}
+                      <div class="footer-block__details-content rte">
+                        {{ block.settings.subtext }}
+                      </div>
+                    {%- when 'link_list' -%}
+                      {%- if block.settings.menu != blank -%}
+                        <ul class="footer-block__details-content list-unstyled">
+                          {%- for link in block.settings.menu.links -%}
+                            <li>
+                              <a
+                                href="{{ link.url }}"
+                                class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}"
+                              >
+                                {{ link.title | escape }}
+                              </a>
+                            </li>
+                          {%- endfor -%}
+                        </ul>
                       {%- endif -%}
-                      {%- if settings.brand_headline != blank -%}
-                        <h2 class="footer-block__heading rte">{{ settings.brand_headline }}</h2>
-                      {%- endif -%}
-                      {%- if settings.brand_description != blank -%}
-                        <div class="rte">{{ settings.brand_description }}</div>
-                      {%- endif -%}
-                      {%- if block.settings.show_social and has_social_icons -%}
-                        {%- render 'social-icons', class: 'footer__list-social' -%}
-                      {%- endif -%}
-                    </div>
-                  {%- when 'image' -%}
-                    <div class="footer-block__details-content footer-block-image {{ block.settings.alignment }}">
-                      {%- if block.settings.image != blank -%}
-                        {%- assign image_size_2x = block.settings.image_width | times: 2 | at_most: 5760 -%}
-                        <div
-                          class="footer-block__image-wrapper"
-                          style="max-width: min(100%, {{ block.settings.image_width }}px);"
-                        >
-                          <img
-                            srcset="{{ block.settings.image | image_url: width: block.settings.image_width }}, {{ block.settings.image | image_url: width: image_size_2x }} 2x"
-                            src="{{ block.settings.image | image_url: width: 760 }}"
-                            alt="{{ block.settings.image.alt | escape }}"
-                            loading="lazy"
-                            width="{{ block.settings.image.width }}"
-                            height="{{ block.settings.image.height }}"
+                    {%- when 'brand_information' -%}
+                      <div class="footer-block__brand-info">
+                        {%- if settings.brand_image != blank -%}
+                          {%- assign brand_image_height = settings.brand_image_width
+                            | divided_by: settings.brand_image.aspect_ratio
+                          -%}
+                          <div
+                            class="footer-block__image-wrapper"
+                            style="max-width: min(100%, {{ settings.brand_image_width }}px);"
                           >
-                        </div>
-                      {%- else -%}
-                        {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
-                      {%- endif -%}
-                    </div>
-                {%- endcase -%}
-              </div>
+                            {{
+                              settings.brand_image
+                              | image_url: width: 1100
+                              | image_tag:
+                                loading: 'lazy',
+                                widths: '50, 100, 150, 200, 300, 400, 550, 800, 1100',
+                                height: brand_image_height,
+                                width: settings.brand_image_width
+                            }}
+                          </div>
+                        {%- endif -%}
+                        {%- if settings.brand_headline != blank -%}
+                          <h2 class="footer-block__heading rte">{{ settings.brand_headline }}</h2>
+                        {%- endif -%}
+                        {%- if settings.brand_description != blank -%}
+                          <div class="rte">{{ settings.brand_description }}</div>
+                        {%- endif -%}
+                        {%- if block.settings.show_social and has_social_icons -%}
+                          {%- render 'social-icons', class: 'footer__list-social' -%}
+                        {%- endif -%}
+                      </div>
+                    {%- when 'image' -%}
+                      <div class="footer-block__details-content footer-block-image {{ block.settings.alignment }}">
+                        {%- if block.settings.image != blank -%}
+                          {%- assign image_size_2x = block.settings.image_width | times: 2 | at_most: 5760 -%}
+                          <div
+                            class="footer-block__image-wrapper"
+                            style="max-width: min(100%, {{ block.settings.image_width }}px);"
+                          >
+                            <img
+                              srcset="{{ block.settings.image | image_url: width: block.settings.image_width }}, {{ block.settings.image | image_url: width: image_size_2x }} 2x"
+                              src="{{ block.settings.image | image_url: width: 760 }}"
+                              alt="{{ block.settings.image.alt | escape }}"
+                              loading="lazy"
+                              width="{{ block.settings.image.width }}"
+                              height="{{ block.settings.image.height }}"
+                            >
+                          </div>
+                        {%- else -%}
+                          {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+                        {%- endif -%}
+                      </div>
+                  {%- endcase -%}
+                </div>
             {%- endfor -%}
             {%- if section.settings.show_social and has_social_icons -%}
               <div class="subscribeDekstop">
@@ -306,12 +311,9 @@
             {%- endif -%}
           </div>
         {%- endif -%}
-
-
       </div>
     {%- endunless -%}
   {%- endif -%}
-
   <div
     class="footer__content-bottom{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
     {% if settings.animations_reveal_on_scroll %}
@@ -383,6 +385,21 @@
     </div>
   </div>
 </footer>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const footerMenus = document.querySelectorAll(".footer-block");
+
+    footerMenus.forEach((menu) => {
+      menu.addEventListener("click", function () {
+        const currentHeight = menu.style.maxHeight;
+        menu.style.maxHeight = currentHeight === "1000px" ? "30px" : "1000px";
+      });
+    });
+  });
+
+</script>
 
 {% schema %}
 {
