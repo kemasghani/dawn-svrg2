@@ -22,7 +22,7 @@
 
       <!-- Text content on top of the gradient -->
       <div class="text-content-overlay flex flex-col gap-10">
-        <h1 class="text-[70px] font-[600] text-white">{{ section.settings.video_heading }}</h1>
+        <h1 class="text-[70px] font-[600] text-white leading-[30px] md:leading-none">{{ section.settings.video_heading }}</h1>
         <p class="text-[20px] font-[300]">{{ section.settings.video_description }}</p>
       </div>
       <a href="{{ section.settings.link }}">
@@ -99,7 +99,7 @@
   }
   @media screen and (max-width: 500px) {
     .video-overlay-content h1 {
-      font-size: 33px;
+      font-size: 28px;
     }
     .video-overlay-content p {
       font-size: 12px;

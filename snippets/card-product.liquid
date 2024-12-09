@@ -140,7 +140,7 @@
       <div class="card__content">
         <div class="card__information">
           <h3
-            class="card__heading line-clamp-2 font-[600] text-[17px] md:text-[17px]{% if card_product.featured_media or settings.card_style == 'standard' %} h5{% endif %}"
+            class="card__heading line-clamp-2 font-[600] text-[14px] md:text-[17px]{% if card_product.featured_media or settings.card_style == 'standard' %} h5{% endif %}"
             {% if card_product.featured_media or settings.card_style == 'card' %}
               id="title-{{ section_id }}-{{ card_product.id }}"
             {% endif %}
@@ -154,7 +154,7 @@
               {{ card_product.title | escape }}
             </a>
           </h3>
-          <div class="card-information">
+          <div class="card-information -translate-y-3">
             {%- if show_vendor -%}
               <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
               <div class="caption-with-letter-spacing light">{{ card_product.vendor }}</div>

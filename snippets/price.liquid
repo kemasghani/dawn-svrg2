@@ -88,7 +88,7 @@
             {%- endunless -%}
           {%- endif -%}
           <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
-          <span class="price-item price-item--regular text-[16px] !font-[500] md:text-[16px] text-[#686868]">
+          <span class="price-item price-item--regular text-[14px] !font-[500] md:text-[16px] text-[#62605e]">
             {{-
               'products.product.volume_pricing.price_range'
               | t: minimum: money_price_min, maximum: money_price_max
@@ -96,7 +96,7 @@
           </span>
         {%- else -%}
           <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
-          <span class="price-item price-item--regular text-[16px] !font-[500] md:text-[16px] text-[#686868]">
+          <span class="price-item price-item--regular text-[14px] !font-[500] md:text-[16px] text-[#62605e]">
             {{ money_price }}
           </span>
         {%- endif -%}
@@ -105,29 +105,32 @@
         {%- unless product.price_varies == false and product.compare_at_price_varies %}
           <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
           <span class="flex flex-nowrap">
-            <s class="price-item price-item--regular text-[13px] opacity-60">
+            <s class="price-item price-item--regular text-[11px] opacity-60">
               {% if settings.currency_code_enabled %}
                 {{ compare_at_price | money_with_currency }}
               {% else %}
                 {{ compare_at_price | money }}
               {% endif %}
             </s>
-            <span class="badge-discount px-3 py-2 bg-[#fee2e2] text-[#dc2626] font-[600] text-[8px] md:text-[9px] h-fit rounded-[5px] discount-card-product translate-x-2 -translate-y-2 md:-translate-y-1">
-              {%- if discount_percentage > 0 -%}
-                {{ discount_percentage | round }}%
-              {%- endif -%}
-            </span>
           </span>
         {%- endunless -%}
         <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.sale_price' | t }}</span>
-        <span class="price-item price-item--sale price-item--last mt-10 text-[16px] !font-[500] md:text-[16px] text-[#686868]">
+       <div class="flex -translate-y-4">
+        <span class="price-item price-item--sale price-item--last mt-10 text-[14px] !font-[500] md:text-[16px] text-[#62605e]">
           {{ money_price }}
         </span>
-        <span class="px-4 py-3 bg-[#fee2e2] text-[#dc2626] !font-[600] text-[16px] rounded-[10px] discount-main-product hidden">
+        <span class="badge-discount px-3 py-2 bg-[#fee2e2] text-[#dc2626] font-[600] text-[8px] md:text-[9px] h-fit rounded-[5px] discount-card-product translate-x-2 translate-y-0 md:-translate-y-1">
           {%- if discount_percentage > 0 -%}
             {{ discount_percentage | round }}%
           {%- endif -%}
         </span>
+        <span class="px-4 pt-[0.89rem] bg-[#fee2e2] text-[#dc2626] !font-[600] text-[16px] rounded-[10px] discount-main-product hidden ml-4">
+          {%- if discount_percentage > 0 -%}
+            {{ discount_percentage | round }}%
+          {%- endif -%}
+        </span>
+       </div>
+
       </div>
       <small class="unit-price caption{% if product.selected_or_first_available_variant.unit_price_measurement == nil %} hidden{% endif %}">
         <span class="visually-hidden">{{ 'products.product.price.unit_price' | t }}</span>

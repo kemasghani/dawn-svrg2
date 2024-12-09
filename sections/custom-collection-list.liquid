@@ -13,7 +13,7 @@
 {%- endstyle -%}
 <div id="collection-list-section" class="section-{{ section.id }}-padding">
     <div class="collection-list-wrapper">
-      <h2 class="title text-[30px] md:text-[40px] title-custom-category">
+      <h2 class="title text-[24px] md:text-[37px] title-custom-category">
         {{ section.settings.title }}
       </h2>
       <div class="collection-list-grid">
@@ -23,7 +23,7 @@
             <div class="collection-item">
               <a href="{{ collection.url }}">
                 <img src="{{ collection.metafields.custom.thumbnail | img_url: '150x150' }}" alt="{{ collection.title }}">
-                <p class="text-[18px] md:text-[22px] mt-3">
+                <p class="text-[18px] md:text-[22px] mt-1">
                   {% if collection.title.size > 7 %}
                     {{ collection.title | slice: 0, 7 }}...
                   {% else %}

@@ -7,7 +7,7 @@
         {% for block in section.blocks %}
         <li class="location-item" data-lat="{{ block.settings.latitude }}" data-lng="{{ block.settings.longitude }}">
           <div class="location-title font-[600] flex justify-between">
-            <div class="flex gap-3 map-item">
+            <div class="flex gap-3 map-item titleCity">
                 {% render 'tower' %}
                 {{ block.settings.title }}
             </div>
@@ -24,7 +24,7 @@
       {% for block in section.blocks %}
       <li class="location-item" data-lat="{{ block.settings.latitude }}" data-lng="{{ block.settings.longitude }}">
         <div class="location-title font-[600] flex justify-between">
-          <div class="flex gap-3">
+          <div class="flex gap-3 titleCity">
               {% render 'tower' %}
               {{ block.settings.title }}
           </div>

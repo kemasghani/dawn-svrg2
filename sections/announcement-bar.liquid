@@ -6,10 +6,10 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
     background: #000;
     text-align: center;
-    padding: 20px;
+    padding: 20px;`
 }
 
 .countdown-timer-wrapper {
@@ -108,25 +108,30 @@
         {%- endif -%}
       </div>
       {%- when 'countdown' -%}
-          <div class="countdown-timer">
-  <div class="countdown-text">FLASH SALE</div>
-  <div class="countdown-timer-wrapper">
-    <div class="countdown-box">
-      <span class="countdown-number" id="hours">00</span>
-      <span class="countdown-label">HRS</span>
-    </div>
-    <span class="separator">:</span>
-    <div class="countdown-box">
-      <span class="countdown-number" id="minutes">00</span>
-      <span class="countdown-label">MIN</span>
-    </div>
-    <span class="separator">:</span>
-    <div class="countdown-box">
-      <span class="countdown-number" id="seconds">00</span>
-      <span class="countdown-label">SEC</span>
-    </div>
-  </div>
-</div>
+          <div class="countdown-timer" style="
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+        ">
+            <div class="countdown-text">FLASH SALE</div>
+            <div class="countdown-timer-wrapper">
+              <div class="countdown-box">
+                <span class="countdown-number" id="hours">00</span>
+                <span class="countdown-label">HRS</span>
+              </div>
+              <span class="separator">:</span>
+              <div class="countdown-box">
+                <span class="countdown-number" id="minutes">00</span>
+                <span class="countdown-label">MIN</span>
+              </div>
+              <span class="separator">:</span>
+              <div class="countdown-box">
+                <span class="countdown-number" id="seconds">00</span>
+                <span class="countdown-label">SEC</span>
+              </div>
+            </div>
+          </div>
 
       {% endcase %}
     {%- endfor -%}

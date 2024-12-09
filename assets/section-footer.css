@@ -2,6 +2,9 @@
   .subscribeMobile {
     display: none;
   }
+  .dropdownArrow {
+    display: none;
+  }
 }
 @media screen and (max-width: 500px) {
   .subscribeDekstop {

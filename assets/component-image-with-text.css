@@ -12,6 +12,9 @@
   .image-with-text__content {
     padding: 0 !important;
   }
+  .image-with-text {
+    margin-top: 10px;
+  }
 }
 .image-with-text .grid {
   margin-bottom: 0;
