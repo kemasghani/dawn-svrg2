@@ -2,6 +2,7 @@
   "sections": {
     "custom_fullwidth_video_DgQa8n": {
       "type": "custom-fullwidth-video",
+      "custom_css": [],
       "settings": {
         "video": "shopify:\/\/files\/videos\/ca2e138374d34365901b09ca083056c8.HD-1080p-7.2Mbps-35756872.webm",
         "video_url": "https:\/\/res.cloudinary.com\/doq2grch0\/video\/upload\/v1729751724\/ca2e138374d34365901b09ca083056c8.HD-1080p-7.2Mbps-35756872_ntidsg.webm",

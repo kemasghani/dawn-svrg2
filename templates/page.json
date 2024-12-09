@@ -158,16 +158,6 @@
             "review": "Super coollll omg, coolest collab & baru sadar Svarga dari Surabaya, bangga bgt krn aku juga dari Surabaya hehee",
             "product": "Product Name"
           }
-        },
-        "review_item_BH78Bc": {
-          "type": "review_item",
-          "settings": {
-            "image": "",
-            "name": "John Doe",
-            "role": "Customer",
-            "review": "This is an amazing product!",
-            "product": "Product Name"
-          }
         }
       },
       "block_order": [
@@ -177,8 +167,7 @@
         "review_item_wbVqwU",
         "review_item_QQ4mfw",
         "review_item_UVrD3q",
-        "review_item_76QKDU",
-        "review_item_BH78Bc"
+        "review_item_76QKDU"
       ],
       "settings": {
         "title": "SVRG’S REVIEW"
@@ -290,7 +279,7 @@
         "heading_fgtdMV": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Our Online Shop Review<\/strong>",
+            "heading": "<strong>OUR ONLINE SHOP REVIEW<\/strong>",
             "heading_size": "h2"
           }
         }
@@ -304,7 +293,7 @@
         "color_scheme": "",
         "full_width": true,
         "padding_top": 40,
-        "padding_bottom": 52
+        "padding_bottom": 4
       }
     },
     "image_with_image_pcxeYz": {
