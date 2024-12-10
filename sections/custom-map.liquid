@@ -11,7 +11,7 @@
                 {% render 'tower' %}
                 {{ block.settings.title }}
             </div>
-            <a href="{{ block.settings.link_maps }}" target="_blank" class="map-container">{% render 'map' %}</a>
+            <a href="{{ block.settings.link_maps }}" target="_blank" class="map-container h-[30px] w-[30px] flex justify-center items-center rounded-[10px] bg-[#EBECED]">{% render 'map' %}</a>
           </div>
           <div class="location-address map-item">{{ block.settings.address }}</div>
         </li>
@@ -28,7 +28,7 @@
               {% render 'tower' %}
               {{ block.settings.title }}
           </div>
-          <a href="{{ block.settings.link_maps }}" target="_blank" class="map-container">{% render 'map' %}</a>
+          <a href="{{ block.settings.link_maps }}" target="_blank" class="map-container h-[30px] w-[30px] flex justify-center items-center rounded-[10px] bg-[#EBECED]">{% render 'map' %}</a>
         </div>
         <div class="location-address">{{ block.settings.address }}</div>
       </li>

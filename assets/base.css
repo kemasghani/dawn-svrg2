@@ -3838,7 +3838,8 @@ p.predictive-search__item-heading {
   letter-spacing: 0.8px !important;
 }
 
-.rich-text__blocks p {
+.rich-text__blocks p,
+.rich-text__text h3 {
   font-family: "ProximaNovaSemiBold" !important;
   line-height: 17px;
 }
@@ -3854,9 +3855,13 @@ p.predictive-search__item-heading {
 }
 
 .image-with-text__content h2,
-.image-with-text__content a {
-  font-family: "ArquitectaBlack";
+.image-with-text__content a,
+.rich-text__blocks .rich-text__buttons a.button {
+  font-family: "ArquitectaBlack" !important;
   letter-spacing: 1.5px;
+}
+.rich-text__blocks .rich-text__buttons a.button{
+  font-size: 14px;
 }
 
 h3.card__heading a {
@@ -4141,4 +4146,27 @@ header nav ul li span,
 .utility-bar__grid.page-width {
   padding-left: 0px;
   padding-right: 0px;
+}
+
+#MainContent {
+  margin-top: 70px;
+}
+.main-blog h1 {
+  text-transform: uppercase;
+}
+.main-blog p,
+.article-template p {
+  font-family: "Open Sans", sans-serif !important;
+  letter-spacing: 0.5px;
+}
+
+h1.article-template__title {
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 500px) {
+  h1.article-template__title {
+    text-transform: uppercase;
+    font-size: 20px;
+  }
 }

@@ -2,13 +2,13 @@
   position: initial;
 }
 @media screen and (max-width: 500px) {
-  header {
+  header.headerContent {
     height: 50px;
   }
   .headerLogo {
     scale: 0.65;
   }
-  .headerContent{
+  .headerContent {
     transform: translateY(-4px);
   }
 }
