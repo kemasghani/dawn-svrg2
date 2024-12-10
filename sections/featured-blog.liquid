@@ -33,7 +33,7 @@
       <div class="title-wrapper-with-link{% if posts_displayed > 2 %} title-wrapper--self-padded-tablet-down{% else %} title-wrapper--self-padded-mobile{% endif %} title-wrapper--no-top-margin">
         <h2
           id="SectionHeading-{{ section.id }}"
-          class="blog__title inline-richtext {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} text-[27px] md:text-[37px]"
+          class="blog__title inline-richtext {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} text-[24px] md:text-[37px]"
           {% if settings.animations_reveal_on_scroll %}
             data-cascade
           {% endif %}
@@ -170,7 +170,7 @@
     </slider-component>
             {%- if section.settings.show_view_all and section.settings.post_limit < section.settings.blog.articles_count -%}
           <div
-            class="blog__view-all center small-hide medium-hide{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            class="blog__view-all center small-hide medium-hide{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} m-auto !w-fit !bg-[#63d7d1] border !py-0 !px-0 rounded-[7px]"
             {% if settings.animations_reveal_on_scroll %}
               data-cascade
             {% endif %}
@@ -179,14 +179,14 @@
             <a
               href="{{ section.settings.blog.url }}"
               id="ViewAll-{{ section.id }}"
-              class="border !rounded-full py-2 px-8 mr-3 text-black text-[15px] md:text-[20px] viewAllBlog"
+              class="border !rounded-full py-2 px-8 mr-3 text-white text-[15px] md:text-[20px] viewAllBlog"
               aria-labelledby="ViewAll-{{ section.id }} SectionHeading-{{ section.id }}"
               style="display:flex; align-items:center; justify-content:center; gap:10px; border: none; color: #666666; text-transform:uppercase;"
             >
-              <span>{{ 'sections.featured_blog.view_all' | t }}</span>
+              <span class="text-white text-[14px] md:text-[20px]">{{ 'sections.featured_blog.view_all' | t }}</span>
               <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_9_171)">
-                <path d="M1.21801 11.5592L0 10.3412L4.55924 5.78199L0 1.21801L1.21801 0L7 5.78199L1.21801 11.5592Z" fill="#6D6D6D"></path>
+                <path d="M1.21801 11.5592L0 10.3412L4.55924 5.78199L0 1.21801L1.21801 0L7 5.78199L1.21801 11.5592Z" fill="white"></path>
                 </g>
                 <defs>
                 <clipPath id="clip0_9_171">

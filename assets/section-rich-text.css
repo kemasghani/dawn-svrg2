@@ -17,7 +17,6 @@
   width: 100%;
 }
 
-
 @media screen and (min-width: 750px) {
   .rich-text__wrapper {
     width: 100%;
@@ -52,7 +51,7 @@
 }
 
 .rich-text__blocks > * + * {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .rich-text__blocks > * + a {
@@ -84,4 +83,10 @@
 
 .rich-text__blocks.right .rich-text__buttons {
   justify-content: flex-end;
+}
+
+@media screen and (max-width: 501px) {
+  .rich-text__wrapper.page-width {
+    margin: 0;
+  }
 }

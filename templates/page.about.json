@@ -30,24 +30,17 @@
         "text_KzaC3w"
       ],
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
+        "desktop_content_position": "left",
+        "content_alignment": "left",
         "color_scheme": "",
         "full_width": true,
         "padding_top": 40,
-        "padding_bottom": 52
+        "padding_bottom": 24
       }
     },
     "image_with_text_caPNqc": {
       "type": "image-with-text",
       "blocks": {
-        "heading_Jd7zJb": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>ALAT OLAHRAGA KUALITAS PREMIUM<\/strong>",
-            "heading_size": "h2"
-          }
-        },
         "text_JfzPrL": {
           "type": "text",
           "settings": {
@@ -57,12 +50,11 @@
         }
       },
       "block_order": [
-        "heading_Jd7zJb",
         "text_JfzPrL"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/DSC07112.webp",
-        "headline": "",
+        "headline": "ALAT OLAHRAGA KUALITAS PREMIUM",
         "image_url": "",
         "height": "small",
         "desktop_image_width": "small",
@@ -74,20 +66,13 @@
         "color_scheme": "",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
-        "padding_top": 100,
-        "padding_bottom": 36
+        "padding_top": 24,
+        "padding_bottom": 0
       }
     },
     "image_with_text_YbpJqe": {
       "type": "image-with-text",
       "blocks": {
-        "heading_4CUdYD": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>TEMUKAN SEMUA YANG ANDA BUTUHKAN DI SVRG<\/strong>",
-            "heading_size": "h2"
-          }
-        },
         "text_TykCFq": {
           "type": "text",
           "settings": {
@@ -97,12 +82,11 @@
         }
       },
       "block_order": [
-        "heading_4CUdYD",
         "text_TykCFq"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/DSC07106.webp",
-        "headline": "",
+        "headline": "TEMUKAN SEMUA YANG ANDA BUTUHKAN DI SVRG",
         "image_url": "",
         "height": "small",
         "desktop_image_width": "small",
@@ -114,7 +98,7 @@
         "color_scheme": "",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
-        "padding_top": 36,
+        "padding_top": 0,
         "padding_bottom": 36
       }
     },

@@ -23,7 +23,7 @@
             <div class="collection-item">
               <a href="{{ collection.url }}">
                 <img src="{{ collection.metafields.custom.thumbnail | img_url: '150x150' }}" alt="{{ collection.title }}">
-                <p class="text-[18px] md:text-[22px] mt-1">
+                <p class="text-[14px] md:text-[17px] mt-1 text-black">
                   {% if collection.title.size > 7 %}
                     {{ collection.title | slice: 0, 7 }}...
                   {% else %}

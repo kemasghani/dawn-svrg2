@@ -3724,7 +3724,7 @@ details-disclosure > details {
 }
 
 .article-card .card__heading.h2 {
-  font-size: 17px;
+  font-size: 14px;
 }
 
 @media screen and (max-width: 989px) {
@@ -3801,6 +3801,12 @@ details-disclosure > details {
   font-style: normal;
 }
 
+.swatches-options label span,
+.swatches-globo .swatch--gl li label .attr-title-hover,
+.article-card__info span time {
+  font-family: "ProximaNovaThin" !important;
+}
+
 p.predictive-search__item-heading {
   font-family: "Open Sans", sans-serif !important;
 }
@@ -3850,17 +3856,16 @@ p.predictive-search__item-heading {
   letter-spacing: 0.5px;
 }
 .image-with-text__content h3 {
-  font-family: "ProximaNovaSemiBold";
-  letter-spacing: 1px;
+  font-family: "ArquitectaBlack";
+  letter-spacing: 1.5px;
 }
 
-.image-with-text__content h2,
 .image-with-text__content a,
 .rich-text__blocks .rich-text__buttons a.button {
   font-family: "ArquitectaBlack" !important;
   letter-spacing: 1.5px;
 }
-.rich-text__blocks .rich-text__buttons a.button{
+.rich-text__blocks .rich-text__buttons a.button {
   font-size: 14px;
 }
 
@@ -3892,7 +3897,7 @@ header nav ul li span,
 .related-products__heading {
   font-family: "ArquitectaBlack";
   font-weight: 300;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
 }
 
 .related-products__heading {
@@ -3912,8 +3917,8 @@ header nav ul li span,
 }
 
 .collection-item p {
-  font-family: "ArquitectaHeavy";
-  letter-spacing: 0.5px;
+  font-family: "ProximaNova";
+  letter-spacing: 1px;
   font-weight: 900;
   text-transform: uppercase;
 }
@@ -3973,7 +3978,7 @@ header nav ul li span,
 }
 
 .image-with-text__content h2 strong {
-  font-family: "ArquitectaBlack";
+  font-family: "ProximaNova";
   letter-spacing: 1px;
   font-weight: 900;
 }
