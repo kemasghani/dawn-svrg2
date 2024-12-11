@@ -3724,7 +3724,12 @@ details-disclosure > details {
 }
 
 .article-card .card__heading.h2 {
-  font-size: 14px;
+  font-size: 17px;
+}
+@media screen and (max-width: 500px) {
+  .article-card .card__heading.h2 {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 989px) {
@@ -3749,6 +3754,13 @@ details-disclosure > details {
   font-family: "Arquitecta";
   src: url("https://cdn.shopify.com/s/files/1/0688/7325/7256/files/Arquitecta.otf?v=1732519824")
     format("otf");
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ProximaNovaExtraBold";
+  src: url("https://cdn.shopify.com/s/files/1/0688/7325/7256/files/Proxima_Nova_Extrabold.otf?v=1732519735")
+    format("opentype");
   font-display: swap;
   font-style: normal;
 }
@@ -3779,7 +3791,7 @@ details-disclosure > details {
 
 @font-face {
   font-family: "ProximaNova";
-  src: url("https://cdn.shopify.com/s/files/1/0688/7325/7256/files/Proxima_Nova_ScOsf_Regular.otf?v=1732519737")
+  src: url("https://cdn.shopify.com/s/files/1/0688/7325/7256/files/ProximaNova-Regular.otf?v=1732519736")
     format("opentype");
   font-display: swap;
   font-style: normal;
@@ -3844,16 +3856,9 @@ p.predictive-search__item-heading {
   letter-spacing: 0.8px !important;
 }
 
-.rich-text__blocks p,
 .rich-text__text h3 {
   font-family: "ProximaNovaSemiBold" !important;
   line-height: 17px;
-}
-
-.image-with-text__text p {
-  font-family: "ProximaNovaSemiBold" !important;
-  line-height: 17px;
-  letter-spacing: 0.5px;
 }
 .image-with-text__content h3 {
   font-family: "ArquitectaBlack";
@@ -3971,10 +3976,12 @@ header nav ul li span,
   text-transform: uppercase;
 }
 
-.view-more button {
-  font-family: "Arquitecta";
+.view-more button,
+.viewAllBlog span {
+  font-family: "ProximaNovaExtraBold" !important;
   letter-spacing: 1px;
   font-weight: 900;
+  padding-top: 1.5px;
 }
 
 .image-with-text__content h2 strong {
@@ -4021,12 +4028,6 @@ header nav ul li span,
   font-family: "Arquitecta";
   letter-spacing: 1px;
   font-weight: 700;
-}
-
-.viewAllBlog span {
-  font-family: "Arquitecta";
-  letter-spacing: 1px;
-  font-weight: 900;
 }
 
 .newsletter-form__button svg {
@@ -4168,10 +4169,23 @@ header nav ul li span,
 h1.article-template__title {
   text-transform: uppercase;
 }
-
+.rich-text__blocks p,
+.image-with-text__text p,
+.rich-text__text h3 {
+  font-family: "ProximaNova" !important;
+  letter-spacing: 1px;
+  font-weight: 700;
+  line-height: 19px;
+  font-size: 17px;
+}
 @media screen and (max-width: 500px) {
   h1.article-template__title {
     text-transform: uppercase;
     font-size: 20px;
+  }
+  .rich-text__blocks p,
+  .image-with-text__text p,
+  .rich-text__text h3 {
+    font-size: 14px;
   }
 }

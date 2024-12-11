@@ -96,7 +96,7 @@
             id="ImageWithText--{{ section.id }}"
             class="image-with-text-bottom image-with-text__content image-with-text__content--{{ section.settings.desktop_content_position }} image-with-text__content--desktop-{{ section.settings.desktop_content_alignment }} image-with-text__content--mobile-{{ section.settings.mobile_content_alignment }} image-with-text__content--{{ section.settings.height }} content-container{% unless remove_color_classes %} gradient color-{{ section.settings.color_scheme }}{% else %} background-transparent{% endunless %}"
           >
-            <h3 class="translate-y-5 tagline text-[30px]">{{ section.settings.headline }}</h3>
+            <h3 class="translate-y-5 tagline text-[24px] md:text-[37px]">{{ section.settings.headline }}</h3>
             {%- for block in section.blocks -%}
               {% case block.type %}
                 {%- when 'heading' -%}
