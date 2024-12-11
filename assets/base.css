@@ -3817,6 +3817,7 @@ details-disclosure > details {
 .swatches-globo .swatch--gl li label .attr-title-hover,
 .article-card__info span time {
   font-family: "ProximaNovaThin" !important;
+  font-weight: 900;
 }
 
 p.predictive-search__item-heading {
