@@ -49,6 +49,7 @@
               name="q"
               value="{{ search.terms | escape }}"
               placeholder="{{ 'general.search.search' | t }}"
+              style="padding: 0 !important; padding-left: 9.2rem;"
               {%- if settings.predictive_search_enabled -%}
                 role="combobox"
                 aria-expanded="false"
