@@ -81,11 +81,11 @@
           <form action="{{ routes.search_url }}" method="get" role="search" class="search">
             <div class="field">
               <input
+                style="padding: 0 !important; padding-left: 9.2rem;"
                 class="search__input field__input"
                 id="Search-In-Template"
                 type="search"
                 name="q"
-                style="padding: 0 !important; padding-left: 9.2rem;"
                 value="{{ search.terms | escape }}"
                 placeholder="{{ 'general.search.search' | t }}"
                 {%- if settings.predictive_search_enabled -%}
