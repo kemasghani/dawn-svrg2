@@ -33,9 +33,6 @@
  .footer__content-top.page-width {
   padding: 0 2rem !important;
  }
- .header.page-width {
-  padding: 0 2rem !important;
- }
 }
 ul.product-grid{
   margin-top: 10px;
@@ -325,6 +322,32 @@ ul.product-grid{
 {%- endif -%}
 
 <script>
+  // Select all <details> elements on the page
+const detailsElements = document.querySelectorAll('details');
+
+// Function to update the padding based on the 'open' state
+function updatePadding(details) {
+  const header = details.querySelector('.header.page-width');
+  if (header) {
+    if (details.open) {
+      header.style.padding = '30px 2rem';
+    } else {
+      header.style.padding = '0 2rem';
+    }
+  }
+}
+
+// Add event listeners to handle the toggle
+detailsElements.forEach(details => {
+  // Set the initial padding state
+  updatePadding(details);
+
+  // Add an event listener for when the open/close state changes
+  details.addEventListener('toggle', () => {
+    updatePadding(details);
+  });
+});
+
   const countdownElementFeatured = document.getElementById(`countdown`);
   const totalTime = {{ section.settings.countdown_total_time }};
 
