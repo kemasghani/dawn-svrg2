@@ -43,13 +43,13 @@
         <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
           <div class="field">
             <input
+              style="padding: 0 !important; padding-left: 1rem !important;"
               class="search__input field__input"
               id="{{ input_id }}"
               type="search"
               name="q"
               value="{{ search.terms | escape }}"
               placeholder="{{ 'general.search.search' | t }}"
-              style="padding: 0 !important; padding-left: 9.2rem;"
               {%- if settings.predictive_search_enabled -%}
                 role="combobox"
                 aria-expanded="false"
