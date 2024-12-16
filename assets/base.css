@@ -4190,3 +4190,8 @@ h1.article-template__title {
     font-size: 14px;
   }
 }
+
+.titleCard {
+  font-family: "ProximaNova" !important;
+  letter-spacing: 0.5px;
+}

@@ -59,7 +59,7 @@
                   </cart-note>
                 {%- endif -%}
                 <div class="totals mt-14">
-                  <h2 class="totals__total">{{ 'sections.cart.estimated_total' | t }}</h2>
+                  <h2 class="totals__total uppercase">{{ 'sections.cart.estimated_total' | t }}</h2>
                   <p class="totals__total-value">{{ cart.total_price | money_with_currency }}</p>
                 </div>
 
@@ -136,7 +136,7 @@
         {% assign collection = collections[collection_handle] %}
 
         {% if collection and collection.products.size > 0 %}
-          <h1 class="h1">Rekomendasi Produk</h1>
+          <h1 class="h1 uppercase text-[24px] lett">Rekomendasi Produk</h1>
           <div class="grid grid-cols-2 gap-4 mt-3">
             {% assign limited_products = collection.products | limit: 6 %}
             {% for product in limited_products %}
@@ -144,7 +144,7 @@
                 <a href="{{ product.url }}" class="block">
                   <img src="{{ product.featured_image | img_url: '400x400' }}" alt="{{ product.title }}" class="w-full h-auto object-cover rounded-md">
                 </a>
-                <p class="font-semibold mt-2 text-[13px] !mb-0 !pb-2">{{ product.title }}</p>
+                <p class="font-semibold mt-2 text-[13px] !mb-0 !pb-2 titleCard">{{ product.title }}</p>
                 <p class="text-gray-600  text-[12px]">{{ product.price | money }}</p>
                 <form method="post" action="/cart/add" class="mt-4">
                   <input type="hidden" name="id" value="{{ product.variants.first.id }}">
