@@ -21,53 +21,6 @@
         "link": "shopify://collections/all"
       }
     },
-    "image_banner_pxLfY8": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_WXdPpT": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1"
-          }
-        },
-        "text_X4ED4K": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "buttons_prnGEA": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_WXdPpT",
-        "text_X4ED4K",
-        "buttons_prnGEA"
-      ],
-      "settings": {
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
     "custom_collection_list_NjCYFP": {
       "type": "custom-collection-list",
       "blocks": {
@@ -581,7 +534,6 @@
   },
   "order": [
     "custom_fullwidth_video_DgQa8n",
-    "image_banner_pxLfY8",
     "custom_collection_list_NjCYFP",
     "take_quiz_MKRjmd",
     "featured_collection_PwmxtQ",
