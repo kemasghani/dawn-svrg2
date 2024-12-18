@@ -4200,11 +4200,6 @@ h1.article-template__title {
   font-family: "ProximaNova" !important;
 }
 
-.titleCard {
-  font-family: "ProximaNova" !important;
-  letter-spacing: 0.5px;
-}
-
 .collapsible-content__grid p {
   font-family: "ProximaNova" !important;
   letter-spacing: 0.5px;
@@ -4212,4 +4207,15 @@ h1.article-template__title {
 .collection-hero__description p,
 .collection-hero__description h3 {
   font-family: "ProximaNova" !important;
+}
+
+.cart__footer h2.totals__total,
+p.totals__total-value {
+  font-family: "ProximaNova" !important;
+}
+
+p.titleCard {
+  font-family: "ProximaNova" !important;
+  letter-spacing: 0.5px !important;
+  font-weight: 700;
 }
