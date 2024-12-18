@@ -91,7 +91,7 @@ main#MainContent {
 
 .page-width {
   max-width: var(--page-width);
-  margin: 0 auto;
+  margin: 0 auto !important;
   padding: 0 1.5rem;
 }
 
@@ -4166,6 +4166,9 @@ header nav ul li span,
   font-family: "Open Sans", sans-serif !important;
   letter-spacing: 0.5px;
 }
+.main-blog p {
+  font-size: 10px;
+}
 
 h1.article-template__title {
   text-transform: uppercase;
@@ -4189,9 +4192,24 @@ h1.article-template__title {
   .rich-text__text h3 {
     font-size: 14px;
   }
+  .collection-hero .collection-hero__image-container {
+    margin-top: 20px !important;
+  }
+}
+.collection-hero__description p {
+  font-family: "ProximaNova" !important;
 }
 
 .titleCard {
   font-family: "ProximaNova" !important;
   letter-spacing: 0.5px;
+}
+
+.collapsible-content__grid p {
+  font-family: "ProximaNova" !important;
+  letter-spacing: 0.5px;
+}
+.collection-hero__description p,
+.collection-hero__description h3 {
+  font-family: "ProximaNova" !important;
 }

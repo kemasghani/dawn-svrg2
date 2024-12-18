@@ -7,7 +7,7 @@
   }
   .headerLogo {
     scale: 0.65;
-    transform: translateY(-4px);
+    transform: translate(-10px, -3px);
   }
   .headerContent {
     transform: translateY(0px);

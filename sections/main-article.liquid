@@ -50,7 +50,7 @@
           {{ block.shopify_attributes }}
         >
           <h1
-            class="article-template__title"
+            class="article-template__title pt-[30px]"
           >
             {{ article.title | escape }}
           </h1>
@@ -76,7 +76,7 @@
         </div>
 
       {%- when 'share' -%}
-        <div popup-open="main-product-share" class=" cursor-pointer flex gap-3 article-template__social-sharing page-width page-width--narrow{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+        <div popup-open="main-product-share" class="py-10 cursor-pointer flex gap-3 article-template__social-sharing page-width page-width--narrow{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
           {{ block.shopify_attributes }}>
           <span class="text-slate-600 text-[12px] font-normal">Share</span>
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
