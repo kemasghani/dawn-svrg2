@@ -1,15 +1,24 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "custom_fullwidth_video_DgQa8n": {
       "type": "custom-fullwidth-video",
       "custom_css": [],
       "settings": {
-        "video": "shopify:\/\/files\/videos\/ca2e138374d34365901b09ca083056c8.HD-1080p-7.2Mbps-35756872.webm",
-        "video_url": "https:\/\/res.cloudinary.com\/doq2grch0\/video\/upload\/v1729751724\/ca2e138374d34365901b09ca083056c8.HD-1080p-7.2Mbps-35756872_ntidsg.webm",
+        "video": "shopify://files/videos/ca2e138374d34365901b09ca083056c8.HD-1080p-7.2Mbps-35756872.webm",
+        "video_url": "https://res.cloudinary.com/doq2grch0/video/upload/v1729751724/ca2e138374d34365901b09ca083056c8.HD-1080p-7.2Mbps-35756872_ntidsg.webm",
         "video_heading": "MAKSIMALKAN OLAHRAGAMU DENGAN SVRG.",
         "video_description": "",
         "button_text": "BELANJA SEKARANG",
-        "link": "shopify:\/\/collections\/all"
+        "link": "shopify://collections/all"
       }
     },
     "custom_collection_list_NjCYFP": {
@@ -117,7 +126,7 @@
     "featured_collection_FXhrhq": {
       "type": "featured-collection",
       "settings": {
-        "link": "shopify:\/\/collections\/new-arrivals",
+        "link": "shopify://collections/new-arrivals",
         "button_text": "LIHAT SEMUA",
         "show_view_all_category": true,
         "title": "MESIN PILATES",
@@ -191,7 +200,7 @@
       "type": "featured-collection",
       "disabled": true,
       "settings": {
-        "link": "shopify:\/\/collections",
+        "link": "shopify://collections",
         "button_text": "Lihat Semua Category",
         "show_view_all_category": true,
         "title": "",
@@ -230,7 +239,7 @@
         "heading_8jwa9y": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>WEIGHTLIFTING SHOES<\/strong>",
+            "heading": "<strong>WEIGHTLIFTING SHOES</strong>",
             "heading_size": "h2"
           }
         },
@@ -238,7 +247,7 @@
           "type": "button",
           "settings": {
             "button_label": "BELI SEKARANG",
-            "button_link": "shopify:\/\/products\/svrg-cross-x-weightlifting-shoes-fitness-shoes-sneakers-gym",
+            "button_link": "shopify://products/svrg-cross-x-weightlifting-shoes-fitness-shoes-sneakers-gym",
             "button_style_secondary": false
           }
         }
@@ -248,9 +257,9 @@
         "button_DxFDUm"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Artboard_1_900x_7973064c-aa27-4b37-9cea-2b78c26d5cdf_11zon.webp",
+        "image": "shopify://shop_images/Artboard_1_900x_7973064c-aa27-4b37-9cea-2b78c26d5cdf_11zon.webp",
         "headline": "PRODUK TERPOPULER",
-        "image_url": "https:\/\/res.cloudinary.com\/doq2grch0\/image\/upload\/v1729749547\/Artboard_1_900x_7973064c-aa27-4b37-9cea-2b78c26d5cdf_11zon_2_gknrbq.webp",
+        "image_url": "https://res.cloudinary.com/doq2grch0/image/upload/v1729749547/Artboard_1_900x_7973064c-aa27-4b37-9cea-2b78c26d5cdf_11zon_2_gknrbq.webp",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -282,17 +291,17 @@
       "disabled": true,
       "settings": {
         "title_section": "KENAPA HARUS BELI DI  SVRG.",
-        "link": "shopify:\/\/pages\/why-choose-svrg",
-        "benefit_1": "<p>Gratis<\/p>",
-        "benefit_2": "<p>Spesial <\/p>",
-        "benefit_3": "<p>Jaminan <\/p>",
-        "image_url": "https:\/\/res.cloudinary.com\/doq2grch0\/image\/upload\/v1728894178\/Artboard_1A_ssnith.webp",
-        "icon_1": "shopify:\/\/shop_images\/FREE_DELIVERY.svg",
+        "link": "shopify://pages/why-choose-svrg",
+        "benefit_1": "<p>Gratis</p>",
+        "benefit_2": "<p>Spesial </p>",
+        "benefit_3": "<p>Jaminan </p>",
+        "image_url": "https://res.cloudinary.com/doq2grch0/image/upload/v1728894178/Artboard_1A_ssnith.webp",
+        "icon_1": "shopify://shop_images/FREE_DELIVERY.svg",
         "read_more_text": "Baca Selengkapnya",
         "title_1": "Gratis Ongkir",
-        "icon_2": "shopify:\/\/shop_images\/SEPCIAL_PACKAGING.svg",
+        "icon_2": "shopify://shop_images/SEPCIAL_PACKAGING.svg",
         "title_2": "Paket Khusus",
-        "icon_3": "shopify:\/\/shop_images\/RETURN.svg",
+        "icon_3": "shopify://shop_images/RETURN.svg",
         "title_3": "Jaminan Uang Kembali",
         "social_text": "KUNJUNGI SOSIAL MEDIA KAMI"
       }
@@ -301,27 +310,27 @@
       "type": "multicolumn-styled",
       "disabled": true,
       "settings": {
-        "image_1": "shopify:\/\/shop_images\/3_Grid-04.jpg",
+        "image_1": "shopify://shop_images/3_Grid-04.jpg",
         "title_1": "KENAPA HARUS BELI DI SVRG.",
         "benefit_1": "Gratis Ongkir",
         "benefit_2": "Pengemasan Spesial",
         "benefit_3": "Jaminan Return",
-        "link_1": "shopify:\/\/pages\/why-choose-svrg",
+        "link_1": "shopify://pages/why-choose-svrg",
         "button_text_1": "Baca Selengkapnya",
-        "icon_1": "shopify:\/\/shop_images\/DELIVERY_BLACK.svg",
+        "icon_1": "shopify://shop_images/DELIVERY_BLACK.svg",
         "icon_text_1": "Gratis Ongkir",
-        "icon_2": "shopify:\/\/shop_images\/PACKAGING_BLACK.svg",
+        "icon_2": "shopify://shop_images/PACKAGING_BLACK.svg",
         "icon_text_2": "Pengemasan Spesial",
-        "icon_3": "shopify:\/\/shop_images\/RETURN_BLACK.svg",
+        "icon_3": "shopify://shop_images/RETURN_BLACK.svg",
         "icon_text_3": "Jaminan Return",
-        "image_2": "shopify:\/\/shop_images\/3_Grid-05.jpg",
+        "image_2": "shopify://shop_images/3_Grid-05.jpg",
         "title_2": "Diskon Cuci Gudang",
-        "link_2": "shopify:\/\/collections\/clearance-sale",
+        "link_2": "shopify://collections/clearance-sale",
         "button_text_2": "Cek Sekarang",
-        "image_3": "shopify:\/\/shop_images\/3_Grid-06.jpg",
+        "image_3": "shopify://shop_images/3_Grid-06.jpg",
         "title_3": "Temukan Toko",
         "subtitle_3": "Belanja Online di Webstore, tersedia pilihan Pickup in SVRG. Showroom",
-        "link_3": "shopify:\/\/pages\/about",
+        "link_3": "shopify://pages/about",
         "button_text_3": "Temukan Toko"
       }
     },
@@ -331,7 +340,7 @@
         "service_item_LJQyeK": {
           "type": "service_item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Isolation_Mode.png",
+            "image": "shopify://shop_images/Isolation_Mode.png",
             "title": "1 Month Guarantee",
             "description": ""
           }
@@ -339,7 +348,7 @@
         "service_item_k6UVLx": {
           "type": "service_item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Isolation_Mode_1.png",
+            "image": "shopify://shop_images/Isolation_Mode_1.png",
             "title": "Cash On Delivery",
             "description": ""
           }
@@ -347,7 +356,7 @@
         "service_item_8DTPRK": {
           "type": "service_item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Isolation_Mode_2.png",
+            "image": "shopify://shop_images/Isolation_Mode_2.png",
             "title": "Ready Stock",
             "description": ""
           }
@@ -355,7 +364,7 @@
         "service_item_TDAgYk": {
           "type": "service_item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Isolation_Mode_3.png",
+            "image": "shopify://shop_images/Isolation_Mode_3.png",
             "title": "Free Delivery",
             "description": ""
           }
@@ -380,7 +389,7 @@
           "settings": {
             "heading": "Di mana saya bisa membeli produk SVRG?",
             "icon": "question_mark",
-            "row_content": "<p>Anda dapat membeli produk SVRG di offline store kami yang berlokasi di Bintaro, Tangerang Selatan, dan Sambikerep, Surabaya. Selain itu, Anda juga bisa membeli secara online di website kami SVRG.ID dan berbagai marketplace online terpercaya<\/p>",
+            "row_content": "<p>Anda dapat membeli produk SVRG di offline store kami yang berlokasi di Bintaro, Tangerang Selatan, dan Sambikerep, Surabaya. Selain itu, Anda juga bisa membeli secara online di website kami SVRG.ID dan berbagai marketplace online terpercaya</p>",
             "page": ""
           }
         },
@@ -389,7 +398,7 @@
           "settings": {
             "heading": "Berapa lama waktu proses pesanan saya ?",
             "icon": "question_mark",
-            "row_content": "<p>Pesanan akan diproses di hari yang sama jika pemesanan atau order dilakukan sebelum pukul 15.00 untuk weekday, dan pukul 14.00 untuk weekend<\/p>",
+            "row_content": "<p>Pesanan akan diproses di hari yang sama jika pemesanan atau order dilakukan sebelum pukul 15.00 untuk weekday, dan pukul 14.00 untuk weekend</p>",
             "page": ""
           }
         },
@@ -398,16 +407,16 @@
           "settings": {
             "heading": "Berapa lama waktu pengiriman untuk pesanan saya ?",
             "icon": "question_mark",
-            "row_content": "<p>Waktu pengiriman untuk pesanan Anda tergantung pada lokasi pengiriman Anda. Untuk metode pengiriman regular, estimasi pengiriman area JABODETABEK 2–3 hari kerja, sementara untuk metode pengiriman instan, pengiriman paket bisa dilakukan di hari yang sama jika order dilakukan sebelum pukul 15.00. <\/p><p>Sementara estimasi pengiriman untuk area di luar pulau Jawa 3–5 hari kerja.<\/p>",
+            "row_content": "<p>Waktu pengiriman untuk pesanan Anda tergantung pada lokasi pengiriman Anda. Untuk metode pengiriman regular, estimasi pengiriman area JABODETABEK 2–3 hari kerja, sementara untuk metode pengiriman instan, pengiriman paket bisa dilakukan di hari yang sama jika order dilakukan sebelum pukul 15.00. </p><p>Sementara estimasi pengiriman untuk area di luar pulau Jawa 3–5 hari kerja.</p>",
             "page": ""
           }
         },
         "collapsible_row_Wkctww": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Apakah bisa untuk pengiriman instant\/sameday ?",
+            "heading": "Apakah bisa untuk pengiriman instant/sameday ?",
             "icon": "question_mark",
-            "row_content": "<p>Untuk pengiriman Instant\/sameday bisa dilakukan di hari yang sama jika pesanan atau order dilakukan sebelum pukul 15.00. Untuk pembayaran lewat dari jam tersebut akan dikirimkan di hari berikutnya<\/p>",
+            "row_content": "<p>Untuk pengiriman Instant/sameday bisa dilakukan di hari yang sama jika pesanan atau order dilakukan sebelum pukul 15.00. Untuk pembayaran lewat dari jam tersebut akan dikirimkan di hari berikutnya</p>",
             "page": ""
           }
         },
@@ -416,7 +425,7 @@
           "settings": {
             "heading": "Bisakah saya melacak pesanan saya ?",
             "icon": "question_mark",
-            "row_content": "<p>Bisa, saat pesanan Anda sudah masuk ke pengiriman, Anda dapat melacak pesanan Anda menggunakan nomor resi yang terdapat pada detail pesanan web SVRG.<\/p>",
+            "row_content": "<p>Bisa, saat pesanan Anda sudah masuk ke pengiriman, Anda dapat melacak pesanan Anda menggunakan nomor resi yang terdapat pada detail pesanan web SVRG.</p>",
             "page": ""
           }
         },
@@ -425,7 +434,7 @@
           "settings": {
             "heading": "Bagaimana cara menukar produk yang saya beli ?",
             "icon": "question_mark",
-            "row_content": "<p>Anda bisa menghubungi customer service kami melalui pesan WhatsApp di nomor <a href=\"https:\/\/wa.me\/6287786397212\" target=\"_blank\" title=\"https:\/\/wa.me\/6287786397212\">087786397212<\/a> untuk mengajukan penukaran produk.<\/p>",
+            "row_content": "<p>Anda bisa menghubungi customer service kami melalui pesan WhatsApp di nomor <a href=\"https://wa.me/6287786397212\" target=\"_blank\" title=\"https://wa.me/6287786397212\">087786397212</a> untuk mengajukan penukaran produk.</p>",
             "page": ""
           }
         },
@@ -434,7 +443,7 @@
           "settings": {
             "heading": "Apa saja syarat dan ketentuan untuk mengembalikan atau menukar produk ?",
             "icon": "question_mark",
-            "row_content": "<ul><li>Produk yang ingin ditukar harus dalam kondisi baru dan tidak terpakai.<\/li><li>Ongkos kirim (Ongkir) penukaran produk sepenuhnya ditanggung oleh customer (Ongkir pengiriman dari rumah customer ke gudang, dan ongkir pengiriman dari gudang ke customer).<\/li><li>Produk return baru akan kami kirim setelah produk yang ditukar oleh customer sudah kami terima.<\/li><\/ul>",
+            "row_content": "<ul><li>Produk yang ingin ditukar harus dalam kondisi baru dan tidak terpakai.</li><li>Ongkos kirim (Ongkir) penukaran produk sepenuhnya ditanggung oleh customer (Ongkir pengiriman dari rumah customer ke gudang, dan ongkir pengiriman dari gudang ke customer).</li><li>Produk return baru akan kami kirim setelah produk yang ditukar oleh customer sudah kami terima.</li></ul>",
             "page": ""
           }
         },
@@ -443,7 +452,7 @@
           "settings": {
             "heading": "Metode pembayaran apa saja yang tersedia di SVRG ?",
             "icon": "question_mark",
-            "row_content": "<p>SVRG menawarkan berbagai metode pembayaran, termasuk transfer bank, kartu kredit\/debit, e-wallet, dan Virtual Account.<\/p>",
+            "row_content": "<p>SVRG menawarkan berbagai metode pembayaran, termasuk transfer bank, kartu kredit/debit, e-wallet, dan Virtual Account.</p>",
             "page": ""
           }
         },
@@ -452,7 +461,7 @@
           "settings": {
             "heading": "Apakah aman berbelanja di SVRG  ?",
             "icon": "question_mark",
-            "row_content": "<p>Ya, Anda dapat dengan aman dan nyaman berbelanja di SVRG. SVRG menggunakan teknologi keamanan terbaru untuk melindungi informasi pribadi dan data pembayaran Anda<\/p>",
+            "row_content": "<p>Ya, Anda dapat dengan aman dan nyaman berbelanja di SVRG. SVRG menggunakan teknologi keamanan terbaru untuk melindungi informasi pribadi dan data pembayaran Anda</p>",
             "page": ""
           }
         },
@@ -461,7 +470,7 @@
           "settings": {
             "heading": "Adakah toko offline SVRG yang bisa saya kunjungi ?",
             "icon": "question_mark",
-            "row_content": "<p>Kami juga memiliki toko offline yang bisa Anda kunjungi <a href=\"\/pages\/about\" title=\"About Us\">di sini<\/a><\/p>",
+            "row_content": "<p>Kami juga memiliki toko offline yang bisa Anda kunjungi <a href=\"/pages/about\" title=\"About Us\">di sini</a></p>",
             "page": ""
           }
         },
@@ -470,7 +479,7 @@
           "settings": {
             "heading": "Apakah ada garansi untuk pembelian produk SVRG ?",
             "icon": "question_mark",
-            "row_content": "<p>Ya, kami menyediakan garansi untuk pembelian produk SVRG. Garansi berlaku hanya dengan video unboxing. Garansi tidak berlaku jika kerusakan terjadi karena kesalahan pemasangan\/pemakaian\/pemeliharaan produk. Garansi kerusakan berlaku 1 bulan untuk produk yang belum digunakan (produk factory defect)<\/p>",
+            "row_content": "<p>Ya, kami menyediakan garansi untuk pembelian produk SVRG. Garansi berlaku hanya dengan video unboxing. Garansi tidak berlaku jika kerusakan terjadi karena kesalahan pemasangan/pemakaian/pemeliharaan produk. Garansi kerusakan berlaku 1 bulan untuk produk yang belum digunakan (produk factory defect)</p>",
             "page": ""
           }
         }
