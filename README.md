@@ -1,2 +1,1 @@
-# dawn-svrg template to give another great experience to user savrga
-
+# dawn-svrg template to give another great experience to user svrg
