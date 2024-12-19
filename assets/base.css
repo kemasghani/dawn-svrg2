@@ -811,6 +811,13 @@ summary::-webkit-details-marker {
   margin: 4rem 0;
 }
 
+@media screen and (max-width: 500px) {
+  .title--primary {
+    margin: 20px 0 0px;
+    font-size: 24px;
+  }
+}
+
 .title-wrapper--self-padded-tablet-down,
 .title-wrapper--self-padded-mobile {
   padding-left: 1.5rem;
@@ -4218,4 +4225,8 @@ p.titleCard {
   font-family: "ProximaNova" !important;
   letter-spacing: 0.5px !important;
   font-weight: 700gi;
+}
+
+p.sc-fzplWN {
+  font-family: "ProximaNova" !important;
 }

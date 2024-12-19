@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -14,14 +23,14 @@
         "heading_Lp47yC": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>TENTANG KAMI<\/strong>",
+            "heading": "<strong>TENTANG KAMI</strong>",
             "heading_size": "h1"
           }
         },
         "text_KzaC3w": {
           "type": "text",
           "settings": {
-            "text": "<p>SVRG adalah perusahaan distributor alat olahraga terbaik yang didirikan sejak tahun 2018 di Surabaya, Indonesia. Kami memulai bisnis ini karena melihat adanya kebutuhan akan peralatan home gym dan perlengkapan workout berkualitas dengan harga terjangkau. Sejak didirikan, kami selalu fokus pada pengalaman olahraga pelanggan yang menyenangkan dan terus bergerak untuk memberikan kepuasan terhadap pelanggan dalam hal inovasi, layanan, dan nilai guna produk.<\/p><p>Dengan koleksi katalog yang mencakup lebih dari 1000 produk, mulai dari pakaian dan peralatan workout, Pilates, yoga, running, hingga aksesoris, kami siap memenuhi kebutuhan olahraga dan menemani perjalanan hidup sehat Anda.<\/p>"
+            "text": "<p>SVRG adalah perusahaan distributor alat olahraga terbaik yang didirikan sejak tahun 2018 di Surabaya, Indonesia. Kami memulai bisnis ini karena melihat adanya kebutuhan akan peralatan home gym dan perlengkapan workout berkualitas dengan harga terjangkau. Sejak didirikan, kami selalu fokus pada pengalaman olahraga pelanggan yang menyenangkan dan terus bergerak untuk memberikan kepuasan terhadap pelanggan dalam hal inovasi, layanan, dan nilai guna produk.</p><p>Dengan koleksi katalog yang mencakup lebih dari 1000 produk, mulai dari pakaian dan peralatan workout, Pilates, yoga, running, hingga aksesoris, kami siap memenuhi kebutuhan olahraga dan menemani perjalanan hidup sehat Anda.</p>"
           }
         }
       },
@@ -44,7 +53,7 @@
         "text_JfzPrL": {
           "type": "text",
           "settings": {
-            "text": "<p>Produk olahraga di SVRG.ID terbuat dari bahan berkualitas tinggi yang dirancang khusus untuk meningkatkan performa Anda dalam setiap latihan. Dibuat dari material terbaik, SVRG. menjamin semua alat olahraga yang kami jual cocok untuk penggunaan jangka panjang.<\/p>",
+            "text": "<p>Produk olahraga di SVRG.ID terbuat dari bahan berkualitas tinggi yang dirancang khusus untuk meningkatkan performa Anda dalam setiap latihan. Dibuat dari material terbaik, SVRG. menjamin semua alat olahraga yang kami jual cocok untuk penggunaan jangka panjang.</p>",
             "text_style": "body"
           }
         }
@@ -53,7 +62,7 @@
         "text_JfzPrL"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/DSC07112.webp",
+        "image": "shopify://shop_images/Kolase_Showroom_1.jpg",
         "headline": "ALAT OLAHRAGA KUALITAS PREMIUM",
         "image_url": "",
         "height": "small",
@@ -76,7 +85,7 @@
         "text_TykCFq": {
           "type": "text",
           "settings": {
-            "text": "<p>Jam Operasional Toko: <strong>Senin - Minggu: 09.00 - 18.00 WIB<\/strong><\/p><p>Kami siap melayani Anda setiap hari untuk berbagai kebutuhan olahraga, mulai dari perlengkapan hingga pakaian olahraga. Kunjungi toko kami selama jam operasional dan nikmati pilihan lengkap dengan pelayanan terbaik!<\/p>",
+            "text": "<p>Jam Operasional Toko: <strong>Senin - Minggu: 09.00 - 18.00 WIB</strong></p><p>Kami siap melayani Anda setiap hari untuk berbagai kebutuhan olahraga, mulai dari perlengkapan hingga pakaian olahraga. Kunjungi toko kami selama jam operasional dan nikmati pilihan lengkap dengan pelayanan terbaik!</p>",
             "text_style": "body"
           }
         }
@@ -85,7 +94,7 @@
         "text_TykCFq"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/DSC07106.webp",
+        "image": "shopify://shop_images/Ruko_SVRG_1.jpg",
         "headline": "TEMUKAN SEMUA YANG ANDA BUTUHKAN DI SVRG",
         "image_url": "",
         "height": "small",
@@ -110,7 +119,7 @@
           "settings": {
             "title": "TANGERANG SELATAN",
             "address": "Emerald Avenue 2 B3JL HR Rasuna Said, Pondok Aren, Tangerang",
-            "link_maps": "https:\/\/maps.app.goo.gl\/uCtUHvXnYQHiTUTP8",
+            "link_maps": "https://maps.app.goo.gl/uCtUHvXnYQHiTUTP8",
             "latitude": "-6.273390",
             "longitude": "106.710110"
           }
@@ -120,7 +129,7 @@
           "settings": {
             "title": "SURABAYA",
             "address": "Ruko North Junction Blok RA 23, Citraland JL. Taman Puspa Raya, Sambikerap, Surabaya",
-            "link_maps": "https:\/\/maps.app.goo.gl\/QgX9XQTfHucismgX6",
+            "link_maps": "https://maps.app.goo.gl/QgX9XQTfHucismgX6",
             "latitude": "-7.278905",
             "longitude": "112.645621"
           }
