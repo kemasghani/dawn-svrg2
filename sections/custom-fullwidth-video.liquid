@@ -1,21 +1,35 @@
 <section id="fullwidth-video-section">
   <div class="fullwidth-video-wrapper">
-    {% if section.settings.video_url != blank %}
-      <video src="{{ section.settings.video_url }}"
-        class="w-full h-[84vh] object-cover"
-        loop
-        autoplay
-        muted
-        style="height: 84vh; width: 100%; max-width: none; max-height: none; object-fit: cover;"></video>
-    {% else %}
-      <video src="{{ section.settings.video.sources[1].url }}"
-        class="w-full h-[84vh] object-cover"
-        loop
-        autoplay
-        muted
-        style="height: 84vh; width: 100%; max-width: none; max-height: none; object-fit: cover;"></video>
-    {% endif %}
+    {% if section.settings.image_banner != blank %}
+      {% if section.settings.image_banner != blank %}
+        <img
+          src="https:{{ section.settings.image_banner | file_url }}"
+          alt="Banner Image"
+          width="1920"
+          height="1080"
+          loading="lazy"
+          class="w-full h-[84vh] object-cover"
+          style="height: 84vh; width: 100%; max-width: none; max-height: none; object-fit: cover;"
+      />
 
+      {% endif %}
+    {% else %}
+      {% if section.settings.video_url != blank %}
+        <video src="{{ section.settings.video_url }}"
+          class="w-full h-[84vh] object-cover"
+          loop
+          autoplay
+          muted
+          style="height: 84vh; width: 100%; max-width: none; max-height: none; object-fit: cover;"></video>
+      {% else %}
+        <video src="{{ section.settings.video.sources[1].url }}"
+          class="w-full h-[84vh] object-cover"
+          loop
+          autoplay
+          muted
+          style="height: 84vh; width: 100%; max-width: none; max-height: none; object-fit: cover;"></video>
+      {% endif %}
+    {% endif %}
     <!-- Overlay content container -->
     <div class="video-overlay-content flex flex-col gap-10">
       <div class="text-content-gradient"></div>
@@ -132,6 +146,11 @@
     "type": "url",
     "id": "video_url",
     "label": "Upload URL Video"
+  },
+  {
+    "type": "image_picker",
+    "id": "image_banner",
+    "label": "Image Banner"
   },
   {
     "type": "text",
