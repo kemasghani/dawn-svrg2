@@ -4073,7 +4073,7 @@ header nav ul li span,
   }
 }
 
-.searchMobile .svg-wrapper .icon-search {
+.searchMobile .header__icon--search .svg-wrapper .icon-search {
   transform: translateX(-30px);
 }
 
@@ -4083,13 +4083,13 @@ header nav ul li span,
 }
 
 @media screen and (max-width: 380px) {
-  .searchMobile .svg-wrapper .icon-search {
+  .searchMobile .header__icon--search .svg-wrapper .icon-search {
     transform: translateX(-20px);
   }
 }
 
 @media screen and (max-width: 350px) {
-  .searchMobile .svg-wrapper .icon-search {
+  .searchMobile .header__icon--search .svg-wrapper .icon-search {
     transform: translateX(-10px);
   }
 }
