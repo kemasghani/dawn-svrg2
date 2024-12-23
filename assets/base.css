@@ -4249,3 +4249,6 @@ p.cart__login-paragraph {
   font-family: "ArquitectaBlack";
   text-transform: uppercase;
 }
+p.product__sku {
+  font-family: "ProximaNova" !important;
+}
