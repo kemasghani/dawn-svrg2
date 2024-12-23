@@ -4189,7 +4189,14 @@ h1.article-template__title {
   line-height: 19px;
   font-size: 17px;
 }
+
+h1.cart__empty-text {
+  text-transform: uppercase;
+}
 @media screen and (max-width: 500px) {
+  h1.cart__empty-text {
+    line-height: 35px;
+  }
   h1.article-template__title {
     text-transform: uppercase;
     font-size: 20px;
@@ -4229,4 +4236,16 @@ p.titleCard {
 
 p.sc-fzplWN {
   font-family: "ProximaNova" !important;
+}
+
+h2.cart__login-title,
+p.cart__login-paragraph {
+  font-family: "ProximaNova" !important;
+  letter-spacing: 0.5px !important;
+  font-weight: 700gi;
+}
+
+.cart__warnings a.button {
+  font-family: "ArquitectaBlack";
+  text-transform: uppercase;
 }

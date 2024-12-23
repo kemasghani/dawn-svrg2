@@ -144,7 +144,7 @@
                 <a href="{{ product.url }}" class="block">
                   <img src="{{ product.featured_image | img_url: '400x400' }}" alt="{{ product.title }}" class="w-full h-auto object-cover rounded-md">
                 </a>
-                <p class="font-semibold mt-2 text-[13px] !mb-0 !pb-2 titleCard">{{ product.title }}</p>
+                <p class="font-semibold mt-2 text-[13px] !mb-0 !pb-2 titleCard line-clamp-2">{{ product.title }}</p>
                 <p class="text-gray-600  text-[12px]">{{ product.price | money }}</p>
                 <form method="post" action="/cart/add" class="mt-4">
                   <input type="hidden" name="id" value="{{ product.variants.first.id }}">

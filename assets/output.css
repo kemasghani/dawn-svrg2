@@ -1732,16 +1732,8 @@ b,
 }
 
 @media (min-width: 768px) {
-  .md\:relative {
-    position: relative;
-  }
-
   .md\:mb-\[20px\] {
     margin-bottom: 20px;
-  }
-
-  .md\:block {
-    display: block;
   }
 
   .md\:hidden {
