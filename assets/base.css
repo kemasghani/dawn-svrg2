@@ -4153,18 +4153,22 @@ header nav ul li span,
   position: sticky !important;
   top: 0;
 }
-.section-header {
-  top: 70px !important;
-}
 
 .utility-bar__grid.page-width {
   padding-left: 0px;
   padding-right: 0px;
 }
 
+/* announcement bar  */
+
+/* .section-header {
+  top: 70px !important;
+}
 #MainContent {
   margin-top: 70px;
-}
+} */
+/* announcement bar  */
+
 .main-blog h1 {
   text-transform: uppercase;
 }
