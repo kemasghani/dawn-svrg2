@@ -1151,6 +1151,10 @@ summary::-webkit-details-marker {
   width: 100%;
 }
 
+.image-desktop img {
+  width: 100% !important;
+}
+
 @media screen and (max-width: 500px) {
   .image-desktop {
     display: none !important;
