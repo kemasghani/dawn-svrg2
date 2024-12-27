@@ -3,13 +3,12 @@
     {% if section.settings.image_banner != blank %}
       {% if section.settings.image_banner != blank %}
         <img
-          src="https:{{ section.settings.image_banner | file_url }}"
+          src="{{ section.settings.image_banner | image_url: width: 1500 }}"
           alt="Banner Image"
-          width="1920"
-          height="1080"
+          width="120"
+          height="480"
           loading="lazy"
-          class="w-full h-[84vh] object-cover"
-          style="height: 84vh; width: 100%; max-width: none; max-height: none; object-fit: cover;"
+          class="w-full"
       />
 
       {% endif %}
@@ -31,7 +30,7 @@
       {% endif %}
     {% endif %}
     <!-- Overlay content container -->
-    <div class="video-overlay-content flex flex-col gap-10">
+    <div class="video-overlay-content flex flex-col gap-10" style="display:none;">
       <div class="text-content-gradient"></div>
 
       <!-- Text content on top of the gradient -->
