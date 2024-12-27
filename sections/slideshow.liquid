@@ -140,55 +140,33 @@
             -%}
             {%- if forloop.first %}
               <div class="image-desktop">
-                <img
-                  src="{{ block.settings.image }}"
-                  alt="Banner Image"
-                  loading="lazy"
-                />
-                {% comment %} {{
+                {{
                   block.settings.image
                   | image_url: width: 3840
                   | image_tag: height: height, sizes: sizes, widths: widths, fetchpriority: fetch_priority
-                }} {% endcomment %}
+                }}
               </div>
               <div class="image-mobile">
-                <img
-                  src="{{ block.settings.image_mobile }}"
-                  alt="Banner Image"
-                  loading="lazy"
-                  style="max-width: 100%;"
-                />
-                {% comment %} {{
+                {{
                   block.settings.image_mobile
                   | image_url: width: 3840
                   | image_tag: height: height, sizes: sizes, widths: widths, fetchpriority: fetch_priority
-                }} {% endcomment %}
+                }}
               </div>
             {%- else -%}
               <div class="image-desktop">
-                <img
-                  src="{{ block.settings.image }}"
-                  alt="Banner Image"
-                  loading="lazy"
-                />
-                {% comment %} {{
+                {{
                   block.settings.image
                   | image_url: width: 3840
                   | image_tag: loading: 'lazy', height: height, sizes: sizes
-                }} {% endcomment %}
+                }}
               </div>
               <div class="image-mobile">
-                <img
-                  src="{{ block.settings.image_mobile }}"
-                  alt="Banner Image"
-                  loading="lazy"
-                  style="max-width: 100%;"
-                />
-                {% comment %} {{
+                {{
                   block.settings.image_mobile
                   | image_url: width: 3840
                   | image_tag: loading: 'lazy', height: height, sizes: sizes
-                }} {% endcomment %}
+                }}
               </div>
             {%- endif -%}
           {%- else -%}
@@ -437,12 +415,12 @@
       "limit": 5,
       "settings": [
         {
-          "type": "url",
+          "type": "image_picker",
           "id": "image",
           "label": "Dekstop Image"
         },
         {
-          "type": "url",
+          "type": "image_picker",
           "id": "image_mobile",
           "label": "Mobile Image"
         },

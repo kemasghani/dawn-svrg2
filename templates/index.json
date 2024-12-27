@@ -15,8 +15,8 @@
         "slide_4C9TyW": {
           "type": "slide",
           "settings": {
-            "image": "https://res.cloudinary.com/doq2grch0/image/upload/v1735271977/WEBSITE_HEADER_FOLDABLE_TREADMILL_rREV_1_ffbigs.jpg",
-            "image_mobile": "https://res.cloudinary.com/doq2grch0/image/upload/v1735271957/Website_Header_Treadmill_Shopee_Size_2000x2000_hdnizp.jpg",
+            "image": "shopify://shop_images/download_1.webp",
+            "image_mobile": "shopify://shop_images/download_2.webp",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
