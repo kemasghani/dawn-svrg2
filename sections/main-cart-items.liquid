@@ -347,7 +347,6 @@
                         </div>
                       </quantity-popover>
                     </td>
-
                     <td class="cart-item__totals right small-hide">
                       {%- render 'loading-spinner' -%}
                       <div class="cart-item__price-wrapper">
@@ -356,7 +355,6 @@
                             <dt class="visually-hidden">
                               {{ 'products.product.price.regular_price' | t }}
                             </dt>
-
                             <dt class="visually-hidden">
                               {{ 'products.product.price.sale_price' | t }}
                             </dt>
@@ -369,7 +367,6 @@
                             {{ item.original_line_price | money }}
                           </span>
                         {%- endif -%}
-
                         {%- if item.variant.available and item.unit_price_measurement -%}
                           <div class="unit-price caption">
                             <span class="visually-hidden">{{ 'products.product.price.unit_price' | t }}</span>
