@@ -104,41 +104,55 @@
 </style>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        // Initialize the Leaflet map with a zoom level of 10
-        var map = L.map('map').setView([-6.917464, 107.619123], 3); // Zoom level set to 10 for a more zoomed-out view
+  document.addEventListener("DOMContentLoaded", function () {
+      // Initialize the Leaflet map with a zoom level of 10
+      var map = L.map('map').setView([-6.917464, 107.619123], 3); // Zoom level set to 10 for a more zoomed-out view
 
-        // Add the tile layer (map background)
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; OpenStreetMap contributors'
-        }).addTo(map);
+      // Add the tile layer (map background)
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; OpenStreetMap contributors'
+      }).addTo(map);
 
-        // Store markers in an array
-        var markers = [];
+      // Store markers in an array
+      var markers = [];
 
-        // Add a marker for each location
-        document.querySelectorAll('.location-item').forEach(function(item) {
-            var lat = item.getAttribute('data-lat');
-            var lng = item.getAttribute('data-lng');
-            var title = item.querySelector('.location-title').innerText;
-            var marker = L.marker([lat, lng]).addTo(map).bindPopup(title);
+      // Get the URL for the custom marker icon from Shopify assets
+      var markerIconUrl = "{{ 'icon-map-pin.svg' | asset_url }}"; // Replace 'marker-icon.png' with your actual file name
 
-            markers.push(marker);
+      // Define a custom marker icon
+      var customIcon = L.icon({
+          iconUrl: markerIconUrl, // Use the custom icon URL
+          iconSize: [32, 32], // Size of the icon
+          iconAnchor: [16, 32], // Anchor point of the icon (usually at the bottom center)
+          popupAnchor: [0, -32] // Popup position relative to the icon
+      });
 
-            // Add click event to focus the map on the marker when clicked
-            item.addEventListener('click', function() {
-                map.setView([lat, lng], 16);
-                marker.openPopup();
-            });
-        });
+      // Add a marker for each location
+      document.querySelectorAll('.location-item').forEach(function(item) {
+          var lat = item.getAttribute('data-lat');
+          var lng = item.getAttribute('data-lng');
+          var title = item.querySelector('.location-title').innerText;
 
-        // Adjust the map bounds to fit all markers
-            if (markers.length > 0) {
-            var group = new L.featureGroup(markers);
-            map.fitBounds(group.getBounds());
-            }
-        });
-</script>
+          // Use the custom icon for the marker
+          var marker = L.marker([lat, lng], { icon: customIcon }).addTo(map).bindPopup(title);
+
+          markers.push(marker);
+
+          // Add click event to focus the map on the marker when clicked
+          item.addEventListener('click', function() {
+              map.setView([lat, lng], 16);
+              marker.openPopup();
+          });
+      });
+
+      // Adjust the map bounds to fit all markers
+      if (markers.length > 0) {
+          var group = new L.featureGroup(markers);
+          map.fitBounds(group.getBounds());
+      }
+  });
+  </script>
+
 
   {% schema %}
   {
