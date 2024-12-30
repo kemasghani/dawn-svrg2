@@ -15,8 +15,8 @@
         "slide_4C9TyW": {
           "type": "slide",
           "settings": {
-            "image": "https://res.cloudinary.com/doq2grch0/image/upload/v1735530795/download_1__11zon_wmzc5p.webp",
-            "image_mobile": "https://res.cloudinary.com/doq2grch0/image/upload/v1735530795/download_2__11zon_mja4ru.webp",
+            "image": "shopify://shop_images/download_1__11zon.webp",
+            "image_mobile": "shopify://shop_images/download_2__11zon.webp",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
