@@ -153,6 +153,7 @@
                     {{ block.settings.image_mobile | image_url: width: 768 }} 768w,
                     {{ block.settings.image | image_url }}"
                   sizes="(max-width: 768px) 100vw, 3840px"
+                  loading="lazy"
                   height="{{ height }}"
                   fetchpriority="{{ fetch_priority }}"
                   alt="{{ block.settings.image.alt | escape }}"
