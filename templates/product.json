@@ -121,15 +121,10 @@
         "judge_me_reviews_review_widget_78iapw": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
-        },
-        "judge_me_reviews_preview_badge_6rJ4im": {
-          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
         }
       },
       "block_order": [
-        "judge_me_reviews_review_widget_78iapw",
-        "judge_me_reviews_preview_badge_6rJ4im"
+        "judge_me_reviews_review_widget_78iapw"
       ],
       "settings": {
         "include_margins": true
