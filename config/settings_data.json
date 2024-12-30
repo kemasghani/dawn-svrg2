@@ -178,11 +178,6 @@
         "disabled": false,
         "settings": {}
       },
-      "15659984488230578541": {
-        "type": "shopify://apps/oc-gift-wrap-product/blocks/giftproduct/235afcd6-e1c6-4bf3-966b-a73b1c132cd1",
-        "disabled": true,
-        "settings": {}
-      },
       "4571859552318407796": {
         "type": "shopify://apps/glo-color-swatch/blocks/app-embed-block/4394f710-096c-4021-bbde-8ebb26057c11",
         "disabled": false,

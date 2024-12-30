@@ -148,10 +148,10 @@
                 class=""
               >
                 <img
-                  src="{{ block.settings.image | image_url: width: 3840 }}"
+                  src="{{ block.settings.image }}"
                   srcset="
-                    {{ block.settings.image_mobile | image_url: width: 768 }} 768w,
-                    {{ block.settings.image | image_url }}"
+                    {{ block.settings.image_mobile }} 768w,
+                    {{ block.settings.image }}"
                   sizes="(max-width: 768px) 100vw, 3840px"
                   loading="lazy"
                   height="{{ height }}"
@@ -169,10 +169,10 @@
                 class="button {% if block.settings.button_style_secondary %}button--secondary{% else %}button--primary{% endif %}"
               >
                 <img
-                  src="{{ block.settings.image | image_url: width: 3840 }}"
+                  src="{{ block.settings.image }}"
                   srcset="
-                    {{ block.settings.image_mobile | image_url: width: 768 }} 768w,
-                    {{ block.settings.image | image_url: width: 3840 }} 3840w"
+                    {{ block.settings.image_mobile }} 768w,
+                    {{ block.settings.image }} 3840w"
                   sizes="(max-width: 768px) 100vw, 3840px"
                   loading="lazy"
                   height="{{ height }}"
@@ -426,12 +426,12 @@
       "limit": 5,
       "settings": [
         {
-          "type": "image_picker",
+          "type": "url",
           "id": "image",
           "label": "Dekstop Image"
         },
         {
-          "type": "image_picker",
+          "type": "url",
           "id": "image_mobile",
           "label": "Mobile Image"
         },
