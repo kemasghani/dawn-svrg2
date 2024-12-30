@@ -147,20 +147,16 @@
                 {% endif %}
                 class=""
               >
-                <div class="image-desktop">
-                  {{
-                    block.settings.image
-                    | image_url: width: 3840
-                    | image_tag: height: height, sizes: sizes, widths: widths, fetchpriority: fetch_priority
-                  }}
-                </div>
-                <div class="image-mobile">
-                  {{
-                    block.settings.image_mobile
-                    | image_url: width: 3840
-                    | image_tag: height: height, sizes: sizes, widths: widths, fetchpriority: fetch_priority
-                  }}
-                </div>
+                <img
+                  src="{{ block.settings.image | image_url: width: 3840 }}"
+                  srcset="
+                    {{ block.settings.image_mobile | image_url: width: 768 }} 768w,
+                    {{ block.settings.image | image_url }}"
+                  sizes="(max-width: 768px) 100vw, 3840px"
+                  height="{{ height }}"
+                  fetchpriority="{{ fetch_priority }}"
+                  alt="{{ block.settings.image.alt | escape }}"
+                style="width: 100vw;">
               </a>
             {%- else -%}
               <a
@@ -171,20 +167,16 @@
                 {% endif %}
                 class="button {% if block.settings.button_style_secondary %}button--secondary{% else %}button--primary{% endif %}"
               >
-                <div class="image-desktop">
-                  {{
-                    block.settings.image
-                    | image_url: width: 3840
-                    | image_tag: loading: 'lazy', height: height, sizes: sizes
-                  }}
-                </div>
-                <div class="image-mobile">
-                  {{
-                    block.settings.image_mobile
-                    | image_url: width: 3840
-                    | image_tag: loading: 'lazy', height: height, sizes: sizes
-                  }}
-                </div>
+                <img
+                  src="{{ block.settings.image | image_url: width: 3840 }}"
+                  srcset="
+                    {{ block.settings.image_mobile | image_url: width: 768 }} 768w,
+                    {{ block.settings.image | image_url: width: 3840 }} 3840w"
+                  sizes="(max-width: 768px) 100vw, 3840px"
+                  loading="lazy"
+                  height="{{ height }}"
+                  alt="{{ block.settings.image.alt | escape }}">
+
               </a>
             {%- endif -%}
           {%- else -%}
