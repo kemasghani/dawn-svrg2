@@ -139,35 +139,53 @@
               endif
             -%}
             {%- if forloop.first %}
-              <div class="image-desktop">
-                {{
-                  block.settings.image
-                  | image_url: width: 3840
-                  | image_tag: height: height, sizes: sizes, widths: widths, fetchpriority: fetch_priority
-                }}
-              </div>
-              <div class="image-mobile">
-                {{
-                  block.settings.image_mobile
-                  | image_url: width: 3840
-                  | image_tag: height: height, sizes: sizes, widths: widths, fetchpriority: fetch_priority
-                }}
-              </div>
+              <a
+                {% if block.settings.link %}
+                  href="{{ block.settings.link }}"
+                {% else %}
+                  role="link" aria-disabled="true"
+                {% endif %}
+                class=""
+              >
+                <div class="image-desktop">
+                  {{
+                    block.settings.image
+                    | image_url: width: 3840
+                    | image_tag: height: height, sizes: sizes, widths: widths, fetchpriority: fetch_priority
+                  }}
+                </div>
+                <div class="image-mobile">
+                  {{
+                    block.settings.image_mobile
+                    | image_url: width: 3840
+                    | image_tag: height: height, sizes: sizes, widths: widths, fetchpriority: fetch_priority
+                  }}
+                </div>
+              </a>
             {%- else -%}
-              <div class="image-desktop">
-                {{
-                  block.settings.image
-                  | image_url: width: 3840
-                  | image_tag: loading: 'lazy', height: height, sizes: sizes
-                }}
-              </div>
-              <div class="image-mobile">
-                {{
-                  block.settings.image_mobile
-                  | image_url: width: 3840
-                  | image_tag: loading: 'lazy', height: height, sizes: sizes
-                }}
-              </div>
+              <a
+                {% if block.settings.link %}
+                  href="{{ block.settings.link }}"
+                {% else %}
+                  role="link" aria-disabled="true"
+                {% endif %}
+                class="button {% if block.settings.button_style_secondary %}button--secondary{% else %}button--primary{% endif %}"
+              >
+                <div class="image-desktop">
+                  {{
+                    block.settings.image
+                    | image_url: width: 3840
+                    | image_tag: loading: 'lazy', height: height, sizes: sizes
+                  }}
+                </div>
+                <div class="image-mobile">
+                  {{
+                    block.settings.image_mobile
+                    | image_url: width: 3840
+                    | image_tag: loading: 'lazy', height: height, sizes: sizes
+                  }}
+                </div>
+              </a>
             {%- endif -%}
           {%- else -%}
             {%- assign placeholder_slide = forloop.index | modulo: 2 -%}
