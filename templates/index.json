@@ -107,11 +107,6 @@
         "padding_bottom": 0
       }
     },
-    "take_quiz_MKRjmd": {
-      "type": "take-quiz",
-      "disabled": true,
-      "settings": {}
-    },
     "featured_collection_PwmxtQ": {
       "type": "featured-collection",
       "settings": {
@@ -184,80 +179,6 @@
         "margin_top": 0
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "link": "",
-        "button_text": "Lihat Semua Category",
-        "show_view_all_category": false,
-        "title": "",
-        "heading_size": "h2",
-        "text_button_all": "Lihat Semua",
-        "description": "",
-        "show_description": false,
-        "show_border_top": true,
-        "description_style": "body",
-        "collection": "pilates",
-        "products_to_show": 10,
-        "columns_desktop": 5,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": true,
-        "color_scheme": "scheme-ecb25ea3-5577-4d55-9002-e07280dac145",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "flash_sale_layout": false,
-        "countdown_total_time": 120,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 24,
-        "padding_bottom": 32,
-        "margin_top": 0
-      }
-    },
-    "featured_collection_8mpqbj": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "link": "shopify://collections",
-        "button_text": "Lihat Semua Category",
-        "show_view_all_category": true,
-        "title": "",
-        "heading_size": "h2",
-        "text_button_all": "Lihat Semua",
-        "description": "",
-        "show_description": false,
-        "show_border_top": true,
-        "description_style": "body",
-        "collection": "weightlifting",
-        "products_to_show": 10,
-        "columns_desktop": 5,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": true,
-        "color_scheme": "scheme-ecb25ea3-5577-4d55-9002-e07280dac145",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "flash_sale_layout": false,
-        "countdown_total_time": 120,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 24,
-        "padding_bottom": 32,
-        "margin_top": 16
-      }
-    },
     "image_with_text_w4aNU7": {
       "type": "image-with-text",
       "blocks": {
@@ -297,66 +218,6 @@
         "mobile_content_alignment": "center",
         "padding_top": 0,
         "padding_bottom": 36
-      }
-    },
-    "diagonal_cross_bar_WaKNHh": {
-      "type": "diagonal-cross-bar",
-      "disabled": true,
-      "settings": {
-        "bar_text": "We'd love to have you as our reseller. Contact us today and let's grow together !    We'd love to have you as our reseller. Contact us today and let's grow together !",
-        "background_color": "#63d7d1",
-        "background_color2": "#c8d92b",
-        "text_color": "#000000",
-        "padding_top": 48,
-        "padding_bottom": 100
-      }
-    },
-    "custom_feature_section_wngyVP": {
-      "type": "custom-feature-section",
-      "disabled": true,
-      "settings": {
-        "title_section": "KENAPA HARUS BELI DI  SVRG.",
-        "link": "shopify://pages/why-choose-svrg",
-        "benefit_1": "<p>Gratis</p>",
-        "benefit_2": "<p>Spesial </p>",
-        "benefit_3": "<p>Jaminan </p>",
-        "image_url": "https://res.cloudinary.com/doq2grch0/image/upload/v1728894178/Artboard_1A_ssnith.webp",
-        "icon_1": "shopify://shop_images/FREE_DELIVERY.svg",
-        "read_more_text": "Baca Selengkapnya",
-        "title_1": "Gratis Ongkir",
-        "icon_2": "shopify://shop_images/SEPCIAL_PACKAGING.svg",
-        "title_2": "Paket Khusus",
-        "icon_3": "shopify://shop_images/RETURN.svg",
-        "title_3": "Jaminan Uang Kembali",
-        "social_text": "KUNJUNGI SOSIAL MEDIA KAMI"
-      }
-    },
-    "multicolumn_styled_8DinCN": {
-      "type": "multicolumn-styled",
-      "disabled": true,
-      "settings": {
-        "image_1": "shopify://shop_images/3_Grid-04.jpg",
-        "title_1": "KENAPA HARUS BELI DI SVRG.",
-        "benefit_1": "Gratis Ongkir",
-        "benefit_2": "Pengemasan Spesial",
-        "benefit_3": "Jaminan Return",
-        "link_1": "shopify://pages/why-choose-svrg",
-        "button_text_1": "Baca Selengkapnya",
-        "icon_1": "shopify://shop_images/DELIVERY_BLACK.svg",
-        "icon_text_1": "Gratis Ongkir",
-        "icon_2": "shopify://shop_images/PACKAGING_BLACK.svg",
-        "icon_text_2": "Pengemasan Spesial",
-        "icon_3": "shopify://shop_images/RETURN_BLACK.svg",
-        "icon_text_3": "Jaminan Return",
-        "image_2": "shopify://shop_images/3_Grid-05.jpg",
-        "title_2": "Diskon Cuci Gudang",
-        "link_2": "shopify://collections/clearance-sale",
-        "button_text_2": "Cek Sekarang",
-        "image_3": "shopify://shop_images/3_Grid-06.jpg",
-        "title_3": "Temukan Toko",
-        "subtitle_3": "Belanja Online di Webstore, tersedia pilihan Pickup in SVRG. Showroom",
-        "link_3": "shopify://pages/about",
-        "button_text_3": "Temukan Toko"
       }
     },
     "multicolumn_icon_b6EmaQ": {
@@ -560,15 +421,9 @@
   "order": [
     "slideshow_YkcNVn",
     "custom_collection_list_NjCYFP",
-    "take_quiz_MKRjmd",
     "featured_collection_PwmxtQ",
     "featured_collection_FXhrhq",
-    "featured_collection",
-    "featured_collection_8mpqbj",
     "image_with_text_w4aNU7",
-    "diagonal_cross_bar_WaKNHh",
-    "custom_feature_section_wngyVP",
-    "multicolumn_styled_8DinCN",
     "multicolumn_icon_b6EmaQ",
     "collapsible_content_4VJ4VT",
     "featured_blog_FrKWDC"
