@@ -218,7 +218,7 @@ You can learn more about this (and learn how to cleanly revert these changes) at
     <div class="flex gap-10 headerLogo">
       {%- if section.settings.logo_position != 'middle-center' -%}
         {%- if request.page_type == 'index' -%}
-          <h1 class="header__heading translate-x-[8px] translate-y-[5px]">
+          <h1 class="header__heading header-logo-icon translate-x-[8px] translate-y-[5px]">
         {%- endif -%}
             <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
               {%- if settings.logo != blank -%}
