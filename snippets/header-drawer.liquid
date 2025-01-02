@@ -5,7 +5,7 @@
   {% render 'header-drawer' %}
 {% endcomment %}
 
-<header-drawer data-breakpoint="{% if section.settings.menu_type_desktop == 'drawer' %}desktop{% else %}tablet{% endif %}">
+<header-drawer class="flex gap-[0px] header-drawer" data-breakpoint="{% if section.settings.menu_type_desktop == 'drawer' %}desktop{% else %}tablet{% endif %}">
   <details id="Details-menu-drawer-container" class="menu-drawer-container">
     <summary
       class="header__icon header__icon--menu header__icon--summary link focus-inset"
@@ -291,4 +291,7 @@
       </div>
     </div>
   </details>
+  <div class="searchMobile">
+    <div class="headerSearch">{% render 'header-search', input_id: 'Search-In-Modal' %}</div>
+  </div>
 </header-drawer>

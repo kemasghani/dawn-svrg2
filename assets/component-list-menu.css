@@ -28,3 +28,9 @@
   width: 10rem;
   padding: 0.5rem;
 }
+
+@media (min-width: 989px) {
+  .header-drawer {
+    display: none;
+  }
+}
